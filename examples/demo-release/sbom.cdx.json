@@ -1,0 +1,18 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.6",
+ "components": [
+  {
+   "type": "library",
+   "name": "lodash",
+   "version": "4.17.21",
+   "purl": "pkg:npm/lodash@4.17.21"
+  },
+  {
+   "type": "library",
+   "name": "express",
+   "version": "4.21.2",
+   "purl": "pkg:npm/express@4.21.2"
+  }
+ ]
+}

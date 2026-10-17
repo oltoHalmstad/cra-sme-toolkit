@@ -1,0 +1,10 @@
+{
+ "product_id": "DEMO-001",
+ "product_version": "1.2.0",
+ "build_sha": "3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d",
+ "artifact_digest": "sha256:abababababababababababababababababababababababababababababababab",
+ "synthetic": true,
+ "input_digests": {
+  "lockfile": "1111111111111111111111111111111111111111111111111111111111111111"
+ }
+}

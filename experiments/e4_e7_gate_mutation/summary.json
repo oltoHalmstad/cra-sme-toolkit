@@ -1,0 +1,13 @@
+{
+  "baseline_decision": "PASS",
+  "baseline_reasons": [],
+  "mutations": 37,
+  "false_green": 0,
+  "false_green_rate": 0.0,
+  "decision_match_rate": 1.0,
+  "correct_code_rate": 1.0,
+  "freshness_recall": 1.0,
+  "legacy_v11_false_green": 33,
+  "legacy_v11_false_green_rate": 0.8918918918918919,
+  "legacy_v11_freshness_recall": 0.0
+}

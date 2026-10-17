@@ -25,7 +25,7 @@ SCHEMA_PATH = next(p for p in (_REPO / "schemas" / "trace_unit.schema.json",
 CATALOGUE_PATH = next(p for p in (_REPO / "data" / "cra_requirements_catalogue.csv",
                                  _PKG / "_data" / "cra_requirements_catalogue.csv") if p.exists())
 
-VALID_STATUS = {"not_started", "in_progress", "implemented", "verified", "not_applicable"}
+VALID_STATUS = {"not_started", "in_progress", "implemented", "verified", "not_applicable", "failed"}
 
 
 def sha256_file(path: str | Path) -> str:

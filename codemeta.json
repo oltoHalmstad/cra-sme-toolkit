@@ -2,7 +2,7 @@
   "@context": "https://w3id.org/codemeta/3.0",
   "@type": "SoftwareSourceCode",
   "name": "CRA-SME Toolkit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "dateCreated": "2026-10-17",
   "datePublished": "2026-10-17",
   "description": "Research toolkit for EU Cyber Resilience Act implementation and evaluation in SMEs: requirements catalogue, risk/evidence workbook, Python core, CI evidence workflow, experiment protocols and notebooks.",

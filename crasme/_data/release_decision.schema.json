@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/crasme/release_decision.schema.json",
+  "title": "CRA-SME release decision (v1.0)",
+  "type": "object",
+  "required": ["schema_version", "engine", "product_id", "build_sha", "decision", "reasons", "details",
+               "eligible_for_human_conformity_review", "legal_conformity", "as_of", "timestamp_utc",
+               "input_digests", "bundle_digest", "policy_digest", "disclaimer"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "engine": {"type": "string"},
+    "product_id": {"type": ["string", "null"]},
+    "product_version": {"type": ["string", "null"]},
+    "build_sha": {"type": ["string", "null"]},
+    "artifact_digest": {"type": ["string", "null"]},
+    "decision": {"enum": ["PASS", "FAIL", "REVIEW_REQUIRED"]},
+    "reasons": {"type": "array", "items": {"type": "string", "pattern": "^[A-Z0-9_]+$"}},
+    "details": {"type": "array", "items": {"type": "object", "required": ["code", "severity", "description"],
+      "properties": {"severity": {"enum": ["FAIL", "REVIEW", "INFO"]}}}},
+    "stats": {"type": "object"},
+    "eligible_for_human_conformity_review": {"type": "boolean"},
+    "legal_conformity": {"const": "NOT_DETERMINED_BY_TOOL"},
+    "as_of": {"type": "string"},
+    "timestamp_utc": {"type": "string"},
+    "input_digests": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+    "bundle_digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "policy_digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "disclaimer": {"type": "string"}
+  },
+  "allOf": [
+    {"if": {"properties": {"decision": {"const": "PASS"}}},
+     "then": {"properties": {"reasons": {"maxItems": 0}, "eligible_for_human_conformity_review": {"const": true}}}},
+    {"if": {"properties": {"decision": {"enum": ["FAIL", "REVIEW_REQUIRED"]}}},
+     "then": {"properties": {"reasons": {"minItems": 1}, "eligible_for_human_conformity_review": {"const": false}}}}
+  ]
+}

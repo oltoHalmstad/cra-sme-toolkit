@@ -1,5 +1,5 @@
 # E2 — Vulnerability-scanner agreement and adjudicated accuracy
-**RQ4 · Annex I Part I(2)(a), Part II(2)** · Code `crasme.vulns`, `tools/ci_gate.py` · Notebook 03
+**RQ4 · Annex I Part I(2)(a), Part II(2)** · Code `crasme.vulns`, `crasme.gate` · Notebook 03
 
 ## Hypotheses
 - **H2a:** Pairwise Jaccard between scanners on identical SBOMs is below 0.7, consistent with Imtiaz et al. 2021 and Boles et al. 2024.

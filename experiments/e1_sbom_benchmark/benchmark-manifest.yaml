@@ -1,0 +1,40 @@
+# E1 SBOM/SCA benchmark manifest (rec. P2-01). One entry per fixture; extend before the EASE 2027 study.
+schema: crasme-e1-benchmark/1
+ground_truth_definition: >-
+  Components installed or linked into the delivered artefact, including transitive dependencies.
+  Excludes build-only tools unless they are shipped. Report results under both definitions where
+  this matters (the pilot counted pip in a venv as a false positive).
+fixtures:
+  - id: py-app
+    status: pilot-run
+    ecosystem: pypi
+    label_method: "pip freeze --all in clean venv (setup_fixtures.sh), excluding pip/setuptools/wheel"
+    labels: fixtures/py-app/ground_truth.csv
+    n_components: 12
+    challenges: [transitive-not-in-manifest]
+  - id: node-app
+    status: pilot-run
+    ecosystem: npm
+    label_method: "npm ls --all --json"
+    labels: fixtures/node-app/ground_truth.csv
+    n_components: 70
+    challenges: [lockfile-v3]
+  - id: c-vendored
+    status: pilot-run
+    ecosystem: [generic, conan]
+    label_method: "hand-curated by fixture author (SYNTHETIC stub header)"
+    labels: fixtures/c-vendored/ground_truth.csv
+    n_components: 2
+    challenges: [vendored-source, no-package-manager]
+  # ---- planned (not yet built) ----
+  - {id: java-maven-multimodule, status: planned, ecosystem: maven, label_method: "mvn dependency:list on resolved build; reuse chains-project/sbom-2023", challenges: [shaded-jar]}
+  - {id: go-vendored, status: planned, ecosystem: golang, label_method: "go list -m all", challenges: [vendored, cgo]}
+  - {id: container-distroless, status: planned, ecosystem: [deb, pypi], label_method: "package DB + language manifests in final image", challenges: [multi-stage]}
+  - {id: yocto-image, status: planned, ecosystem: [generic], label_method: "Yocto build history / license manifest, two curators", challenges: [firmware, binary-only]}
+  - {id: firmware-blob-busybox-openssl, status: planned, ecosystem: [generic], label_method: "build log of known versions; binary analysis cross-check", challenges: [binary-only, stripped]}
+generators_recorded_in: pilot-results/runs.csv
+scanner_versions_recorded_in: "scan-status.json (tool_version) per run"
+evaluator: "python -m crasme.sbom (accuracy, diff_report) via notebooks/03"
+limitations:
+  - "Pilot: 3 fixtures, 3 generators (sandbox without Syft/Trivy and vulnerability DB access)."
+  - "Resolver drift: unpinned transitive dependencies change over time; ground truth is dated."

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this toolkit, please cite it using the metadata below (the Zenodo DOI identifies the exact version)."
 type: software
 title: "CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs"
-version: 1.1.0
+version: 1.2.0
 date-released: 2026-10-17
 license: Apache-2.0
 authors:

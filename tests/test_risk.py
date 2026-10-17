@@ -92,3 +92,26 @@ def test_ranking_stability_no_noise_is_perfect():
     out = r.ranking_stability(lie, p_shift=0.0, n_sim=10)
     assert out["tau_mean"] == pytest.approx(1.0)
     assert out["topk_overlap"] == pytest.approx(1.0)
+
+
+def test_rating_range_validation_and_score_range():
+    l = r.RatingRange(2, 3, 4, "EPSS 3%", "public PoC")
+    i = r.RatingRange(3, 4, 4, "data flow", "personal data")
+    e = r.RatingRange(3, 3, 5, "", "")
+    s = r.score_range(l, i, e)
+    assert (s["low"], s["central"], s["high"]) == (18, 36, 80)
+    assert s["band_ambiguous"] and s["bands"] == ["Medium", "Critical"]
+    assert s["undocumented"] == ["exposure"]
+    with pytest.raises(ValueError):
+        r.RatingRange(4, 3, 5)
+
+
+def test_kev_floor_forces_top_likelihood():
+    l = r.kev_floor(r.RatingRange(1, 2, 3), True)
+    assert (l.central, l.high) == (5, 5) and l.low >= 4
+    assert r.kev_floor(r.RatingRange(1, 2, 3), False).central == 2
+
+
+def test_anchors_cover_all_levels():
+    for dim in ("likelihood", "impact", "exposure"):
+        assert set(r.ANCHORS[dim]) == {1, 2, 3, 4, 5}

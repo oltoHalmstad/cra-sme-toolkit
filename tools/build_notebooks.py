@@ -371,4 +371,33 @@ for sme, st in start.items():
         rows.append({'sme': sme, 'period': p, 'treated': tr, 'trace': base + 0.02*p + 0.25*tr + rng.normal(0, 0.04)})
 panel = pd.DataFrame(rows); s.staggered_did(panel, 'trace')"""),
 ])
+
+# ---------------------------------------------------------------- 07
+nb("07_release_gate_mutation_E4_E7.ipynb", [
+(M, """# 07 · Release-decision engine: seeded-fault evaluation (E4/E7, v1.2)
+**Supports:** RQ4 (false assurance), recommendations P0-01, P0-02 and P0-04. Each of 37 synthetic faults is planted, one at a time, into a valid **synthetic** bundle. Every faulty bundle is then evaluated by the v1.2 engine (`crasme.gate`) and by the legacy v1.1 CI gate.
+*This verifies engine logic against anticipated faults. It does not estimate real-world fault prevalence.*"""),
+(C, SETUP + "\nfrom crasme.mutation import run_suite\nres = run_suite()\npd.Series(res['summary'])"),
+(C, """df = pd.DataFrame(res['rows'])
+tab = df.groupby('category').agg(n=('mutation','count'), v12_false_green=('false_green','sum'),
+                                 v11_false_green=('legacy_v11_false_green','sum'), v12_code_ok=('code_reported','sum'))
+tab"""),
+(C, """fig, ax = plt.subplots(figsize=(7, 3.2))
+y = np.arange(len(tab))
+ax.barh(y + 0.18, tab.v11_false_green / tab.n, height=0.34, color=plotting.SERIES[1], label='legacy v1.1 gate')
+ax.barh(y - 0.18, tab.v12_false_green / tab.n, height=0.34, color=plotting.SERIES[0], label='v1.2 engine')
+for i, (a, b, n) in enumerate(zip(tab.v12_false_green, tab.v11_false_green, tab.n)):
+    ax.text(b / n + 0.01, i + 0.18, f'{b}/{n}', va='center', fontsize=8, color=plotting.INK2)
+    ax.text(a / n + 0.01, i - 0.18, f'{a}/{n}', va='center', fontsize=8, color=plotting.INK2)
+ax.set_yticks(y, tab.index); ax.set_xlim(0, 1.15); ax.set_xlabel('False-green rate (PASS despite planted blocker)')
+ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.22), ncol=2, fontsize=8); ax.set_title('Planted faults that would have been released'); plt.show()"""),
+(C, """df[['mutation','category','description','decision','expected_code','legacy_v11_decision']]"""),
+(M, """**Reading.** v1.1 blocked only on KEV hits and treated missing or empty inputs as clean. As a result, 33 of 37 planted blockers would have passed, including every stale-evidence case. v1.2 detects all 37 faults, with the expected FAIL/REVIEW split and reason code in each case.
+
+**Next (pilot E4):**
+- apply the same mutation operators to forks of pilot repositories
+- measure reviewer time per evidence package
+- add faults the authors did *not* anticipate, contributed by external reviewers"""),
+])
+
 print("notebooks written")

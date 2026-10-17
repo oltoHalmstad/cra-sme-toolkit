@@ -40,6 +40,8 @@ def test_repo_workflows_pinned():
 
 def test_packaged_data_matches_repo_copies():
     pairs = [("schemas/trace_unit.schema.json", "crasme/_data/trace_unit.schema.json"),
-             ("data/cra_requirements_catalogue.csv", "crasme/_data/cra_requirements_catalogue.csv")]
+             ("data/cra_requirements_catalogue.csv", "crasme/_data/cra_requirements_catalogue.csv"),
+             ("schemas/release_decision.schema.json", "crasme/_data/release_decision.schema.json"),
+             ("schemas/product.schema.json", "crasme/_data/product.schema.json")]
     for a, b in pairs:
         assert (ROOT / a).read_bytes() == (ROOT / b).read_bytes(), f"{b} out of sync with {a}"

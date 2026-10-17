@@ -272,3 +272,54 @@ def tie_share(scores: Iterable[float]) -> float:
     s = list(scores)
     pairs = list(itertools.combinations(s, 2))
     return sum(1 for a, b in pairs if a == b) / len(pairs) if pairs else 0.0
+
+
+# ---------------------------------------------------------------------------
+# v1.2: anchored ratings with uncertainty (docs/risk-scoring-guide.md)
+# ---------------------------------------------------------------------------
+ANCHORS = {
+    "likelihood": {1: "Rare", 2: "Unlikely", 3: "Possible", 4: "Likely", 5: "Almost certain (e.g. KEV-listed)"},
+    "impact": {1: "Negligible", 2: "Minor", 3: "Moderate", 4: "Major", 5: "Severe"},
+    "exposure": {1: "Isolated", 2: "Local/physical, authenticated", 3: "Adjacent network, authenticated",
+                 4: "LAN unauthenticated or internet behind auth", 5: "Internet, unauthenticated / update channel"},
+}
+
+
+@dataclass(frozen=True)
+class RatingRange:
+    """low / central / high rating on a 1-5 anchor scale, with the evidence used."""
+    low: int
+    central: int
+    high: int
+    evidence: str = ""
+    justification: str = ""
+
+    def __post_init__(self):
+        for n, v in (("low", self.low), ("central", self.central), ("high", self.high)):
+            _check_scale(n, v)
+        if not self.low <= self.central <= self.high:
+            raise ValueError("require low <= central <= high")
+
+    @property
+    def width(self) -> int:
+        return self.high - self.low
+
+    @property
+    def documented(self) -> bool:
+        return bool(self.evidence.strip() and self.justification.strip())
+
+
+def score_range(l: RatingRange, i: RatingRange, e: RatingRange) -> dict:
+    """Inherent L x I x E at low / central / high, plus the bands each falls in."""
+    lo, mid, hi = l.low * i.low * e.low, l.central * i.central * e.central, l.high * i.high * e.high
+    return {"low": lo, "central": mid, "high": hi, "bands": sorted({band(lo), band(mid), band(hi)},
+            key=["Low", "Medium", "High", "Critical"].index), "band_ambiguous": band(lo) != band(hi),
+            "undocumented": [n for n, r in (("likelihood", l), ("impact", i), ("exposure", e)) if not r.documented]}
+
+
+def kev_floor(likelihood: RatingRange, known_exploited: bool) -> RatingRange:
+    """Anchor rule: a KEV-listed weakness is rated L=5 (central and high); flags an Art. 14 assessment."""
+    if not known_exploited:
+        return likelihood
+    return RatingRange(max(likelihood.low, 4), 5, 5, likelihood.evidence or "KEV listing",
+                       likelihood.justification or "Actively exploited (KEV) — anchor level 5")

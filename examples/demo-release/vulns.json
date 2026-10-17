@@ -1,0 +1,17 @@
+{
+ "SchemaVersion": 2,
+ "ArtifactName": "sbom.cdx.json",
+ "Results": [
+  {
+   "Target": "sbom",
+   "Vulnerabilities": [
+    {
+     "VulnerabilityID": "CVE-0000-00002",
+     "PkgName": "express",
+     "InstalledVersion": "4.21.2",
+     "Severity": "LOW"
+    }
+   ]
+  }
+ ]
+}

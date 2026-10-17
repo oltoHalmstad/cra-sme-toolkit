@@ -1,0 +1,10 @@
+{
+ "title": "SYNTHETIC KEV snapshot",
+ "catalogVersion": "demo",
+ "count": 1,
+ "vulnerabilities": [
+  {
+   "cveID": "CVE-0000-00001"
+  }
+ ]
+}

@@ -1,19 +1,40 @@
 {
   "upload_type": "software",
   "title": "CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publication_date": "2026-10-17",
   "creators": [
-    {"name": "Torstensson, Olga"}
+    {
+      "name": "Torstensson, Olga"
+    }
   ],
-  "description": "<p>Research toolkit for implementing and evaluating the EU Cyber Resilience Act (Regulation (EU) 2024/2847) in small and medium-sized enterprises.</p><p><strong>Contents:</strong> a 46-obligation CRA requirements catalogue (CSV) with references, application dates and evidence types; a risk and evidence workbook (xlsx, v1.0 and corrected v1.1); the <code>crasme</code> Python package (ordinal and Monte Carlo risk models, inter-rater agreement statistics, SBOM and vulnerability-scanner accuracy metrics, Article 14 reporting clocks and tabletop scoring, a traceability JSON Schema with a score-independent release gate, an evidence provenance manifest); a SHA-pinned GitHub Actions evidence workflow; protocols, pre-registration template and data-collection templates for eight experiments (E1-E8); six executed Jupyter notebooks; a pilot SBOM generator benchmark (real tool output, 3 fixtures); a review of toolkit v1.0; and a comparison with existing solutions and related work.</p><p><strong>Data status:</strong> only <code>experiments/e1_sbom_benchmark/pilot-results/</code> contains real tool output. All other example and notebook data are synthetic and labelled as such.</p><p><strong>Limits:</strong> research instruments only; not legal advice, not an official CRA assessment and not a conformity assessment. Risk scores are not CRA criteria.</p><p><strong>Licensing:</strong> code under Apache-2.0; documentation, templates, catalogue, workbooks and notebook text under CC BY 4.0 (see LICENSES/ and README).</p>",
+  "description": "<p>Research toolkit for implementing and evaluating the EU Cyber Resilience Act (Regulation (EU) 2024/2847) in small and medium-sized enterprises.</p><p><strong>Contents:</strong> a 46-obligation CRA requirements catalogue (CSV) with references, application dates and evidence types; a risk and evidence workbook (xlsx, v1.0 and corrected v1.1); the <code>crasme</code> Python package (ordinal and Monte Carlo risk models, inter-rater agreement statistics, SBOM and vulnerability-scanner accuracy metrics, Article 14 reporting clocks and tabletop scoring, a traceability JSON Schema with a score-independent release gate, an evidence provenance manifest); a SHA-pinned GitHub Actions evidence workflow; protocols, pre-registration template and data-collection templates for eight experiments (E1-E8); six executed Jupyter notebooks; a pilot SBOM generator benchmark (real tool output, 3 fixtures); a review of toolkit v1.0; and a comparison with existing solutions and related work.</p><p><strong>New in 1.2.0:</strong> fail-safe scanner execution-status records; a single release-decision engine (PASS / FAIL / REVIEW_REQUIRED with reason codes) bound to product, version, build SHA and artifact digest; legal-review metadata on every catalogue row (all unverified pending legal review); lifecycle and Article 14 templates; anchored risk scoring; evidence-data governance and redaction; E3 allocation and analysis scripts; and a 37-fault seeded evaluation (false-green rate 0/37 vs 33/37 for v1.1).</p><p><strong>Data status:</strong> only <code>experiments/e1_sbom_benchmark/pilot-results/</code> contains real tool output. All other example and notebook data are synthetic and labelled as such.</p><p><strong>Limits:</strong> research instruments only; not legal advice, not an official CRA assessment and not a conformity assessment. Risk scores are not CRA criteria.</p><p><strong>Licensing:</strong> code under Apache-2.0; documentation, templates, catalogue, workbooks and notebook text under CC BY 4.0 (see LICENSES/ and README).</p>",
   "access_right": "open",
   "license": "apache-2.0",
-  "keywords": ["Cyber Resilience Act", "Regulation (EU) 2024/2847", "SME", "SBOM", "compliance as code", "cybersecurity risk assessment", "evidence traceability", "vulnerability disclosure", "Article 14 reporting", "design science research"],
+  "keywords": [
+    "Cyber Resilience Act",
+    "Regulation (EU) 2024/2847",
+    "SME",
+    "SBOM",
+    "compliance as code",
+    "cybersecurity risk assessment",
+    "evidence traceability",
+    "vulnerability disclosure",
+    "Article 14 reporting",
+    "design science research"
+  ],
   "related_identifiers": [
-    {"identifier": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng", "relation": "references", "resource_type": "publication-other"},
-    {"identifier": "https://github.com/OWNER/cra-sme-toolkit/tree/v1.1.0", "relation": "isSupplementTo", "resource_type": "software"}
+    {
+      "identifier": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng",
+      "relation": "references",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "https://github.com/OWNER/cra-sme-toolkit/tree/v1.2.0",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
   ],
   "language": "eng",
-  "notes": "Version 1.1.0 (research edition). Synthetic data is labelled; see README for the licensing split and REVIEW-v1.0-findings.md for open items requiring legal review."
+  "notes": "Version 1.2.0 (research edition). Synthetic data is labelled. The obligation catalogue is legally unverified; see docs/v1.2-implementation-status.md."
 }

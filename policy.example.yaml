@@ -1,0 +1,11 @@
+# CRA-SME release-decision policy (internal policy, NOT legal requirements).
+required_scans: [sbom, vulns, kev]          # names used in scan-status.json (tools/run_scan.py --name)
+required_approval_roles: [security_lead, product_owner]
+obligation_gates: [pre-market, lifecycle]    # catalogue 'gate' values evaluated per release
+require_verified_legal_mapping: true         # unverified mandatory rows -> REVIEW_REQUIRED
+untriaged_review_severities: [CRITICAL, HIGH]
+# Freshness: the CRA sets no evidence-age interval. These are your own rules (days); null = no age rule.
+evidence_max_age_days:
+  default: null
+  sbom: 30
+  vulns: 7

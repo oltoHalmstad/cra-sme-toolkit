@@ -9,7 +9,7 @@ from crasme.risk import RiskRow
 
 openpyxl = pytest.importorskip("openpyxl")
 SOFFICE = shutil.which("soffice") or shutil.which("libreoffice")
-BOOKS = ["CRA-SME-Risk-and-Evidence-Calculator.xlsx", "CRA-SME-Risk-and-Evidence-Calculator-v1.1.xlsx"]
+BOOKS = ["CRA-SME-Risk-and-Evidence-Calculator.xlsx", "CRA-SME-Risk-and-Evidence-Calculator-v1.2.xlsx"]
 
 
 def recalc(src, tmp_path):
@@ -46,16 +46,28 @@ def test_readiness_weights_sum_to_one():
         assert sum(ws.cell(i, 2).value for i in range(2, 8)) == pytest.approx(1.0)
 
 
-def test_v11_evidence_matrix_matches_catalogue():
+def test_v12_evidence_matrix_matches_catalogue():
     from crasme.traceability import load_catalogue
     ws = openpyxl.load_workbook(ROOT / BOOKS[1])["CRA Evidence Matrix"]
     ids = [ws.cell(i, 1).value for i in range(2, ws.max_row + 1) if ws.cell(i, 1).value]
     assert ids == [r["req_id"] for r in load_catalogue()]
 
 
-def test_v11_risk_register_has_research_columns():
+def test_v12_risk_register_has_research_columns():
     ws = openpyxl.load_workbook(ROOT / BOOKS[1])["Risk Register"]
     headers = [c.value for c in ws[1]]
     for h in ("Mandatory / release blocker (Y/N)", "Known exploited (KEV) Y/N", "EPSS 0-1",
               "Loss p05 EUR", "Loss p95 EUR", "Assessor rationale"):
         assert h in headers
+
+
+def test_v12_matrix_shows_legal_status_and_anchors_sheet():
+    from crasme.traceability import load_catalogue
+    wb = openpyxl.load_workbook(ROOT / BOOKS[1])
+    ws = wb["CRA Evidence Matrix"]
+    hdr = [c.value for c in ws[1]]
+    col = hdr.index("Legal status") + 1
+    cat = {r["req_id"]: r["legal_status"] for r in load_catalogue()}
+    for i in range(2, ws.max_row + 1):
+        assert ws.cell(i, col).value == cat[ws.cell(i, 1).value]
+    assert "Scoring anchors" in wb.sheetnames

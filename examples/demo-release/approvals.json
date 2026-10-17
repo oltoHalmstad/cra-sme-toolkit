@@ -1,0 +1,18 @@
+[
+ {
+  "role": "security_lead",
+  "reviewer": "S. Lead",
+  "build_sha": "3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d",
+  "approved_at": "2027-12-19T12:00:00+00:00",
+  "expires_at": "2028-01-19T12:00:00+00:00",
+  "revoked": false
+ },
+ {
+  "role": "product_owner",
+  "reviewer": "P. Owner",
+  "build_sha": "3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d",
+  "approved_at": "2027-12-19T12:30:00+00:00",
+  "expires_at": "2028-01-19T12:00:00+00:00",
+  "revoked": false
+ }
+]

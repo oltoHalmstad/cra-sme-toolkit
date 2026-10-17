@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CRA-SME product build record (product.json)",
+  "type": "object",
+  "required": ["product_id", "product_version", "build_sha"],
+  "properties": {
+    "product_id": {"type": "string", "minLength": 1},
+    "product_version": {"type": "string", "minLength": 1},
+    "build_sha": {"type": "string", "pattern": "^[0-9a-f]{7,64}$"},
+    "artifact_digest": {"type": "string", "pattern": "^(sha256|sha512):[0-9a-f]{64,128}$"},
+    "input_digests": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+      "description": "Digests of inputs whose change invalidates evidence, e.g. lockfile, firmware binary, config"},
+    "synthetic": {"type": "boolean"}
+  }
+}

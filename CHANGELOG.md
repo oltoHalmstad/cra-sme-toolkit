@@ -1,4 +1,35 @@
 # Changelog
+## 1.2.0 — 17 Oct 2026
+This release implements `docs/reviews/v1.1-to-v1.2-improvement-recommendations.md`. Status per item: `docs/v1.2-implementation-status.md`.
+- **P0-01 Fail-safe scans.**
+  - `crasme.scanstatus` and `tools/run_scan.py` write explicit execution-status records with output validation: empty or truncated KEV feed, malformed JSON, empty SBOM, documented exit codes, timeouts.
+  - `automation/security-scan.v1.2.yml` replaces the v1.1 workflow. It has no `|| true`, no `continue-on-error` and no empty-KEV fallback.
+- **P0-02 Single release decision.**
+  - `crasme.gate` (CLI `crasme-gate`, `tools/ci_gate.py`) decides PASS / FAIL / REVIEW_REQUIRED, with 38 reason codes, bundle and policy digests, and a JSON Schema.
+  - PASS means only that the build is eligible for human conformity review.
+  - `policy.example.yaml` added.
+- **P0-03 Catalogue legal QA.**
+  - Catalogue v1.2.0 adds legal-status, source, reviewer, rationale, requirement-kind and operator-role metadata. All rows are `unverified`.
+  - `tools/catalogue_review.py` records reviews in an append-only log.
+  - Unverified in-force mandatory rows force REVIEW_REQUIRED.
+- **P0-04 Build-bound evidence.**
+  - Evidence manifest v2 records product, version, build SHA, artifact digest and input digests.
+  - The gate checks binding, integrity, input changes and configurable (non-legal) age rules.
+  - `schemas/product.schema.json` added.
+- **P1.**
+  - Anchored risk scoring with low/central/high ranges (`docs/risk-scoring-guide.md`, `crasme.risk.RatingRange`, workbook *Scoring anchors* sheet).
+  - Seven lifecycle and Art. 14 templates, plus an updated incident checklist.
+  - `docs/evidence-data-governance.md`, secret redaction and `tools/redact_check.py`.
+  - `constraints-ci.txt`, `tools/verify_package.py`, and CI `package` and mutation jobs.
+- **P2.**
+  - E1 `benchmark-manifest.yaml`.
+  - E3 Latin-square allocation and pre-registered analysis (`crasme.e3`, `experiments/e3_rater_study/`).
+  - Seeded-fault suite `crasme.mutation` / `tools/mutation_suite.py`, with results in `experiments/e4_e7_gate_mutation/` and notebook 07. The v1.2 false-green rate is 0/37; the legacy v1.1 gate's is 33/37.
+  - Pilot protocol and consent document.
+- **Workbook:** `CRA-SME-Risk-and-Evidence-Calculator-v1.2.xlsx` replaces v1.1. It adds legal-status columns and the anchors sheet. The v1.0 workbook is kept for comparison.
+- **Legacy:** the v1.1 gate has moved to `tools/legacy/` and is kept only as the comparison baseline.
+- **Demo:** `examples/demo-release/` is a synthetic bundle whose decision is REVIEW_REQUIRED (legal mapping pending).
+
 ## 1.1.0 — 17 Oct 2026 (research edition)
 The changes below respond to the review findings in `REVIEW-v1.0-findings.md`.
 - **Added** the `crasme/` Python package, a tested research core:

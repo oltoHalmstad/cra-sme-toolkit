@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "product_id": "DEMO-001",
+  "build_sha": "3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d",
+  "scans": [
+    {
+      "name": "sbom",
+      "tool": "action",
+      "kind": "cyclonedx",
+      "required": true,
+      "execution_status": "OK",
+      "tool_version": "1.0-demo",
+      "exit_code": 0,
+      "started_at": "2027-12-19T10:00:00+00:00",
+      "finished_at": "2027-12-19T10:01:00+00:00",
+      "input_digest": null,
+      "output_path": "sbom.cdx.json",
+      "output_digest": "d01efbba89248619c94f7088d1f4ea0a50e3088a2aacb51cd2044413bb506f3c",
+      "finding_count": 2,
+      "error_code": null
+    },
+    {
+      "name": "vulns",
+      "tool": "trivy",
+      "kind": "trivy",
+      "required": true,
+      "execution_status": "OK",
+      "tool_version": "1.0-demo",
+      "exit_code": 0,
+      "started_at": "2027-12-19T10:00:00+00:00",
+      "finished_at": "2027-12-19T10:01:00+00:00",
+      "input_digest": null,
+      "output_path": "vulns.json",
+      "output_digest": "5ee48dd4f31665067f39891c6cea8c9587a775180f358481a94bdd13af8c96c3",
+      "finding_count": 1,
+      "error_code": null
+    },
+    {
+      "name": "kev",
+      "tool": "curl",
+      "kind": "kev",
+      "required": true,
+      "execution_status": "OK",
+      "tool_version": "1.0-demo",
+      "exit_code": 0,
+      "started_at": "2027-12-19T10:00:00+00:00",
+      "finished_at": "2027-12-19T10:01:00+00:00",
+      "input_digest": null,
+      "output_path": "kev.json",
+      "output_digest": "132a66dd2057eaba1fc543b371a29ca95e8b3baf2f17d1610b18e5bcb9dbe0a9",
+      "finding_count": 1,
+      "error_code": null
+    }
+  ]
+}

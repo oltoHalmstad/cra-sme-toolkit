@@ -14,7 +14,7 @@
       "requirement_id": {"type": "string", "pattern": "^[A-Z0-9-]+(-[a-z0-9]+)?$"},
       "applicable": {"type": "boolean"},
       "applicability_justification": {"type": "string"},
-      "status": {"enum": ["not_started", "in_progress", "implemented", "verified", "not_applicable"]},
+      "status": {"enum": ["not_started", "in_progress", "implemented", "verified", "not_applicable", "failed"]},
       "risk_ids": {"type": "array", "items": {"type": "string"}},
       "control_id": {"type": "string"},
       "test_id": {"type": "string"},
