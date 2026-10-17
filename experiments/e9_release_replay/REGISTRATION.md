@@ -24,6 +24,8 @@ Run 39042942480 of `e9-replay` was started by mistake on 17 Oct 2026 at 14:57 UT
 | # | Date | Note |
 |---|---|---|
 | N1 | 17 Oct 2026 | **Rater calibration.** Before the real sample, raters complete 3 practice items (`validation/practice/`). The items are drawn from unsampled `known_high` findings that share no package or vulnerability with the 30 sampled units. They are excluded from all analyses. The coding guide (VALIDATION.md) is unchanged. |
+| N2 | 17 Oct 2026 | **Sampling error found after the run.** Mosquitto's latest stable release before the freeze is 2026-02-09, so it did not meet the registered activity criterion ("a stable release in the 6 months before the freeze"). It is retained as registered. Excluding it reduces the H9a empty-or-invalid group from 5 to 1 release; no other result changes. |
+| N3 | 17 Oct 2026 | **Partial Maven resolution not flagged.** ThingsBoard v3.9, v3.9.1, v4.0.1 and v4.2 resolved to only 50–52 runtime components, against 515–522 later, but were counted as assessable. All four gates passed them. This is reported as further evidence for the H9a finding: silently incomplete inventories pass. |
 
 ## Registered run
 Run **39047161461** (source `e399bc1`, 17 Oct 2026, data fetched 16:18Z, 0 unfetched OSV records) is the registered E9 run. Results: `results/run-39047161461/` (RESULTS.md, ANALYSIS.json). Runs 39044972246 and 39046134739 failed in the data-fetch step and produced no results.
