@@ -1,0 +1,8 @@
+product_id,tag,syft_status,lockfile_n,syft_n,both,recall_vs_lockfile,precision_vs_lockfile,syft_only,error
+node-red,4.0.8,ok,0,0,0,,,0,
+node-red,4.0.9,ok,0,0,0,,,0,
+node-red,4.1.0,ok,0,0,0,,,0,
+node-red,4.1.2,ok,0,0,0,,,0,
+node-red,4.1.8,ok,274,275,274,1.0,0.9963636363636363,1,
+node-red,5.0.0,ok,437,438,437,1.0,0.997716894977169,1,
+node-red,4.1.15,ok,438,439,438,1.0,0.9977220956719818,1,

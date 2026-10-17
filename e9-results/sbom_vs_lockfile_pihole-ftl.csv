@@ -1,0 +1,7 @@
+product_id,tag,syft_status,lockfile_n,syft_n,both,recall_vs_lockfile,precision_vs_lockfile,syft_only,error
+pihole-ftl,v6.1,ok,0,1,0,,0.0,1,
+pihole-ftl,v6.2.3,ok,0,1,0,,0.0,1,
+pihole-ftl,v6.4.1,ok,0,1,0,,0.0,1,
+pihole-ftl,v6.5,ok,0,1,0,,0.0,1,
+pihole-ftl,v6.6.2,ok,0,1,0,,0.0,1,
+pihole-ftl,v6.7.1,ok,0,1,0,,0.0,1,

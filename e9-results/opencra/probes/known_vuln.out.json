@@ -1,0 +1,140 @@
+{
+  "target": "e9-results/opencra/probes/known_vuln.cdx.json",
+  "scanned_at": "2026-10-17T16:18:28.910935Z",
+  "sbom": {
+    "bom_format": "CycloneDX",
+    "spec_version": "1.6",
+    "serial_number": "urn:uuid:6f385550-8425-4b36-b627-34b21e73db9d",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-17T16:18:28.069253Z",
+      "name": null,
+      "version": null,
+      "component_type": "application",
+      "tools": []
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "lodash",
+        "version": "4.17.20",
+        "purl": "pkg:npm/lodash@4.17.20",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      }
+    ],
+    "raw": {
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "components": [
+        {
+          "type": "library",
+          "name": "lodash",
+          "version": "4.17.20",
+          "purl": "pkg:npm/lodash@4.17.20"
+        }
+      ]
+    }
+  },
+  "matches": [
+    {
+      "purl": "pkg:npm/lodash@4.17.20",
+      "component_name": "lodash",
+      "component_version": "4.17.20",
+      "osv_id": "GHSA-29mw-wpgm-hmr9",
+      "cve_id": "CVE-2020-28500",
+      "severity": "MODERATE",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2020-28500"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Regular Expression Denial of Service (ReDoS) in lodash"
+    },
+    {
+      "purl": "pkg:npm/lodash@4.17.20",
+      "component_name": "lodash",
+      "component_version": "4.17.20",
+      "osv_id": "GHSA-35jh-r3h4-6jhm",
+      "cve_id": "CVE-2021-23337",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2021-23337"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Command Injection in lodash"
+    },
+    {
+      "purl": "pkg:npm/lodash@4.17.20",
+      "component_name": "lodash",
+      "component_version": "4.17.20",
+      "osv_id": "GHSA-f23m-r3pf-42rh",
+      "cve_id": "CVE-2026-2950",
+      "severity": "MODERATE",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-2950"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`"
+    },
+    {
+      "purl": "pkg:npm/lodash@4.17.20",
+      "component_name": "lodash",
+      "component_version": "4.17.20",
+      "osv_id": "GHSA-r5fr-rjxr-66jc",
+      "cve_id": "CVE-2026-4800",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-4800"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "lodash vulnerable to Code Injection via `_.template` imports key names"
+    },
+    {
+      "purl": "pkg:npm/lodash@4.17.20",
+      "component_name": "lodash",
+      "component_version": "4.17.20",
+      "osv_id": "GHSA-xxjr-mmjv-4gpg",
+      "cve_id": "CVE-2025-13465",
+      "severity": "MODERATE",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2025-13465"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions"
+    }
+  ],
+  "skipped_components": [],
+  "offline": false,
+  "warnings": []
+}

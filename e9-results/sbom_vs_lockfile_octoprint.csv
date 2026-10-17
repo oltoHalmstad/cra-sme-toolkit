@@ -1,0 +1,7 @@
+product_id,tag,syft_status,lockfile_n,syft_n,both,recall_vs_lockfile,precision_vs_lockfile,syft_only,error
+octoprint,1.10.3,ok,0,3,0,,0.0,3,
+octoprint,1.11.2,ok,0,6,0,,0.0,6,
+octoprint,1.11.3,ok,0,7,0,,0.0,7,
+octoprint,1.11.5,ok,0,7,0,,0.0,7,
+octoprint,1.11.7,ok,0,7,0,,0.0,7,
+octoprint,1.11.8,ok,0,7,0,,0.0,7,

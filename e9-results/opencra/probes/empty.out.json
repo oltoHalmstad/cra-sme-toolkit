@@ -1,0 +1,27 @@
+{
+  "target": "e9-results/opencra/probes/empty.cdx.json",
+  "scanned_at": "2026-10-17T16:18:23.268743Z",
+  "sbom": {
+    "bom_format": "CycloneDX",
+    "spec_version": "1.6",
+    "serial_number": "urn:uuid:f49e3a4e-41d1-40ab-be8c-c327c8dcd5c9",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-17T16:18:23.229914Z",
+      "name": null,
+      "version": null,
+      "component_type": "application",
+      "tools": []
+    },
+    "components": [],
+    "raw": {
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "components": []
+    }
+  },
+  "matches": [],
+  "skipped_components": [],
+  "offline": false,
+  "warnings": []
+}

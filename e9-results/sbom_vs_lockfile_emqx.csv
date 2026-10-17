@@ -1,0 +1,8 @@
+product_id,tag,syft_status,lockfile_n,syft_n,both,recall_vs_lockfile,precision_vs_lockfile,syft_only,error
+emqx,v5.8.4,ok,0,24,0,,0.0,24,
+emqx,v5.8.6,ok,0,24,0,,0.0,24,
+emqx,6.0.0,ok,0,24,0,,0.0,24,
+emqx,v5.8.9,ok,0,24,0,,0.0,24,
+emqx,6.2.0,ok,0,25,0,,0.0,25,
+emqx,6.0.3,ok,0,24,0,,0.0,24,
+emqx,6.1.5,ok,0,25,0,,0.0,25,

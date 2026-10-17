@@ -1,0 +1,2970 @@
+{
+  "target": "e9-sbom/sboms/tasmota-v15.0.1.cdx.json",
+  "scanned_at": "2026-10-17T16:23:46.762787Z",
+  "sbom": {
+    "bom_format": "CycloneDX",
+    "spec_version": "1.6",
+    "serial_number": "urn:uuid:9ca6ac09-1751-4960-a8e7-6c8108361bf6",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-17T15:55:52Z",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1",
+      "version": null,
+      "component_type": "file",
+      "tools": [
+        {
+          "name": "syft",
+          "version": "1.42.3"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "Jason2866/copy_file_to_another_repo_action",
+        "version": "main",
+        "purl": "pkg:github/jason2866/copy_file_to_another_repo_action@main",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/cache",
+        "version": "v2",
+        "purl": "pkg:github/actions/cache@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v2",
+        "purl": "pkg:github/actions/checkout@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v2",
+        "purl": "pkg:github/actions/checkout@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v2",
+        "purl": "pkg:github/actions/checkout@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v2",
+        "purl": "pkg:github/actions/checkout@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v2",
+        "purl": "pkg:github/actions/checkout@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v2",
+        "purl": "pkg:github/actions/checkout@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v2",
+        "purl": "pkg:github/actions/checkout@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v2",
+        "purl": "pkg:github/actions/checkout@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v3",
+        "purl": "pkg:github/actions/checkout@v3",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v3",
+        "purl": "pkg:github/actions/checkout@v3",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/download-artifact",
+        "version": "v4",
+        "purl": "pkg:github/actions/download-artifact@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/download-artifact",
+        "version": "v4",
+        "purl": "pkg:github/actions/download-artifact@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v1",
+        "purl": "pkg:github/actions/setup-python@v1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v1",
+        "purl": "pkg:github/actions/setup-python@v1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v2",
+        "purl": "pkg:github/actions/setup-python@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v2",
+        "purl": "pkg:github/actions/setup-python@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v2",
+        "purl": "pkg:github/actions/setup-python@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v5",
+        "purl": "pkg:github/actions/setup-python@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v5",
+        "purl": "pkg:github/actions/setup-python@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v5",
+        "purl": "pkg:github/actions/setup-python@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/stale",
+        "version": "v9",
+        "purl": "pkg:github/actions/stale@v9",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/upload-artifact",
+        "version": "v4",
+        "purl": "pkg:github/actions/upload-artifact@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/upload-artifact",
+        "version": "v4",
+        "purl": "pkg:github/actions/upload-artifact@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/upload-artifact",
+        "version": "v4",
+        "purl": "pkg:github/actions/upload-artifact@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "arduino/arduino-lint-action",
+        "version": "v1",
+        "purl": "pkg:github/arduino/arduino-lint-action@v1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "arduino/arduino-lint-action",
+        "version": "v1",
+        "purl": "pkg:github/arduino/arduino-lint-action@v1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "application",
+        "name": "berry",
+        "version": "UNKNOWN",
+        "purl": null,
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "library",
+        "name": "breathe",
+        "version": "4.7.3",
+        "purl": "pkg:pypi/breathe@4.7.3",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "codespell-project/actions-codespell",
+        "version": "master",
+        "purl": "pkg:github/codespell-project/actions-codespell@master",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "github/codeql-action/analyze",
+        "version": "v2",
+        "purl": "pkg:github/github/codeql-action@v2#analyze",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "github/codeql-action/autobuild",
+        "version": "v2",
+        "purl": "pkg:github/github/codeql-action@v2#autobuild",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "github/codeql-action/init",
+        "version": "v2",
+        "purl": "pkg:github/github/codeql-action@v2#init",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "jason2866/action-gh-release",
+        "version": "v1.2",
+        "purl": "pkg:github/jason2866/action-gh-release@v1.2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "mattnotmitt/doxygen-action",
+        "version": "v1",
+        "purl": "pkg:github/mattnotmitt/doxygen-action@v1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "mattnotmitt/doxygen-action",
+        "version": "v1.9.5",
+        "purl": "pkg:github/mattnotmitt/doxygen-action@v1.9.5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "sphinx",
+        "version": "1.6.5",
+        "purl": "pkg:pypi/sphinx@1.6.5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "stefanzweifel/git-auto-commit-action",
+        "version": "v5",
+        "purl": "pkg:github/stefanzweifel/git-auto-commit-action@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/Tasmota_build_devel.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "6885d5ac66ec97902b0340a0399fb56ecbf2b607",
+          "SHA-256": "53a3dde4292311c6300d8a3b1500116ed14c741cd833ca1cbbfa33bfffd5b12b"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/Tasmota_build_master.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "389bb2ebe8f71a5a4a2b1c9cf7960fce5af20878",
+          "SHA-256": "3a38f3d01d7ab6e81224ed536d4aef8182a9a968b4b82cfe61ce9d73d9c68d75"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/build_all_the_things.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "2e44796a4a57a34974e47e01ee9b86367070bac0",
+          "SHA-256": "ca7c8fc007a7ef09aa07b5d19be68143f8b796f97b4f6d5df94c8147466bbb51"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/copy_change.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "9390bce23fecbeb6905cedb2b6f1b52214cb350a",
+          "SHA-256": "5cdcd2960cdbdf45bede8514109497e0086572e697aeca848621563711dcbd8f"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/stale-actions.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "209f7168cbc6badcf4cdd3109cc26d2a866bcd2a",
+          "SHA-256": "5067079da5f6c2ad18975556872f46e301b726d61d5894fed9ff2b9390526f81"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_audio/ESP8266Audio/.github/workflows/pr-or-master-push.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "5fcd48c7ee569e37fefc13ceed80257c06d11e50",
+          "SHA-256": "4333f8781f72d8ebf621a8e67371de6954efe398c94c6bf10eb8b0e434e91de2"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Build.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "4f09f79f788b28166c15d212fc88777aa754c4ff",
+          "SHA-256": "bf379aa387e9b7566742de89debf71e4a2251faf53988d091af1a9823ce35203"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Documentation.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "0d8191fcca86a6328abb1a853f08b0459f0e118e",
+          "SHA-256": "14469844c6490ca716d3538b517360bb8d45248a58dddca2814d7a0a345ad9f8"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Lint.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "10b31c7eedf4eae7c9b63db6c0f76f7c73c17cb2",
+          "SHA-256": "143bea0746a9ed0027da719dfd3cb480eb3eed97b374222f94a5e3117ff93ec9"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/MetaChecks.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "769bd0d88a4f923e9fefee6ac6b2e890ab55f518",
+          "SHA-256": "d916345e9d56799e2db64a65f904054cd248f61f6d230d102cbf7a1a9e8880a7"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/UnitTests.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "d49f68844cba2d845f1e2c4027f9a5d7086c02d9",
+          "SHA-256": "ec4706b08f5e34ea168d13dd4ef6c7b4a631e65c508a9d9fb959f8a45052454e"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/codeql-analysis.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "17e2cd7165039e649e92bc85c34286b5d0b6d36e",
+          "SHA-256": "f4aa5ae20ff65c7b79ba28b1309f61acd0e045daad0714e6304c89f8dc71de0c"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_display/Display_Renderer-gemu-1.0/docs/requirements.txt",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "0150985e8c74e245de3eea3af9d6c7c9b41d4312",
+          "SHA-256": "61b05f5da8b35b0765aba200ac61bd885a681b4323dd98c81d0f01c0eeb16093"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_div/Adafruit-Fingerprint-Sensor-Library-2.1.0-Tasmota/.github/workflows/githubci.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "8862f93c2b1414ea0ed2d068c4f8402c756c48b7",
+          "SHA-256": "7764afed37bef9e201eaa7b16ab17217e28476f10cbbb320b3b29396474a8efe"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_i2c/Adafruit_MCP9808_Tasmota/.github/workflows/githubci.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "f0049f428c8d3db9652a930c31530d92285069b9",
+          "SHA-256": "251b8b06860272a5cff0bc021436b272ac0e1631aaef9ee85700a8899c58ea94"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/libesp32/berry/berry.exe",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "ee29f49e229d3ac0a055f336fa96000e4d849949",
+          "SHA-256": "f81f8cc488f4dc2027c9b68ba8799d86a1f5c0ff41f467d5041b0d3eb728b452"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/libesp32_div/esp-nimble-cpp/.github/workflows/build.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "dff82e6d1b3c905dfce505e781f1252a1af9b024",
+          "SHA-256": "e7fb7c6878142e7b133fc89762203a284c24d7be2acd2740c2f34f429a84f477"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      }
+    ],
+    "raw": {
+      "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "serialNumber": "urn:uuid:9ca6ac09-1751-4960-a8e7-6c8108361bf6",
+      "version": 1,
+      "metadata": {
+        "timestamp": "2026-10-17T15:55:52Z",
+        "tools": {
+          "components": [
+            {
+              "type": "application",
+              "author": "anchore",
+              "name": "syft",
+              "version": "1.42.3"
+            }
+          ]
+        },
+        "component": {
+          "bom-ref": "740cd45c014cc0e4",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1"
+        }
+      },
+      "components": [
+        {
+          "bom-ref": "pkg:github/jason2866/copy_file_to_another_repo_action@main?package-id=680ba84a9babd5b0",
+          "type": "library",
+          "name": "Jason2866/copy_file_to_another_repo_action",
+          "version": "main",
+          "cpe": "cpe:2.3:a:Jason2866\\/copy-file-to-another-repo-action:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*",
+          "purl": "pkg:github/Jason2866/copy_file_to_another_repo_action@main",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy-file-to-another-repo-action:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file_to_another_repo_action:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file_to_another_repo_action:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy-file-to-another-repo:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy-file-to-another-repo:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file_to_another_repo:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file_to_another_repo:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy-file-to-another:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy-file-to-another:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file_to_another:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file_to_another:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy-file-to:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy-file-to:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file_to:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file_to:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy-file:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy-file:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy_file:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy:Jason2866\\/copy-file-to-another-repo-action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Jason2866\\/copy:Jason2866\\/copy_file_to_another_repo_action:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/copy_change.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/cache@v2?package-id=b67726fcb2a63fd3",
+          "type": "library",
+          "name": "actions/cache",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/cache:actions\\/cache:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/cache@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v2?package-id=620444a13cb63b69",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_audio/ESP8266Audio/.github/workflows/pr-or-master-push.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v2?package-id=3f20f37a606d9a9e",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v2?package-id=d405c0e8d6983b8b",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Documentation.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v2?package-id=d0b56f76fc510dd2",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Lint.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v2?package-id=0380aae2573ecf5e",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/MetaChecks.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v2?package-id=53eb70a01b3b73ff",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/UnitTests.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v2?package-id=c33d0b0a3d536866",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_div/Adafruit-Fingerprint-Sensor-Library-2.1.0-Tasmota/.github/workflows/githubci.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v2?package-id=6e6404729a5b434a",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_i2c/Adafruit_MCP9808_Tasmota/.github/workflows/githubci.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v3?package-id=0b7772bb356a3882",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v3",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v3:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/codeql-analysis.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v3?package-id=95d7890af8158fb4",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v3",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v3:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/libesp32_div/esp-nimble-cpp/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=b9edf38e723cbe34",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_devel.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=069d7a6b9b955632",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_master.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=edce5bf1d5b4793f",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build_all_the_things.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=1350c98f202fb06c",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/copy_change.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/download-artifact@v4?package-id=9f3b57a12a84f551",
+          "type": "library",
+          "name": "actions/download-artifact",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/download-artifact:actions\\/download-artifact:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/download-artifact@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download-artifact:actions\\/download_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download_artifact:actions\\/download-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download_artifact:actions\\/download_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download:actions\\/download-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download:actions\\/download_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_devel.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/download-artifact@v4?package-id=2aeac8cf54649887",
+          "type": "library",
+          "name": "actions/download-artifact",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/download-artifact:actions\\/download-artifact:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/download-artifact@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download-artifact:actions\\/download_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download_artifact:actions\\/download-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download_artifact:actions\\/download_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download:actions\\/download-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download:actions\\/download_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_master.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v1?package-id=46ca9e5aab162098",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v1",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_div/Adafruit-Fingerprint-Sensor-Library-2.1.0-Tasmota/.github/workflows/githubci.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v1?package-id=48269f167c5ff4ab",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v1",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_i2c/Adafruit_MCP9808_Tasmota/.github/workflows/githubci.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v2?package-id=37615bb39af5f6d9",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_audio/ESP8266Audio/.github/workflows/pr-or-master-push.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v2?package-id=b6c22ec8fea7ddd0",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v2?package-id=d686eb2d45de3db6",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Lint.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v5?package-id=4693f91d53d25c8a",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_devel.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v5?package-id=7d35bbeac185b013",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_master.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v5?package-id=138f5b8ca41aa205",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build_all_the_things.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/stale@v9?package-id=eebd7192a5edde0d",
+          "type": "library",
+          "name": "actions/stale",
+          "version": "v9",
+          "cpe": "cpe:2.3:a:actions\\/stale:actions\\/stale:v9:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/stale@v9",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/stale-actions.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/upload-artifact@v4?package-id=7b6487296dbd298c",
+          "type": "library",
+          "name": "actions/upload-artifact",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/upload-artifact@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_devel.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/upload-artifact@v4?package-id=fc037d50d9792e55",
+          "type": "library",
+          "name": "actions/upload-artifact",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/upload-artifact@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_master.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/upload-artifact@v4?package-id=181c08b86168294f",
+          "type": "library",
+          "name": "actions/upload-artifact",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/upload-artifact@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build_all_the_things.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/arduino/arduino-lint-action@v1?package-id=a195f2c935d66e48",
+          "type": "library",
+          "name": "arduino/arduino-lint-action",
+          "version": "v1",
+          "cpe": "cpe:2.3:a:arduino\\/arduino-lint-action:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/arduino/arduino-lint-action@v1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino-lint-action:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino_lint_action:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino_lint_action:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino-lint:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino-lint:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino_lint:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino_lint:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_audio/ESP8266Audio/.github/workflows/pr-or-master-push.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/arduino/arduino-lint-action@v1?package-id=72f5ae6e60f02b87",
+          "type": "library",
+          "name": "arduino/arduino-lint-action",
+          "version": "v1",
+          "cpe": "cpe:2.3:a:arduino\\/arduino-lint-action:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/arduino/arduino-lint-action@v1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino-lint-action:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino_lint_action:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino_lint_action:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino-lint:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino-lint:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino_lint:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino_lint:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino:arduino\\/arduino-lint-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:arduino\\/arduino:arduino\\/arduino_lint_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/MetaChecks.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "3758a15675d741cc",
+          "type": "application",
+          "name": "berry",
+          "version": "UNKNOWN",
+          "cpe": "cpe:2.3:a:berry:berry:*:*:*:*:*:*:*:*",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "pe-binary-package-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "binary"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "pe-binary"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/libesp32/berry/berry.exe"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:pypi/breathe@4.7.3?package-id=2d0512af4668ea35",
+          "type": "library",
+          "name": "breathe",
+          "version": "4.7.3",
+          "cpe": "cpe:2.3:a:python-breathe:python-breathe:4.7.3:*:*:*:*:*:*:*",
+          "purl": "pkg:pypi/breathe@4.7.3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "python-package-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "python"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "python"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "python-pip-requirements-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-breathe:python_breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_breathe:python-breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_breathe:python_breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:breathe:python-breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:breathe:python_breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-breathe:breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_breathe:breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python-breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python_breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:breathe:breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:breathe:4.7.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_display/Display_Renderer-gemu-1.0/docs/requirements.txt"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/codespell-project/actions-codespell@master?package-id=9a3758721e8be3f1",
+          "type": "library",
+          "name": "codespell-project/actions-codespell",
+          "version": "master",
+          "cpe": "cpe:2.3:a:codespell-project\\/actions-codespell:codespell-project\\/actions-codespell:master:*:*:*:*:*:*:*",
+          "purl": "pkg:github/codespell-project/actions-codespell@master",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell-project\\/actions-codespell:codespell_project\\/actions_codespell:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell_project\\/actions_codespell:codespell-project\\/actions-codespell:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell_project\\/actions_codespell:codespell_project\\/actions_codespell:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell-project\\/actions:codespell-project\\/actions-codespell:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell-project\\/actions:codespell_project\\/actions_codespell:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell_project\\/actions:codespell-project\\/actions-codespell:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell_project\\/actions:codespell_project\\/actions_codespell:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell:codespell-project\\/actions-codespell:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell:codespell_project\\/actions_codespell:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_audio/ESP8266Audio/.github/workflows/pr-or-master-push.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/github/codeql-action@v2?package-id=0541abada980d3fe#analyze",
+          "type": "library",
+          "name": "github/codeql-action/analyze",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:github\\/codeql-action\\/analyze:github\\/codeql-action\\/analyze:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/github/codeql-action@v2#analyze",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/analyze:github\\/codeql_action\\/analyze:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/analyze:github\\/codeql-action\\/analyze:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/analyze:github\\/codeql_action\\/analyze:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql-action\\/analyze:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql_action\\/analyze:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/codeql-analysis.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/github/codeql-action@v2?package-id=e1e853b328710a1f#autobuild",
+          "type": "library",
+          "name": "github/codeql-action/autobuild",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:github\\/codeql-action\\/autobuild:github\\/codeql-action\\/autobuild:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/github/codeql-action@v2#autobuild",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/autobuild:github\\/codeql_action\\/autobuild:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/autobuild:github\\/codeql-action\\/autobuild:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/autobuild:github\\/codeql_action\\/autobuild:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql-action\\/autobuild:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql_action\\/autobuild:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/codeql-analysis.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/github/codeql-action@v2?package-id=4151d6229d8fef9e#init",
+          "type": "library",
+          "name": "github/codeql-action/init",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:github\\/codeql-action\\/init:github\\/codeql-action\\/init:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/github/codeql-action@v2#init",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/init:github\\/codeql_action\\/init:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/init:github\\/codeql-action\\/init:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/init:github\\/codeql_action\\/init:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql-action\\/init:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql_action\\/init:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/codeql-analysis.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/jason2866/action-gh-release@v1.2?package-id=b9d281361f4079de",
+          "type": "library",
+          "name": "jason2866/action-gh-release",
+          "version": "v1.2",
+          "cpe": "cpe:2.3:a:jason2866\\/action-gh-release:jason2866\\/action-gh-release:v1.2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/jason2866/action-gh-release@v1.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:jason2866\\/action-gh-release:jason2866\\/action_gh_release:v1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:jason2866\\/action_gh_release:jason2866\\/action-gh-release:v1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:jason2866\\/action_gh_release:jason2866\\/action_gh_release:v1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:jason2866\\/action-gh:jason2866\\/action-gh-release:v1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:jason2866\\/action-gh:jason2866\\/action_gh_release:v1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:jason2866\\/action_gh:jason2866\\/action-gh-release:v1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:jason2866\\/action_gh:jason2866\\/action_gh_release:v1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:jason2866\\/action:jason2866\\/action-gh-release:v1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:jason2866\\/action:jason2866\\/action_gh_release:v1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_master.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/mattnotmitt/doxygen-action@v1?package-id=855ea38a8c479666",
+          "type": "library",
+          "name": "mattnotmitt/doxygen-action",
+          "version": "v1",
+          "cpe": "cpe:2.3:a:mattnotmitt\\/doxygen-action:mattnotmitt\\/doxygen-action:v1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/mattnotmitt/doxygen-action@v1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen-action:mattnotmitt\\/doxygen_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen_action:mattnotmitt\\/doxygen-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen_action:mattnotmitt\\/doxygen_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen:mattnotmitt\\/doxygen-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen:mattnotmitt\\/doxygen_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Documentation.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/mattnotmitt/doxygen-action@v1.9.5?package-id=e09c5082f46e4739",
+          "type": "library",
+          "name": "mattnotmitt/doxygen-action",
+          "version": "v1.9.5",
+          "cpe": "cpe:2.3:a:mattnotmitt\\/doxygen-action:mattnotmitt\\/doxygen-action:v1.9.5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/mattnotmitt/doxygen-action@v1.9.5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen-action:mattnotmitt\\/doxygen_action:v1.9.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen_action:mattnotmitt\\/doxygen-action:v1.9.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen_action:mattnotmitt\\/doxygen_action:v1.9.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen:mattnotmitt\\/doxygen-action:v1.9.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:mattnotmitt\\/doxygen:mattnotmitt\\/doxygen_action:v1.9.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/libesp32_div/esp-nimble-cpp/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:pypi/sphinx@1.6.5?package-id=8cd55bf4fdf8de82",
+          "type": "library",
+          "name": "sphinx",
+          "version": "1.6.5",
+          "cpe": "cpe:2.3:a:python-sphinx:python-sphinx:1.6.5:*:*:*:*:*:*:*",
+          "purl": "pkg:pypi/sphinx@1.6.5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "python-package-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "python"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "python"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "python-pip-requirements-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-sphinx:python_sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_sphinx:python-sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_sphinx:python_sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-sphinx:sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python-sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python_sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_sphinx:sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:sphinx:python-sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:sphinx:python_sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:sphinx:sphinx:1.6.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/lib/lib_display/Display_Renderer-gemu-1.0/docs/requirements.txt"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/stefanzweifel/git-auto-commit-action@v5?package-id=d4c1560ac0001ef2",
+          "type": "library",
+          "name": "stefanzweifel/git-auto-commit-action",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:stefanzweifel\\/git-auto-commit-action:stefanzweifel\\/git-auto-commit-action:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/stefanzweifel/git-auto-commit-action@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git-auto-commit-action:stefanzweifel\\/git_auto_commit_action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git_auto_commit_action:stefanzweifel\\/git-auto-commit-action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git_auto_commit_action:stefanzweifel\\/git_auto_commit_action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git-auto-commit:stefanzweifel\\/git-auto-commit-action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git-auto-commit:stefanzweifel\\/git_auto_commit_action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git_auto_commit:stefanzweifel\\/git-auto-commit-action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git_auto_commit:stefanzweifel\\/git_auto_commit_action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git-auto:stefanzweifel\\/git-auto-commit-action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git-auto:stefanzweifel\\/git_auto_commit_action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git_auto:stefanzweifel\\/git-auto-commit-action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git_auto:stefanzweifel\\/git_auto_commit_action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git:stefanzweifel\\/git-auto-commit-action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stefanzweifel\\/git:stefanzweifel\\/git_auto_commit_action:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/Tasmota_build_devel.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "1975487c88af8441",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/Tasmota_build_devel.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "6885d5ac66ec97902b0340a0399fb56ecbf2b607"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "53a3dde4292311c6300d8a3b1500116ed14c741cd833ca1cbbfa33bfffd5b12b"
+            }
+          ]
+        },
+        {
+          "bom-ref": "9feaf046a44b3b6a",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/Tasmota_build_master.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "389bb2ebe8f71a5a4a2b1c9cf7960fce5af20878"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "3a38f3d01d7ab6e81224ed536d4aef8182a9a968b4b82cfe61ce9d73d9c68d75"
+            }
+          ]
+        },
+        {
+          "bom-ref": "29dbc64ee6d2109e",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/build_all_the_things.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "2e44796a4a57a34974e47e01ee9b86367070bac0"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "ca7c8fc007a7ef09aa07b5d19be68143f8b796f97b4f6d5df94c8147466bbb51"
+            }
+          ]
+        },
+        {
+          "bom-ref": "26bf698c41650979",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/copy_change.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "9390bce23fecbeb6905cedb2b6f1b52214cb350a"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "5cdcd2960cdbdf45bede8514109497e0086572e697aeca848621563711dcbd8f"
+            }
+          ]
+        },
+        {
+          "bom-ref": "11608b135a21652c",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/stale-actions.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "209f7168cbc6badcf4cdd3109cc26d2a866bcd2a"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "5067079da5f6c2ad18975556872f46e301b726d61d5894fed9ff2b9390526f81"
+            }
+          ]
+        },
+        {
+          "bom-ref": "f35961f761ce957f",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_audio/ESP8266Audio/.github/workflows/pr-or-master-push.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "5fcd48c7ee569e37fefc13ceed80257c06d11e50"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "4333f8781f72d8ebf621a8e67371de6954efe398c94c6bf10eb8b0e434e91de2"
+            }
+          ]
+        },
+        {
+          "bom-ref": "ddd66b750d8d4409",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Build.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "4f09f79f788b28166c15d212fc88777aa754c4ff"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "bf379aa387e9b7566742de89debf71e4a2251faf53988d091af1a9823ce35203"
+            }
+          ]
+        },
+        {
+          "bom-ref": "83380e9194a78071",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Documentation.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "0d8191fcca86a6328abb1a853f08b0459f0e118e"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "14469844c6490ca716d3538b517360bb8d45248a58dddca2814d7a0a345ad9f8"
+            }
+          ]
+        },
+        {
+          "bom-ref": "989fbb22a53b512b",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Lint.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "10b31c7eedf4eae7c9b63db6c0f76f7c73c17cb2"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "143bea0746a9ed0027da719dfd3cb480eb3eed97b374222f94a5e3117ff93ec9"
+            }
+          ]
+        },
+        {
+          "bom-ref": "935d5c08120985ed",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/MetaChecks.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "769bd0d88a4f923e9fefee6ac6b2e890ab55f518"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "d916345e9d56799e2db64a65f904054cd248f61f6d230d102cbf7a1a9e8880a7"
+            }
+          ]
+        },
+        {
+          "bom-ref": "9cec15076e852678",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/UnitTests.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "d49f68844cba2d845f1e2c4027f9a5d7086c02d9"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "ec4706b08f5e34ea168d13dd4ef6c7b4a631e65c508a9d9fb959f8a45052454e"
+            }
+          ]
+        },
+        {
+          "bom-ref": "6a4c834b0945bb41",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/codeql-analysis.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "17e2cd7165039e649e92bc85c34286b5d0b6d36e"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "f4aa5ae20ff65c7b79ba28b1309f61acd0e045daad0714e6304c89f8dc71de0c"
+            }
+          ]
+        },
+        {
+          "bom-ref": "e6f130d38407d811",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_display/Display_Renderer-gemu-1.0/docs/requirements.txt",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "0150985e8c74e245de3eea3af9d6c7c9b41d4312"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "61b05f5da8b35b0765aba200ac61bd885a681b4323dd98c81d0f01c0eeb16093"
+            }
+          ]
+        },
+        {
+          "bom-ref": "49290b55296b7499",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_div/Adafruit-Fingerprint-Sensor-Library-2.1.0-Tasmota/.github/workflows/githubci.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "8862f93c2b1414ea0ed2d068c4f8402c756c48b7"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "7764afed37bef9e201eaa7b16ab17217e28476f10cbbb320b3b29396474a8efe"
+            }
+          ]
+        },
+        {
+          "bom-ref": "ea02d14b220fb08b",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_i2c/Adafruit_MCP9808_Tasmota/.github/workflows/githubci.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "f0049f428c8d3db9652a930c31530d92285069b9"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "251b8b06860272a5cff0bc021436b272ac0e1631aaef9ee85700a8899c58ea94"
+            }
+          ]
+        },
+        {
+          "bom-ref": "3a8fc3486e8e2264",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/libesp32/berry/berry.exe",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "ee29f49e229d3ac0a055f336fa96000e4d849949"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "f81f8cc488f4dc2027c9b68ba8799d86a1f5c0ff41f467d5041b0d3eb728b452"
+            }
+          ]
+        },
+        {
+          "bom-ref": "6b8a96000d118faf",
+          "type": "file",
+          "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/libesp32_div/esp-nimble-cpp/.github/workflows/build.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "dff82e6d1b3c905dfce505e781f1252a1af9b024"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "e7fb7c6878142e7b133fc89762203a284c24d7be2acd2740c2f34f429a84f477"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "matches": [],
+  "skipped_components": [
+    {
+      "type": "application",
+      "name": "berry",
+      "version": "UNKNOWN",
+      "purl": null,
+      "licenses": [],
+      "hashes": {},
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/Tasmota_build_devel.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "6885d5ac66ec97902b0340a0399fb56ecbf2b607",
+        "SHA-256": "53a3dde4292311c6300d8a3b1500116ed14c741cd833ca1cbbfa33bfffd5b12b"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/Tasmota_build_master.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "389bb2ebe8f71a5a4a2b1c9cf7960fce5af20878",
+        "SHA-256": "3a38f3d01d7ab6e81224ed536d4aef8182a9a968b4b82cfe61ce9d73d9c68d75"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/build_all_the_things.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "2e44796a4a57a34974e47e01ee9b86367070bac0",
+        "SHA-256": "ca7c8fc007a7ef09aa07b5d19be68143f8b796f97b4f6d5df94c8147466bbb51"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/copy_change.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "9390bce23fecbeb6905cedb2b6f1b52214cb350a",
+        "SHA-256": "5cdcd2960cdbdf45bede8514109497e0086572e697aeca848621563711dcbd8f"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/.github/workflows/stale-actions.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "209f7168cbc6badcf4cdd3109cc26d2a866bcd2a",
+        "SHA-256": "5067079da5f6c2ad18975556872f46e301b726d61d5894fed9ff2b9390526f81"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_audio/ESP8266Audio/.github/workflows/pr-or-master-push.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "5fcd48c7ee569e37fefc13ceed80257c06d11e50",
+        "SHA-256": "4333f8781f72d8ebf621a8e67371de6954efe398c94c6bf10eb8b0e434e91de2"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Build.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "4f09f79f788b28166c15d212fc88777aa754c4ff",
+        "SHA-256": "bf379aa387e9b7566742de89debf71e4a2251faf53988d091af1a9823ce35203"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Documentation.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "0d8191fcca86a6328abb1a853f08b0459f0e118e",
+        "SHA-256": "14469844c6490ca716d3538b517360bb8d45248a58dddca2814d7a0a345ad9f8"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/Lint.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "10b31c7eedf4eae7c9b63db6c0f76f7c73c17cb2",
+        "SHA-256": "143bea0746a9ed0027da719dfd3cb480eb3eed97b374222f94a5e3117ff93ec9"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/MetaChecks.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "769bd0d88a4f923e9fefee6ac6b2e890ab55f518",
+        "SHA-256": "d916345e9d56799e2db64a65f904054cd248f61f6d230d102cbf7a1a9e8880a7"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/UnitTests.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "d49f68844cba2d845f1e2c4027f9a5d7086c02d9",
+        "SHA-256": "ec4706b08f5e34ea168d13dd4ef6c7b4a631e65c508a9d9fb959f8a45052454e"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_basic/IRremoteESP8266/IRremoteESP8266/.github/workflows/codeql-analysis.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "17e2cd7165039e649e92bc85c34286b5d0b6d36e",
+        "SHA-256": "f4aa5ae20ff65c7b79ba28b1309f61acd0e045daad0714e6304c89f8dc71de0c"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_display/Display_Renderer-gemu-1.0/docs/requirements.txt",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "0150985e8c74e245de3eea3af9d6c7c9b41d4312",
+        "SHA-256": "61b05f5da8b35b0765aba200ac61bd885a681b4323dd98c81d0f01c0eeb16093"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_div/Adafruit-Fingerprint-Sensor-Library-2.1.0-Tasmota/.github/workflows/githubci.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "8862f93c2b1414ea0ed2d068c4f8402c756c48b7",
+        "SHA-256": "7764afed37bef9e201eaa7b16ab17217e28476f10cbbb320b3b29396474a8efe"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/lib_i2c/Adafruit_MCP9808_Tasmota/.github/workflows/githubci.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "f0049f428c8d3db9652a930c31530d92285069b9",
+        "SHA-256": "251b8b06860272a5cff0bc021436b272ac0e1631aaef9ee85700a8899c58ea94"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/libesp32/berry/berry.exe",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "ee29f49e229d3ac0a055f336fa96000e4d849949",
+        "SHA-256": "f81f8cc488f4dc2027c9b68ba8799d86a1f5c0ff41f467d5041b0d3eb728b452"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/tasmota-v15.0.1/lib/libesp32_div/esp-nimble-cpp/.github/workflows/build.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "dff82e6d1b3c905dfce505e781f1252a1af9b024",
+        "SHA-256": "e7fb7c6878142e7b133fc89762203a284c24d7be2acd2740c2f34f429a84f477"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    }
+  ],
+  "offline": false,
+  "warnings": [
+    "Skipped 18 component(s) with invalid or missing PURLs (they were not sent to OSV)."
+  ]
+}

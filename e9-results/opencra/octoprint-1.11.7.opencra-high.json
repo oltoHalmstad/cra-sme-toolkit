@@ -1,0 +1,2850 @@
+{
+  "target": "e9-sbom/sboms/octoprint-1.11.7.cdx.json",
+  "scanned_at": "2026-10-17T16:23:15.698228Z",
+  "sbom": {
+    "bom_format": "CycloneDX",
+    "spec_version": "1.6",
+    "serial_number": "urn:uuid:bed81108-5e7a-4cdb-b574-2618abb0f8dc",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-17T15:55:57Z",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7",
+      "version": null,
+      "component_type": "file",
+      "tools": [
+        {
+          "name": "syft",
+          "version": "1.42.3"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "Ilshidur/action-discord",
+        "version": "master",
+        "purl": "pkg:github/ilshidur/action-discord@master",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "OctoPrint/actions/close-by-query",
+        "version": "main",
+        "purl": "pkg:github/octoprint/actions@main#close-by-query",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "OctoPrint/actions/e2e",
+        "version": "main",
+        "purl": "pkg:github/octoprint/actions@main#e2e",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "OctoPrint/actions/pr-validation",
+        "version": "main",
+        "purl": "pkg:github/octoprint/actions@main#pr-validation",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "OctoPrint/actions/process-systeminfo-bundles",
+        "version": "main",
+        "purl": "pkg:github/octoprint/actions@main#process-systeminfo-bundles",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/add-to-project",
+        "version": "main",
+        "purl": "pkg:github/actions/add-to-project@main",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/cache",
+        "version": "v4",
+        "purl": "pkg:github/actions/cache@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v5",
+        "purl": "pkg:github/actions/checkout@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v5",
+        "purl": "pkg:github/actions/checkout@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v5",
+        "purl": "pkg:github/actions/checkout@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/download-artifact",
+        "version": "v5",
+        "purl": "pkg:github/actions/download-artifact@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/github-script",
+        "version": "v7",
+        "purl": "pkg:github/actions/github-script@v7",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/labeler",
+        "version": "v5",
+        "purl": "pkg:github/actions/labeler@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v5",
+        "purl": "pkg:github/actions/setup-python@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-python",
+        "version": "v5",
+        "purl": "pkg:github/actions/setup-python@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/upload-artifact",
+        "version": "v4",
+        "purl": "pkg:github/actions/upload-artifact@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "crypto-js",
+        "version": "4.2.0",
+        "purl": "pkg:npm/crypto-js@4.2.0",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "dessant/lock-threads",
+        "version": "v5",
+        "purl": "pkg:github/dessant/lock-threads@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "octoprint-playwright-tests",
+        "version": "1.0.0",
+        "purl": "pkg:npm/octoprint-playwright-tests@1.0.0",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "passlib",
+        "version": "1.7.4",
+        "purl": "pkg:pypi/passlib@1.7.4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "peter-evans/repository-dispatch",
+        "version": "v3",
+        "purl": "pkg:github/peter-evans/repository-dispatch@v3",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "peter-evans/repository-dispatch",
+        "version": "v3",
+        "purl": "pkg:github/peter-evans/repository-dispatch@v3",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "peter-evans/repository-dispatch",
+        "version": "v3",
+        "purl": "pkg:github/peter-evans/repository-dispatch@v3",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "pydantic",
+        "version": "1.10.16",
+        "purl": "pkg:pypi/pydantic@1.10.16",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "pypa/gh-action-pypi-publish",
+        "version": "release/v1",
+        "purl": "pkg:github/pypa/gh-action-pypi-publish@release/v1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "pyyaml",
+        "version": "6.0.1",
+        "purl": "pkg:pypi/pyyaml@6.0.1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "robotology/gh-action-nightly-merge",
+        "version": "v1.5.2",
+        "purl": "pkg:github/robotology/gh-action-nightly-merge@v1.5.2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "sarge",
+        "version": "0.1.7.post1",
+        "purl": "pkg:pypi/sarge@0.1.7.post1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "tornado",
+        "version": "6.4.2",
+        "purl": "pkg:pypi/tornado@6.4.2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/add_to_backlog.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "5ecdebd14c93dbf42a620c75bb41c57da3fdecc4",
+          "SHA-256": "46341e9944cca7a8eea2104a1ea16ea8068e33d90af3e9b30a93a6cb884c9150"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/build.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "b8516e4f0ff71cba9ad944ff846e12a32f732d2f",
+          "SHA-256": "e1fc73e993fdf05f3a5be54c92d453ea5295a247109cc624ed67762b0af06404"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/cleanup.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "f0097470eabf6e7dcecb9e3d9152e1347ec685bd",
+          "SHA-256": "539c89ad5d3a9a74789067736564a18dd64c44a17534ba15e766c7320613f0d3"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/issue_automation.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "a3b9c857126788798ceb275131df69dc458e17ca",
+          "SHA-256": "da58a413feb11716ac85361dba67e8c9033082f20b06307cf8c9ccd3c8bd3c18"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/nightly_merge.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "809853d7c053cf310a3a50e65bd23b3b0efec8da",
+          "SHA-256": "8be9ae4662e03149cf305952c5ef00b07bad97be2e36f7a16028323506b8d21a"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/pr_automation.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "2ff7f5052a7732508ecef0399e612435028335d9",
+          "SHA-256": "1806e0027ea25e0300febe57d7c21fa00558357643866793e50e4476e22730eb"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/process_bundles.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "06e5cd04b2b3cb017c11cfb8ee69b857f809ae3d",
+          "SHA-256": "828b7197ef69908423680e2f603d75df40c7ec6f7e7e959c8a5d8f740fef3346"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/test_install.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "5ab0c29753162b7bc7e280d2cc63cf2d689f56de",
+          "SHA-256": "372e9fc5495165c172b55d58c3b038da9fb141e25ce301542ea869fe785dc8ee"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/trigger_docker.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "e803c3d6c95260ef838efea12aac60921597ac9f",
+          "SHA-256": "d845090d5907e2da9437a7fd9ae2025a3271668669a9e594af625f03eb82c65a"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/trigger_docs.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "6dafe012cd6a92890ec03c1d12454835b103bd8b",
+          "SHA-256": "e51b3e9f87820888bdc18f69818abb44e91efe4e0580a9e0d4590aef7eb089f2"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/setup.py",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "60b128aa9fe0ae45ef45b1e7adec61f9bfd009c2",
+          "SHA-256": "ecd59851eadec2e00a890ca74902b8eaf514e1e7929ce64d3bc92bb35cee42fa"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/octoprint-1.11.7/tests/playwright/package-lock.json",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "313b2f95523338cb8fb4e6c0d3c1178193d476e4",
+          "SHA-256": "cef4dc7d7a355a8c341f23a7012663a1d80d9dcf53667e803f95d94c49bacae2"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      }
+    ],
+    "raw": {
+      "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "serialNumber": "urn:uuid:bed81108-5e7a-4cdb-b574-2618abb0f8dc",
+      "version": 1,
+      "metadata": {
+        "timestamp": "2026-10-17T15:55:57Z",
+        "tools": {
+          "components": [
+            {
+              "type": "application",
+              "author": "anchore",
+              "name": "syft",
+              "version": "1.42.3"
+            }
+          ]
+        },
+        "component": {
+          "bom-ref": "4a91a924f9a831e0",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7"
+        }
+      },
+      "components": [
+        {
+          "bom-ref": "pkg:github/ilshidur/action-discord@master?package-id=a3d3956e03c06238",
+          "type": "library",
+          "name": "Ilshidur/action-discord",
+          "version": "master",
+          "cpe": "cpe:2.3:a:Ilshidur\\/action-discord:Ilshidur\\/action-discord:master:*:*:*:*:*:*:*",
+          "purl": "pkg:github/Ilshidur/action-discord@master",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Ilshidur\\/action-discord:Ilshidur\\/action_discord:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Ilshidur\\/action_discord:Ilshidur\\/action-discord:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Ilshidur\\/action_discord:Ilshidur\\/action_discord:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Ilshidur\\/action:Ilshidur\\/action-discord:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Ilshidur\\/action:Ilshidur\\/action_discord:master:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/test_install.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/octoprint/actions@main?package-id=6be98ae021a46db9#close-by-query",
+          "type": "library",
+          "name": "OctoPrint/actions/close-by-query",
+          "version": "main",
+          "cpe": "cpe:2.3:a:OctoPrint\\/actions\\/close-by-query:OctoPrint\\/actions\\/close-by-query:main:*:*:*:*:*:*:*",
+          "purl": "pkg:github/OctoPrint/actions@main#close-by-query",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/close-by-query:OctoPrint\\/actions\\/close_by_query:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/close_by_query:OctoPrint\\/actions\\/close-by-query:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/close_by_query:OctoPrint\\/actions\\/close_by_query:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/close-by:OctoPrint\\/actions\\/close-by-query:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/close-by:OctoPrint\\/actions\\/close_by_query:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/close_by:OctoPrint\\/actions\\/close-by-query:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/close_by:OctoPrint\\/actions\\/close_by_query:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/close:OctoPrint\\/actions\\/close-by-query:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/close:OctoPrint\\/actions\\/close_by_query:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/cleanup.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/octoprint/actions@main?package-id=125374cce8fb5268#e2e",
+          "type": "library",
+          "name": "OctoPrint/actions/e2e",
+          "version": "main",
+          "cpe": "cpe:2.3:a:OctoPrint\\/actions\\/e2e:OctoPrint\\/actions\\/e2e:main:*:*:*:*:*:*:*",
+          "purl": "pkg:github/OctoPrint/actions@main#e2e",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/octoprint/actions@main?package-id=778ab5a612a35dbb#pr-validation",
+          "type": "library",
+          "name": "OctoPrint/actions/pr-validation",
+          "version": "main",
+          "cpe": "cpe:2.3:a:OctoPrint\\/actions\\/pr-validation:OctoPrint\\/actions\\/pr-validation:main:*:*:*:*:*:*:*",
+          "purl": "pkg:github/OctoPrint/actions@main#pr-validation",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/pr-validation:OctoPrint\\/actions\\/pr_validation:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/pr_validation:OctoPrint\\/actions\\/pr-validation:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/pr_validation:OctoPrint\\/actions\\/pr_validation:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/pr:OctoPrint\\/actions\\/pr-validation:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/pr:OctoPrint\\/actions\\/pr_validation:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/pr_automation.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/octoprint/actions@main?package-id=d4688c2a7c057ae1#process-systeminfo-bundles",
+          "type": "library",
+          "name": "OctoPrint/actions/process-systeminfo-bundles",
+          "version": "main",
+          "cpe": "cpe:2.3:a:OctoPrint\\/actions\\/process-systeminfo-bundles:OctoPrint\\/actions\\/process-systeminfo-bundles:main:*:*:*:*:*:*:*",
+          "purl": "pkg:github/OctoPrint/actions@main#process-systeminfo-bundles",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/process-systeminfo-bundles:OctoPrint\\/actions\\/process_systeminfo_bundles:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/process_systeminfo_bundles:OctoPrint\\/actions\\/process-systeminfo-bundles:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/process_systeminfo_bundles:OctoPrint\\/actions\\/process_systeminfo_bundles:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/process-systeminfo:OctoPrint\\/actions\\/process-systeminfo-bundles:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/process-systeminfo:OctoPrint\\/actions\\/process_systeminfo_bundles:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/process_systeminfo:OctoPrint\\/actions\\/process-systeminfo-bundles:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/process_systeminfo:OctoPrint\\/actions\\/process_systeminfo_bundles:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/process:OctoPrint\\/actions\\/process-systeminfo-bundles:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:OctoPrint\\/actions\\/process:OctoPrint\\/actions\\/process_systeminfo_bundles:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/process_bundles.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/add-to-project@main?package-id=7bd364e7af9305ec",
+          "type": "library",
+          "name": "actions/add-to-project",
+          "version": "main",
+          "cpe": "cpe:2.3:a:actions\\/add-to-project:actions\\/add-to-project:main:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/add-to-project@main",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/add-to-project:actions\\/add_to_project:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/add_to_project:actions\\/add-to-project:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/add_to_project:actions\\/add_to_project:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/add-to:actions\\/add-to-project:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/add-to:actions\\/add_to_project:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/add_to:actions\\/add-to-project:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/add_to:actions\\/add_to_project:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/add:actions\\/add-to-project:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/add:actions\\/add_to_project:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/add_to_backlog.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/cache@v4?package-id=857da13dda3d8ba2",
+          "type": "library",
+          "name": "actions/cache",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/cache:actions\\/cache:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/cache@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v5?package-id=508e3c7b45d1ea73",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v5?package-id=e3928680c74e49d2",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/nightly_merge.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v5?package-id=41c879718bc6d480",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/test_install.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/download-artifact@v5?package-id=1ca24a3d29d60d6b",
+          "type": "library",
+          "name": "actions/download-artifact",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/download-artifact:actions\\/download-artifact:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/download-artifact@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download-artifact:actions\\/download_artifact:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download_artifact:actions\\/download-artifact:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download_artifact:actions\\/download_artifact:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download:actions\\/download-artifact:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download:actions\\/download_artifact:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/github-script@v7?package-id=03bd62e151764e55",
+          "type": "library",
+          "name": "actions/github-script",
+          "version": "v7",
+          "cpe": "cpe:2.3:a:actions\\/github-script:actions\\/github-script:v7:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/github-script@v7",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/github-script:actions\\/github_script:v7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/github_script:actions\\/github-script:v7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/github_script:actions\\/github_script:v7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/github:actions\\/github-script:v7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/github:actions\\/github_script:v7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/issue_automation.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/labeler@v5?package-id=cc6113060d8f17be",
+          "type": "library",
+          "name": "actions/labeler",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/labeler:actions\\/labeler:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/labeler@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/pr_automation.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v5?package-id=d2a39767f25cb887",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-python@v5?package-id=585632c6a0755093",
+          "type": "library",
+          "name": "actions/setup-python",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-python@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/test_install.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/upload-artifact@v4?package-id=6000fc3dd7755c61",
+          "type": "library",
+          "name": "actions/upload-artifact",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/upload-artifact@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/crypto-js@4.2.0?package-id=5ca6419be24992cd",
+          "type": "library",
+          "name": "crypto-js",
+          "version": "4.2.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:crypto-js:crypto-js:4.2.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/crypto-js@4.2.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:crypto-js:crypto_js:4.2.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:crypto_js:crypto-js:4.2.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:crypto_js:crypto_js:4.2.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:crypto:crypto-js:4.2.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:crypto:crypto_js:4.2.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/tests/playwright/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/dessant/lock-threads@v5?package-id=17af8839574ed9eb",
+          "type": "library",
+          "name": "dessant/lock-threads",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:dessant\\/lock-threads:dessant\\/lock-threads:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/dessant/lock-threads@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock-threads:dessant\\/lock_threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock_threads:dessant\\/lock-threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock_threads:dessant\\/lock_threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock:dessant\\/lock-threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock:dessant\\/lock_threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/cleanup.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/octoprint-playwright-tests@1.0.0?package-id=bd71fd972543daf7",
+          "type": "library",
+          "name": "octoprint-playwright-tests",
+          "version": "1.0.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:octoprint-playwright-tests:octoprint-playwright-tests:1.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/octoprint-playwright-tests@1.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:octoprint-playwright-tests:octoprint_playwright_tests:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:octoprint_playwright_tests:octoprint-playwright-tests:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:octoprint_playwright_tests:octoprint_playwright_tests:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:octoprint-playwright:octoprint-playwright-tests:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:octoprint-playwright:octoprint_playwright_tests:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:octoprint_playwright:octoprint-playwright-tests:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:octoprint_playwright:octoprint_playwright_tests:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:octoprint:octoprint-playwright-tests:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:octoprint:octoprint_playwright_tests:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/tests/playwright/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:pypi/passlib@1.7.4?package-id=774a9811a3cf15ec",
+          "type": "library",
+          "name": "passlib",
+          "version": "1.7.4",
+          "cpe": "cpe:2.3:a:python-passlib:python-passlib:1.7.4:*:*:*:*:*:*:*",
+          "purl": "pkg:pypi/passlib@1.7.4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "python-package-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "python"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "python"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-passlib:python_passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_passlib:python-passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_passlib:python_passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:passlib:python-passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:passlib:python_passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-passlib:passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_passlib:passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python-passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python_passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:passlib:passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:passlib:1.7.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/setup.py"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/peter-evans/repository-dispatch@v3?package-id=abe98e55107ff9f1",
+          "type": "library",
+          "name": "peter-evans/repository-dispatch",
+          "version": "v3",
+          "cpe": "cpe:2.3:a:peter-evans\\/repository-dispatch:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*",
+          "purl": "pkg:github/peter-evans/repository-dispatch@v3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/repository-dispatch:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository_dispatch:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository_dispatch:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/repository:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/repository:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/peter-evans/repository-dispatch@v3?package-id=ac76066f60b331bf",
+          "type": "library",
+          "name": "peter-evans/repository-dispatch",
+          "version": "v3",
+          "cpe": "cpe:2.3:a:peter-evans\\/repository-dispatch:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*",
+          "purl": "pkg:github/peter-evans/repository-dispatch@v3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/repository-dispatch:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository_dispatch:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository_dispatch:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/repository:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/repository:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/trigger_docker.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/peter-evans/repository-dispatch@v3?package-id=37a41f975a3b9ffa",
+          "type": "library",
+          "name": "peter-evans/repository-dispatch",
+          "version": "v3",
+          "cpe": "cpe:2.3:a:peter-evans\\/repository-dispatch:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*",
+          "purl": "pkg:github/peter-evans/repository-dispatch@v3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/repository-dispatch:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository_dispatch:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository_dispatch:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/repository:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/repository:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/repository:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter:peter-evans\\/repository-dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter:peter_evans\\/repository_dispatch:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/trigger_docs.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:pypi/pydantic@1.10.16?package-id=e930423b731797a5",
+          "type": "library",
+          "name": "pydantic",
+          "version": "1.10.16",
+          "cpe": "cpe:2.3:a:python-pydantic:python-pydantic:1.10.16:*:*:*:*:*:*:*",
+          "purl": "pkg:pypi/pydantic@1.10.16",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "python-package-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "python"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "python"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-pydantic:python_pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_pydantic:python-pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_pydantic:python_pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pydantic:python-pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pydantic:python_pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-pydantic:pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_pydantic:pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python-pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python_pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pydantic:pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:pydantic:1.10.16:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/setup.py"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/pypa/gh-action-pypi-publish@release%2Fv1?package-id=9486319623fa8088",
+          "type": "library",
+          "name": "pypa/gh-action-pypi-publish",
+          "version": "release/v1",
+          "cpe": "cpe:2.3:a:pypa\\/gh-action-pypi-publish:pypa\\/gh-action-pypi-publish:release\\/v1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/pypa/gh-action-pypi-publish@release%2Fv1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh-action-pypi-publish:pypa\\/gh_action_pypi_publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh_action_pypi_publish:pypa\\/gh-action-pypi-publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh_action_pypi_publish:pypa\\/gh_action_pypi_publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh-action-pypi:pypa\\/gh-action-pypi-publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh-action-pypi:pypa\\/gh_action_pypi_publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh_action_pypi:pypa\\/gh-action-pypi-publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh_action_pypi:pypa\\/gh_action_pypi_publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh-action:pypa\\/gh-action-pypi-publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh-action:pypa\\/gh_action_pypi_publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh_action:pypa\\/gh-action-pypi-publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh_action:pypa\\/gh_action_pypi_publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh:pypa\\/gh-action-pypi-publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pypa\\/gh:pypa\\/gh_action_pypi_publish:release\\/v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:pypi/pyyaml@6.0.1?package-id=e88900699c5d5f40",
+          "type": "library",
+          "name": "pyyaml",
+          "version": "6.0.1",
+          "cpe": "cpe:2.3:a:python-pyyaml:python-pyyaml:6.0.1:*:*:*:*:*:*:*",
+          "purl": "pkg:pypi/pyyaml@6.0.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "python-package-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "python"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "python"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-pyyaml:python_pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_pyyaml:python-pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_pyyaml:python_pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-pyyaml:pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python-pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python_pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_pyyaml:pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pyyaml:python-pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pyyaml:python_pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pyyaml:pyyaml:6.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/setup.py"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/robotology/gh-action-nightly-merge@v1.5.2?package-id=6755296e1990adfb",
+          "type": "library",
+          "name": "robotology/gh-action-nightly-merge",
+          "version": "v1.5.2",
+          "cpe": "cpe:2.3:a:robotology\\/gh-action-nightly-merge:robotology\\/gh-action-nightly-merge:v1.5.2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/robotology/gh-action-nightly-merge@v1.5.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh-action-nightly-merge:robotology\\/gh_action_nightly_merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh_action_nightly_merge:robotology\\/gh-action-nightly-merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh_action_nightly_merge:robotology\\/gh_action_nightly_merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh-action-nightly:robotology\\/gh-action-nightly-merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh-action-nightly:robotology\\/gh_action_nightly_merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh_action_nightly:robotology\\/gh-action-nightly-merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh_action_nightly:robotology\\/gh_action_nightly_merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh-action:robotology\\/gh-action-nightly-merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh-action:robotology\\/gh_action_nightly_merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh_action:robotology\\/gh-action-nightly-merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh_action:robotology\\/gh_action_nightly_merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh:robotology\\/gh-action-nightly-merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:robotology\\/gh:robotology\\/gh_action_nightly_merge:v1.5.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/nightly_merge.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:pypi/sarge@0.1.7.post1?package-id=21f87252cdc86fc9",
+          "type": "library",
+          "name": "sarge",
+          "version": "0.1.7.post1",
+          "cpe": "cpe:2.3:a:python-sarge:python-sarge:0.1.7.post1:*:*:*:*:*:*:*",
+          "purl": "pkg:pypi/sarge@0.1.7.post1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "python-package-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "python"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "python"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-sarge:python_sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_sarge:python-sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_sarge:python_sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python-sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python_sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-sarge:sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_sarge:sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:sarge:python-sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:sarge:python_sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:sarge:sarge:0.1.7.post1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/setup.py"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:pypi/tornado@6.4.2?package-id=66ff7685f951876e",
+          "type": "library",
+          "name": "tornado",
+          "version": "6.4.2",
+          "cpe": "cpe:2.3:a:python-tornado:python-tornado:6.4.2:*:*:*:*:*:*:*",
+          "purl": "pkg:pypi/tornado@6.4.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "python-package-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "python"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "python"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-tornado:python_tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_tornado:python-tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_tornado:python_tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python-tornado:tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python_tornado:tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:tornado:python-tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:tornado:python_tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python-tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:python_tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:tornado:tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:python:tornado:6.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/setup.py"
+            }
+          ]
+        },
+        {
+          "bom-ref": "703db0a46668ec4a",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/add_to_backlog.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "5ecdebd14c93dbf42a620c75bb41c57da3fdecc4"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "46341e9944cca7a8eea2104a1ea16ea8068e33d90af3e9b30a93a6cb884c9150"
+            }
+          ]
+        },
+        {
+          "bom-ref": "ebff2c81fbaf921b",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/build.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "b8516e4f0ff71cba9ad944ff846e12a32f732d2f"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "e1fc73e993fdf05f3a5be54c92d453ea5295a247109cc624ed67762b0af06404"
+            }
+          ]
+        },
+        {
+          "bom-ref": "d10d77aee22c2d42",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/cleanup.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "f0097470eabf6e7dcecb9e3d9152e1347ec685bd"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "539c89ad5d3a9a74789067736564a18dd64c44a17534ba15e766c7320613f0d3"
+            }
+          ]
+        },
+        {
+          "bom-ref": "71972c149ff84491",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/issue_automation.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "a3b9c857126788798ceb275131df69dc458e17ca"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "da58a413feb11716ac85361dba67e8c9033082f20b06307cf8c9ccd3c8bd3c18"
+            }
+          ]
+        },
+        {
+          "bom-ref": "48236e4c43c04389",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/nightly_merge.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "809853d7c053cf310a3a50e65bd23b3b0efec8da"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "8be9ae4662e03149cf305952c5ef00b07bad97be2e36f7a16028323506b8d21a"
+            }
+          ]
+        },
+        {
+          "bom-ref": "5328ac987695fa96",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/pr_automation.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "2ff7f5052a7732508ecef0399e612435028335d9"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "1806e0027ea25e0300febe57d7c21fa00558357643866793e50e4476e22730eb"
+            }
+          ]
+        },
+        {
+          "bom-ref": "0182bb78512ea5a3",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/process_bundles.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "06e5cd04b2b3cb017c11cfb8ee69b857f809ae3d"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "828b7197ef69908423680e2f603d75df40c7ec6f7e7e959c8a5d8f740fef3346"
+            }
+          ]
+        },
+        {
+          "bom-ref": "1836c7fb464bc66c",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/test_install.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "5ab0c29753162b7bc7e280d2cc63cf2d689f56de"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "372e9fc5495165c172b55d58c3b038da9fb141e25ce301542ea869fe785dc8ee"
+            }
+          ]
+        },
+        {
+          "bom-ref": "b45006ff4134bd1a",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/trigger_docker.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "e803c3d6c95260ef838efea12aac60921597ac9f"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "d845090d5907e2da9437a7fd9ae2025a3271668669a9e594af625f03eb82c65a"
+            }
+          ]
+        },
+        {
+          "bom-ref": "41d4c2e003190d3d",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/trigger_docs.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "6dafe012cd6a92890ec03c1d12454835b103bd8b"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "e51b3e9f87820888bdc18f69818abb44e91efe4e0580a9e0d4590aef7eb089f2"
+            }
+          ]
+        },
+        {
+          "bom-ref": "c829033125510d5a",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/setup.py",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "60b128aa9fe0ae45ef45b1e7adec61f9bfd009c2"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "ecd59851eadec2e00a890ca74902b8eaf514e1e7929ce64d3bc92bb35cee42fa"
+            }
+          ]
+        },
+        {
+          "bom-ref": "1eb982a6e5a3d79e",
+          "type": "file",
+          "name": "/tmp/e9-sbom/octoprint-1.11.7/tests/playwright/package-lock.json",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "313b2f95523338cb8fb4e6c0d3c1178193d476e4"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "cef4dc7d7a355a8c341f23a7012663a1d80d9dcf53667e803f95d94c49bacae2"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "ref": "pkg:npm/octoprint-playwright-tests@1.0.0?package-id=bd71fd972543daf7",
+          "dependsOn": [
+            "pkg:npm/crypto-js@4.2.0?package-id=5ca6419be24992cd"
+          ]
+        }
+      ]
+    }
+  },
+  "matches": [
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-3hv7-mjh2-fv65",
+      "cve_id": "CVE-2026-103261",
+      "severity": "MODERATE",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-103261"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado: Unbounded query-string argument count allows event-loop-stalling DoS"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-3x9g-8vmp-wqvf",
+      "cve_id": "CVE-2026-49853",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-49853",
+        "PYSEC-2026-3387"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado: Authorization header forwarded across cross-origin redirects in SimpleAsyncHTTPClient"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-78cv-mqj4-43f7",
+      "cve_id": "CVE-2026-35536",
+      "severity": "MODERATE",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-35536",
+        "GHSA-fqwm-6jpj-5wxc",
+        "PYSEC-2026-2287"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado has incomplete validation of cookie attributes"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-7cx3-6m66-7c5m",
+      "cve_id": "CVE-2025-47287",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2025-47287",
+        "PYSEC-2026-1974"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado vulnerable to excessive logging caused by malformed multipart form data"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-8423-8fgw-73vq",
+      "cve_id": "CVE-2026-91990",
+      "severity": "MODERATE",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-91990"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "tornado: multipart split() creates huge temp list before max_parts check -> memory amplification DoS (httputil.py:34)"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-c2m8-h5v5-343r",
+      "cve_id": "CVE-2026-103263",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-103263"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado: StaticFileHandler follows symlinks outside static root (path traversal)"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-c98p-7wgm-6p64",
+      "cve_id": "CVE-2025-67725",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2025-67725",
+        "PYSEC-2025-266"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado: Quadratic DoS via Repeated Header Coalescing"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-chx6-46f5-w4vp",
+      "cve_id": "CVE-2026-103262",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-103262"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "tornado: CurlAsyncHTTPClient enforces no response-size limit \u2014 decompression bomb drives unbounded memory accumulation to OOM"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-cx3h-4qpv-8hc9",
+      "cve_id": "CVE-2026-49854",
+      "severity": "LOW",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-49854",
+        "PYSEC-2026-3388"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado has out-of-bounds memory access via C extension"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-fqwm-6jpj-5wxc",
+      "cve_id": "CVE-2026-35536",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-35536",
+        "GHSA-78cv-mqj4-43f7",
+        "PYSEC-2026-2287"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado has cookie attribute injection via .RequestHandler.set_cookie"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-jhmp-mqwm-3gq8",
+      "cve_id": "CVE-2025-67726",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2025-67726",
+        "PYSEC-2025-267"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado: Quadratic DoS via Crafted Multipart Parameters"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-mgf9-4vpg-hj56",
+      "cve_id": "CVE-2026-49855",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-49855",
+        "PYSEC-2026-3389"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "tornado AsyncHTTPClient accumulates decompressed chunks without size limit (gzip bomb)"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-mpf4-983q-p7j4",
+      "cve_id": "CVE-2026-82397",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-82397",
+        "PYSEC-2026-3928"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": " Tornado: Urlencoded body parsing omits max_num_fields, so one request can stall the event loop"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-pr2v-jx2c-wg9f",
+      "cve_id": "CVE-2025-67724",
+      "severity": "MODERATE",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2025-67724",
+        "PYSEC-2025-265"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado vulnerable to Header Injection and XSS via reason argument"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-pw6j-qg29-8w7f",
+      "cve_id": "CVE-2026-91992",
+      "severity": "MODERATE",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-91992"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado: CurlAsyncHTTPClient leaks per-request credentials on handle reuse"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "GHSA-qjxf-f2mg-c6mc",
+      "cve_id": "CVE-2026-31958",
+      "severity": "HIGH",
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-31958",
+        "PYSEC-2026-140"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado is vulnerable to DoS due to too many multipart parts"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2025-265",
+      "cve_id": "CVE-2025-67724",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2025-67724",
+        "GHSA-pr2v-jx2c-wg9f"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": null
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2025-266",
+      "cve_id": "CVE-2025-67725",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2025-67725",
+        "GHSA-c98p-7wgm-6p64"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": null
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2025-267",
+      "cve_id": "CVE-2025-67726",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2025-67726",
+        "GHSA-jhmp-mqwm-3gq8"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": null
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2026-140",
+      "cve_id": "CVE-2026-31958",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-31958",
+        "GHSA-qjxf-f2mg-c6mc"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": null
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2026-1974",
+      "cve_id": "CVE-2025-47287",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2025-47287",
+        "GHSA-7cx3-6m66-7c5m"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado vulnerable to excessive logging caused by malformed multipart form data"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2026-2287",
+      "cve_id": "CVE-2026-35536",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-35536",
+        "GHSA-78cv-mqj4-43f7",
+        "GHSA-fqwm-6jpj-5wxc"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": null
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2026-3387",
+      "cve_id": "CVE-2026-49853",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-49853",
+        "GHSA-3x9g-8vmp-wqvf"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado: Authorization header forwarded across cross-origin redirects in SimpleAsyncHTTPClient"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2026-3388",
+      "cve_id": "CVE-2026-49854",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-49854",
+        "GHSA-cx3h-4qpv-8hc9"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "Tornado has out-of-bounds memory access via C extension"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2026-3389",
+      "cve_id": "CVE-2026-49855",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-49855",
+        "GHSA-mgf9-4vpg-hj56"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": "tornado AsyncHTTPClient accumulates decompressed chunks without size limit (gzip bomb)"
+    },
+    {
+      "purl": "pkg:pypi/tornado@6.4.2",
+      "component_name": "tornado",
+      "component_version": "6.4.2",
+      "osv_id": "PYSEC-2026-3928",
+      "cve_id": "CVE-2026-82397",
+      "severity": null,
+      "cvss_v3": null,
+      "epss": null,
+      "in_kev": false,
+      "kev_added_at": null,
+      "kev_ransomware": null,
+      "aliases": [
+        "CVE-2026-82397",
+        "GHSA-mpf4-983q-p7j4"
+      ],
+      "status": "open",
+      "vex_status": null,
+      "summary": " Tornado: Urlencoded body parsing omits max_num_fields, so one request can stall the event loop"
+    }
+  ],
+  "skipped_components": [
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/add_to_backlog.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "5ecdebd14c93dbf42a620c75bb41c57da3fdecc4",
+        "SHA-256": "46341e9944cca7a8eea2104a1ea16ea8068e33d90af3e9b30a93a6cb884c9150"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/build.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "b8516e4f0ff71cba9ad944ff846e12a32f732d2f",
+        "SHA-256": "e1fc73e993fdf05f3a5be54c92d453ea5295a247109cc624ed67762b0af06404"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/cleanup.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "f0097470eabf6e7dcecb9e3d9152e1347ec685bd",
+        "SHA-256": "539c89ad5d3a9a74789067736564a18dd64c44a17534ba15e766c7320613f0d3"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/issue_automation.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "a3b9c857126788798ceb275131df69dc458e17ca",
+        "SHA-256": "da58a413feb11716ac85361dba67e8c9033082f20b06307cf8c9ccd3c8bd3c18"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/nightly_merge.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "809853d7c053cf310a3a50e65bd23b3b0efec8da",
+        "SHA-256": "8be9ae4662e03149cf305952c5ef00b07bad97be2e36f7a16028323506b8d21a"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/pr_automation.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "2ff7f5052a7732508ecef0399e612435028335d9",
+        "SHA-256": "1806e0027ea25e0300febe57d7c21fa00558357643866793e50e4476e22730eb"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/process_bundles.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "06e5cd04b2b3cb017c11cfb8ee69b857f809ae3d",
+        "SHA-256": "828b7197ef69908423680e2f603d75df40c7ec6f7e7e959c8a5d8f740fef3346"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/test_install.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "5ab0c29753162b7bc7e280d2cc63cf2d689f56de",
+        "SHA-256": "372e9fc5495165c172b55d58c3b038da9fb141e25ce301542ea869fe785dc8ee"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/trigger_docker.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "e803c3d6c95260ef838efea12aac60921597ac9f",
+        "SHA-256": "d845090d5907e2da9437a7fd9ae2025a3271668669a9e594af625f03eb82c65a"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/.github/workflows/trigger_docs.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "6dafe012cd6a92890ec03c1d12454835b103bd8b",
+        "SHA-256": "e51b3e9f87820888bdc18f69818abb44e91efe4e0580a9e0d4590aef7eb089f2"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/setup.py",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "60b128aa9fe0ae45ef45b1e7adec61f9bfd009c2",
+        "SHA-256": "ecd59851eadec2e00a890ca74902b8eaf514e1e7929ce64d3bc92bb35cee42fa"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/octoprint-1.11.7/tests/playwright/package-lock.json",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "313b2f95523338cb8fb4e6c0d3c1178193d476e4",
+        "SHA-256": "cef4dc7d7a355a8c341f23a7012663a1d80d9dcf53667e803f95d94c49bacae2"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    }
+  ],
+  "offline": false,
+  "warnings": [
+    "Skipped 12 component(s) with invalid or missing PURLs (they were not sent to OSV)."
+  ]
+}

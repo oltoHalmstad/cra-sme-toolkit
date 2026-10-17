@@ -1,0 +1,1900 @@
+{
+  "target": "e9-sbom/sboms/pihole-ftl-v6.4.1.cdx.json",
+  "scanned_at": "2026-10-17T16:23:41.328426Z",
+  "sbom": {
+    "bom_format": "CycloneDX",
+    "spec_version": "1.6",
+    "serial_number": "urn:uuid:2e75dd93-d663-4f3a-a60e-aee1db8f7af0",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-17T15:55:58Z",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1",
+      "version": null,
+      "component_type": "file",
+      "tools": [
+        {
+          "name": "syft",
+          "version": "1.42.3"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "actions/attest-build-provenance",
+        "version": "v3.0.0",
+        "purl": "pkg:github/actions/attest-build-provenance@v3.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v6.0.0",
+        "purl": "pkg:github/actions/checkout@v6.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v6.0.0",
+        "purl": "pkg:github/actions/checkout@v6.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v6.0.0",
+        "purl": "pkg:github/actions/checkout@v6.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v6.0.0",
+        "purl": "pkg:github/actions/checkout@v6.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v6.0.0",
+        "purl": "pkg:github/actions/checkout@v6.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v6.0.0",
+        "purl": "pkg:github/actions/checkout@v6.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/download-artifact",
+        "version": "v6.0.0",
+        "purl": "pkg:github/actions/download-artifact@v6.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-node",
+        "version": "v6.0.0",
+        "purl": "pkg:github/actions/setup-node@v6.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/stale",
+        "version": "v10.1.0",
+        "purl": "pkg:github/actions/stale@v10.1.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/stale",
+        "version": "v10.1.0",
+        "purl": "pkg:github/actions/stale@v10.1.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/upload-artifact",
+        "version": "v5.0.0",
+        "purl": "pkg:github/actions/upload-artifact@v5.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/upload-artifact",
+        "version": "v5.0.0",
+        "purl": "pkg:github/actions/upload-artifact@v5.0.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "advanced-security/filter-sarif",
+        "version": "v1.0.1",
+        "purl": "pkg:github/advanced-security/filter-sarif@v1.0.1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "benoitchantre/setup-ssh-authentication-action",
+        "version": "1.0.1",
+        "purl": "pkg:github/benoitchantre/setup-ssh-authentication-action@1.0.1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "codespell-project/actions-codespell",
+        "version": "8f01853be192eb0f849a5c7d721450e7a467c579",
+        "purl": "pkg:github/codespell-project/actions-codespell@8f01853be192eb0f849a5c7d721450e7a467c579",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "docker/setup-buildx-action",
+        "version": "v3.11.1",
+        "purl": "pkg:github/docker/setup-buildx-action@v3.11.1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "docker/setup-qemu-action",
+        "version": "v3.7.0",
+        "purl": "pkg:github/docker/setup-qemu-action@v3.7.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "eps1lon/actions-label-merge-conflict",
+        "version": "v3.0.3",
+        "purl": "pkg:github/eps1lon/actions-label-merge-conflict@v3.0.3",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "github/codeql-action/analyze",
+        "version": "v4.31.4",
+        "purl": "pkg:github/github/codeql-action@v4.31.4#analyze",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "github/codeql-action/init",
+        "version": "v4.31.4",
+        "purl": "pkg:github/github/codeql-action@v4.31.4#init",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "github/codeql-action/upload-sarif",
+        "version": "v4.31.4",
+        "purl": "pkg:github/github/codeql-action@v4.31.4#upload-sarif",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "nick-fields/retry",
+        "version": "v3.0.2",
+        "purl": "pkg:github/nick-fields/retry@v3.0.2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "peter-evans/create-pull-request",
+        "version": "v7.0.8",
+        "purl": "pkg:github/peter-evans/create-pull-request@v7.0.8",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "pihole-ftl",
+        "version": "1.0.0",
+        "purl": "pkg:npm/pihole-ftl@1.0.0",
+        "licenses": [
+          "EUPL-1.2"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "softprops/action-gh-release",
+        "version": "v2.4.2",
+        "purl": "pkg:github/softprops/action-gh-release@v2.4.2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/build.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "b844faff6f35919d073823fc44f36851a29e3ca5",
+          "SHA-256": "8cc33b813ac752ec0adcadd86f448236098b6f068f2b9989c2bcf74c1611cf25"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/codeql.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "dacb4eae398619bf68f6f107f203012174a6958c",
+          "SHA-256": "b0fd4444901838e883867670db4a0dd6e71d7472665e13ab01a5f7590695091b"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/codespell.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "336ab30887e443d3b50a778323a302e73b6665fd",
+          "SHA-256": "0d550fd25adb1eb906f24ef436db9440371de26bee67e7da64969681bfc266c5"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/merge-conflict.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "0ec977c6202df8107f7b4bbfbde7d4a2f233699b",
+          "SHA-256": "f0b9a59faadcbd476e860414f4cb4197f9aaf6308dcdc037dc4eb69ede9dd4be"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/openapi-validator.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "6e0a6d37a96178e77c418a2c5bb1c5c37d8c94bb",
+          "SHA-256": "906b0950487cffcec2abf3a3188757a3b65fb0835591124cda636d55228457d7"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/stale.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "194216d91c00d8d8c5afd80e31c1782977ab2472",
+          "SHA-256": "35a7e4b61bd81c796e65b62906e539f112049bdda55e24ca610898a1ae9136c7"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/stale_pr.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "652171fba7113d5ada76f94e4bf9150fce96953f",
+          "SHA-256": "0c0e04a35a1a3d89501e6189b8b484c9a0d38ddda3604e9ba345e1bd4bbf84a8"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/sync-back-to-dev.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "4913c0b99b455fbca469bb437640bbddb27725ca",
+          "SHA-256": "12d33cd8193f15a3138d397c59c16960e7f37e1e33510c5356f95eaf23ddb4b6"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/package-lock.json",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "ae3d06ee3035c99808f3cc9f8d9ce68a183ff857",
+          "SHA-256": "862c703ec4fbad2d5a7f54233b04a92ec59fb89167eb4b9a1be805a48dfb3c40"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      }
+    ],
+    "raw": {
+      "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "serialNumber": "urn:uuid:2e75dd93-d663-4f3a-a60e-aee1db8f7af0",
+      "version": 1,
+      "metadata": {
+        "timestamp": "2026-10-17T15:55:58Z",
+        "tools": {
+          "components": [
+            {
+              "type": "application",
+              "author": "anchore",
+              "name": "syft",
+              "version": "1.42.3"
+            }
+          ]
+        },
+        "component": {
+          "bom-ref": "cbe51ae6acc86f51",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1"
+        }
+      },
+      "components": [
+        {
+          "bom-ref": "pkg:github/actions/attest-build-provenance@v3.0.0?package-id=c23a978a88d6b987",
+          "type": "library",
+          "name": "actions/attest-build-provenance",
+          "version": "v3.0.0",
+          "cpe": "cpe:2.3:a:actions\\/attest-build-provenance:actions\\/attest-build-provenance:v3.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/attest-build-provenance@v3.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/attest-build-provenance:actions\\/attest_build_provenance:v3.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/attest_build_provenance:actions\\/attest-build-provenance:v3.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/attest_build_provenance:actions\\/attest_build_provenance:v3.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/attest-build:actions\\/attest-build-provenance:v3.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/attest-build:actions\\/attest_build_provenance:v3.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/attest_build:actions\\/attest-build-provenance:v3.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/attest_build:actions\\/attest_build_provenance:v3.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/attest:actions\\/attest-build-provenance:v3.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/attest:actions\\/attest_build_provenance:v3.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v6.0.0?package-id=407b53563807f777",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v6.0.0",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v6.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v6.0.0?package-id=629579a3d906ebbe",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v6.0.0",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v6.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v6.0.0?package-id=67015e6b453c9585",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v6.0.0",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v6.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codespell.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v6.0.0?package-id=1c635c4d8129df28",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v6.0.0",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v6.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/openapi-validator.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v6.0.0?package-id=828effd4470de963",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v6.0.0",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v6.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/stale.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v6.0.0?package-id=567c53c9d236e6ea",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v6.0.0",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v6.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/sync-back-to-dev.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/download-artifact@v6.0.0?package-id=b23b28b222685b87",
+          "type": "library",
+          "name": "actions/download-artifact",
+          "version": "v6.0.0",
+          "cpe": "cpe:2.3:a:actions\\/download-artifact:actions\\/download-artifact:v6.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/download-artifact@v6.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download-artifact:actions\\/download_artifact:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download_artifact:actions\\/download-artifact:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download_artifact:actions\\/download_artifact:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download:actions\\/download-artifact:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/download:actions\\/download_artifact:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-node@v6.0.0?package-id=fd294c8ce535576f",
+          "type": "library",
+          "name": "actions/setup-node",
+          "version": "v6.0.0",
+          "cpe": "cpe:2.3:a:actions\\/setup-node:actions\\/setup-node:v6.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-node@v6.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-node:actions\\/setup_node:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_node:actions\\/setup-node:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_node:actions\\/setup_node:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-node:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_node:v6.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/openapi-validator.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/stale@v10.1.0?package-id=dcb4a095e693cc75",
+          "type": "library",
+          "name": "actions/stale",
+          "version": "v10.1.0",
+          "cpe": "cpe:2.3:a:actions\\/stale:actions\\/stale:v10.1.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/stale@v10.1.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/stale.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/stale@v10.1.0?package-id=531f0613992647b0",
+          "type": "library",
+          "name": "actions/stale",
+          "version": "v10.1.0",
+          "cpe": "cpe:2.3:a:actions\\/stale:actions\\/stale:v10.1.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/stale@v10.1.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/stale_pr.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/upload-artifact@v5.0.0?package-id=f4fbc85163710de8",
+          "type": "library",
+          "name": "actions/upload-artifact",
+          "version": "v5.0.0",
+          "cpe": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload-artifact:v5.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/upload-artifact@v5.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload_artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload-artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload_artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload-artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload_artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/upload-artifact@v5.0.0?package-id=048d00df18d510d1",
+          "type": "library",
+          "name": "actions/upload-artifact",
+          "version": "v5.0.0",
+          "cpe": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload-artifact:v5.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/upload-artifact@v5.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload_artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload-artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload_artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload-artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload_artifact:v5.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/advanced-security/filter-sarif@v1.0.1?package-id=01d9bd82f877c858",
+          "type": "library",
+          "name": "advanced-security/filter-sarif",
+          "version": "v1.0.1",
+          "cpe": "cpe:2.3:a:advanced-security\\/filter-sarif:advanced-security\\/filter-sarif:v1.0.1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/advanced-security/filter-sarif@v1.0.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:advanced-security\\/filter-sarif:advanced_security\\/filter_sarif:v1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:advanced_security\\/filter_sarif:advanced-security\\/filter-sarif:v1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:advanced_security\\/filter_sarif:advanced_security\\/filter_sarif:v1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:advanced-security\\/filter:advanced-security\\/filter-sarif:v1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:advanced-security\\/filter:advanced_security\\/filter_sarif:v1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:advanced_security\\/filter:advanced-security\\/filter-sarif:v1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:advanced_security\\/filter:advanced_security\\/filter_sarif:v1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:advanced:advanced-security\\/filter-sarif:v1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:advanced:advanced_security\\/filter_sarif:v1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/benoitchantre/setup-ssh-authentication-action@1.0.1?package-id=b33f980d5becdda0",
+          "type": "library",
+          "name": "benoitchantre/setup-ssh-authentication-action",
+          "version": "1.0.1",
+          "cpe": "cpe:2.3:a:benoitchantre\\/setup-ssh-authentication-action:benoitchantre\\/setup-ssh-authentication-action:1.0.1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/benoitchantre/setup-ssh-authentication-action@1.0.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup-ssh-authentication-action:benoitchantre\\/setup_ssh_authentication_action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup_ssh_authentication_action:benoitchantre\\/setup-ssh-authentication-action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup_ssh_authentication_action:benoitchantre\\/setup_ssh_authentication_action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup-ssh-authentication:benoitchantre\\/setup-ssh-authentication-action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup-ssh-authentication:benoitchantre\\/setup_ssh_authentication_action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup_ssh_authentication:benoitchantre\\/setup-ssh-authentication-action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup_ssh_authentication:benoitchantre\\/setup_ssh_authentication_action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup-ssh:benoitchantre\\/setup-ssh-authentication-action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup-ssh:benoitchantre\\/setup_ssh_authentication_action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup_ssh:benoitchantre\\/setup-ssh-authentication-action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup_ssh:benoitchantre\\/setup_ssh_authentication_action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup:benoitchantre\\/setup-ssh-authentication-action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:benoitchantre\\/setup:benoitchantre\\/setup_ssh_authentication_action:1.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/codespell-project/actions-codespell@8f01853be192eb0f849a5c7d721450e7a467c579?package-id=f4d2611660f1a3db",
+          "type": "library",
+          "name": "codespell-project/actions-codespell",
+          "version": "8f01853be192eb0f849a5c7d721450e7a467c579",
+          "cpe": "cpe:2.3:a:codespell-project\\/actions-codespell:codespell-project\\/actions-codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*",
+          "purl": "pkg:github/codespell-project/actions-codespell@8f01853be192eb0f849a5c7d721450e7a467c579",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell-project\\/actions-codespell:codespell_project\\/actions_codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell_project\\/actions_codespell:codespell-project\\/actions-codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell_project\\/actions_codespell:codespell_project\\/actions_codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell-project\\/actions:codespell-project\\/actions-codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell-project\\/actions:codespell_project\\/actions_codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell_project\\/actions:codespell-project\\/actions-codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell_project\\/actions:codespell_project\\/actions_codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell:codespell-project\\/actions-codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:codespell:codespell_project\\/actions_codespell:8f01853be192eb0f849a5c7d721450e7a467c579:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codespell.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/docker/setup-buildx-action@v3.11.1?package-id=28f842c0bfc36d04",
+          "type": "library",
+          "name": "docker/setup-buildx-action",
+          "version": "v3.11.1",
+          "cpe": "cpe:2.3:a:docker\\/setup-buildx-action:docker\\/setup-buildx-action:v3.11.1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/docker/setup-buildx-action@v3.11.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup-buildx-action:docker\\/setup_buildx_action:v3.11.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup_buildx_action:docker\\/setup-buildx-action:v3.11.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup_buildx_action:docker\\/setup_buildx_action:v3.11.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup-buildx:docker\\/setup-buildx-action:v3.11.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup-buildx:docker\\/setup_buildx_action:v3.11.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup_buildx:docker\\/setup-buildx-action:v3.11.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup_buildx:docker\\/setup_buildx_action:v3.11.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup:docker\\/setup-buildx-action:v3.11.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup:docker\\/setup_buildx_action:v3.11.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/docker/setup-qemu-action@v3.7.0?package-id=6f2fca3dda035ea2",
+          "type": "library",
+          "name": "docker/setup-qemu-action",
+          "version": "v3.7.0",
+          "cpe": "cpe:2.3:a:docker\\/setup-qemu-action:docker\\/setup-qemu-action:v3.7.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/docker/setup-qemu-action@v3.7.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup-qemu-action:docker\\/setup_qemu_action:v3.7.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup_qemu_action:docker\\/setup-qemu-action:v3.7.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup_qemu_action:docker\\/setup_qemu_action:v3.7.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup-qemu:docker\\/setup-qemu-action:v3.7.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup-qemu:docker\\/setup_qemu_action:v3.7.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup_qemu:docker\\/setup-qemu-action:v3.7.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup_qemu:docker\\/setup_qemu_action:v3.7.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup:docker\\/setup-qemu-action:v3.7.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docker\\/setup:docker\\/setup_qemu_action:v3.7.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/eps1lon/actions-label-merge-conflict@v3.0.3?package-id=9b43b5afdf4e1b86",
+          "type": "library",
+          "name": "eps1lon/actions-label-merge-conflict",
+          "version": "v3.0.3",
+          "cpe": "cpe:2.3:a:eps1lon\\/actions-label-merge-conflict:eps1lon\\/actions-label-merge-conflict:v3.0.3:*:*:*:*:*:*:*",
+          "purl": "pkg:github/eps1lon/actions-label-merge-conflict@v3.0.3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions-label-merge-conflict:eps1lon\\/actions_label_merge_conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions_label_merge_conflict:eps1lon\\/actions-label-merge-conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions_label_merge_conflict:eps1lon\\/actions_label_merge_conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions-label-merge:eps1lon\\/actions-label-merge-conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions-label-merge:eps1lon\\/actions_label_merge_conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions_label_merge:eps1lon\\/actions-label-merge-conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions_label_merge:eps1lon\\/actions_label_merge_conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions-label:eps1lon\\/actions-label-merge-conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions-label:eps1lon\\/actions_label_merge_conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions_label:eps1lon\\/actions-label-merge-conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions_label:eps1lon\\/actions_label_merge_conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions:eps1lon\\/actions-label-merge-conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:eps1lon\\/actions:eps1lon\\/actions_label_merge_conflict:v3.0.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/merge-conflict.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/github/codeql-action@v4.31.4?package-id=9845756d4c038041#analyze",
+          "type": "library",
+          "name": "github/codeql-action/analyze",
+          "version": "v4.31.4",
+          "cpe": "cpe:2.3:a:github\\/codeql-action\\/analyze:github\\/codeql-action\\/analyze:v4.31.4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/github/codeql-action@v4.31.4#analyze",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/analyze:github\\/codeql_action\\/analyze:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/analyze:github\\/codeql-action\\/analyze:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/analyze:github\\/codeql_action\\/analyze:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql-action\\/analyze:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql_action\\/analyze:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/github/codeql-action@v4.31.4?package-id=f534fae9746c28cc#init",
+          "type": "library",
+          "name": "github/codeql-action/init",
+          "version": "v4.31.4",
+          "cpe": "cpe:2.3:a:github\\/codeql-action\\/init:github\\/codeql-action\\/init:v4.31.4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/github/codeql-action@v4.31.4#init",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/init:github\\/codeql_action\\/init:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/init:github\\/codeql-action\\/init:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/init:github\\/codeql_action\\/init:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql-action\\/init:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql_action\\/init:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/github/codeql-action@v4.31.4?package-id=68555b2790c8ca8d#upload-sarif",
+          "type": "library",
+          "name": "github/codeql-action/upload-sarif",
+          "version": "v4.31.4",
+          "cpe": "cpe:2.3:a:github\\/codeql-action\\/upload-sarif:github\\/codeql-action\\/upload-sarif:v4.31.4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/github/codeql-action@v4.31.4#upload-sarif",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/upload-sarif:github\\/codeql_action\\/upload_sarif:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/upload_sarif:github\\/codeql-action\\/upload-sarif:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/upload_sarif:github\\/codeql_action\\/upload_sarif:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/upload:github\\/codeql-action\\/upload-sarif:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/upload:github\\/codeql_action\\/upload_sarif:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/upload:github\\/codeql-action\\/upload-sarif:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/upload:github\\/codeql_action\\/upload_sarif:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql-action\\/upload-sarif:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql_action\\/upload_sarif:v4.31.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/nick-fields/retry@v3.0.2?package-id=bc20ec7e7108490f",
+          "type": "library",
+          "name": "nick-fields/retry",
+          "version": "v3.0.2",
+          "cpe": "cpe:2.3:a:nick-fields\\/retry:nick-fields\\/retry:v3.0.2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/nick-fields/retry@v3.0.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:nick-fields\\/retry:nick_fields\\/retry:v3.0.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:nick_fields\\/retry:nick-fields\\/retry:v3.0.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:nick_fields\\/retry:nick_fields\\/retry:v3.0.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:nick:nick-fields\\/retry:v3.0.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:nick:nick_fields\\/retry:v3.0.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/peter-evans/create-pull-request@v7.0.8?package-id=29ab206875fb375e",
+          "type": "library",
+          "name": "peter-evans/create-pull-request",
+          "version": "v7.0.8",
+          "cpe": "cpe:2.3:a:peter-evans\\/create-pull-request:peter-evans\\/create-pull-request:v7.0.8:*:*:*:*:*:*:*",
+          "purl": "pkg:github/peter-evans/create-pull-request@v7.0.8",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/create-pull-request:peter_evans\\/create_pull_request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/create_pull_request:peter-evans\\/create-pull-request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/create_pull_request:peter_evans\\/create_pull_request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/create-pull:peter-evans\\/create-pull-request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/create-pull:peter_evans\\/create_pull_request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/create_pull:peter-evans\\/create-pull-request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/create_pull:peter_evans\\/create_pull_request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/create:peter-evans\\/create-pull-request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter-evans\\/create:peter_evans\\/create_pull_request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/create:peter-evans\\/create-pull-request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter_evans\\/create:peter_evans\\/create_pull_request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter:peter-evans\\/create-pull-request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:peter:peter_evans\\/create_pull_request:v7.0.8:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/pihole-ftl@1.0.0?package-id=a98f5f0f18f22def",
+          "type": "library",
+          "name": "pihole-ftl",
+          "version": "1.0.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "EUPL-1.2"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:pihole-ftl:pihole-ftl:1.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/pihole-ftl@1.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pihole-ftl:pihole_ftl:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pihole_ftl:pihole-ftl:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pihole_ftl:pihole_ftl:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pihole:pihole-ftl:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pihole:pihole_ftl:1.0.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/softprops/action-gh-release@v2.4.2?package-id=4b355fbd7f6cd14e",
+          "type": "library",
+          "name": "softprops/action-gh-release",
+          "version": "v2.4.2",
+          "cpe": "cpe:2.3:a:softprops\\/action-gh-release:softprops\\/action-gh-release:v2.4.2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/softprops/action-gh-release@v2.4.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:softprops\\/action-gh-release:softprops\\/action_gh_release:v2.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:softprops\\/action_gh_release:softprops\\/action-gh-release:v2.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:softprops\\/action_gh_release:softprops\\/action_gh_release:v2.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:softprops\\/action-gh:softprops\\/action-gh-release:v2.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:softprops\\/action-gh:softprops\\/action_gh_release:v2.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:softprops\\/action_gh:softprops\\/action-gh-release:v2.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:softprops\\/action_gh:softprops\\/action_gh_release:v2.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:softprops\\/action:softprops\\/action-gh-release:v2.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:softprops\\/action:softprops\\/action_gh_release:v2.4.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "ebff2c81fbaf921b",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/build.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "b844faff6f35919d073823fc44f36851a29e3ca5"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "8cc33b813ac752ec0adcadd86f448236098b6f068f2b9989c2bcf74c1611cf25"
+            }
+          ]
+        },
+        {
+          "bom-ref": "f4fe0eee66e1ba99",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/codeql.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "dacb4eae398619bf68f6f107f203012174a6958c"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "b0fd4444901838e883867670db4a0dd6e71d7472665e13ab01a5f7590695091b"
+            }
+          ]
+        },
+        {
+          "bom-ref": "bdc9aa9673143e81",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/codespell.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "336ab30887e443d3b50a778323a302e73b6665fd"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "0d550fd25adb1eb906f24ef436db9440371de26bee67e7da64969681bfc266c5"
+            }
+          ]
+        },
+        {
+          "bom-ref": "64e010c290d8f4e6",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/merge-conflict.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "0ec977c6202df8107f7b4bbfbde7d4a2f233699b"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "f0b9a59faadcbd476e860414f4cb4197f9aaf6308dcdc037dc4eb69ede9dd4be"
+            }
+          ]
+        },
+        {
+          "bom-ref": "80b344c114720026",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/openapi-validator.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "6e0a6d37a96178e77c418a2c5bb1c5c37d8c94bb"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "906b0950487cffcec2abf3a3188757a3b65fb0835591124cda636d55228457d7"
+            }
+          ]
+        },
+        {
+          "bom-ref": "ffd6ebf112245b93",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/stale.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "194216d91c00d8d8c5afd80e31c1782977ab2472"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "35a7e4b61bd81c796e65b62906e539f112049bdda55e24ca610898a1ae9136c7"
+            }
+          ]
+        },
+        {
+          "bom-ref": "5a0b7bf82c291a09",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/stale_pr.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "652171fba7113d5ada76f94e4bf9150fce96953f"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "0c0e04a35a1a3d89501e6189b8b484c9a0d38ddda3604e9ba345e1bd4bbf84a8"
+            }
+          ]
+        },
+        {
+          "bom-ref": "776cd9ddb4c24f91",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/sync-back-to-dev.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "4913c0b99b455fbca469bb437640bbddb27725ca"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "12d33cd8193f15a3138d397c59c16960e7f37e1e33510c5356f95eaf23ddb4b6"
+            }
+          ]
+        },
+        {
+          "bom-ref": "fd71c2238fc07657",
+          "type": "file",
+          "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/package-lock.json",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "ae3d06ee3035c99808f3cc9f8d9ce68a183ff857"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "862c703ec4fbad2d5a7f54233b04a92ec59fb89167eb4b9a1be805a48dfb3c40"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "matches": [],
+  "skipped_components": [
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/build.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "b844faff6f35919d073823fc44f36851a29e3ca5",
+        "SHA-256": "8cc33b813ac752ec0adcadd86f448236098b6f068f2b9989c2bcf74c1611cf25"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/codeql.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "dacb4eae398619bf68f6f107f203012174a6958c",
+        "SHA-256": "b0fd4444901838e883867670db4a0dd6e71d7472665e13ab01a5f7590695091b"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/codespell.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "336ab30887e443d3b50a778323a302e73b6665fd",
+        "SHA-256": "0d550fd25adb1eb906f24ef436db9440371de26bee67e7da64969681bfc266c5"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/merge-conflict.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "0ec977c6202df8107f7b4bbfbde7d4a2f233699b",
+        "SHA-256": "f0b9a59faadcbd476e860414f4cb4197f9aaf6308dcdc037dc4eb69ede9dd4be"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/openapi-validator.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "6e0a6d37a96178e77c418a2c5bb1c5c37d8c94bb",
+        "SHA-256": "906b0950487cffcec2abf3a3188757a3b65fb0835591124cda636d55228457d7"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/stale.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "194216d91c00d8d8c5afd80e31c1782977ab2472",
+        "SHA-256": "35a7e4b61bd81c796e65b62906e539f112049bdda55e24ca610898a1ae9136c7"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/stale_pr.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "652171fba7113d5ada76f94e4bf9150fce96953f",
+        "SHA-256": "0c0e04a35a1a3d89501e6189b8b484c9a0d38ddda3604e9ba345e1bd4bbf84a8"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/.github/workflows/sync-back-to-dev.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "4913c0b99b455fbca469bb437640bbddb27725ca",
+        "SHA-256": "12d33cd8193f15a3138d397c59c16960e7f37e1e33510c5356f95eaf23ddb4b6"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/pihole-ftl-v6.4.1/package-lock.json",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "ae3d06ee3035c99808f3cc9f8d9ce68a183ff857",
+        "SHA-256": "862c703ec4fbad2d5a7f54233b04a92ec59fb89167eb4b9a1be805a48dfb3c40"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    }
+  ],
+  "offline": false,
+  "warnings": [
+    "Skipped 9 component(s) with invalid or missing PURLs (they were not sent to OSV)."
+  ]
+}

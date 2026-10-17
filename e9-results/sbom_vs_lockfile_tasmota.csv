@@ -1,0 +1,8 @@
+product_id,tag,syft_status,lockfile_n,syft_n,both,recall_vs_lockfile,precision_vs_lockfile,syft_only,error
+tasmota,v14.4.1,ok,0,2,0,,0.0,2,
+tasmota,v14.5.0,ok,0,2,0,,0.0,2,
+tasmota,v15.0.1,ok,0,2,0,,0.0,2,
+tasmota,v15.2.0,ok,0,2,0,,0.0,2,
+tasmota,v15.3.0,ok,0,2,0,,0.0,2,
+tasmota,v15.5.0,ok,0,2,0,,0.0,2,
+tasmota,v15.6.0,ok,0,2,0,,0.0,2,
