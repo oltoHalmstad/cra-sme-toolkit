@@ -13,6 +13,7 @@
 - **Added `.github/workflows/e9-replay.yml`:** a SHA-pinned matrix workflow (resolve → sbom → replay).
 - **Added notebook 08.** Coverage and drift use real data. The vulnerability sections use a labelled **synthetic** cache until the CI run.
 - **Changed:** an OSV report with `results: []` is now a valid clean result. OSV-Scanner omits clean sources, and an empty inventory is caught by the SBOM check and the input binding instead.
+- **Packaging:** the synthetic E9 test cache (939 files) is now one `tests/fixtures/e9_synthetic_cache.tar.gz`; `run_replay.py --cache` accepts a `.tar.gz`. This keeps the archive under Zenodo's preview limit.
 - **Release metadata:**
   - Zenodo DOI 10.5281/zenodo.23437353
   - the development repository is private; the Zenodo archive is the public release, and no metadata links to the repository

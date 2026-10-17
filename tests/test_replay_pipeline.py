@@ -9,7 +9,7 @@ from conftest import ROOT
 def test_run_replay_on_synthetic_cache(tmp_path):
     out = tmp_path / "res"
     r = subprocess.run([sys.executable, str(ROOT / "tools/replay/run_replay.py"), "--e9", str(ROOT / "experiments/e9_release_replay"),
-                        "--cache", str(ROOT / "tests/fixtures/e9_synthetic_cache"), "--out", str(out),
+                        "--cache", str(ROOT / "tests/fixtures/e9_synthetic_cache.tar.gz"), "--out", str(out),
                         "--limit-products", "headscale,mosquitto,zwave-js-ui"], capture_output=True, text=True, timeout=600)
     assert r.returncode == 0, r.stderr[-2000:]
     m = {(x["product_id"], x["tag"]): x for x in csv.DictReader(open(out / "release_metrics.csv"))}

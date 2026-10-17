@@ -34,4 +34,4 @@ python tools/replay/extract_inventory.py --mirrors mirrors --products experiment
 - **Coverage:** 94/144 releases have lockfile inventories, 29 need resolution, 17 are C/firmware with no package manifest, and 4 have no committed lock.
 - **Drift:** the median Jaccard between consecutive quarterly releases is **0.51**, and 91% of transitions change more than 10% of components. A previous release's SBOM is therefore rarely valid evidence for the next one.
 
-Everything else in notebook 08 runs on a **SYNTHETIC** vulnerability cache (`tests/fixtures/e9_synthetic_cache`) until the CI run provides real data.
+Everything else in notebook 08 runs on a **SYNTHETIC** vulnerability cache (`tests/fixtures/e9_synthetic_cache.tar.gz`) until the CI run provides real data.

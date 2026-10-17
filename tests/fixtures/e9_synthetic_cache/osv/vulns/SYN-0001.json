@@ -1,1 +1,0 @@
-{"id": "SYN-0001", "aliases": ["CVE-0000-7000"], "published": "2024-11-01T00:00:00Z", "summary": "SYNTHETIC test record", "affected": [{"package": {"ecosystem": "Go", "name": "golang.org/x/net"}, "ranges": [{"type": "SEMVER", "events": [{"introduced": "0"}, {"fixed": "999.0.0"}]}]}], "severity": [{"type": "CVSS_V3", "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"}]}

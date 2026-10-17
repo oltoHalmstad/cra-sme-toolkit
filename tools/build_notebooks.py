@@ -420,7 +420,7 @@ REAL = bool(os.environ.get('E9_RESULTS')) and (RES / 'release_metrics.csv').exis
 if not REAL:
     RES = pathlib.Path('/tmp/e9-synthetic-results')
     subprocess.run([sys.executable, str(ROOT / 'tools/replay/run_replay.py'), '--e9', str(E9), '--cache',
-                    str(ROOT / 'tests/fixtures/e9_synthetic_cache'), '--out', str(RES)], check=True, capture_output=True)
+                    str(ROOT / 'tests/fixtures/e9_synthetic_cache.tar.gz'), '--out', str(RES)], check=True, capture_output=True)
 print('VULNERABILITY DATA:', 'REAL (CI run)' if REAL else 'SYNTHETIC — pipeline demonstration only')"""),
 (M, "## 1 · Release sample and inventory coverage (real data)"),
 (C, """rel = pd.read_csv(E9 / 'releases.csv'); inv = pd.read_csv(E9 / 'inventories' / 'summary.csv')

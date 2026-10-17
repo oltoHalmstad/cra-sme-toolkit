@@ -15,6 +15,8 @@ import argparse
 import csv
 import json
 import sys
+import tarfile
+import tempfile
 import urllib.parse
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -59,12 +61,17 @@ class OSVCache:
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--e9", required=True)
-    ap.add_argument("--cache", required=True)
+    ap.add_argument("--cache", required=True, help="cache directory, or a .tar.gz of one")
     ap.add_argument("--out", required=True)
     ap.add_argument("--include-dev", action="store_true")
     ap.add_argument("--limit-products")
     a = ap.parse_args(argv)
     e9, cache, out = Path(a.e9), Path(a.cache), Path(a.out)
+    if cache.is_file() and cache.name.endswith(".tar.gz"):   # packed cache (keeps the archive small)
+        tmp = Path(tempfile.mkdtemp(prefix="e9-cache-"))
+        with tarfile.open(cache) as t:
+            t.extractall(tmp, filter="data")
+        cache = next((d for d in tmp.iterdir() if (d / "kev.json").exists()), tmp)
     out.mkdir(parents=True, exist_ok=True)
     kev_doc = json.loads((cache / "kev.json").read_text())
     kev = R.kev_index(kev_doc)
