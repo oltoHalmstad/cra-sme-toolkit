@@ -10,6 +10,8 @@
 
 **Sample:** 144 releases of 20 products. Numbers are from `ANALYSIS.json` (`tools/replay/analyze_e9.py`). Proportions carry 95% Wilson CIs, plus a product-level cluster bootstrap (5,000 resamples, seed 2026) where shown.
 
+**Reproducibility check (17 Oct 2026):** re-running `run_replay.py` offline from the downloaded `e9-osv-cache` artifact reproduces `release_metrics.csv`, `findings.csv`, `exposure.csv`, `drift.csv` and `engine_reasons.csv` byte for byte. The cache archive SHA-256 is `8485b3d7579fb94934126f0e77318af60f361ca638f67fff1911b8b6a8013e55`; it will be archived on Zenodo as a dataset.
+
 ## Gate decisions (n = 144)
 | Gate | PASS | REVIEW | FAIL |
 |---|---|---|---|
