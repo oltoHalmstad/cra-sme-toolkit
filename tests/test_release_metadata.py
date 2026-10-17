@@ -45,3 +45,25 @@ def test_packaged_data_matches_repo_copies():
              ("schemas/product.schema.json", "crasme/_data/product.schema.json")]
     for a, b in pairs:
         assert (ROOT / a).read_bytes() == (ROOT / b).read_bytes(), f"{b} out of sync with {a}"
+
+
+def test_set_doi_concept_and_version(tmp_path, monkeypatch):
+    import shutil
+    import yaml
+    for f in ("README.md", "CITATION.cff", ".zenodo.json", "codemeta.json"):
+        shutil.copy(ROOT / f, tmp_path / f)
+    import set_doi
+    monkeypatch.setattr(set_doi, "ROOT", tmp_path)
+    set_doi.main(["--concept", "10.5281/zenodo.111", "--version", "10.5281/zenodo.23437353"])
+    c = yaml.safe_load((tmp_path / "CITATION.cff").read_text())
+    assert c["doi"] == "10.5281/zenodo.111" and len(c["identifiers"]) == 2
+    assert "10.5281/zenodo.111" in (tmp_path / "README.md").read_text()
+    import pytest
+    with pytest.raises(SystemExit):
+        set_doi.main(["--concept", "doi:nope"])
+
+
+def test_repository_cites_zenodo_doi():
+    import yaml
+    assert yaml.safe_load((ROOT / "CITATION.cff").read_text())["doi"].startswith("10.5281/zenodo.")
+    assert "ZENODO-DOI-PLACEHOLDER" not in (ROOT / "README.md").read_text()

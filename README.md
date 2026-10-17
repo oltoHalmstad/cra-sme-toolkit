@@ -1,7 +1,7 @@
 # CRA-SME Toolkit
 
 [![ci](https://github.com/OWNER/cra-sme-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/cra-sme-toolkit/actions/workflows/ci.yml)
-[![DOI](https://zenodo.org/badge/DOI/ZENODO-DOI-PLACEHOLDER.svg)](https://doi.org/ZENODO-DOI-PLACEHOLDER)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23437353.svg)](https://doi.org/10.5281/zenodo.23437353)
 ![licence: Apache-2.0 (code) / CC BY 4.0 (docs, data)](https://img.shields.io/badge/licence-Apache--2.0%20%7C%20CC%20BY%204.0-blue)
 
 **A risk-driven, evidence-based research toolkit for implementing the EU Cyber Resilience Act (Regulation (EU) 2024/2847) in SMEs.** Version 1.2.0, research edition, 17 October 2026.
@@ -19,7 +19,7 @@ python tools/run_notebooks.py                     # re-execute the six notebooks
 ## How to cite
 Cite the Zenodo DOI of the version you used. GitHub's "Cite this repository" button reads `CITATION.cff`.
 
-> Torstensson, O. (2026). *CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs* (Version 1.2.0) [Computer software]. Zenodo. https://doi.org/ZENODO-DOI-PLACEHOLDER
+> Torstensson, O. (2026). *CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs* (Version 1.2.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23437353
 
 ## Licensing
 | Part | Licence |

@@ -1,32 +1,36 @@
 cff-version: 1.2.0
-message: "If you use this toolkit, please cite it using the metadata below (the Zenodo DOI identifies the exact version)."
+message: If you use this toolkit, please cite it using the metadata below (the Zenodo DOI identifies the
+  exact version).
 type: software
-title: "CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs"
+title: 'CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation
+  in SMEs'
 version: 1.2.0
 date-released: 2026-10-17
 license: Apache-2.0
 authors:
-  - family-names: Torstensson
-    given-names: Olga
-repository-code: "https://github.com/OWNER/cra-sme-toolkit"
-abstract: >-
-  Research toolkit for implementing and evaluating the EU Cyber Resilience Act
-  (Regulation (EU) 2024/2847) in small and medium-sized enterprises. It contains
-  a 46-obligation CRA requirements catalogue, a risk and evidence workbook, a
-  tested Python core (release-decision engine, ordinal and Monte Carlo risk models, inter-rater
-  agreement statistics, SBOM and scanner accuracy metrics, Article 14 reporting
-  clocks, a traceability schema with a score-independent release gate, and an
-  evidence provenance manifest), a SHA-pinned CI evidence workflow, protocols
-  for eight experiments (E1-E8), executed Jupyter notebooks, and an SBOM
-  generator pilot benchmark. Research instruments only: not legal advice and
-  not a conformity assessment.
+- family-names: Torstensson
+  given-names: Olga
+repository-code: https://github.com/OWNER/cra-sme-toolkit
+abstract: 'Research toolkit for implementing and evaluating the EU Cyber Resilience Act (Regulation (EU)
+  2024/2847) in small and medium-sized enterprises. It contains a 46-obligation CRA requirements catalogue,
+  a risk and evidence workbook, a tested Python core (release-decision engine, ordinal and Monte Carlo
+  risk models, inter-rater agreement statistics, SBOM and scanner accuracy metrics, Article 14 reporting
+  clocks, a traceability schema with a score-independent release gate, and an evidence provenance manifest),
+  a SHA-pinned CI evidence workflow, protocols for eight experiments (E1-E8), executed Jupyter notebooks,
+  and an SBOM generator pilot benchmark. Research instruments only: not legal advice and not a conformity
+  assessment.'
 keywords:
-  - Cyber Resilience Act
-  - Regulation (EU) 2024/2847
-  - SME
-  - SBOM
-  - compliance as code
-  - cybersecurity risk assessment
-  - evidence traceability
-  - vulnerability disclosure
-  - design science research
+- Cyber Resilience Act
+- Regulation (EU) 2024/2847
+- SME
+- SBOM
+- compliance as code
+- cybersecurity risk assessment
+- evidence traceability
+- vulnerability disclosure
+- design science research
+doi: 10.5281/zenodo.23437353
+identifiers:
+- type: doi
+  value: 10.5281/zenodo.23437353
+  description: Zenodo DOI

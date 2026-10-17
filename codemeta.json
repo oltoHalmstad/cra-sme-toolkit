@@ -10,8 +10,27 @@
   "codeRepository": "https://github.com/OWNER/cra-sme-toolkit",
   "programmingLanguage": "Python",
   "runtimePlatform": "Python 3.12+",
-  "author": [{"@type": "Person", "givenName": "Olga", "familyName": "Torstensson"}],
-  "keywords": ["Cyber Resilience Act", "SME", "SBOM", "compliance as code", "risk assessment", "traceability"],
-  "softwareRequirements": ["numpy>=2.0", "scipy>=1.13", "pandas>=2.2", "jsonschema>=4.21"],
-  "developmentStatus": "active"
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Olga",
+      "familyName": "Torstensson"
+    }
+  ],
+  "keywords": [
+    "Cyber Resilience Act",
+    "SME",
+    "SBOM",
+    "compliance as code",
+    "risk assessment",
+    "traceability"
+  ],
+  "softwareRequirements": [
+    "numpy>=2.0",
+    "scipy>=1.13",
+    "pandas>=2.2",
+    "jsonschema>=4.21"
+  ],
+  "developmentStatus": "active",
+  "identifier": "https://doi.org/10.5281/zenodo.23437353"
 }

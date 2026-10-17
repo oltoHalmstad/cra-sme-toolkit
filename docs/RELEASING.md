@@ -23,7 +23,7 @@
 2. Run `python tools/check_release.py --strict && pytest && python tools/run_notebooks.py`, then commit the executed notebooks.
 3. Tag and push with `git tag -a vX.Y.Z -m "vX.Y.Z" && git push --tags`.
 4. **Create the GitHub release** from the tag (Releases → Draft a new release). Zenodo then archives the release and mints two DOIs: a *version DOI* and a *concept DOI* that always resolves to the latest version.
-5. **Add the DOI to the repository:** replace `ZENODO-DOI-PLACEHOLDER` in `README.md` with the concept DOI, and add an `identifiers` entry with the DOI to `CITATION.cff`. Commit this to `main`; there is no need to re-release.
+5. **Add the DOI to the repository:** run `python tools/set_doi.py --concept <concept DOI> --version <version DOI>` and commit to `main`; there is no need to re-release. The Zenodo-specific steps are in `docs/ZENODO.md`.
 
 ## Uploading by hand instead of through the GitHub integration
 Upload `cra-sme-toolkit-v1.1.0.zip` on zenodo.org → New upload. Copy the fields from `.zenodo.json`: resource type *Software*, licence Apache-2.0, plus the creators, description and keywords. Mention the CC BY 4.0 part in the description, because a Zenodo record holds only one licence.
