@@ -1,0 +1,3 @@
+ecosystem,name,version,dev,source
+PyPI,breathe,4.7.3,False,ci:syft:ok
+PyPI,sphinx,1.6.5,False,ci:syft:ok
