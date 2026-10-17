@@ -1,0 +1,39 @@
+# E9 product sample (frozen 2026-10-17). Open-source IoT / network software used as PROXIES for
+# products with digital elements that SMEs build or ship. Selection criteria (PREREGISTRATION §2):
+# active (release in last 6 months), connected-device or network role, tagged releases, >= 1 lockfile
+# or manifest, ecosystem diversity. We make NO claim that these projects themselves fall under the CRA
+# (free and open-source software outside commercial activity is treated differently; Art. 24, recitals).
+schema: crasme-e9-products/1
+products:
+  # --- JavaScript / npm --------------------------------------------------------------
+  - {id: zigbee2mqtt,   repo: Koenkk/zigbee2mqtt,        ecosystem: npm,   role: "Zigbee-to-MQTT bridge (smart-home gateway)", inventory: ['^pnpm-lock\.yaml$', '^package-lock\.json$'], inventory_mode: 'lockfile'}
+  - {id: node-red,      repo: node-red/node-red,         ecosystem: npm,   role: "IoT flow runtime (edge devices, gateways)", inventory: ['^package-lock\.json$'], inventory_mode: 'lockfile'}
+  - {id: homebridge,    repo: homebridge/homebridge,     ecosystem: npm,   role: "HomeKit bridge for smart-home devices", inventory: ['^package-lock\.json$'], inventory_mode: 'lockfile'}
+  - {id: zwave-js-ui,   repo: zwave-js/zwave-js-ui,      ecosystem: npm,   role: "Z-Wave control gateway", inventory: ['^package-lock\.json$'], inventory_mode: 'lockfile'}
+  # --- Python / PyPI ------------------------------------------------------------------
+  - {id: home-assistant,repo: home-assistant/core,       ecosystem: pypi,  role: "home-automation hub (also sold on commercial hardware)", inventory: ['^requirements\.txt$', '^homeassistant/package_constraints\.txt$'], inventory_mode: 'lockfile'}
+  - {id: esphome,       repo: esphome/esphome,           ecosystem: pypi,  role: "firmware build system for ESP32/ESP8266 devices", inventory: ['^requirements\.txt$'], inventory_mode: 'lockfile'}
+  - {id: octoprint,     repo: OctoPrint/OctoPrint,       ecosystem: pypi,  role: "network control for 3D printers", inventory: [], inventory_mode: 'resolve-in-ci (pip, no lockfile)'}
+  - {id: frigate,       repo: blakeblackshear/frigate,   ecosystem: pypi,  role: "network video recorder for IP cameras", inventory: ['^docker/main/requirements-wheels\.txt$', '^web/package-lock\.json$'], inventory_mode: 'lockfile'}
+  # --- Go ------------------------------------------------------------------------------
+  - {id: adguardhome,   repo: AdguardTeam/AdGuardHome,   ecosystem: golang, role: "network DNS filter appliance", inventory: ['^go\.sum$', '^client/package-lock\.json$'], inventory_mode: 'lockfile'}
+  - {id: headscale,     repo: juanfont/headscale,        ecosystem: golang, role: "VPN coordination server", inventory: ['^go\.sum$'], inventory_mode: 'lockfile'}
+  - {id: traefik,       repo: traefik/traefik,           ecosystem: golang, role: "edge reverse proxy", inventory: ['^go\.sum$', '^webui/yarn\.lock$'], inventory_mode: 'lockfile'}
+  - {id: telegraf,      repo: influxdata/telegraf,       ecosystem: golang, role: "telemetry agent for devices and servers", inventory: ['^go\.sum$'], inventory_mode: 'lockfile'}
+  - {id: evcc,          repo: evcc-io/evcc,              ecosystem: golang, role: "EV charger / energy-management controller", tag_pattern: '^\d+\.\d+\.\d+$', inventory: ['^go\.sum$', '^package-lock\.json$'], inventory_mode: 'lockfile'}
+  # --- Java / Maven ---------------------------------------------------------------------
+  - {id: thingsboard,   repo: thingsboard/thingsboard,   ecosystem: maven, role: "IoT device-management platform", inventory: [], inventory_mode: 'resolve-in-ci (maven)'}
+  - {id: openhab-core,  repo: openhab/openhab-core,      ecosystem: maven, role: "home-automation runtime", inventory: [], inventory_mode: 'resolve-in-ci (maven)'}
+  # --- C / C++ / firmware (expected SBOM coverage gap) -----------------------------------
+  - {id: mosquitto,     repo: eclipse/mosquitto,         ecosystem: c,     role: "MQTT broker (embedded and server)", inventory: [], inventory_mode: 'no-package-manifest (C)'}
+  - {id: tasmota,       repo: arendst/Tasmota,           ecosystem: c,     role: "ESP device firmware", inventory: [], inventory_mode: 'no-package-manifest (C/PlatformIO)'}
+  - {id: pihole-ftl,    repo: pi-hole/FTL,               ecosystem: c,     role: "DNS/DHCP appliance daemon", inventory: [], inventory_mode: 'no-package-manifest (C)'}
+  # --- Rust / Erlang ---------------------------------------------------------------------
+  - {id: influxdb3,     repo: influxdata/influxdb,       ecosystem: cargo, role: "IoT time-series database (v3, Rust)", tag_pattern: '^v3\.\d+\.\d+$', inventory: ['^Cargo\.lock$'], inventory_mode: 'lockfile'}
+  - {id: emqx,          repo: emqx/emqx,                 ecosystem: hex,   role: "IoT MQTT broker platform", inventory: [], inventory_mode: 'resolve-in-ci (rebar3, no committed lock)'}
+
+# Screened out before freezing (with reason), for transparency:
+excluded:
+  - {repo: mochi-mqtt/server, reason: "inactive: last stable release 2025-03-01 (> 6 months before freeze)"}
+  - {repo: bytebeamio/rumqtt, reason: "component-prefixed tags; daemon (rumqttd) had 1 release in window"}
+  - {repo: domoticz/domoticz, reason: "19 tags only; irregular release practice"}

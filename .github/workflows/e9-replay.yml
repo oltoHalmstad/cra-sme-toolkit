@@ -1,0 +1,117 @@
+# E9 retrospective release replay (research workflow; manual trigger).
+# Runs where OSV, CISA KEV and package registries are reachable. ~1–3 h on GitHub-hosted runners.
+# Output: artifact "e9-results" (CSV results, data cache with fetch timestamps, executed notebook 08).
+name: e9-replay
+on:
+  workflow_dispatch:
+    inputs:
+      include_dev:
+        description: "Also count dev dependencies (sensitivity analysis)"
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  resolve:
+    # products whose inventory is not a committed lockfile: time-travelled resolution or Syft
+    strategy:
+      fail-fast: false
+      matrix:
+        product: [octoprint, node-red, thingsboard, openhab-core, emqx, mosquitto, tasmota, pihole-ftl]
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - uses: anchore/sbom-action/download-syft@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+      - run: python -m pip install -q -c constraints-ci.txt -e . && python -m pip install -q uv
+      - name: Resolve inventories as of each release date
+        run: python tools/replay/resolve_ci.py --e9 experiments/e9_release_replay --product ${{ matrix.product }}
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: inv-${{ matrix.product }}
+          path: experiments/e9_release_replay/inventories/${{ matrix.product }}*
+          if-no-files-found: warn
+
+  sbom:
+    # E1 at scale: Syft on every release checkout vs the lockfile inventory; SBOMs kept for OpenCRA
+    strategy:
+      fail-fast: false
+      matrix:
+        product: [zigbee2mqtt, node-red, homebridge, zwave-js-ui, home-assistant, esphome, octoprint, frigate,
+                  adguardhome, headscale, traefik, telegraf, evcc, thingsboard, openhab-core, mosquitto, tasmota,
+                  pihole-ftl, influxdb3, emqx]
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - uses: anchore/sbom-action/download-syft@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+      - run: python -m pip install -q -c constraints-ci.txt -e .
+      - run: python tools/replay/sbom_vs_lockfile.py --e9 experiments/e9_release_replay --product ${{ matrix.product }} --out sbom-results
+      - name: Keep Syft SBOMs
+        run: mkdir -p sboms && for d in /tmp/e9-sbom/*/; do b=$(basename "$d"); [ -f "$d/syft.cdx.json" ] && cp "$d/syft.cdx.json" "sboms/$b.cdx.json"; done; ls sboms | wc -l
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: sbom-${{ matrix.product }}
+          path: |
+            sbom-results/
+            sboms/
+
+  replay:
+    needs: [resolve, sbom]
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -q -c constraints-ci.txt -e ".[test,notebooks]" && python -m ipykernel install --user
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: inv-*
+          path: experiments/e9_release_replay/inventories
+          merge-multiple: true
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: sbom-*
+          path: e9-sbom
+          merge-multiple: true
+      - name: Fetch OSV / KEV / registry data (fails if KEV unavailable)
+        run: python tools/replay/fetch_data.py --inventories experiments/e9_release_replay/inventories --cache e9-cache ${{ inputs.include_dev && '--include-dev' || '' }}
+      - name: Replay all releases (offline from cache)
+        run: python tools/replay/run_replay.py --e9 experiments/e9_release_replay --cache e9-cache --out e9-results ${{ inputs.include_dev && '--include-dev' || '' }}
+      - name: OpenCRA head-to-head (current knowledge) + fail-safe probes
+        run: tools/replay/opencra_compare.sh e9-sbom/sboms e9-results/opencra
+      - name: Analysis notebook on real results
+        env:
+          E9_RESULTS: ${{ github.workspace }}/e9-results
+        run: |
+          if ls e9-sbom/sbom-results/*.csv >/dev/null 2>&1; then cp e9-sbom/sbom-results/*.csv e9-results/; fi
+          python tools/run_notebooks.py notebooks/08_release_replay_E9.ipynb
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: e9-results
+          path: |
+            e9-results/
+            e9-cache/kev.json
+            e9-cache/MANIFEST.json
+            experiments/e9_release_replay/inventories/
+            notebooks/08_release_replay_E9.ipynb
+          retention-days: 90
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: e9-osv-cache
+          path: e9-cache/
+          retention-days: 90

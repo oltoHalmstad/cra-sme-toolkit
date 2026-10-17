@@ -1,0 +1,1 @@
+{"SYNTHETIC": true, "note": "invented vulnerability records for offline pipeline tests", "picks": [["Go", "golang.org/x/net"], ["npm", "express"], ["npm", "ws"]]}

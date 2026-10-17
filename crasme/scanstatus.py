@@ -95,8 +95,9 @@ def validate_output(kind: str, path: str | Path) -> tuple[str, str | None, int |
     if kind == "osv":
         if not isinstance(doc.get("results"), list):
             return INVALID, "NOT_OSV_REPORT", None
-        if not doc["results"]:
-            return INVALID, "NO_TARGETS", 0
+        # OSV-Scanner lists only sources WITH vulnerabilities, so `results: []` is a legitimate clean
+        # result. Emptiness of the scanned inventory is caught by the SBOM check (EMPTY_SBOM) and the
+        # vulns<->SBOM input binding (SCAN_INPUT_UNBOUND) in crasme.gate.
         n = sum(len(pk.get("vulnerabilities") or []) for r in doc["results"] for pk in r.get("packages") or [])
         return OK, None, n
     if kind == "sarif":

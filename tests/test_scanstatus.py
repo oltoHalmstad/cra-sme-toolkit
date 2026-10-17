@@ -24,7 +24,7 @@ def w(p, obj):
     ("trivy", {"Results": []}, ss.INVALID, "NOT_TRIVY_REPORT"),
     ("trivy", {"SchemaVersion": 2, "ArtifactName": "x", "Results": None}, ss.INVALID, "NO_TARGETS"),
     ("trivy", {"SchemaVersion": 2, "ArtifactName": "x", "Results": [{"Target": "sbom"}]}, ss.OK, None),
-    ("osv", {"results": []}, ss.INVALID, "NO_TARGETS"),
+    ("osv", {"results": []}, ss.OK, None),      # OSV-Scanner omits clean sources
     ("cyclonedx", {"bomFormat": "CycloneDX", "components": []}, ss.INVALID, "EMPTY_SBOM"),
     ("cyclonedx", {"bomFormat": "SPDX"}, ss.INVALID, "NOT_CYCLONEDX"),
     ("osv", {"results": "nope"}, ss.INVALID, "NOT_OSV_REPORT"),

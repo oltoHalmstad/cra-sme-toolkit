@@ -1,6 +1,6 @@
 # CRA-SME experiment programme (proposal v1.1)
 
-Eight experiments operationalise RQ1–RQ5 and the §8 metrics of the concept note. E1, E2, E4 and E5 can begin in the lab before any SME is recruited. E3 and E6–E8 need participants.
+Nine experiments operationalise RQ1–RQ5 and the §8 metrics of the concept note. E1, E2, E4 and E5 can begin in the lab before any SME is recruited. E3 and E6–E8 need participants.
 
 | ID | Experiment | RQ | Type | Primary measure | Notebook | Status |
 |---|---|---|---|---|---|---|
@@ -12,6 +12,7 @@ Eight experiments operationalise RQ1–RQ5 and the §8 metrics of the concept no
 | E6 | Effort / cost time-and-motion study | RQ2 | Pilot, baseline vs post | Staff hours per product and per release; setup cost | 06 | Data template ready |
 | E7 | Seeded-vulnerability false-assurance study | RQ4 | Lab, deliberately vulnerable targets | Share of seeded Annex I violations missed by automated pass | 07 | Gate-level seeded faults done; product-level seeds (Juice Shop, IoTGoat) still to run |
 | E8 | Usability and adoption (SUS, interviews, UTAUT constructs) | RQ5 | Mixed methods | SUS, task success, coded themes | 06 | Instruments ready |
+| **E9** | **Retrospective release replay on 20 real open-source IoT/network products (144 releases)** | RQ4 + head-to-head | Real-world retrospective study | Silent-pass rate, KEV-at-release share, inventory drift, exposure windows, OpenCRA fail-safe probes | 08 | **Sample, inventories and drift are real and done**; vulnerability replay runs in CI (`e9-replay` workflow) |
 
 Common rules for every experiment:
 - Pin tool versions and record provenance with `crasme.provenance`. Scan only assets you own or are authorised to test.

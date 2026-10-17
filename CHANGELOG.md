@@ -1,4 +1,22 @@
 # Changelog
+## Unreleased (1.3.0-dev): E9 real-world release replay
+- **Added E9** (`experiments/e9_release_replay/`): a frozen sample of 20 open-source IoT and network products and 144 real releases (2024Q4–2026Q3), selected from git history with a pre-registered rule. It also includes lockfile inventories for 94 releases (47,363 component-versions), coverage classification for all 144, and `PREREGISTRATION.md` (H9a–H9f).
+- **Added `crasme.replay`:**
+  - lockfile parsers (npm, pnpm, yarn, go.sum, Cargo.lock, requirements, rebar.lock)
+  - ecosystem-aware version ordering, including Maven padding rules
+  - OSV affected-range evaluation and as-of-date "time-travel"
+  - KEV `dateAdded` filtering
+  - a CVSS v3.1 base-score calculator checked against reference vectors
+  - baseline gates, and bundles that run the real engine on replayed data
+- **Added `crasme.gate` `scope="security"`** for research replay. It checks only scans and findings, reports `SCOPE_SECURITY_ONLY`, and is never eligible for conformity review; the schema is updated to match.
+- **Added `tools/replay/`:** release selection, inventory extraction, time-travelled CI resolution (uv `--exclude-newer`, npm `--before`, Maven, Syft), data fetching with fail-safe KEV handling, the offline replay runner, Syft-vs-lockfile comparison, and the OpenCRA 0.1.6 head-to-head and fail-safe probes.
+- **Added `.github/workflows/e9-replay.yml`:** a SHA-pinned matrix workflow (resolve → sbom → replay).
+- **Added notebook 08.** Coverage and drift use real data. The vulnerability sections use a labelled **synthetic** cache until the CI run.
+- **Changed:** an OSV report with `results: []` is now a valid clean result. OSV-Scanner omits clean sources, and an empty inventory is caught by the SBOM check and the input binding instead.
+- **Real results so far:**
+  - Median Jaccard between consecutive quarterly releases is 0.51, and 91% of transitions change more than 10% of components.
+  - 17 C/firmware releases have no package manifest at all.
+
 ## 1.2.0 — 17 Oct 2026
 This release implements `docs/reviews/v1.1-to-v1.2-improvement-recommendations.md`. Status per item: `docs/v1.2-implementation-status.md`.
 - **P0-01 Fail-safe scans.**

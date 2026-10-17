@@ -42,6 +42,11 @@ crasme-gate --bundle examples/demo-release --policy examples/demo-policy.yaml --
 python tools/mutation_suite.py        # 69 seeded faults: false-green 0/69 (legacy v1.1: 63/69)
 ```
 
+## In development (1.3.0-dev): E9, a real-world release replay
+The toolkit is replayed on **20 open-source IoT and network products and 144 real releases**. The question is what each gate would have decided at each release date. See `experiments/e9_release_replay/` and notebook 08.
+
+The sample, inventories and drift results are real. The vulnerability replay runs in the `e9-replay` GitHub Actions workflow, because it needs OSV and KEV access.
+
 ## What is new in v1.2
 | Path | What it is |
 |---|---|

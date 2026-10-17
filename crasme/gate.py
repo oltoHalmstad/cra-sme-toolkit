@@ -53,6 +53,7 @@ REASON_CODES = {
     "PRODUCT_RECORD_MISSING": (SEV_REVIEW, "product.json missing or invalid"),
     "PRODUCT_RECORD_MISMATCH": (SEV_REVIEW, "product.json does not match the build/product expected by CI"),
     "ENGINE_ERROR": (SEV_REVIEW, "decision engine or configuration error; no automated approval possible"),
+    "SCOPE_SECURITY_ONLY": (SEV_INFO, "security-only evaluation: obligations, evidence manifest and approvals NOT assessed"),
     "POLICY_BELOW_MINIMUM": (SEV_REVIEW, "policy weakens a minimum safeguard (floor re-applied)"),
     "CATALOGUE_NOT_PINNED": (SEV_REVIEW, "policy does not pin the obligation catalogue digest"),
     "CATALOGUE_DIGEST_MISMATCH": (SEV_REVIEW, "obligation catalogue differs from the pinned digest"),
@@ -210,7 +211,10 @@ def catalogue_digest(catalogue: list[dict]) -> str:
 
 class Engine:
     def __init__(self, bundle: str | Path, policy: dict, as_of: datetime, catalogue: list[dict],
-                 expect_build: str | None = None, expect_product: str | None = None):
+                 expect_build: str | None = None, expect_product: str | None = None, scope: str = "full"):
+        if scope not in ("full", "security"):
+            raise ValueError("scope must be 'full' or 'security'")
+        self.scope = scope
         self.bundle = Path(bundle)
         self.policy = json.loads(json.dumps(policy))   # never mutate the caller's policy
         self.as_of = (as_of if as_of.tzinfo else as_of.replace(tzinfo=timezone.utc)).astimezone(timezone.utc)
@@ -665,6 +669,13 @@ class Engine:
 
     # -- run ------------------------------------------------------------------
     def run(self) -> dict:
+        if self.scope == "security":
+            # research/replay use (E9): scan + finding checks only; never eligible for conformity review
+            self.add("SCOPE_SECURITY_ONLY")
+            self.check_policy_security()
+            if self.check_product():
+                self.check_findings(self.check_scans())
+            return self.decision()
         self.check_policy()
         if self.check_product():
             outputs = self.check_scans()
@@ -673,6 +684,18 @@ class Engine:
             self.check_obligations()
             self.check_approvals()
         return self.decision()
+
+    def check_policy_security(self) -> None:
+        """Scan/finding floors only (catalogue, approvals and obligations are out of scope)."""
+        pol = self.policy
+        for key, minimum in (("required_scans", MIN_REQUIRED_SCANS), ("untriaged_review_severities", MIN_REVIEW_SEVERITIES)):
+            have = set(pol.get(key) or [])
+            if not minimum <= have:
+                self.add("POLICY_BELOW_MINIMUM", f"{key} lacks {sorted(minimum - have)}", [key])
+                pol[key] = sorted(have | minimum)
+        if not isinstance(pol.get("kev_min_entries"), int) or pol["kev_min_entries"] <= 0:
+            self.add("POLICY_BELOW_MINIMUM", "kev_min_entries must be a positive integer", ["kev_min_entries"])
+            pol["kev_min_entries"] = DEFAULT_POLICY["kev_min_entries"]
 
     def decision(self) -> dict:
         sev = {r.severity for r in self.reasons}
@@ -696,7 +719,8 @@ class Engine:
             "reasons": [r.code for r in reasons if r.severity != SEV_INFO],
             "details": [r.to_dict() for r in reasons],
             "stats": self.stats,
-            "eligible_for_human_conformity_review": verdict == PASS,
+            "scope": self.scope,
+            "eligible_for_human_conformity_review": verdict == PASS and self.scope == "full",
             "legal_conformity": "NOT_DETERMINED_BY_TOOL",
             "as_of": self.as_of.isoformat(timespec="seconds"),
             "timestamp_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -714,12 +738,12 @@ def load_catalogue(path: str | Path = CATALOGUE_PATH) -> list[dict]:
 
 def evaluate(bundle: str | Path, policy: dict | None = None, as_of: datetime | None = None,
              catalogue: list[dict] | None = None, expect_build: str | None = None,
-             expect_product: str | None = None) -> dict:
+             expect_product: str | None = None, scope: str = "full") -> dict:
     as_of = as_of or datetime.now(timezone.utc)
     pol = policy if policy is not None else load_policy(None)
     try:
         return Engine(bundle, pol, as_of, catalogue if catalogue is not None else load_catalogue(),
-                      expect_build, expect_product).run()
+                      expect_build, expect_product, scope).run()
     except Exception as e:  # fail safe: never PASS on engine error
         eng = Engine(bundle, pol if isinstance(pol, dict) else {}, as_of, [])
         eng.add("ENGINE_ERROR", f"{type(e).__name__}: {e}")
