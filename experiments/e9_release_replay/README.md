@@ -2,6 +2,8 @@
 
 **Pre-registration:** https://doi.org/10.5281/zenodo.23438234 (see REGISTRATION.md).
 
+**Results (registered run 39047161461):** [results/run-39047161461/RESULTS.md](results/run-39047161461/RESULTS.md)
+
 **Sample:** 20 products and 144 real releases (2024Q4–2026Q3), frozen from git history on 17 Oct 2026.
 
 | File | Content | Real? |

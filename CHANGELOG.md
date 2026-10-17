@@ -25,6 +25,15 @@
   - Median Jaccard between consecutive quarterly releases is 0.51, and 91% of transitions change more than 10% of components.
   - 17 C/firmware releases have no package manifest at all.
 
+- **E9 run on real data (registered run 39047161461):** 144 releases, 5,899 packages, 4,958 OSV records, 0 unfetched.
+  - H9a is partly refuted: the gate passes 19/25 declared-incomplete inventories.
+  - H9b is not supported: 0 of 119 releases shipped a vulnerability already KEV-listed.
+  - H9c is supported: median Jaccard 0.53.
+  - H9d is supported: median exposure 50 days.
+  - H9e is supported: 62% REVIEW.
+  - H9f is supported: OpenCRA exits clean on an empty or malformed SBOM.
+  - Added `tools/replay/analyze_e9.py`, `crasme/validation.py` and the rater sheets.
+
 ## 1.2.0 — 17 Oct 2026
 This release implements `docs/reviews/v1.1-to-v1.2-improvement-recommendations.md`. Status per item: `docs/v1.2-implementation-status.md`.
 - **P0-01 Fail-safe scans.**

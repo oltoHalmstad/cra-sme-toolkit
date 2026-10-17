@@ -1,0 +1,8 @@
+{
+  "catalogVersion": "2026.10.16",
+  "count": 1748,
+  "source": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+  "fetched_at": "2026-10-17T16:00:33+00:00",
+  "sha256_of_fetched_json": "d908e7f5b439191c4d82b26b35620ee4c02ee3fc126ae3bc93ac27c4b5a9cb9c",
+  "full_copy": "branch e9-results-run-39047161461 (e9-results/kev.json); also cisagov/kev-data git history"
+}

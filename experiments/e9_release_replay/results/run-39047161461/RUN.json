@@ -1,0 +1,16 @@
+{
+  "run_at": "2026-10-17T16:18:18+00:00",
+  "releases": 144,
+  "include_dev": false,
+  "cache_manifest": {
+    "fetched_at": "2026-10-17T16:18:05+00:00",
+    "packages": 5899,
+    "osv_records": 4958,
+    "kev_entries": 1748,
+    "kev_catalog_version": "2026.10.16",
+    "kev_source": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+    "osv_index_unfetched_packages": [],
+    "osv_unfetched_records": [],
+    "include_dev": false
+  }
+}

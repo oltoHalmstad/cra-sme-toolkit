@@ -1,0 +1,15 @@
+5899 unique packages
+osv index 500/5899
+osv index 1000/5899
+osv index 1500/5899
+osv index 2000/5899
+osv index 2500/5899
+osv index 3000/5899
+osv index 3500/5899
+osv index 4000/5899
+osv index 4500/5899
+osv index 5000/5899
+osv index 5500/5899
+osv index 5899/5899
+osv vulns pass 1: 4958/4958 ok
+osv vulns: 4958 indexed, 0 unfetched (their packages count as unassessed)

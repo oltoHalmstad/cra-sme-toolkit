@@ -1,0 +1,9 @@
+product_id,tag,syft_status,lockfile_n,syft_n,both,recall_vs_lockfile,precision_vs_lockfile,syft_only,error
+thingsboard,v3.9,ok,0,1890,0,,0.0,1890,
+thingsboard,v3.9.1,ok,0,1890,0,,0.0,1890,
+thingsboard,v4.0.1,ok,0,1683,0,,0.0,1683,
+thingsboard,v4.2,ok,0,1632,0,,0.0,1632,
+thingsboard,v4.2.1.1,ok,0,1687,0,,0.0,1687,
+thingsboard,v4.3.1.1,ok,0,1736,0,,0.0,1736,
+thingsboard,v4.3.1.3,ok,0,1781,0,,0.0,1781,
+thingsboard,v4.4,ok,0,1960,0,,0.0,1960,

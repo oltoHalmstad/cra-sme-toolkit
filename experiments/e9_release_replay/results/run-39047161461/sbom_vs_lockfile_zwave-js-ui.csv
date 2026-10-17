@@ -1,0 +1,9 @@
+product_id,tag,syft_status,lockfile_n,syft_n,both,recall_vs_lockfile,precision_vs_lockfile,syft_only,error
+zwave-js-ui,v9.29.0,ok,444,445,444,1.0,0.9977528089887641,1,
+zwave-js-ui,v10.1.3,ok,414,415,414,1.0,0.9975903614457832,1,
+zwave-js-ui,v10.7.0,ok,415,416,415,1.0,0.9975961538461539,1,
+zwave-js-ui,v11.3.1,ok,602,603,602,1.0,0.9983416252072969,1,
+zwave-js-ui,v11.9.1,ok,593,594,593,1.0,0.9983164983164983,1,
+zwave-js-ui,v11.15.1,ok,588,589,588,1.0,0.99830220713073,1,
+zwave-js-ui,v11.21.1,ok,437,438,437,1.0,0.997716894977169,1,
+zwave-js-ui,v11.24.2,ok,449,450,449,1.0,0.9977777777777778,1,
