@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "engine": "crasme.gate 1.1.0",
+  "engine": "crasme.gate 1.2.0",
   "product_id": "DEMO-001",
   "product_version": "1.2.0",
   "build_sha": "3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d3f2c9e1d",
@@ -14,13 +14,14 @@
       "code": "LEGAL_MAPPING_REVIEW_PENDING",
       "severity": "REVIEW",
       "description": "in-force mandatory obligation(s) without verified legal mapping",
-      "detail": "38 row(s)",
+      "detail": "39 row(s)",
       "refs": [
         "CA-01",
         "DOC-01",
         "DOC-EU-01",
         "ID-01",
         "OP-01",
+        "OSS-01",
         "P1-01",
         "P1-a",
         "P1-b",
@@ -58,13 +59,15 @@
     }
   ],
   "stats": {
+    "catalogue_sha256": "804e41c6e15313ee1f88e485922a692f0b722cc72e2860d62e96c797b0dddce6",
     "scans_recorded": 3,
     "scans_ok": 3,
     "findings_unique": 1,
     "kev_hits": 0,
+    "secret_findings": 0,
     "evidence_records": 40,
     "evidence_valid": 40,
-    "mandatory_obligations_in_force": 38,
+    "mandatory_obligations_in_force": 39,
     "mandatory_obligations_not_yet_in_force": 0
   },
   "eligible_for_human_conformity_review": false,
@@ -72,7 +75,7 @@
   "as_of": "2027-12-20T12:00:00+00:00",
   "timestamp_utc": "2027-12-20T12:00:00+00:00",
   "input_digests": {
-    "approvals.json": "9468fd00776478d96b366933cb5ea43ecb7f3c44da6c97791cdb7a62d2bea698",
+    "approvals.json": "da1e2c668b7f89f08a83ec807c7ec70056d279d0e3c3224d7dc45de283430265",
     "evidence-CA-01.md": "5174dc4e45250713f3ef514386f01bde8c9205c35c35ccaffc4a082c2ea4ee03",
     "evidence-DOC-01.md": "c926979e060e9b08b32590d85423c34daa5cb8644ee1a5fe57a10ce620244b95",
     "evidence-DOC-EU-01.md": "28407f03b283c0672485f4763bc0d1d72c832cb8c095324ddfaa9f5c906daaef",
@@ -112,15 +115,15 @@
     "evidence-TD-02.md": "0419ace66f6f83ddd063cb78efcfeec6f54077776a35e2457eb8b207a11d11f1",
     "evidence-UI-01.md": "88c85b78bd6e41e0be258bd9938b5627b5937a9cc56b4201f50970dc1cb44304",
     "evidence-manifest.json": "c7e5d8486bcb030f6c42769aa73d46ab909414b42bb44bc274df4970089ba1f9",
-    "kev.json": "132a66dd2057eaba1fc543b371a29ca95e8b3baf2f17d1610b18e5bcb9dbe0a9",
+    "kev.json": "b13f6e680c42450e726d965ee15fba5a5831922d0beff8fe26adb5ea67caafa8",
     "product.json": "fbdcf02954754014373a18409afd609eac2a68449efec72dd822aaf61bf77887",
     "sbom.cdx.json": "d01efbba89248619c94f7088d1f4ea0a50e3088a2aacb51cd2044413bb506f3c",
-    "scan-status.json": "75d56a36e2ef6ba7abcde8240bc40fe068319eab00f5046945a32dd0bc37e0e7",
+    "scan-status.json": "e3cae1548e63c9540a5180bd1cb9201f145d8f899e4123edbc29d9f89e463993",
     "trace-units.json": "7940aadf505a4af7c07cc617ea3ab63780f5fbd194a7cb5818697f5e9e2eccb4",
     "vex.json": "8a356221b389609e1946e5babd27484653d1bb522c7368b9a48406f06ff8232c",
     "vulns.json": "5ee48dd4f31665067f39891c6cea8c9587a775180f358481a94bdd13af8c96c3"
   },
-  "bundle_digest": "014763853fb69cd99e13b9ccf3ce324d528047fb20b88ad014daa5fbe6f36500",
-  "policy_digest": "4116539a66ec200dd53fe5d5564defc9c33de42d9265c8b67c24d0461f30d8bb",
+  "bundle_digest": "b80c9ea8f093dee080e42eb318f53bba89475022d50a6e95dd2d4b245efe9f84",
+  "policy_digest": "d8f764f2468063d76e40d3b57dc00e6890d0bd8fd61f6d9ea822ff4034380eab",
   "disclaimer": "Automated evidence check only. Not legal advice and not a conformity assessment."
 }

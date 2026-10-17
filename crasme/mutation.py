@@ -43,7 +43,8 @@ def _scan(b: Path, name: str, **kw):
 
 def _rescan(b: Path, name, tool, kind, fname, exit_code=0):
     m = ScanManifest.load(b / "scan-status.json")
-    record_scan(m, name, tool, kind, b / fname, exit_code)
+    record_scan(m, name, tool, kind, b / fname, exit_code,
+                inputs=[b / "sbom.cdx.json"] if name == "vulns" and (b / "sbom.cdx.json").exists() else None)
     m.save(b / "scan-status.json")
 
 
@@ -205,6 +206,93 @@ _m("M37", "bundle", "trace-units.json corrupted (engine error path)", REVIEW, "E
     lambda b, c, p: (b / "trace-units.json").write_text("[{not json"))
 
 
+# --- added after adversarial review (v1.2) ------------------------------------------
+_m("M38", "policy", "Policy removes the KEV feed from required scans", REVIEW, "POLICY_BELOW_MINIMUM")(
+    lambda b, c, p: p.update(required_scans=["sbom", "vulns"]))
+_m("M39", "policy", "Policy requires no human approval", REVIEW, "POLICY_BELOW_MINIMUM")(
+    lambda b, c, p: p.update(required_approval_roles=[]))
+_m("M40", "obligation", "Obligation cites a valid evidence file declared for another requirement", REVIEW, "OBLIGATION_EVIDENCE_MISATTRIBUTED")(
+    lambda b, c, p: _units(b, lambda u: _first_applicable(u).update(evidence_sha256=_j(b / "evidence-manifest.json")["records"][0]["evidence_sha256"])))
+_m("M41", "obligation", "Duplicate trace units: a failed one shadowed by a verified one", REVIEW, "TRACE_UNIT_DUPLICATE")(
+    lambda b, c, p: _units(b, lambda u: u.insert(0, dict(_first_applicable(u), status="failed"))))
+_m("M42", "obligation", "Catalogue row with unparsable application date", REVIEW, "CATALOGUE_ROW_INVALID")(
+    lambda b, c, p: next(r for r in c if r["req_id"] == "P1-b").update(applies_from="TBD"))
+_m("M43", "approval", "Approval without expiry date", REVIEW, "APPROVAL_NO_EXPIRY")(
+    lambda b, c, p: _approval(b, "product_owner", expires_at=None))
+_m("M44", "approval", "Valid approval plus a later revocation for the same build", REVIEW, "APPROVAL_REVOKED")(
+    lambda b, c, p: (lambda a: (a.append(dict(next(x for x in a if x["role"] == "security_lead"), revoked=True)),
+                                _w(b / "approvals.json", a)))(_j(b / "approvals.json")))
+_m("M45", "scan", "Scan recorded OK but without output digest", REVIEW, "SCAN_RECORD_INCOMPLETE")(
+    lambda b, c, p: _scan(b, "vulns", output_digest=None))
+
+
+# --- added after independent adversarial review (v1.2) -------------------------------
+def _resign(b, name, fname):
+    m = ScanManifest.load(b / "scan-status.json")
+    for sc in m.scans:
+        if sc.name == name:
+            sc.output_path = fname
+            sc.output_digest = __import__("hashlib").sha256((b / fname).read_bytes()).hexdigest()
+    m.save(b / "scan-status.json")
+
+
+_m("M46", "scan", "KEV record re-pointed at vulns.json with recomputed digest", REVIEW, "KEV_FEED_UNAVAILABLE")(
+    lambda b, c, p: _resign(b, "kev", "vulns.json"))
+_m("M47", "scan", "KEV feed emptied and digest recomputed (status left OK)", REVIEW, "KEV_FEED_UNAVAILABLE")(
+    lambda b, c, p: (_w(b / "kev.json", {"catalogVersion": "x", "vulnerabilities": []}), _resign(b, "kev", "kev.json")))
+_m("M48", "scan", "Trivy report with no targets (Results: [])", REVIEW, "SCAN_OUTPUT_INVALID")(
+    lambda b, c, p: (_w(b / "vulns.json", {"SchemaVersion": 2, "ArtifactName": "sbom", "Results": []}),
+                     _resign(b, "vulns", "vulns.json"), _refresh_manifest_hash(b, "vulns.json")))
+_m("M49", "scan", "Vulnerability scan not bound to this bundle's SBOM", REVIEW, "SCAN_INPUT_UNBOUND")(
+    lambda b, c, p: _scan(b, "vulns", input_digest="0" * 64))
+_m("M50", "scan", "Scan snapshot two years old", REVIEW, "SCAN_STALE")(
+    lambda b, c, p: _scan(b, "vulns", finished_at="2025-12-01T00:00:00+00:00"))
+_m("M51", "finding", "Secret detected by the fs scan", REVIEW, "SECRET_FINDING")(
+    lambda b, c, p: (lambda m: (_w(b / "trivy-fs.json", {"SchemaVersion": 2, "ArtifactName": ".", "Results": [
+        {"Target": "app/config.py", "Secrets": [{"RuleID": "aws-access-key-id", "StartLine": 3, "Match": "***REDACTED***"}]}]}),
+        record_scan(m, "fs", "trivy", "trivy", b / "trivy-fs.json"), m.save(b / "scan-status.json")))(ScanManifest.load(b / "scan-status.json")))
+_m("M52", "finding", "VEX 'fixed' while the scan still detects the KEV vulnerability", REVIEW, "VEX_CONTRADICTS_SCAN")(
+    lambda b, c, p: _add_kev_finding(b, "fixed"))
+_m("M53", "finding", "VEX statement for another product", REVIEW, "KEV_TRIAGE_PENDING")(
+    lambda b, c, p: (_add_kev_finding(b), _w(b / "vex.json", {"statements": [{"vulnerability": {"name": FAKE_KEV_ID},
+        "products": [{"@id": "OTHER-002"}], "status": "not_affected", "justification": "component_not_present"}]})))
+_m("M54", "finding", "Finding identified only by GHSA id (KEV status unknowable)", REVIEW, "KEV_STATUS_UNKNOWN")(
+    lambda b, c, p: (lambda v: (v["Results"][0]["Vulnerabilities"].append({"VulnerabilityID": "GHSA-xxxx-yyyy-zzzz", "PkgName": "lodash",
+        "InstalledVersion": "4.17.21", "Severity": "LOW"}), _w(b / "vulns.json", v), _rescan(b, "vulns", "trivy", "trivy", "vulns.json"),
+        _refresh_manifest_hash(b, "vulns.json")))(_j(b / "vulns.json")))
+_m("M55", "obligation", "Conditional obligation without any decision", REVIEW, "APPLICABILITY_DECISION_MISSING")(
+    lambda b, c, p: _units(b, lambda u: u.remove(next(x for x in u if x["requirement_id"] == "OSS-01"))))
+_m("M56", "obligation", "N/A decision bound to another product/build", REVIEW, "OBLIGATION_EVIDENCE_WRONG_BUILD")(
+    lambda b, c, p: _units(b, lambda u: _first_applicable(u).update(applicable=False, status="not_applicable",
+                                                                     product_id="OTHER", build_id="0" * 40)))
+_m("M57", "obligation", "Obligation review timestamp before the evidence existed", REVIEW, "OBLIGATION_REVIEW_INVALID")(
+    lambda b, c, p: _units(b, lambda u: _first_applicable(u).update(reviewed_at="2020-01-01T00:00:00Z")))
+_m("M58", "obligation", "One evidence record claimed for every obligation", REVIEW, "EVIDENCE_OVERCLAIMED")(
+    lambda b, c, p: _evidence(b, lambda r: r[0].update(requirement_ids=[x["requirement_id"] for x in _j(b / "trace-units.json")])))
+_m("M59", "catalogue", "Catalogue edited without updating the pinned digest", REVIEW, "CATALOGUE_DIGEST_MISMATCH")(
+    lambda b, c, p: next(r for r in c if r["req_id"] == "P1-j").update(mandatory="N"))
+_m("M60", "catalogue", "Catalogue gate value mistyped", REVIEW, "CATALOGUE_ROW_INVALID")(
+    lambda b, c, p: next(r for r in c if r["req_id"] == "P1-k").update(gate="Pre-market"))
+_m("M61", "policy", "Policy disables verified-legal-mapping requirement", REVIEW, "POLICY_BELOW_MINIMUM")(
+    lambda b, c, p: p.update(require_verified_legal_mapping=False))
+_m("M62", "policy", "Policy does not pin the catalogue", REVIEW, "CATALOGUE_NOT_PINNED")(
+    lambda b, c, p: p.update(catalogue_sha256=None))
+_m("M63", "evidence", "Evidence declares lockfile digest but product record has none", REVIEW, "EVIDENCE_INPUT_UNVERIFIABLE")(
+    lambda b, c, p: (lambda pr: (pr.pop("input_digests"), _w(b / "product.json", pr)))(_j(b / "product.json")))
+_m("M64", "evidence", "Evidence timestamp in the future", REVIEW, "EVIDENCE_TIMESTAMP_INVALID")(
+    lambda b, c, p: _evidence(b, lambda r: r[9].update(generated_at="2099-01-01T00:00:00+00:00")))
+_m("M65", "approval", "Approval for the same build but another product", REVIEW, "APPROVAL_WRONG_BUILD")(
+    lambda b, c, p: _approval(b, "product_owner", product_id="OTHER-999"))
+_m("M66", "approval", "One person holds both approval roles", REVIEW, "APPROVAL_SAME_REVIEWER")(
+    lambda b, c, p: _approval(b, "product_owner", reviewer="S. Lead"))
+_m("M67", "approval", "Approval valid for 20 years", REVIEW, "APPROVAL_INVALID")(
+    lambda b, c, p: _approval(b, "security_lead", expires_at="2047-12-19T12:00:00+00:00"))
+_m("M68", "approval", "Approval dated after the assessment time", REVIEW, "APPROVAL_INVALID")(
+    lambda b, c, p: _approval(b, "security_lead", approved_at="2030-01-01T00:00:00+00:00"))
+_m("M69", "bundle", "product.json does not match the CI build (expect-build)", REVIEW, "PRODUCT_RECORD_MISMATCH")(
+    lambda b, c, p: p.update(_expect_build="f" * 40))
+
+
 def legacy_v11_decision(b: Path) -> str:
     """Decision the v1.1 CI gate (tools/legacy/ci_gate_v1_1.py) would reach on the same bundle.
 
@@ -238,7 +326,8 @@ def run_suite(out_csv: str | Path | None = None) -> dict:
             c = [dict(r) for r in cat]
             p = json.loads(json.dumps(pol))
             m.apply(d, c, p)
-            res = evaluate(d, p, as_of, c)
+            eb = p.pop("_expect_build", None)
+            res = evaluate(d, p, as_of, c, expect_build=eb)
             legacy = legacy_v11_decision(d)
             rows.append({"legacy_v11_decision": legacy, "legacy_v11_false_green": legacy == PASS,"mutation": m.mid, "category": m.category, "description": m.description,
                          "expected_decision": m.expect_decision, "decision": res["decision"],

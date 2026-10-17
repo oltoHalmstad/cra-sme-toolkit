@@ -5,8 +5,10 @@ This release implements `docs/reviews/v1.1-to-v1.2-improvement-recommendations.m
   - `crasme.scanstatus` and `tools/run_scan.py` write explicit execution-status records with output validation: empty or truncated KEV feed, malformed JSON, empty SBOM, documented exit codes, timeouts.
   - `automation/security-scan.v1.2.yml` replaces the v1.1 workflow. It has no `|| true`, no `continue-on-error` and no empty-KEV fallback.
 - **P0-02 Single release decision.**
-  - `crasme.gate` (CLI `crasme-gate`, `tools/ci_gate.py`) decides PASS / FAIL / REVIEW_REQUIRED, with 38 reason codes, bundle and policy digests, and a JSON Schema.
+  - `crasme.gate` (CLI `crasme-gate`, `tools/ci_gate.py`) decides PASS / FAIL / REVIEW_REQUIRED, with 64 reason codes, bundle and policy digests, and a JSON Schema.
   - PASS means only that the build is eligible for human conformity review.
+  - Policy floors cannot be lowered, the catalogue is pinned by digest, and `--expect-build`/`--expect-product` bind the decision to the CI run.
+  - Hardened after an independent adversarial review, which found 30 false-PASS inputs in the first draft; all were fixed and kept as `tests/test_adversarial.py`.
   - `policy.example.yaml` added.
 - **P0-03 Catalogue legal QA.**
   - Catalogue v1.2.0 adds legal-status, source, reviewer, rationale, requirement-kind and operator-role metadata. All rows are `unverified`.
@@ -24,7 +26,7 @@ This release implements `docs/reviews/v1.1-to-v1.2-improvement-recommendations.m
 - **P2.**
   - E1 `benchmark-manifest.yaml`.
   - E3 Latin-square allocation and pre-registered analysis (`crasme.e3`, `experiments/e3_rater_study/`).
-  - Seeded-fault suite `crasme.mutation` / `tools/mutation_suite.py`, with results in `experiments/e4_e7_gate_mutation/` and notebook 07. The v1.2 false-green rate is 0/37; the legacy v1.1 gate's is 33/37.
+  - Seeded-fault suite `crasme.mutation` / `tools/mutation_suite.py`, with results in `experiments/e4_e7_gate_mutation/` and notebook 07. The v1.2 false-green rate is 0/69; the legacy v1.1 gate's is 63/69.
   - Pilot protocol and consent document.
 - **Workbook:** `CRA-SME-Risk-and-Evidence-Calculator-v1.2.xlsx` replaces v1.1. It adds legal-status columns and the anchors sheet. The v1.0 workbook is kept for comparison.
 - **Legacy:** the v1.1 gate has moved to `tools/legacy/` and is kept only as the comparison baseline.

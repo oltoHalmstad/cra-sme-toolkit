@@ -29,10 +29,42 @@ PASS,True,M27,obligation,Obligation recorded as failed,FAIL,FAIL,OBLIGATION_NOT_
 PASS,True,M28,obligation,Obligation evidence not reviewed,REVIEW_REQUIRED,REVIEW_REQUIRED,OBLIGATION_EVIDENCE_INCOMPLETE,True,False,True,False,OBLIGATION_EVIDENCE_INCOMPLETE
 PASS,True,M29,obligation,Obligation evidence from an older build,REVIEW_REQUIRED,REVIEW_REQUIRED,OBLIGATION_EVIDENCE_WRONG_BUILD,True,False,True,True,OBLIGATION_EVIDENCE_WRONG_BUILD
 PASS,True,M30,obligation,Obligation evidence hash not in manifest,REVIEW_REQUIRED,REVIEW_REQUIRED,OBLIGATION_EVIDENCE_NOT_IN_MANIFEST,True,False,True,False,OBLIGATION_EVIDENCE_NOT_IN_MANIFEST
-PASS,True,M31,obligation,One mandatory legal mapping not verified,REVIEW_REQUIRED,REVIEW_REQUIRED,LEGAL_MAPPING_REVIEW_PENDING,True,False,True,False,LEGAL_MAPPING_REVIEW_PENDING
+PASS,True,M31,obligation,One mandatory legal mapping not verified,REVIEW_REQUIRED,REVIEW_REQUIRED,LEGAL_MAPPING_REVIEW_PENDING,True,False,True,False,CATALOGUE_DIGEST_MISMATCH LEGAL_MAPPING_REVIEW_PENDING
 PASS,True,M32,approval,Security-lead approval expired,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_EXPIRED,True,False,True,False,APPROVAL_EXPIRED
 PASS,True,M33,approval,Product-owner approval revoked,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_REVOKED,True,False,True,False,APPROVAL_REVOKED
 PASS,True,M34,approval,Approval given for previous build,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_WRONG_BUILD,True,False,True,False,APPROVAL_WRONG_BUILD
 PASS,True,M35,approval,Approvals file missing,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_MISSING,True,False,True,False,APPROVAL_MISSING
 PASS,True,M36,bundle,product.json missing,REVIEW_REQUIRED,REVIEW_REQUIRED,PRODUCT_RECORD_MISSING,True,False,True,False,PRODUCT_RECORD_MISSING
 PASS,True,M37,bundle,trace-units.json corrupted (engine error path),REVIEW_REQUIRED,REVIEW_REQUIRED,ENGINE_ERROR,True,False,True,False,ENGINE_ERROR
+PASS,True,M38,policy,Policy removes the KEV feed from required scans,REVIEW_REQUIRED,REVIEW_REQUIRED,POLICY_BELOW_MINIMUM,True,False,True,False,POLICY_BELOW_MINIMUM
+PASS,True,M39,policy,Policy requires no human approval,REVIEW_REQUIRED,REVIEW_REQUIRED,POLICY_BELOW_MINIMUM,True,False,True,False,POLICY_BELOW_MINIMUM
+PASS,True,M40,obligation,Obligation cites a valid evidence file declared for another requirement,REVIEW_REQUIRED,REVIEW_REQUIRED,OBLIGATION_EVIDENCE_MISATTRIBUTED,True,False,True,False,OBLIGATION_EVIDENCE_MISATTRIBUTED
+PASS,True,M41,obligation,Duplicate trace units: a failed one shadowed by a verified one,REVIEW_REQUIRED,REVIEW_REQUIRED,TRACE_UNIT_DUPLICATE,True,False,True,False,TRACE_UNIT_DUPLICATE
+PASS,True,M42,obligation,Catalogue row with unparsable application date,REVIEW_REQUIRED,REVIEW_REQUIRED,CATALOGUE_ROW_INVALID,True,False,True,False,CATALOGUE_DIGEST_MISMATCH CATALOGUE_ROW_INVALID
+PASS,True,M43,approval,Approval without expiry date,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_NO_EXPIRY,True,False,True,False,APPROVAL_NO_EXPIRY
+PASS,True,M44,approval,Valid approval plus a later revocation for the same build,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_REVOKED,True,False,True,False,APPROVAL_REVOKED
+PASS,True,M45,scan,Scan recorded OK but without output digest,REVIEW_REQUIRED,REVIEW_REQUIRED,SCAN_RECORD_INCOMPLETE,True,False,True,False,SCAN_RECORD_INCOMPLETE
+PASS,True,M46,scan,KEV record re-pointed at vulns.json with recomputed digest,REVIEW_REQUIRED,REVIEW_REQUIRED,KEV_FEED_UNAVAILABLE,True,False,True,False,KEV_FEED_UNAVAILABLE SCAN_OUTPUT_INVALID
+PASS,True,M47,scan,KEV feed emptied and digest recomputed (status left OK),REVIEW_REQUIRED,REVIEW_REQUIRED,KEV_FEED_UNAVAILABLE,True,False,True,False,KEV_FEED_UNAVAILABLE SCAN_OUTPUT_INVALID
+PASS,True,M48,scan,Trivy report with no targets (Results: []),REVIEW_REQUIRED,REVIEW_REQUIRED,SCAN_OUTPUT_INVALID,True,False,True,False,SCAN_OUTPUT_INVALID
+PASS,True,M49,scan,Vulnerability scan not bound to this bundle's SBOM,REVIEW_REQUIRED,REVIEW_REQUIRED,SCAN_INPUT_UNBOUND,True,False,True,False,SCAN_INPUT_UNBOUND
+PASS,True,M50,scan,Scan snapshot two years old,REVIEW_REQUIRED,REVIEW_REQUIRED,SCAN_STALE,True,False,True,False,SCAN_STALE
+PASS,True,M51,finding,Secret detected by the fs scan,REVIEW_REQUIRED,REVIEW_REQUIRED,SECRET_FINDING,True,False,True,False,SECRET_FINDING
+FAIL,False,M52,finding,VEX 'fixed' while the scan still detects the KEV vulnerability,REVIEW_REQUIRED,REVIEW_REQUIRED,VEX_CONTRADICTS_SCAN,True,False,True,False,ARTICLE14_ASSESSMENT_REQUIRED VEX_CONTRADICTS_SCAN
+FAIL,False,M53,finding,VEX statement for another product,REVIEW_REQUIRED,REVIEW_REQUIRED,KEV_TRIAGE_PENDING,True,False,True,False,ARTICLE14_ASSESSMENT_REQUIRED KEV_TRIAGE_PENDING
+PASS,True,M54,finding,Finding identified only by GHSA id (KEV status unknowable),REVIEW_REQUIRED,REVIEW_REQUIRED,KEV_STATUS_UNKNOWN,True,False,True,False,KEV_STATUS_UNKNOWN
+PASS,True,M55,obligation,Conditional obligation without any decision,REVIEW_REQUIRED,REVIEW_REQUIRED,APPLICABILITY_DECISION_MISSING,True,False,True,False,APPLICABILITY_DECISION_MISSING
+PASS,True,M56,obligation,N/A decision bound to another product/build,REVIEW_REQUIRED,REVIEW_REQUIRED,OBLIGATION_EVIDENCE_WRONG_BUILD,True,False,True,False,OBLIGATION_EVIDENCE_WRONG_BUILD
+PASS,True,M57,obligation,Obligation review timestamp before the evidence existed,REVIEW_REQUIRED,REVIEW_REQUIRED,OBLIGATION_REVIEW_INVALID,True,False,True,False,OBLIGATION_REVIEW_INVALID
+PASS,True,M58,obligation,One evidence record claimed for every obligation,REVIEW_REQUIRED,REVIEW_REQUIRED,EVIDENCE_OVERCLAIMED,True,False,True,False,EVIDENCE_OVERCLAIMED
+PASS,True,M59,catalogue,Catalogue edited without updating the pinned digest,REVIEW_REQUIRED,REVIEW_REQUIRED,CATALOGUE_DIGEST_MISMATCH,True,False,True,False,CATALOGUE_DIGEST_MISMATCH
+PASS,True,M60,catalogue,Catalogue gate value mistyped,REVIEW_REQUIRED,REVIEW_REQUIRED,CATALOGUE_ROW_INVALID,True,False,True,False,CATALOGUE_DIGEST_MISMATCH CATALOGUE_ROW_INVALID
+PASS,True,M61,policy,Policy disables verified-legal-mapping requirement,REVIEW_REQUIRED,REVIEW_REQUIRED,POLICY_BELOW_MINIMUM,True,False,True,False,POLICY_BELOW_MINIMUM
+PASS,True,M62,policy,Policy does not pin the catalogue,REVIEW_REQUIRED,REVIEW_REQUIRED,CATALOGUE_NOT_PINNED,True,False,True,False,CATALOGUE_NOT_PINNED
+PASS,True,M63,evidence,Evidence declares lockfile digest but product record has none,REVIEW_REQUIRED,REVIEW_REQUIRED,EVIDENCE_INPUT_UNVERIFIABLE,True,False,True,False,EVIDENCE_INPUT_UNVERIFIABLE
+PASS,True,M64,evidence,Evidence timestamp in the future,REVIEW_REQUIRED,REVIEW_REQUIRED,EVIDENCE_TIMESTAMP_INVALID,True,False,True,False,EVIDENCE_TIMESTAMP_INVALID OBLIGATION_EVIDENCE_NOT_IN_MANIFEST
+PASS,True,M65,approval,Approval for the same build but another product,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_WRONG_BUILD,True,False,True,False,APPROVAL_WRONG_BUILD
+PASS,True,M66,approval,One person holds both approval roles,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_SAME_REVIEWER,True,False,True,False,APPROVAL_SAME_REVIEWER
+PASS,True,M67,approval,Approval valid for 20 years,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_INVALID,True,False,True,False,APPROVAL_INVALID
+PASS,True,M68,approval,Approval dated after the assessment time,REVIEW_REQUIRED,REVIEW_REQUIRED,APPROVAL_INVALID,True,False,True,False,APPROVAL_INVALID
+PASS,True,M69,bundle,product.json does not match the CI build (expect-build),REVIEW_REQUIRED,REVIEW_REQUIRED,PRODUCT_RECORD_MISMATCH,True,False,True,False,PRODUCT_RECORD_MISMATCH

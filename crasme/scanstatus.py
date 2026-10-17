@@ -45,13 +45,13 @@ def sha256_bytes(b: bytes) -> str:
 
 
 def digest_paths(paths: list[str | Path]) -> str | None:
-    """Combined digest over input files (sorted by path); None if any is missing."""
+    """Combined digest over input files, keyed by file NAME (location-independent, so a CI path
+    and the flattened evidence bundle give the same value); None if any file is missing."""
     h = hashlib.sha256()
-    for p in sorted(str(x) for x in paths):
-        pp = Path(p)
+    for pp in sorted((Path(x) for x in paths), key=lambda q: q.name):
         if not pp.is_file():
             return None
-        h.update(p.encode() + b"\0" + hashlib.sha256(pp.read_bytes()).digest())
+        h.update(pp.name.encode() + b"\0" + hashlib.sha256(pp.read_bytes()).digest())
     return h.hexdigest()
 
 
@@ -87,12 +87,16 @@ def validate_output(kind: str, path: str | Path) -> tuple[str, str | None, int |
         if "SchemaVersion" not in doc or "ArtifactName" not in doc:
             return INVALID, "NOT_TRIVY_REPORT", None
         res = doc.get("Results") or []
+        if not res:
+            return INVALID, "NO_TARGETS", 0      # nothing was scanned: not a clean result
         n = sum(len(r.get("Vulnerabilities") or []) + len(r.get("Secrets") or [])
                 + len(r.get("Misconfigurations") or []) for r in res)
         return OK, None, n
     if kind == "osv":
         if not isinstance(doc.get("results"), list):
             return INVALID, "NOT_OSV_REPORT", None
+        if not doc["results"]:
+            return INVALID, "NO_TARGETS", 0
         n = sum(len(pk.get("vulnerabilities") or []) for r in doc["results"] for pk in r.get("packages") or [])
         return OK, None, n
     if kind == "sarif":

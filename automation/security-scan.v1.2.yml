@@ -122,14 +122,25 @@ jobs:
           lockarg=""; for f in package-lock.json poetry.lock requirements.txt go.sum; do [ -f "$f" ] && lockarg="--input lockfile=$f" && break; done
           [ -f evidence/sbom.cdx.json ] && python -m crasme.provenance $base --tool syft --tool-version "$SYFT_VERSION" --evidence-type sbom --evidence evidence/sbom.cdx.json --requirement P2-1 --requirement SC-01 $lockarg
           [ -f evidence/vulns.json ] && python -m crasme.provenance $base --tool trivy --tool-version "$TRIVY_VERSION" --evidence-type vulns --evidence evidence/vulns.json --requirement P1-a --requirement P2-2 $lockarg
-          # Obligation evidence (documents, test reports) and trace-units.json / approvals.json / vex.json
-          # are maintained in the repository (e.g. compliance/) and copied in here:
-          if [ -d compliance ]; then cp -r compliance/. evidence/; else echo "no compliance/ folder: obligations will be REVIEW_REQUIRED"; fi
+          # Human-maintained inputs live in compliance/. Only allowlisted names are copied and nothing
+          # CI produced (product.json, scan-status.json, scan outputs, manifest) can be overwritten.
+          if [ -d compliance ]; then
+            for f in compliance/trace-units.json compliance/approvals.json compliance/vex.json compliance/triage.json compliance/evidence-*; do
+              [ -e "$f" ] || continue
+              case "$(basename "$f")" in product.json|scan-status.json|evidence-manifest.json|decision.json|sbom.cdx.json|vulns.json|kev.json|trivy-fs.json|osv.json|semgrep.sarif) echo "refusing $f"; exit 1;; esac
+              cp -n "$f" evidence/
+            done
+            # manual obligation evidence is hashed into the manifest like any other evidence
+            for f in compliance/evidence-*; do [ -f "$f" ] && python -m crasme.provenance $base --tool manual --evidence-type document --evidence "evidence/$(basename "$f")" --requirement "$(basename "$f" | sed -E 's/^evidence-([A-Za-z0-9-]+)\..*/\1/')"; done
+          else
+            echo "no compliance/ folder: obligations will be REVIEW_REQUIRED"
+          fi
 
       - name: Release decision (PASS / FAIL / REVIEW_REQUIRED)
         id: decision
         if: always()
-        run: python tools/ci_gate.py --bundle evidence --policy policy.yaml --out evidence/decision.json --report evidence/decision.md
+        # policy.yaml must pin the catalogue: catalogue_sha256 = output of `crasme-gate --print-catalogue-digest`
+        run: python tools/ci_gate.py --bundle evidence --policy policy.yaml --expect-build "$GITHUB_SHA" --expect-product "$PRODUCT_ID" --out evidence/decision.json --report evidence/decision.md
 
       - name: Decision summary
         if: always()

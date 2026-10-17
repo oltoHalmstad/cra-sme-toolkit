@@ -1,0 +1,25 @@
+# Policy used for examples/demo-release (SYNTHETIC). Pins the shipped, legally UNVERIFIED catalogue.
+required_scans:
+- sbom
+- vulns
+- kev
+required_approval_roles:
+- security_lead
+- product_owner
+obligation_gates:
+- pre-market
+- lifecycle
+require_verified_legal_mapping: true
+untriaged_review_severities:
+- CRITICAL
+- HIGH
+evidence_max_age_days:
+  default: null
+scan_max_age_days:
+  default: 30
+  vulns: 7
+  kev: 7
+approval_max_validity_days: 90
+kev_min_entries: 1000
+max_requirements_per_evidence: 3
+catalogue_sha256: 804e41c6e15313ee1f88e485922a692f0b722cc72e2860d62e96c797b0dddce6

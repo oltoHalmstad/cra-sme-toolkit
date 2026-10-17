@@ -29,7 +29,7 @@
       "exit_code": 0,
       "started_at": "2027-12-19T10:00:00+00:00",
       "finished_at": "2027-12-19T10:01:00+00:00",
-      "input_digest": null,
+      "input_digest": "ddff6cb1bbaad4ccf02954bfe063ef9b76f626ea84bb6ac429f7bd128bb6033f",
       "output_path": "vulns.json",
       "output_digest": "5ee48dd4f31665067f39891c6cea8c9587a775180f358481a94bdd13af8c96c3",
       "finding_count": 1,
@@ -47,8 +47,8 @@
       "finished_at": "2027-12-19T10:01:00+00:00",
       "input_digest": null,
       "output_path": "kev.json",
-      "output_digest": "132a66dd2057eaba1fc543b371a29ca95e8b3baf2f17d1610b18e5bcb9dbe0a9",
-      "finding_count": 1,
+      "output_digest": "b13f6e680c42450e726d965ee15fba5a5831922d0beff8fe26adb5ea67caafa8",
+      "finding_count": 1200,
       "error_code": null
     }
   ]

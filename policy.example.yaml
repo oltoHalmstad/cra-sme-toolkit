@@ -9,3 +9,14 @@ evidence_max_age_days:
   default: null
   sbom: 30
   vulns: 7
+# Scan / feed freshness (internal policy):
+scan_max_age_days: {default: 30, vulns: 7, kev: 7}
+approval_max_validity_days: 90      # approvals must expire; longer windows -> REVIEW_REQUIRED
+kev_min_entries: 1000               # sanity floor for the CISA KEV feed size
+max_requirements_per_evidence: 3    # one evidence file cannot satisfy many obligations
+# Pin the obligation catalogue you reviewed (REQUIRED, otherwise REVIEW_REQUIRED):
+#   crasme-gate --print-catalogue-digest
+catalogue_sha256: null
+# Floors the engine re-applies even if lowered here: required_scans ⊇ {sbom, vulns, kev};
+# untriaged_review_severities ⊇ {CRITICAL, HIGH}; ≥ 2 approval roles held by different people;
+# obligation_gates ⊇ {pre-market, lifecycle}; require_verified_legal_mapping = true.

@@ -36,7 +36,8 @@ def test_seeded_fault_never_passes(baseline, tmp_path, m):
     c = [dict(r) for r in cat]
     p = json.loads(json.dumps(pol))
     m.apply(d, c, p)
-    res = gate.evaluate(d, p, as_of, c)
+    eb = p.pop("_expect_build", None)
+    res = gate.evaluate(d, p, as_of, c, expect_build=eb)
     assert res["decision"] == m.expect_decision, (m.description, res["reasons"])
     assert m.expect_code in [x["code"] for x in res["details"]]
     jsonschema.validate(res, DECISION_SCHEMA)
@@ -64,6 +65,27 @@ def test_obligations_not_in_force_are_info_only(baseline, tmp_path):
     assert d["stats"]["mandatory_obligations_not_yet_in_force"] > 30
 
 
+def test_policy_floors_reapplied_without_mutating_caller(baseline):
+    b, cat, pol, as_of = baseline
+    weak = dict(pol, required_scans=[], untriaged_review_severities=[], required_approval_roles=["x"],
+                require_verified_legal_mapping=False)
+    before = json.dumps(weak, sort_keys=True)
+    d = gate.evaluate(b, weak, as_of, cat)
+    assert d["decision"] == gate.REVIEW and "POLICY_BELOW_MINIMUM" in d["reasons"]
+    assert json.dumps(weak, sort_keys=True) == before
+
+
+def test_revocation_for_other_build_does_not_block(baseline, tmp_path):
+    """Documented behaviour: a revoked approval of a previous build does not affect this build."""
+    b, cat, pol, as_of = baseline
+    d = tmp_path / "b"
+    shutil.copytree(b, d)
+    a = json.loads((d / "approvals.json").read_text())
+    a.append(dict(a[0], build_sha="1" * 40, revoked=True))
+    (d / "approvals.json").write_text(json.dumps(a))
+    assert gate.evaluate(d, pol, as_of, cat)["decision"] == gate.PASS
+
+
 def test_risk_scores_are_not_an_input():
     import inspect
     src = inspect.getsource(gate)
@@ -80,9 +102,15 @@ def test_cli_exit_codes_and_report(baseline, tmp_path):
         wr = csv.DictWriter(f, fieldnames=list(cat[0].keys()))
         wr.writeheader()
         wr.writerows(cat)
-    args = ["--bundle", str(d), "--catalogue", str(catf), "--as-of", as_of.isoformat(), "--report", str(tmp_path / "r.md")]
+    import yaml
+    polf = tmp_path / "policy.yaml"
+    polf.write_text(yaml.safe_dump(pol))
+    args = ["--bundle", str(d), "--catalogue", str(catf), "--policy", str(polf), "--as-of", as_of.isoformat(),
+            "--expect-build", json.loads((d / "product.json").read_text())["build_sha"], "--report", str(tmp_path / "r.md")]
     assert gate.main(args) == 0
     assert "PASS" in (tmp_path / "r.md").read_text()
+    assert gate.main(args[:-4] + ["--expect-build", "f" * 40]) == 2      # decision bound to the CI build
+    assert gate.main(["--print-catalogue-digest", "--catalogue", str(catf)]) == 0
     (d / "kev.json").write_text('{"catalogVersion": "x", "vulnerabilities": []}')   # tampered after recording
     assert gate.main(args) == 1
     shutil.rmtree(d)

@@ -48,7 +48,7 @@ def main(argv=None):
             return 1
         out = td / "decision.json"
         r = run([td / "venv" / "bin" / "crasme-gate", "--bundle", ROOT / "examples" / "demo-release",
-                 "--as-of", "2027-12-20T12:00:00Z", "--out", out], cwd=td)
+                 "--policy", ROOT / "examples" / "demo-policy.yaml", "--as-of", "2027-12-20T12:00:00Z", "--out", out], cwd=td)
         d = json.loads(out.read_text())
         ok = r.returncode == 2 and d["decision"] == "REVIEW_REQUIRED" and d["reasons"] == ["LEGAL_MAPPING_REVIEW_PENDING"]
         r2 = run([py, "-c", "from crasme.traceability import load_catalogue, SCHEMA_PATH; "

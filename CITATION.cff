@@ -13,7 +13,7 @@ abstract: >-
   Research toolkit for implementing and evaluating the EU Cyber Resilience Act
   (Regulation (EU) 2024/2847) in small and medium-sized enterprises. It contains
   a 46-obligation CRA requirements catalogue, a risk and evidence workbook, a
-  tested Python core (ordinal and Monte Carlo risk models, inter-rater
+  tested Python core (release-decision engine, ordinal and Monte Carlo risk models, inter-rater
   agreement statistics, SBOM and scanner accuracy metrics, Article 14 reporting
   clocks, a traceability schema with a score-independent release gate, and an
   evidence provenance manifest), a SHA-pinned CI evidence workflow, protocols

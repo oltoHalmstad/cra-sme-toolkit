@@ -38,8 +38,8 @@ The release-decision engine (`crasme-gate`) returns one of three verdicts:
 The engine never determines legal conformity: `legal_conformity` is always `NOT_DETERMINED_BY_TOOL`. Risk scores are not an input. The shipped obligation catalogue is **legally unverified**, so out of the box the best possible verdict is REVIEW_REQUIRED (see `examples/demo-release/`).
 
 ```bash
-crasme-gate --bundle examples/demo-release --as-of 2027-12-20T12:00:00Z --out /tmp/decision.json   # → REVIEW_REQUIRED
-python tools/mutation_suite.py        # 37 seeded faults: false-green 0/37 (legacy v1.1: 33/37)
+crasme-gate --bundle examples/demo-release --policy examples/demo-policy.yaml --as-of 2027-12-20T12:00:00Z --out /tmp/decision.json   # → REVIEW_REQUIRED
+python tools/mutation_suite.py        # 69 seeded faults: false-green 0/69 (legacy v1.1: 63/69)
 ```
 
 ## What is new in v1.2

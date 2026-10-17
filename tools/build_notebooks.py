@@ -375,7 +375,7 @@ panel = pd.DataFrame(rows); s.staggered_did(panel, 'trace')"""),
 # ---------------------------------------------------------------- 07
 nb("07_release_gate_mutation_E4_E7.ipynb", [
 (M, """# 07 · Release-decision engine: seeded-fault evaluation (E4/E7, v1.2)
-**Supports:** RQ4 (false assurance), recommendations P0-01, P0-02 and P0-04. Each of 37 synthetic faults is planted, one at a time, into a valid **synthetic** bundle. Every faulty bundle is then evaluated by the v1.2 engine (`crasme.gate`) and by the legacy v1.1 CI gate.
+**Supports:** RQ4 (false assurance), recommendations P0-01, P0-02 and P0-04. Each of 69 synthetic faults is planted, one at a time, into a valid **synthetic** bundle. Every faulty bundle is then evaluated by the v1.2 engine (`crasme.gate`) and by the legacy v1.1 CI gate.
 *This verifies engine logic against anticipated faults. It does not estimate real-world fault prevalence.*"""),
 (C, SETUP + "\nfrom crasme.mutation import run_suite\nres = run_suite()\npd.Series(res['summary'])"),
 (C, """df = pd.DataFrame(res['rows'])
@@ -392,7 +392,9 @@ for i, (a, b, n) in enumerate(zip(tab.v12_false_green, tab.v11_false_green, tab.
 ax.set_yticks(y, tab.index); ax.set_xlim(0, 1.15); ax.set_xlabel('False-green rate (PASS despite planted blocker)')
 ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.22), ncol=2, fontsize=8); ax.set_title('Planted faults that would have been released'); plt.show()"""),
 (C, """df[['mutation','category','description','decision','expected_code','legacy_v11_decision']]"""),
-(M, """**Reading.** v1.1 blocked only on KEV hits and treated missing or empty inputs as clean. As a result, 33 of 37 planted blockers would have passed, including every stale-evidence case. v1.2 detects all 37 faults, with the expected FAIL/REVIEW split and reason code in each case.
+(M, """**Provenance of the faults.** M01–M37 were written by the authors. M38–M45 came from their own follow-up review. M46–M69 came from an independent adversarial review, which found 30 false-PASS inputs in the first v1.2 draft; all have since been fixed.
+
+**Reading.** v1.1 blocked only on KEV hits and treated missing or empty inputs as clean. As a result, 63 of 69 planted blockers would have passed, including every stale-evidence case. v1.2 detects all 69 faults, with the expected FAIL/REVIEW split and reason code in each case.
 
 **Next (pilot E4):**
 - apply the same mutation operators to forks of pilot repositories

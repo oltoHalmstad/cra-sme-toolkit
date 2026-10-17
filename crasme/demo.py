@@ -14,8 +14,8 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from .gate import DEFAULT_POLICY, applies_from, load_catalogue
-from .scanstatus import ScanManifest, ScanRecord, classify
+from .gate import DEFAULT_POLICY, applies_from, catalogue_digest, load_catalogue
+from .scanstatus import ScanManifest, ScanRecord, classify, digest_paths
 from .traceability import sha256_file
 
 PRODUCT = {"product_id": "DEMO-001", "product_version": "1.2.0", "build_sha": "3f2c9e1d" * 5,
@@ -48,13 +48,14 @@ def release_relevant(catalogue, policy, as_of):
     return out
 
 
-def record_scan(man: ScanManifest, name, tool, kind, path: Path, exit_code=0, required=True, version="1.0-demo"):
+def record_scan(man: ScanManifest, name, tool, kind, path: Path, exit_code=0, required=True, version="1.0-demo",
+                inputs: list[Path] | None = None):
     st, err, n = classify(tool, kind, exit_code, path)
     man.upsert(ScanRecord(name=name, tool=tool, kind=kind, required=required, execution_status=st,
                           tool_version=version, exit_code=exit_code, started_at="2027-12-19T10:00:00+00:00",
                           finished_at="2027-12-19T10:01:00+00:00", output_path=path.name,
                           output_digest=hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else None,
-                          finding_count=n, error_code=err))
+                          finding_count=n, error_code=err, input_digest=digest_paths(inputs) if inputs else None))
 
 
 def evidence_record(path: Path, rids, tool="demo", etype=None, inputs=None, product=PRODUCT,
@@ -77,17 +78,19 @@ def build_baseline(root: str | Path):
     _write(b / "vulns.json", {"SchemaVersion": 2, "ArtifactName": "sbom.cdx.json", "Results": [
         {"Target": "sbom", "Vulnerabilities": [
             {"VulnerabilityID": "CVE-0000-00002", "PkgName": "express", "InstalledVersion": "4.21.2", "Severity": "LOW"}]}]})
-    _write(b / "kev.json", {"title": "SYNTHETIC KEV snapshot", "catalogVersion": "demo", "count": 1,
-                            "vulnerabilities": [{"cveID": FAKE_KEV_ID}]})
+    fake = [{"cveID": FAKE_KEV_ID}] + [{"cveID": f"CVE-0000-{90000 + i}"} for i in range(1199)]   # invented IDs
+    _write(b / "kev.json", {"title": "SYNTHETIC KEV snapshot (invented IDs)", "catalogVersion": "demo",
+                            "count": len(fake), "vulnerabilities": fake})
     _write(b / "vex.json", {"@context": "https://openvex.dev/ns/v0.2.0", "statements": []})
     man = ScanManifest(product["product_id"], product["build_sha"])
     record_scan(man, "sbom", "action", "cyclonedx", b / "sbom.cdx.json")
-    record_scan(man, "vulns", "trivy", "trivy", b / "vulns.json")
+    record_scan(man, "vulns", "trivy", "trivy", b / "vulns.json", inputs=[b / "sbom.cdx.json"])
     record_scan(man, "kev", "curl", "kev", b / "kev.json")
     man.save(b / "scan-status.json")
 
     catalogue = verified_catalogue()
     policy = copy.deepcopy(DEFAULT_POLICY)
+    policy["catalogue_sha256"] = catalogue_digest(catalogue)
     records = [evidence_record(b / "sbom.cdx.json", ["P2-1", "SC-01"], "syft", "sbom", {"lockfile": "11" * 32}),
                evidence_record(b / "vulns.json", ["P1-a", "P2-2"], "trivy", "vulns", {"lockfile": "11" * 32})]
     units = []
@@ -109,8 +112,8 @@ def build_baseline(root: str | Path):
     _write(b / "trace-units.json", units)
     exp = (AS_OF + timedelta(days=30)).isoformat()
     _write(b / "approvals.json", [
-        {"role": "security_lead", "reviewer": "S. Lead", "build_sha": product["build_sha"],
+        {"role": "security_lead", "reviewer": "S. Lead", "product_id": product["product_id"], "build_sha": product["build_sha"],
          "approved_at": "2027-12-19T12:00:00+00:00", "expires_at": exp, "revoked": False},
-        {"role": "product_owner", "reviewer": "P. Owner", "build_sha": product["build_sha"],
+        {"role": "product_owner", "reviewer": "P. Owner", "product_id": product["product_id"], "build_sha": product["build_sha"],
          "approved_at": "2027-12-19T12:30:00+00:00", "expires_at": exp, "revoked": False}])
     return b, catalogue, policy, AS_OF

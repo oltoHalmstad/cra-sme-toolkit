@@ -22,7 +22,9 @@ def w(p, obj):
     ("kev", {"catalogVersion": "1", "count": 1, "vulnerabilities": [{"cveID": "X"}]}, ss.OK, None),
     ("trivy", '{"SchemaVersion": 2, "Res', ss.INVALID, "MALFORMED_JSON"),
     ("trivy", {"Results": []}, ss.INVALID, "NOT_TRIVY_REPORT"),
-    ("trivy", {"SchemaVersion": 2, "ArtifactName": "x", "Results": None}, ss.OK, None),
+    ("trivy", {"SchemaVersion": 2, "ArtifactName": "x", "Results": None}, ss.INVALID, "NO_TARGETS"),
+    ("trivy", {"SchemaVersion": 2, "ArtifactName": "x", "Results": [{"Target": "sbom"}]}, ss.OK, None),
+    ("osv", {"results": []}, ss.INVALID, "NO_TARGETS"),
     ("cyclonedx", {"bomFormat": "CycloneDX", "components": []}, ss.INVALID, "EMPTY_SBOM"),
     ("cyclonedx", {"bomFormat": "SPDX"}, ss.INVALID, "NOT_CYCLONEDX"),
     ("osv", {"results": "nope"}, ss.INVALID, "NOT_OSV_REPORT"),
@@ -46,13 +48,13 @@ def test_missing_output(tmp_path):
     ("semgrep", 2, ss.FAILED, "EXIT_2"),
 ])
 def test_exit_code_normalisation(tmp_path, tool, code, status, err):
-    out = w(tmp_path / "o.json", {"results": []})
+    out = w(tmp_path / "o.json", {"results": [{"packages": []}]})
     st, e, _ = ss.classify(tool, "osv", code, out)
     assert (st, e) == (status, err)
 
 
 def test_step_outcome_and_timeout(tmp_path):
-    out = w(tmp_path / "o.json", {"results": []})
+    out = w(tmp_path / "o.json", {"results": [{"packages": []}]})
     assert ss.classify("action", "osv", None, out, step_outcome="failure")[0] == ss.FAILED
     assert ss.classify("osv-scanner", "osv", None, out, timed_out=True)[0] == ss.TIMEOUT
 
