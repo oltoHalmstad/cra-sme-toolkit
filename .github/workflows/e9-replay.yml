@@ -70,6 +70,11 @@ jobs:
     needs: [resolve, sbom]
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    permissions:
+      contents: write   # only to publish logs + results to branch e9-results-run-<id> (always runs)
+    defaults:
+      run:
+        shell: bash     # -eo pipefail, so `| tee` keeps the step's exit code
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -89,19 +94,19 @@ jobs:
           path: e9-sbom
           merge-multiple: true
       - name: Fetch OSV / KEV / registry data (fails if KEV unavailable)
-        run: python tools/replay/fetch_data.py --inventories experiments/e9_release_replay/inventories --cache e9-cache ${{ inputs.include_dev && '--include-dev' || '' }}
+        run: mkdir -p e9-results/logs && python tools/replay/fetch_data.py --inventories experiments/e9_release_replay/inventories --cache e9-cache ${{ inputs.include_dev && '--include-dev' || '' }} 2>&1 | tee e9-results/logs/fetch.log
       - name: Replay all releases (offline from cache)
-        run: python tools/replay/run_replay.py --e9 experiments/e9_release_replay --cache e9-cache --out e9-results ${{ inputs.include_dev && '--include-dev' || '' }}
+        run: python tools/replay/run_replay.py --e9 experiments/e9_release_replay --cache e9-cache --out e9-results ${{ inputs.include_dev && '--include-dev' || '' }} 2>&1 | tee e9-results/logs/replay.log
       - name: Draw the pre-registered validation sample (seed 2026; blinded rater sheets)
-        run: python tools/replay/validation.py sample --results e9-results --e9 experiments/e9_release_replay --out e9-results/validation
+        run: python tools/replay/validation.py sample --results e9-results --e9 experiments/e9_release_replay --out e9-results/validation 2>&1 | tee e9-results/logs/validation.log
       - name: OpenCRA head-to-head (current knowledge) + fail-safe probes
-        run: tools/replay/opencra_compare.sh e9-sbom/sboms e9-results/opencra
+        run: tools/replay/opencra_compare.sh e9-sbom/sboms e9-results/opencra 2>&1 | tee e9-results/logs/opencra.log
       - name: Analysis notebook on real results
         env:
           E9_RESULTS: ${{ github.workspace }}/e9-results
         run: |
           if ls e9-sbom/sbom-results/*.csv >/dev/null 2>&1; then cp e9-sbom/sbom-results/*.csv e9-results/; fi
-          python tools/run_notebooks.py notebooks/08_release_replay_E9.ipynb
+          python tools/run_notebooks.py notebooks/08_release_replay_E9.ipynb 2>&1 | tee e9-results/logs/notebook.log
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: e9-results
@@ -117,3 +122,23 @@ jobs:
           name: e9-osv-cache
           path: e9-cache/
           retention-days: 90
+      - name: Publish logs and results to branch e9-results-run-<id> (always)
+        if: always()
+        env:
+          TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          SHA: ${{ github.sha }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          set -u
+          D="$(mktemp -d)"; mkdir -p "$D/e9-results" "$D/inventories"
+          [ -d e9-results ] && cp -r e9-results/. "$D/e9-results/"
+          for f in e9-cache/kev.json e9-cache/MANIFEST.json; do [ -f "$f" ] && cp "$f" "$D/e9-results/"; done
+          cp -r experiments/e9_release_replay/inventories/. "$D/inventories/" 2>/dev/null || true
+          [ -f notebooks/08_release_replay_E9.ipynb ] && cp notebooks/08_release_replay_E9.ipynb "$D/"
+          printf '{"run_id": "%s", "source_commit": "%s", "job_status": "%s"}\n' "$RUN_ID" "$SHA" "$JOB_STATUS" > "$D/RUN-INFO.json"
+          cd "$D" && git init -q && git checkout -q -b "e9-results-run-$RUN_ID"
+          git -c user.name="e9-replay" -c user.email="actions@users.noreply.github.com" add -A
+          git -c user.name="e9-replay" -c user.email="actions@users.noreply.github.com" commit -q -m "E9 results, run $RUN_ID (source $SHA, status $JOB_STATUS)"
+          git push -q "https://x-access-token:${TOKEN}@github.com/${REPO}.git" "HEAD:refs/heads/e9-results-run-$RUN_ID"

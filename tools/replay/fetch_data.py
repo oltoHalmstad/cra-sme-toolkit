@@ -38,10 +38,11 @@ def http(url, data=None, retries=4):
             if e.code == 404:
                 return None
             if i == retries - 1:
-                raise
-        except Exception:
+                body = e.read()[:300].decode("utf-8", "replace") if hasattr(e, "read") else ""
+                raise RuntimeError(f"HTTP {e.code} from {url}: {body}") from e
+        except Exception as e:
             if i == retries - 1:
-                raise
+                raise RuntimeError(f"request failed for {url}: {type(e).__name__}: {e}") from e
         time.sleep(2 ** i)
 
 
