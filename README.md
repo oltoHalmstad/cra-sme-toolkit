@@ -1,6 +1,5 @@
 # CRA-SME Toolkit
 
-[![ci](https://github.com/oltoHalmstad/cra-sme-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/oltoHalmstad/cra-sme-toolkit/actions/workflows/ci.yml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23437353.svg)](https://doi.org/10.5281/zenodo.23437353)
 ![licence: Apache-2.0 (code) / CC BY 4.0 (docs, data)](https://img.shields.io/badge/licence-Apache--2.0%20%7C%20CC%20BY%204.0-blue)
 
@@ -10,7 +9,8 @@
 
 ## Install and run
 ```bash
-git clone https://github.com/oltoHalmstad/cra-sme-toolkit && cd cra-sme-toolkit
+# download and unzip the release archive from https://doi.org/10.5281/zenodo.23437353, then:
+cd cra-sme-toolkit-<version>
 python -m pip install -e ".[test,notebooks]"     # Python ≥ 3.12
 pytest                                            # ~100 tests; workbook parity needs LibreOffice
 python tools/run_notebooks.py                     # re-execute the six notebooks

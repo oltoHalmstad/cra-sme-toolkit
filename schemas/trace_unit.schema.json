@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/oltoHalmstad/cra-sme-toolkit/schemas/trace_unit.schema.json",
+  "$id": "https://doi.org/10.5281/zenodo.23437353/schemas/trace_unit.schema.json",
   "title": "CRA-SME traceability units",
   "description": "One record links a product build to a CRA obligation, its applicability decision, risks, control, test and hashed evidence. Research data model; not an official format.",
   "type": "array",

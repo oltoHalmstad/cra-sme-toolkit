@@ -49,7 +49,6 @@ What each DOI is for:
 | Keywords | Cyber Resilience Act; Regulation (EU) 2024/2847; SME; SBOM; compliance as code; cybersecurity risk assessment; evidence traceability; vulnerability disclosure; Article 14 reporting; design science research |
 | Language | English |
 | Related identifier: *References* | https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng (Publication) |
-| Related identifier: *Is supplement to* | https://github.com/<owner>/cra-sme-toolkit/tree/v1.2.0 (Software), once the GitHub repository exists |
 | Description | Use the text in `.zenodo.json` → `description`. It already states the data status, the limits and the licensing split |
 
 **Notes / Additional description** (paste as-is):
@@ -76,7 +75,7 @@ Alternatively, register on **OSF Registries** (osf.io/registries), which is the 
 
 ### 4b. Software version 1.3.0 (after the e9-replay run)
 1. In the repository, set version 1.3.0 in all metadata files (`python tools/check_release.py` checks them). Add the E9 results (`e9-results/`, plus `e9-cache/MANIFEST.json` and `kev.json`) under `experiments/e9_release_replay/results/`. Commit and tag `v1.3.0`.
-2. On the existing record, click **New version**. Zenodo copies the metadata, and you replace the files with `cra-sme-toolkit-v1.3.0.zip`. Or, if the GitHub integration is switched on, create a GitHub release and Zenodo creates the version for you.
+2. On the existing record, click **New version**. Zenodo copies the metadata, and you replace the files with `cra-sme-toolkit-v1.3.0.zip`.
 3. Update the version, date and description. Add one sentence: "1.3.0 adds E9, a retrospective release replay on 20 open-source IoT and network products (144 releases), with real vulnerability time-travel results."
 4. Add the related identifier: *Is supplement to* → the pre-registration DOI (§4a).
 5. **Large data.** If the OSV cache (`e9-osv-cache`) is large, archive it as a separate **Dataset** record linked with *Is derived from* / *Is supplement to*, rather than inflating the software archive.

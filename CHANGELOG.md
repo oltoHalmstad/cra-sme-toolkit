@@ -15,9 +15,9 @@
 - **Changed:** an OSV report with `results: []` is now a valid clean result. OSV-Scanner omits clean sources, and an empty inventory is caught by the SBOM check and the input binding instead.
 - **Release metadata:**
   - Zenodo DOI 10.5281/zenodo.23437353
-  - GitHub repository https://github.com/oltoHalmstad/cra-sme-toolkit
-  - SECURITY.md uses GitHub private vulnerability reporting
-  - schema `$id`s point to the repository
+  - the development repository is private; the Zenodo archive is the public release, and no metadata links to the repository
+  - SECURITY.md asks for private reports by email to the author
+  - schema `$id`s are DOI-based identifiers
   - `tools/set_doi.py` added
   - `tools/check_release.py` accepts PEP 440 pre-release versions
 - **Real results so far:**

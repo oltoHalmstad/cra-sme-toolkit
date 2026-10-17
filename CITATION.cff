@@ -10,7 +10,6 @@ license: Apache-2.0
 authors:
 - family-names: Torstensson
   given-names: Olga
-repository-code: https://github.com/oltoHalmstad/cra-sme-toolkit
 abstract: 'Research toolkit for implementing and evaluating the EU Cyber Resilience Act (Regulation (EU)
   2024/2847) in small and medium-sized enterprises. It contains a 46-obligation CRA requirements catalogue,
   a risk and evidence workbook, a tested Python core (release-decision engine, ordinal and Monte Carlo
