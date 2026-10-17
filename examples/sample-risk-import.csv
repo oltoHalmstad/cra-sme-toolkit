@@ -1,0 +1,2 @@
+risk_id,product_id,scenario,likelihood,impact,exposure,annual_probability,loss_eur,source
+DEMO-R01,DEMO-001,Unauthenticated management endpoint,4,5,4,0.2,150000,Illustrative estimates; not observations

@@ -1,0 +1,127 @@
+# CRA-SME v1.1 evidence workflow. Copy to .github/workflows/cra-evidence.yml.
+#
+# Changes vs v1.0 (see REVIEW-v1.0-findings.md, F-07..F-10):
+#  * every action pinned to a full commit SHA (resolved with `git ls-remote` on 2026-10-17;
+#    tag in the trailing comment). Let Dependabot/Renovate update pins; re-verify SHAs yourself.
+#    Background: aquasecurity/trivy-action tags were force-pushed with malware in March 2026
+#    (CVE-2026-33634); mutable tags are not evidence-grade.
+#  * tool versions pinned and recorded; every evidence file hashed into evidence-manifest.json
+#  * secrets + misconfiguration + OSV + SAST scans added; KEV-based gate (informational by default)
+#  * build provenance attestation on main only, in a separate job with the extra permissions
+#
+# Requires the toolkit's crasme/ and tools/ folders at the repository root (copy them in).
+# Output is EVIDENCE FOR HUMAN REVIEW, not proof of CRA conformity.
+name: cra-evidence
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+env:
+  PRODUCT_ID: DEMO-001            # replace
+  SYFT_VERSION: v1.52.0
+  TRIVY_VERSION: v0.76.0
+  SEMGREP_VERSION: "1.181.0"
+  GATE_ENFORCE: "false"           # set "true" once triage process is in place
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: SBOM (CycloneDX) — Annex I Part II(1)
+        uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0.24.0
+        with:
+          path: .
+          format: cyclonedx-json
+          output-file: evidence/sbom.cdx.json
+          syft-version: ${{ env.SYFT_VERSION }}
+          upload-artifact: false
+
+      - name: Vulnerabilities from SBOM — Annex I Part I(2)(a), Part II(2)
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: sbom
+          scan-ref: evidence/sbom.cdx.json
+          format: json
+          output: evidence/trivy-vulns.json
+          exit-code: "0"
+          version: ${{ env.TRIVY_VERSION }}
+
+      - name: Secrets and misconfiguration — Annex I Part I(2)(d),(j)
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          scanners: secret,misconfig
+          format: json
+          output: evidence/trivy-fs.json
+          exit-code: "0"
+          version: ${{ env.TRIVY_VERSION }}
+          skip-setup-trivy: true
+
+      - name: OSV cross-check (second vulnerability source, experiment E2)
+        continue-on-error: true
+        run: |
+          go install github.com/google/osv-scanner/v2/cmd/osv-scanner@v2.6.0
+          "$(go env GOPATH)/bin/osv-scanner" scan source -r --format json --output evidence/osv.json . || true
+
+      - name: SAST (Semgrep) — Annex I Part II(3)
+        continue-on-error: true
+        run: |
+          python -m pip install --quiet "semgrep==${SEMGREP_VERSION}"
+          semgrep scan --config p/default --sarif --output evidence/semgrep.sarif --metrics off || true
+
+      - name: Evidence provenance manifest
+        run: |
+          set -e
+          m=evidence/evidence-manifest.json
+          python -m crasme.provenance --product "$PRODUCT_ID" --build "$GITHUB_SHA" --tool syft --tool-version "$SYFT_VERSION" --evidence evidence/sbom.cdx.json --requirement P2-1 --requirement SC-01 --out $m
+          python -m crasme.provenance --product "$PRODUCT_ID" --build "$GITHUB_SHA" --tool trivy --tool-version "$TRIVY_VERSION" --evidence evidence/trivy-vulns.json --evidence evidence/trivy-fs.json --requirement P1-a --requirement P2-2 --out $m
+          [ -f evidence/osv.json ] && python -m crasme.provenance --product "$PRODUCT_ID" --build "$GITHUB_SHA" --tool osv-scanner --tool-version v2.6.0 --evidence evidence/osv.json --requirement P2-2 --out $m || true
+          [ -f evidence/semgrep.sarif ] && python -m crasme.provenance --product "$PRODUCT_ID" --build "$GITHUB_SHA" --tool semgrep --tool-version "$SEMGREP_VERSION" --evidence evidence/semgrep.sarif --requirement P2-3 --out $m || true
+
+      - name: KEV gate (known exploited vulnerabilities block release; scores never do)
+        run: |
+          curl -fsSL https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json -o evidence/kev.json || echo '{"vulnerabilities":[]}' > evidence/kev.json
+          python tools/ci_gate.py --trivy evidence/trivy-vulns.json --osv evidence/osv.json --kev evidence/kev.json \
+            --out evidence/gate-report.json $([ "$GATE_ENFORCE" = "true" ] && echo --enforce)
+
+      - name: Preserve evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: cra-evidence-${{ github.sha }}
+          path: evidence/
+          retention-days: 90   # CI retention only; long-term archive per Art. 13 retention policy (TD-02)
+          if-no-files-found: error
+
+  attest:
+    # Signed build provenance for the evidence bundle (main branch only).
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: evidence
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Download evidence
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: cra-evidence-${{ github.sha }}
+          path: evidence
+      - uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: evidence/*

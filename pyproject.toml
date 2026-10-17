@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crasme"
+version = "1.1.0"
+description = "CRA-SME research toolkit: risk models, evidence traceability, SBOM/scanner metrics and Article 14 reporting clocks for EU Cyber Resilience Act implementation studies in SMEs"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE", "LICENSES/*"]
+authors = [{ name = "Olga Torstensson" }]
+keywords = ["cyber resilience act", "CRA", "SME", "SBOM", "compliance as code", "risk assessment", "traceability", "vulnerability disclosure"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = ["numpy>=2.0", "scipy>=1.13", "pandas>=2.2", "jsonschema>=4.21"]
+
+[project.optional-dependencies]
+notebooks = ["matplotlib>=3.8", "nbformat>=5.9", "nbclient>=0.10", "ipykernel>=6.29"]
+test = ["pytest>=8.0", "openpyxl>=3.1", "pyyaml>=6.0", "krippendorff>=0.8", "scikit-learn>=1.4"]
+
+[project.scripts]
+crasme-provenance = "crasme.provenance:main"
+
+[project.urls]
+Repository = "https://github.com/OWNER/cra-sme-toolkit"
+Changelog = "https://github.com/OWNER/cra-sme-toolkit/blob/main/CHANGELOG.md"
+
+[tool.setuptools]
+packages = ["crasme"]
+
+[tool.setuptools.package-data]
+crasme = ["_data/*"]

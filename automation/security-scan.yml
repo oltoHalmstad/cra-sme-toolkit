@@ -1,0 +1,39 @@
+# Starter GitHub Actions workflow. Copy to .github/workflows/security-scan.yml.
+# Review third-party actions and pin their immutable commit SHAs before production use.
+name: cra-security-evidence
+on:
+  workflow_dispatch:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  sbom-and-vulnerabilities:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate CycloneDX SBOM
+        uses: anchore/sbom-action@v0
+        with:
+          path: .
+          format: cyclonedx-json
+          output-file: sbom.cdx.json
+          upload-artifact: false
+      - name: Scan SBOM for vulnerabilities
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          scan-type: sbom
+          scan-ref: sbom.cdx.json
+          format: json
+          output: trivy-findings.json
+          exit-code: '0'
+      - name: Preserve evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cra-security-evidence
+          path: |
+            sbom.cdx.json
+            trivy-findings.json
+          if-no-files-found: warn
+# Informational only: human triage and risk-to-control evidence linking are required.
+# Add approved security gates, signed releases, retention policy and pinned action SHAs.

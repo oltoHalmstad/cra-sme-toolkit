@@ -1,0 +1,44 @@
+# E5 inject set A (baseline). Answer key must be reviewed by a legal specialist before use.
+# Times are offsets from exercise start (simulated hours). Set B (follow-up) = parallel form.
+exercise: CRA-SME tabletop set A
+product: DEMO-001 connected sensor gateway, firmware 2.3 (on EU market since 2025)
+srp_required_fields:
+  early_warning_all: [notification_type, title_max255, summary_max4000, member_states, product_name, product_version]
+  early_warning_vulnerability: [awareness_datetime]
+  early_warning_incident: [suspected_malicious_act, detection_datetime]
+  notification_vulnerability: [general_information, exploitation_datetime]
+  notification_incident: [nature_of_incident, occurrence_datetime, initial_assessment]
+  final_vulnerability: [fix_available_date, update_details, severity_description, impact_description, corrective_measures, user_measures]
+  final_incident: [mitigation_applied, severity, impact, root_cause, corrective_measures, user_measures]
+source_note: Field list paraphrased from ENISA CRA SRP Glossary v1.5 (checked 17 Oct 2026); re-check before each session.
+injects:
+  - id: I1
+    t_hours: 0
+    text: Customer forwards gateway logs showing repeated use of an authentication bypass in the management API on fw 2.3.
+    key: {reportable: true, type: actively_exploited_vulnerability, awareness_at: 0, fix_available_at: 96}
+    teaching_points: [awareness starts when evidence is credible, not when forensics finishes, early warning before full certainty]
+  - id: I2
+    t_hours: 2
+    text: Researcher emails a stored XSS with proof-of-concept; no indication of exploitation.
+    key: {reportable: false, type: null}
+    teaching_points: [CVD handling not Art.14, track for re-assessment if exploitation evidence appears]
+  - id: I3
+    t_hours: 20
+    text: Update server credentials leaked; a maliciously modified, validly signed firmware reached 3% of the fleet.
+    key: {reportable: true, type: severe_incident, awareness_at: 20}
+    teaching_points: [severe incident affects product security, Art.14(8) inform users, revoke keys]
+  - id: I4
+    t_hours: 30
+    text: Upstream TLS library advisory published; CISA KEV lists it as exploited; the library is in the gateway SBOM.
+    key: {reportable: true, type: actively_exploited_vulnerability, awareness_at: 30, fix_available_at: 216}
+    teaching_points: [SBOM lookup speed, exploited-in-product determination, Art.13(5) due diligence]
+  - id: I5
+    t_hours: 40
+    text: Internal pentest of unreleased fw 2.4 finds a hard-coded debug credential.
+    key: {reportable: false, type: null, release_blocker: "Annex I Part I(2)(a)"}
+    teaching_points: [not on market -> not Art.14, but blocks release]
+  - id: I6
+    t_hours: 44
+    text: Reseller in another Member State says customers report devices rebooting; cause unknown; no security indication yet.
+    key: {reportable: undetermined, type: null}
+    teaching_points: [record a non-reportable decision with reassessment trigger]

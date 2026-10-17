@@ -1,0 +1,96 @@
+{
+ "_note": "SYNTHETIC FIXTURE - not real scanner output; constructed to exercise E2 analysis code",
+ "results": [
+  {
+   "packages": [
+    {
+     "package": {
+      "name": "lodash",
+      "version": "4.17.20",
+      "ecosystem": "npm"
+     },
+     "vulnerabilities": [
+      {
+       "id": "OSV-SYN-2021-23337",
+       "aliases": [
+        "CVE-2021-23337"
+       ]
+      },
+      {
+       "id": "OSV-SYN-2020-28500",
+       "aliases": [
+        "CVE-2020-28500"
+       ]
+      }
+     ]
+    },
+    {
+     "package": {
+      "name": "minimist",
+      "version": "1.2.5",
+      "ecosystem": "npm"
+     },
+     "vulnerabilities": [
+      {
+       "id": "OSV-SYN-2021-44906",
+       "aliases": [
+        "CVE-2021-44906"
+       ]
+      }
+     ]
+    },
+    {
+     "package": {
+      "name": "express",
+      "version": "4.18.2",
+      "ecosystem": "npm"
+     },
+     "vulnerabilities": [
+      {
+       "id": "OSV-SYN-2024-29041",
+       "aliases": [
+        "CVE-2024-29041"
+       ]
+      },
+      {
+       "id": "OSV-SYN-2024-43796",
+       "aliases": [
+        "CVE-2024-43796"
+       ]
+      }
+     ]
+    },
+    {
+     "package": {
+      "name": "path-to-regexp",
+      "version": "0.1.7",
+      "ecosystem": "npm"
+     },
+     "vulnerabilities": [
+      {
+       "id": "OSV-SYN-2024-45296",
+       "aliases": [
+        "CVE-2024-45296"
+       ]
+      }
+     ]
+    },
+    {
+     "package": {
+      "name": "body-parser",
+      "version": "1.20.1",
+      "ecosystem": "npm"
+     },
+     "vulnerabilities": [
+      {
+       "id": "OSV-SYN-2024-45590",
+       "aliases": [
+        "CVE-2024-45590"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

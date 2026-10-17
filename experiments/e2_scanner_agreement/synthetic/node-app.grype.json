@@ -1,0 +1,93 @@
+{
+ "_note": "SYNTHETIC FIXTURE - not real scanner output; constructed to exercise E2 analysis code",
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2021-23337",
+    "severity": "High"
+   },
+   "artifact": {
+    "name": "lodash",
+    "version": "4.17.20"
+   },
+   "relatedVulnerabilities": []
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2020-28500",
+    "severity": "Medium"
+   },
+   "artifact": {
+    "name": "lodash",
+    "version": "4.17.20"
+   },
+   "relatedVulnerabilities": []
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2021-44906",
+    "severity": "Critical"
+   },
+   "artifact": {
+    "name": "minimist",
+    "version": "1.2.5"
+   },
+   "relatedVulnerabilities": []
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-29041",
+    "severity": "Medium"
+   },
+   "artifact": {
+    "name": "express",
+    "version": "4.18.2"
+   },
+   "relatedVulnerabilities": []
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-43796",
+    "severity": "Medium"
+   },
+   "artifact": {
+    "name": "express",
+    "version": "4.18.2"
+   },
+   "relatedVulnerabilities": []
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-45296",
+    "severity": "High"
+   },
+   "artifact": {
+    "name": "path-to-regexp",
+    "version": "0.1.7"
+   },
+   "relatedVulnerabilities": []
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-45590",
+    "severity": "High"
+   },
+   "artifact": {
+    "name": "body-parser",
+    "version": "1.20.1"
+   },
+   "relatedVulnerabilities": []
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2024-47764",
+    "severity": "Low"
+   },
+   "artifact": {
+    "name": "cookie",
+    "version": "0.5.0"
+   },
+   "relatedVulnerabilities": []
+  }
+ ]
+}

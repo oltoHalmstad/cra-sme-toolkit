@@ -1,0 +1,7 @@
+fixture,generator,tool_version,mode,exit_code,seconds,output
+c-vendored,cdxgen,12.8.6,auto,0,1.834585604,pilot-results/c-vendored.cdxgen.cdx.json
+node-app,cdxgen,12.8.6,auto,0,2.441221397,pilot-results/node-app.cdxgen.cdx.json
+node-app,cyclonedx-npm,6.0.1,installed,0,1.368509449,pilot-results/node-app.cyclonedx-npm.cdx.json
+py-app,cdxgen,12.8.6,auto,0,2.501564816,pilot-results/py-app.cdxgen.cdx.json
+py-app,cyclonedx-py,7.5.0,requirements,0,2.256282447,pilot-results/py-app.cyclonedx-py-req.cdx.json
+py-app,cyclonedx-py,7.5.0,environment,0,3.765735831,pilot-results/py-app.cyclonedx-py-env.cdx.json

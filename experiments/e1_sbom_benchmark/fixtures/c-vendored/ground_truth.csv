@@ -1,0 +1,3 @@
+ecosystem,namespace,name,version
+generic,,zlib,1.2.11
+conan,,openssl,3.0.8

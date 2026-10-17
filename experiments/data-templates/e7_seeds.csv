@@ -1,0 +1,9 @@
+seed_id,annex_i_ref,defect,target,introduced_commit,detected_by_automation_YN,tool,expert_rating_met_notmet_cannot_tell,expert_id,notes
+S-b,Part I(2)(b),Default admin password without secure reset,DEMO-001,,,,,,
+S-c,Part I(2)(c),Unsigned update channel,DEMO-001,,,,,,
+S-d,Part I(2)(d),Unauthenticated management endpoint,DEMO-001,,,,,,
+S-e,Part I(2)(e),TLS 1.0 + plaintext credentials,DEMO-001,,,,,,
+S-g,Part I(2)(g),Unnecessary location telemetry,DEMO-001,,,,,,
+S-j,Part I(2)(j),Debug service enabled in release,DEMO-001,,,,,,
+S-l,Part I(2)(l),No security event logging,DEMO-001,,,,,,
+S-m,Part I(2)(m),Factory reset leaves credentials,DEMO-001,,,,,,

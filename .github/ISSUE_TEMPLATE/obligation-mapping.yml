@@ -1,0 +1,23 @@
+name: Obligation mapping correction
+description: Report an error or gap in the CRA requirements catalogue or workbook matrix
+labels: [legal-mapping]
+body:
+  - type: input
+    id: req
+    attributes: { label: Requirement ID(s), placeholder: "P1-c, SUP-02" }
+    validations: { required: true }
+  - type: textarea
+    id: issue
+    attributes: { label: What is wrong or missing? }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Authoritative source (EUR-Lex article/annex point, Commission guidance section) }
+    validations: { required: true }
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included confidential product or vulnerability information.
+          required: true

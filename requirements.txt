@@ -1,0 +1,14 @@
+numpy>=2.0
+scipy>=1.13
+pandas>=2.2
+matplotlib>=3.8
+openpyxl>=3.1
+jsonschema>=4.21
+pyyaml>=6.0
+pytest>=8.0
+nbformat>=5.9
+nbclient>=0.10
+ipykernel>=6.29
+# optional cross-checks used by tests (skipped if absent)
+krippendorff>=0.8
+scikit-learn>=1.4

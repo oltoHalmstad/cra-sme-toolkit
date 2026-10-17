@@ -1,0 +1,78 @@
+# CRA-SME Toolkit
+
+[![ci](https://github.com/OWNER/cra-sme-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/cra-sme-toolkit/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/ZENODO-DOI-PLACEHOLDER.svg)](https://doi.org/ZENODO-DOI-PLACEHOLDER)
+![licence: Apache-2.0 (code) / CC BY 4.0 (docs, data)](https://img.shields.io/badge/licence-Apache--2.0%20%7C%20CC%20BY%204.0-blue)
+
+**A risk-driven, evidence-based research toolkit for implementing the EU Cyber Resilience Act (Regulation (EU) 2024/2847) in SMEs.** Version 1.1.0, research edition, 17 October 2026.
+
+> **Not legal advice. Not an official CRA assessment. Not a certification.** The risk scores are research instruments and are not EU thresholds. Nothing here establishes CRA applicability or conformity.
+
+## Install and run
+```bash
+git clone https://github.com/OWNER/cra-sme-toolkit && cd cra-sme-toolkit
+python -m pip install -e ".[test,notebooks]"     # Python ≥ 3.12
+pytest                                            # ~100 tests; workbook parity needs LibreOffice
+python tools/run_notebooks.py                     # re-execute the six notebooks
+```
+
+## How to cite
+Cite the Zenodo DOI of the version you used. GitHub's "Cite this repository" button reads `CITATION.cff`.
+
+> Torstensson, O. (2026). *CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs* (Version 1.1.0) [Computer software]. Zenodo. https://doi.org/ZENODO-DOI-PLACEHOLDER
+
+## Licensing
+| Part | Licence |
+|---|---|
+| Code: `crasme/`, `tools/`, `tests/`, `automation/`, `schemas/`, shell scripts, notebook code cells | [Apache-2.0](LICENSES/Apache-2.0.txt) |
+| Documentation, templates, `comparison/`, experiment protocols and data templates, `data/` catalogue, workbooks, notebook text and figures | [CC BY 4.0](LICENSES/CC-BY-4.0.txt) |
+
+See `NOTICE` for details and third-party material.
+
+## What is new in v1.1 (research edition)
+| Path | What it is |
+|---|---|
+| `REVIEW-v1.0-findings.md` | 16 review findings on v1.0 (incl. wrong Annex I letters, unpinned CI actions) with status |
+| `CRA-SME-Risk-and-Evidence-Calculator-v1.1.xlsx` | Corrected 46-row Evidence Matrix, uncertainty + exploitation + gate columns, Provenance sheet |
+| `data/cra_requirements_catalogue.csv` | Machine-readable obligation catalogue (source of the matrix) |
+| `crasme/` | Tested Python core used by notebooks, CI and experiments |
+| `schemas/trace_unit.schema.json` | Traceability-unit JSON Schema (concept note §5) |
+| `automation/security-scan.v1.1.yml`, `tools/ci_gate.py` | SHA-pinned evidence workflow with provenance manifest and KEV gate |
+| `experiments/` | Protocols E1–E8, pre-registration, interview guide, data templates, E1 pilot results |
+| `notebooks/` | Six executed Jupyter notebooks (risk sensitivity, inter-rater, SBOM/scanner, traceability, Art. 14 tabletop, pilot analysis) |
+| `tests/` | pytest suite (`pip install -r requirements.txt && pytest`) |
+| `comparison/` | Existing-solutions landscape and verified related-work list |
+
+Synthetic data is always labelled as such; only `experiments/e1_sbom_benchmark/pilot-results/` contains real tool output.
+
+## Contents (v1.0 practitioner kit, retained)
+- `docs/CRA-SME-Implementation-Playbook-v1.0.docx` — 12-week practical playbook
+- `CRA-SME-Risk-and-Evidence-Calculator.xlsx` — v1.0 workbook (kept unchanged for comparison; use v1.1)
+- `templates/` — templates for classification, threat model, risk acceptance, CVD policy, Annex II/VII and incident reporting
+- `automation/security-scan.yml` — v1.0 starter job (superseded: uses mutable action tags, see F-07)
+- `automation/scripts/generate_sbom.sh` — reproducible example command
+- `examples/` — fictitious sample inputs, NOT an assurance claim
+
+## First steps
+1. Copy directory to a restricted project repository; assign the responsible product owner.
+2. Open workbook START HERE; replace/delete **DEMO-** rows.
+3. Fill Products scope and classification memo; check Annex III/IV, exemptions and conformity route.
+4. Complete threat model and Risk Register; justify scores and financial assumptions.
+5. Map Annex I/II/VII obligations to controls and evidence; mark inapplicable only with recorded rationale.
+6. Adapt scanning workflow to your build, repository permissions, licensing and data handling; verify tool outputs manually.
+7. Set up CVD intake, reportability triage and reporting escalation with on-call coverage.
+8. Review technical file and conformity path before product release.
+
+**Important dates:** Article 14 notifications apply since 11 September 2026; the CRA main application is 11 December 2027. In-scope products already available on the EU market may have reporting duties even before the main application date. See official sources below.
+
+**Official sources:**
+- https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng
+- https://digital-strategy.ec.europa.eu/en/policies/cra-summary
+- https://digital-strategy.ec.europa.eu/en/policies/cra-reporting
+- https://digital-strategy.ec.europa.eu/en/factpages/cyber-resilience-act-implementation
+- https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation
+
+**Scope and limitation:** Illustrative threat scoring and financial estimates are not prescribed by the CRA. A compliance matrix is an aid to evaluation, not a replacement for reviewing full Annex I and legal obligations. Scanning requires permissions; run only on assets you own or are authorized to test.
+
+## Repository map (additions for publication)
+`CITATION.cff`, `.zenodo.json` and `codemeta.json` hold the citation and archive metadata. `LICENSES/` and `NOTICE` hold the licences. `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md` and `SECURITY.md` cover governance. `.github/` has CI (SHA-pinned), Dependabot and issue/PR templates. `docs/background/` holds the research concept note and the CRA state-of-play summary. `docs/RELEASING.md` explains how to publish a release on GitHub and Zenodo.

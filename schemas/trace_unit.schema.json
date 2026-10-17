@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/crasme/trace_unit.schema.json",
+  "title": "CRA-SME traceability units",
+  "description": "One record links a product build to a CRA obligation, its applicability decision, risks, control, test and hashed evidence. Research data model; not an official format.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["product_id", "build_id", "requirement_id", "applicable", "applicability_justification", "status"],
+    "additionalProperties": false,
+    "properties": {
+      "product_id": {"type": "string", "minLength": 1},
+      "build_id": {"type": "string", "minLength": 1, "description": "Commit SHA, image digest or firmware build hash"},
+      "requirement_id": {"type": "string", "pattern": "^[A-Z0-9-]+(-[a-z0-9]+)?$"},
+      "applicable": {"type": "boolean"},
+      "applicability_justification": {"type": "string"},
+      "status": {"enum": ["not_started", "in_progress", "implemented", "verified", "not_applicable"]},
+      "risk_ids": {"type": "array", "items": {"type": "string"}},
+      "control_id": {"type": "string"},
+      "test_id": {"type": "string"},
+      "evidence_uri": {"type": "string"},
+      "evidence_sha256": {"type": "string", "pattern": "^([a-f0-9]{64})?$"},
+      "evidence_generated_at": {"type": "string"},
+      "tool": {"type": "string"},
+      "owner": {"type": "string"},
+      "reviewer": {"type": "string"},
+      "reviewed_at": {"type": "string"}
+    },
+    "allOf": [
+      {
+        "if": {"properties": {"applicable": {"const": false}}},
+        "then": {"properties": {"applicability_justification": {"minLength": 10}}}
+      },
+      {
+        "if": {"properties": {"status": {"const": "verified"}}},
+        "then": {"required": ["evidence_uri", "evidence_sha256", "reviewer", "reviewed_at"]}
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+ "_note": "SYNTHETIC FIXTURE - not real scanner output; constructed to exercise E2 analysis code",
+ "SchemaVersion": 2,
+ "Results": [
+  {
+   "Target": "package-lock.json",
+   "Vulnerabilities": [
+    {
+     "VulnerabilityID": "CVE-2021-23337",
+     "PkgName": "lodash",
+     "InstalledVersion": "4.17.20",
+     "Severity": "HIGH"
+    },
+    {
+     "VulnerabilityID": "CVE-2020-28500",
+     "PkgName": "lodash",
+     "InstalledVersion": "4.17.20",
+     "Severity": "MEDIUM"
+    },
+    {
+     "VulnerabilityID": "CVE-2021-44906",
+     "PkgName": "minimist",
+     "InstalledVersion": "1.2.5",
+     "Severity": "CRITICAL"
+    },
+    {
+     "VulnerabilityID": "CVE-2024-29041",
+     "PkgName": "express",
+     "InstalledVersion": "4.18.2",
+     "Severity": "MEDIUM"
+    },
+    {
+     "VulnerabilityID": "CVE-2024-43796",
+     "PkgName": "express",
+     "InstalledVersion": "4.18.2",
+     "Severity": "LOW"
+    },
+    {
+     "VulnerabilityID": "CVE-2024-45296",
+     "PkgName": "path-to-regexp",
+     "InstalledVersion": "0.1.7",
+     "Severity": "HIGH"
+    },
+    {
+     "VulnerabilityID": "CVE-2024-45590",
+     "PkgName": "body-parser",
+     "InstalledVersion": "1.20.1",
+     "Severity": "HIGH"
+    },
+    {
+     "VulnerabilityID": "CVE-2024-43799",
+     "PkgName": "send",
+     "InstalledVersion": "0.18.0",
+     "Severity": "LOW"
+    },
+    {
+     "VulnerabilityID": "CVE-2024-43800",
+     "PkgName": "serve-static",
+     "InstalledVersion": "1.15.0",
+     "Severity": "LOW"
+    }
+   ]
+  }
+ ]
+}

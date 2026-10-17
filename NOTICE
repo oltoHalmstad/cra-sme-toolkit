@@ -1,0 +1,14 @@
+CRA-SME Toolkit
+Copyright 2026 Olga Torstensson and contributors
+
+Licensing (see LICENSES/):
+  Apache-2.0 : crasme/, tools/, tests/, automation/, experiments/**/*.sh, notebook code cells, schemas/
+  CC-BY-4.0  : docs/, templates/, comparison/, experiments/protocols/, experiments/data-templates/,
+               data/cra_requirements_catalogue.csv, *.xlsx workbooks, README/REVIEW/CHANGELOG text,
+               notebook markdown cells and figures
+  Third-party: experiments/e1_sbom_benchmark/pilot-results/*.cdx.json are outputs of cdxgen,
+               cyclonedx-py and cyclonedx-npm describing open-source packages; package names and
+               versions are factual data. Fixture manifests list public open-source packages.
+
+Not legal advice. Nothing in this repository establishes CRA applicability or conformity.
+Regulation (EU) 2024/2847 text: (c) European Union, https://eur-lex.europa.eu/ (reuse per Commission Decision 2011/833/EU).

@@ -1,0 +1,45 @@
+[
+  {
+    "product_id": "DEMO-001",
+    "build_id": "3f2c9e1",
+    "requirement_id": "P2-1",
+    "applicable": true,
+    "applicability_justification": "All products: SBOM covering at least top-level dependencies",
+    "status": "verified",
+    "risk_ids": [
+      "DEMO-R02"
+    ],
+    "control_id": "C-SBOM-01",
+    "test_id": "T-E1-recall",
+    "evidence_uri": "experiments/e1_sbom_benchmark/pilot-results/node-app.cyclonedx-npm.cdx.json",
+    "evidence_sha256": "3f725c29f7c8f6ef19b79d9126cf30d39d810d120096e5f6ac9fdc274e785ea0",
+    "evidence_generated_at": "2026-10-17T12:00:00Z",
+    "tool": "cyclonedx-npm 6.0.1",
+    "owner": "Dev lead",
+    "reviewer": "Security lead",
+    "reviewed_at": "2026-10-17T14:00:00Z"
+  },
+  {
+    "product_id": "DEMO-001",
+    "build_id": "3f2c9e1",
+    "requirement_id": "P1-m",
+    "applicable": false,
+    "applicability_justification": "EXAMPLE ONLY: gateway stores no user data or settings beyond factory config (to be verified)",
+    "status": "not_applicable",
+    "reviewer": "Security lead",
+    "reviewed_at": "2026-10-17T14:00:00Z"
+  },
+  {
+    "product_id": "DEMO-001",
+    "build_id": "3f2c9e1",
+    "requirement_id": "P1-d",
+    "applicable": true,
+    "applicability_justification": "Management endpoint exposed on LAN",
+    "status": "in_progress",
+    "risk_ids": [
+      "DEMO-R01"
+    ],
+    "control_id": "C-AUTH-01",
+    "owner": "Security lead"
+  }
+]

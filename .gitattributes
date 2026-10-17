@@ -1,0 +1,6 @@
+*.xlsx binary
+*.docx binary
+*.png binary
+*.ipynb linguist-language=Jupyter\ Notebook
+experiments/e1_sbom_benchmark/pilot-results/*.json linguist-generated=true
+*.sh text eol=lf

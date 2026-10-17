@@ -1,0 +1,181 @@
+CRA-SME: A Risk-Driven, Evidence-Based and Cost-Aware Framework for Cyber Resilience Act Implementation in SMEs
+Research concept note | Version 1.0 | 17 October 2026
+Domain: Cybersecurity engineering, regulatory compliance, software supply-chain security, empirical software engineering
+Proposed outcome: Validated implementation framework, open reproducible toolkit, SME pilot study, and peer-reviewed publications
+Starting artifact: CRA-SME-Toolkit-v1.0.zip (implementation playbook, Excel risk/evidence calculator, documentation templates and example security automation)
+Status and limits. This is a research proposal, not a claim that CRA-SME has been empirically validated or that using it establishes CRA conformity. Research hypotheses, performance targets, sample sizes, budgets, and metrics below are proposals to be tested. Product-specific legal applicability and conformity assessment routes must be determined separately. The risk scores are research instruments, not official EU thresholds.
+
+1. Abstract
+The EU Cyber Resilience Act (CRA; Regulation (EU) 2024/2847) introduces lifecycle cybersecurity obligations for manufacturers of products with digital elements. Small and medium-sized enterprises (SMEs) face particular challenges: limited specialist capacity, diverse product architectures, fragmented tool outputs, and the cost of maintaining traceable cybersecurity evidence over a product's support period. We propose CRA-SME, a lightweight, risk-driven and evidence-based implementation framework integrating product classification, threat modelling, software bill of materials (SBOM), automated security scanning, risk prioritization, vulnerability handling, and conformity-documentation workflows. CRA-SME will be operationalized through an open toolkit consisting of a structured risk register, requirements-to-evidence mappings, reusable playbooks, and CI/CD integrations. Its usefulness will be evaluated through a multi-case SME study, comparing baseline and post-intervention performance and examining evidence completeness, remediation time, staff effort, and residual product risks. The research will also examine whether quantitative risk estimates improve prioritization compared with conventional qualitative methods. Expected outputs include a validated practical framework, a reproducible evaluation protocol, and findings on the limits and organizational prerequisites of compliance automation.
+Keywords: Cyber Resilience Act; SME; security-by-design; compliance as code; SBOM; cybersecurity risk assessment; vulnerability disclosure; evidence traceability; empirical evaluation.
+2. Problem statement and research gap
+The CRA requires product-specific risk assessment, appropriate cybersecurity properties, vulnerability handling and technical documentation. A general organizational security checklist cannot by itself demonstrate conformity for an individual product. SMEs often have security tools but lack a connected process that converts a finding into a documented risk decision, tested control and mapped regulatory evidence.
+Research gap (to be established systematically in Phase 1): limited empirical evidence on how resource-constrained manufacturers can combine automated product-security assessment, explainable risk prioritization, evidence traceability, and CRA-specific lifecycle obligations in a proportional and repeatable workflow. This is a proposed gap, not a conclusion from a completed systematic review.
+Specific challenges
+1. Interpretation: distinguish product roles, scope, exclusions, product categorization, and conformity routes.
+2. Traceability: link each applicable obligation to product risks, safeguards, tests and approvals.
+3. Risk estimation: avoid false precision while enabling transparent, repeatable prioritization and cost comparison.
+4. Automation: translate SBOM, SAST, SCA and DAST results into reviewable evidence rather than confusing tool output with compliance.
+5. Lifecycle: maintain vulnerability handling, security updates, incident reporting and evidence throughout the support period.
+6. Proportionality: quantify SME effort and identify the smallest effective set of activities for different product categories.
+3. Research aim and objectives
+Aim: design, implement and empirically evaluate an affordable product-centred framework that helps SMEs plan, execute, document and maintain cybersecurity activities aligned with applicable CRA requirements.
+Objectives
+- O1: Derive a traceable CRA requirements model from the regulation and current Commission guidance, including applicability decisions.
+- O2: Specify a product-level risk model integrating threat scenarios, vulnerability severity, exploitability, exposure, business/user harm and uncertainty.
+- O3: Build a reusable evidence pipeline linking code/build identity, SBOM, security findings, remediation tickets, test results and regulatory requirements.
+- O4: Define and test practical playbooks for secure development, coordinated vulnerability disclosure, reporting escalation and documentation maintenance.
+- O5: Evaluate outcomes, usability, staff effort and transferability with multiple SME product cases.
+- O6: Publish non-sensitive templates, synthetic examples, anonymized study protocols and reproducible analysis scripts.
+4. Research questions and hypotheses
+ID	Research question	Proposed testable hypothesis / expectation
+RQ1	How can CRA obligations be operationalized as product-specific, verifiable engineering activities for SMEs?	A structured obligation–risk–control–test–evidence mapping increases independently assessed traceability coverage.
+RQ2	Does a tool-supported CRA-SME playbook reduce implementation effort relative to existing SME workflows?	Repeated standardized tasks require fewer staff hours; up-front setup costs may offset early savings.
+RQ3	Does explicit risk prioritization improve remediation decisions and consistency?	Blinded reviewers show greater agreement on prioritization when assumptions and evidence are made explicit; numeric models alone may not outperform qualitative review.
+RQ4	Can automatic security evidence improve completeness and freshness without increasing false assurance?	Automatically linked records are more current, but expert review remains necessary for applicability and risk acceptance.
+RQ5	What factors affect CRA-SME adoption across software, IoT and embedded-product SMEs?	Product complexity, skill availability, CI/CD maturity and supply-chain dependency predict cost and adoption barriers.
+
+
+No causal claim will be made based only on a before/after comparison without addressing confounders.
+5. Conceptual framework
+EU CRA + Commission guidance + product context
+                    |
+                    v
+         [A] Applicability & classification
+                    |
+                    v
+        [B] Product architecture & SBOM
+                    |
+                    v
+       [C] Threat scenarios / risk model
+                    |
+          +---------+---------+
+          |                   |
+          v                   v
+ [D] Secure controls    [E] Security test pipeline
+          |                   |
+          +---------+---------+
+                    v
+      [F] Evidence graph / traceability
+                    |
+                    v
+ [G] Residual-risk review & technical file
+                    |
+                    v
+ [H] Support, vulnerability disclosure, updates,
+     incident reporting and continuous reassessment
+Traceability unit: (product ID, version/build, requirement ID, applicability justification, risk ID, control ID, test ID, evidence hash, reviewer, timestamp, status). This research data model is deliberately more precise than a simple traffic-light checklist.
+6. Methodology
+Approach: Design Science Research (DSR) supported by mixed-methods, multi-case empirical evaluation and a threat-to-evidence engineering study.
+Phase 1 — Requirements analysis and baseline (Months 1–3)
+- Analyse Regulation (EU) 2024/2847, current European Commission guidance, relevant standards and supporting frameworks (e.g., ISO/IEC 27005 and 27001, IEC 62443 where applicable, ETSI EN 303 645 for relevant consumer IoT, NIST SSDF, OWASP SAMM, CycloneDX/SPDX).
+- Create obligation catalogue with source, exact legal article/annex, applicability conditions, evidence type and review owner.
+- Conduct structured literature review and stakeholder interviews with security engineers, SME management and conformity specialists.
+- Record baseline tool maturity, risk register quality, evidence coverage and reporting readiness.
+Output: legal mapping with provenance, interview protocol, baseline assessment and preregistered evaluation plan where practical.
+Phase 2 — Prototype refinement (Months 4–6)
+Extend the existing CRA-SME-Toolkit-v1.0.zip with:
+- product classification questionnaire and version-controlled decision record;
+- configurable threat and risk catalogue and uncertainty fields;
+- CI/CD connectors for Syft, Trivy, OSV-Scanner, Semgrep, Gitleaks and applicable dynamic tests;
+- deduplication, vulnerability triage and evidence provenance (tool version, execution time, build hash);
+- product-focused requirement/control/evidence mappings and sign-off workflow;
+- reporting escalation workflow covering applicable CRA Article 14 events;
+- export of a draft technical documentation evidence index for human review.
+Output: CRA-SME prototype v2, public synthetic demonstration and automated validation tests.
+Phase 3 — SME pilots (Months 7–12)
+Proposed sample: 6–10 SMEs, ideally spanning application software, IoT/connected products and embedded/industrial products; one or more representative products per organization. Recruitment will depend on availability and consent.
+Each pilot follows the same evaluation protocol: (1) baseline assessment; (2) training; (3) guided implementation; (4) security verification and evidence review; (5) follow-up interview. A comparison group or staggered roll-out should be used if feasible; otherwise findings are explicitly observational.
+Safety and ethics: use test environments and authorized scans; do not publish identifiable product vulnerabilities, confidential designs, credentials or unreleased incident details. Store research data under approved agreements; report aggregate/anonymized results. No action is taken on production systems without written authorization.
+Phase 4 — Evaluation and dissemination (Months 13–18)
+- Compare baseline and post-pilot indicators, adjusted for product complexity and baseline maturity where defensible.
+- Assess inter-rater agreement on risk assessments and evidence completeness.
+- Conduct sensitivity analysis for scoring thresholds, input uncertainty and missing evidence.
+- Evaluate practitioner usability and perceived trust via interviews and task-based questionnaires.
+- Publish findings, toolkit improvements, sample datasets and replication package where permissible.
+7. Research-grade risk model
+The current toolkit uses an illustrative prioritization score, not a legal conformity rule:
+InherentPriority = Likelihood (1–5) × Impact (1–5) × Exposure (1–5).
+A residual-priority estimate may be shown as InherentPriority × (1 – verified reduction fraction), only if its reduction assumption is documented and subjected to sensitivity analysis. Researchers must not confuse arithmetic score reduction with validated security effectiveness.
+Proposed improvements:
+- Distinguish scenario-based likelihood, exploitation evidence (e.g., CVSS/EPSS as inputs where relevant), exposure, and safety or societal consequences.
+- Retain uncertainty ranges, missingness and assessors' explanations.
+- Use scenario-level financial risk estimates only when plausible frequency/loss estimates are available: AnnualExpectedLoss = AnnualIncidentProbability × EstimatedLossPerIncident.
+- Compare simple scoring with an uncertainty-aware, FAIR-inspired range estimate via Monte Carlo simulation where data suffice.
+- Evaluate ranking stability and assess inter-rater agreement (weighted kappa / ICC as appropriate).
+- Make mandatory obligations and release blockers separate from risk score thresholds; no numerical score can waive CRA duties.
+8. Evaluation metrics and analysis plan
+Dimension	Operational measure	Collection method
+Requirements traceability	% applicable obligations with reviewed control + test + evidence + owner	Independent document audit
+Evidence freshness	Median days between last relevant change/build and linked evidence	Repository/CI logs
+Security remediation	Median days from validated finding to verified fix, stratified by severity	Issue tracker + retest
+Risk decision quality	Inter-rater agreement, justification completeness and ranking stability	Blinded assessor review
+Effort / cost	Staff hours and direct tool/service costs per product and per release	Time logs + interviews
+SBOM completeness	Identified dependencies vs reference dependency list (sample-based)	Build/dependency audit
+Reporting preparedness	Scenario-test correctness and time to prepare draft report	Tabletop exercises
+Usability / adoption	Task success, error rate, interview themes, SUS (optional)	Facilitated exercises
+False assurance	Cases where automated pass missed applicable control or contextual vulnerability	Expert adjudication
+
+
+Analysis: paired differences with confidence intervals when appropriate; effect sizes and case-wise distributions rather than significance testing alone; thematic coding of qualitative data; stratification by SME size and product type. Clearly report recruitment bias, small sample limitations, and learning effects. Baseline/post comparisons are not proof of causality.
+9. Work packages and outputs
+WP	Months	Work package	Deliverables
+WP1	1–3	CRA mapping and SME needs	D1 requirements model; D2 baseline protocol
+WP2	3–6	Risk and evidence model	D3 scoring specification; D4 evidence data schema
+WP3	4–8	Open-source technical prototype	D5 CRA-SME v2 and CI/CD examples
+WP4	7–12	Industrial SME pilots	D6 anonymized case-study dataset; D7 evaluation logs
+WP5	12–18	Evaluation, guidance, dissemination	D8 evaluation report; D9 revised toolkit; publications
+
+
+Proposed project duration: 18 months; an initial 6-month proof of concept could focus on a single product type and 2–3 SMEs.
+10. Expected contributions
+Scientific: (1) empirically evaluated approach to translating product-security regulation into engineering evidence; (2) comparison of SME risk prioritization strategies; (3) understanding of trade-offs between automation and expert judgement; (4) cross-case adoption barriers and enabling factors.
+Technical: open compliance-evidence schema, requirements mapping, risk worksheet, CI/CD integration patterns, synthetic example cases, vulnerability-response simulations and exportable review records.
+Practical: measurable reduction of repeated manual work if supported by the evaluation, clearer accountability, more reliable evidence maintenance, and repeatable SME onboarding.
+11. Novelty and positioning
+The project's novelty claim should not be “another CRA checklist.” Differentiate it through:
+1. Evidence provenance and freshness: reproducible links from an exact product build to an applicable requirement and independently reviewed evidence.
+2. Cost-aware and uncertainty-aware prioritization: explicit assumptions, score sensitivity, and transparent trade-offs; no false claim of legal compliance from a score.
+3. Lifecycle adaptation: evidence changes when dependencies, product versions, known vulnerabilities, support commitments and incident status change.
+4. Empirical SME validation: quantitative operational outcomes plus qualitative evidence on feasibility and limitations.
+Related work and tool comparisons must be established through a documented literature review before making an originality claim.
+12. Publication and funding strategy
+Paper A — Framework/design: “CRA-SME: A Traceable Risk-to-Evidence Framework for Cyber Resilience Act Implementation in SMEs.” Focus on requirements model, design principles, data schema and prototype evaluation.
+Paper B — Empirical study: “Cost, Evidence Quality and Vulnerability Remediation in SME Cyber Resilience Act Adoption: A Multi-Case Study.” Focus on pilot results, effort and contextual factors.
+Paper C — Risk methods (optional): “Uncertainty-Aware Cybersecurity Risk Prioritization for Resource-Constrained Digital Product Manufacturers.” Focus on scoring consistency, sensitivity and decision quality.
+Potential collaboration: cybersecurity researchers, SME product manufacturers, software/IoT engineers, legal/compliance specialists, and regional innovation or industry networks. Funding routes should be matched against calls currently open at proposal preparation time; no eligibility is presumed.
+13. Risks and mitigation for the research project
+Research risk	Mitigation
+Inconsistent interpretations of evolving CRA guidance	Version legal mappings and obtain specialist review
+Too few or nonrepresentative SME participants	Use purposive diversity and report case boundaries
+Disclosure of real vulnerabilities	Use secure handling, disclosure coordination and synthetic public datasets
+Tool findings mistaken for proof of compliance	Independent human validation and explicit assurance limitations
+Unrealistic risk numbers	Elicit ranges, document data source, sensitivity tests and missingness
+Inadequate causal inference	Comparison cohort / staggered rollout where feasible; cautious conclusions otherwise
+Rapid tool and dependency evolution	Pin versions and log execution provenance
+
+
+14. Minimum viable study: first 90 days
+- Days 1–15: literature search protocol, CRA requirements catalogue, product selection, interview questions.
+- Days 16–30: pilot recruitment and baseline measurement; data protection and research ethics review.
+- Days 31–45: improve risk model and evidence schema; extend toolkit with provenance fields.
+- Days 46–60: connect automated scans and SBOM to risks/control IDs; run synthetic integration tests.
+- Days 61–75: carry out 1–2 controlled SME walkthroughs and reporting tabletop exercises.
+- Days 76–90: analyze usability and evidence gaps; release v1.1 pilot protocol and design paper outline.
+Go/no-go criteria: at least one consenting pilot product, documented mapping with source provenance, reproducible scan/evidence export for one versioned build, and demonstrated review of critical gaps by a human assessor.
+15. Compliance boundaries and key sources
+- The CRA main requirements apply from 11 December 2027, while Article 14 reporting obligations apply from 11 September 2026 to qualifying manufacturer events. Notification timeframes and final-report timing depend on event type; workflows must reflect the current applicable provisions.
+- The CRA requires a documented cybersecurity risk assessment for products in scope (not a prescribed 1–125 score). Technical documentation, support-period decisions and conformity routes remain product-specific.
+- Harmonised standards and notified-body requirements must be checked at the time of assessment. An open-source security scanner is not a conformity assessment body.
+Primary legal and official sources (accessed October 2026):
+1. EU Cyber Resilience Act, Regulation (EU) 2024/2847: https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng
+2. European Commission, CRA reporting obligations: https://digital-strategy.ec.europa.eu/en/policies/cra-reporting
+3. European Commission, implementation guidance: https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation
+4. European Commission, manufacturer guidance: https://digital-strategy.ec.europa.eu/en/policies/cra-manufacturers
+Related methods and technical resources for Phase 1 review:
+- NIST Secure Software Development Framework (SSDF): https://csrc.nist.gov/projects/ssdf
+- OWASP SAMM: https://owaspsamm.org/
+- CycloneDX: https://cyclonedx.org/
+- SPDX: https://spdx.dev/
+- FIRST CVSS: https://www.first.org/cvss/
+- FIRST EPSS: https://www.first.org/epss/
