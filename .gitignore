@@ -18,3 +18,10 @@ pilot-data/
 *.key
 *.pem
 .env
+
+# unpublished manuscript drafts (kept out of the public repository until submission)
+paper/manuscript_content.js
+paper/build_manuscript.js
+paper/references.json
+paper/*.docx
+paper/*.pdf
