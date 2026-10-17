@@ -4,4 +4,4 @@ This project adopts the [Contributor Covenant, version 2.1](https://www.contribu
 
 In short: be respectful, assume good faith, and keep discussion on the work. Harassment of any kind is not tolerated. Some contributors work for SMEs whose products are under study, so their confidentiality must be respected.
 
-Report unacceptable behaviour privately to the maintainer at the contact address in `SECURITY.md`. All reports are handled confidentially.
+Report unacceptable behaviour privately to the maintainer through the repository owner's GitHub profile contact, or a private GitHub security advisory if needed. All reports are handled confidentially.

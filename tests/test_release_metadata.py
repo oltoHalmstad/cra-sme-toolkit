@@ -67,3 +67,10 @@ def test_repository_cites_zenodo_doi():
     import yaml
     assert yaml.safe_load((ROOT / "CITATION.cff").read_text())["doi"].startswith("10.5281/zenodo.")
     assert "ZENODO-DOI-PLACEHOLDER" not in (ROOT / "README.md").read_text()
+
+
+def test_citation_cff_format_version_untouched():
+    import yaml
+    c = yaml.safe_load((ROOT / "CITATION.cff").read_text())
+    assert str(c["cff-version"]) == "1.2.0"        # CFF schema version, not the software version
+    assert c["repository-code"] == "https://github.com/oltoHalmstad/cra-sme-toolkit"

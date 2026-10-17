@@ -21,7 +21,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-UA = {"User-Agent": "cra-sme-e9-replay/1.3 (research; https://github.com/OWNER/cra-sme-toolkit)"}
+UA = {"User-Agent": "cra-sme-e9-replay/1.3 (research; https://github.com/oltoHalmstad/cra-sme-toolkit)"}
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
 

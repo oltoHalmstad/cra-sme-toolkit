@@ -1,5 +1,5 @@
 # Changelog
-## Unreleased (1.3.0-dev): E9 real-world release replay
+## 1.3.0rc1 — 17 Oct 2026: E9 real-world release replay (pre-registered; vulnerability replay pending)
 - **Added E9** (`experiments/e9_release_replay/`): a frozen sample of 20 open-source IoT and network products and 144 real releases (2024Q4–2026Q3), selected from git history with a pre-registered rule. It also includes lockfile inventories for 94 releases (47,363 component-versions), coverage classification for all 144, and `PREREGISTRATION.md` (H9a–H9f).
 - **Added `crasme.replay`:**
   - lockfile parsers (npm, pnpm, yarn, go.sum, Cargo.lock, requirements, rebar.lock)
@@ -13,6 +13,13 @@
 - **Added `.github/workflows/e9-replay.yml`:** a SHA-pinned matrix workflow (resolve → sbom → replay).
 - **Added notebook 08.** Coverage and drift use real data. The vulnerability sections use a labelled **synthetic** cache until the CI run.
 - **Changed:** an OSV report with `results: []` is now a valid clean result. OSV-Scanner omits clean sources, and an empty inventory is caught by the SBOM check and the input binding instead.
+- **Release metadata:**
+  - Zenodo DOI 10.5281/zenodo.23437353
+  - GitHub repository https://github.com/oltoHalmstad/cra-sme-toolkit
+  - SECURITY.md uses GitHub private vulnerability reporting
+  - schema `$id`s point to the repository
+  - `tools/set_doi.py` added
+  - `tools/check_release.py` accepts PEP 440 pre-release versions
 - **Real results so far:**
   - Median Jaccard between consecutive quarterly releases is 0.51, and 91% of transitions change more than 10% of components.
   - 17 C/firmware releases have no package manifest at all.

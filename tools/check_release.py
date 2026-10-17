@@ -24,7 +24,7 @@ def collect():
         ".zenodo.json": json.loads((ROOT / ".zenodo.json").read_text())["version"],
         "codemeta.json": json.loads((ROOT / "codemeta.json").read_text())["version"],
         "crasme/__init__.py": re.search(r'__version__ = "([^"]+)"', (ROOT / "crasme/__init__.py").read_text()).group(1),
-        "CHANGELOG.md": re.search(r"^## (\d+\.\d+\.\d+)", (ROOT / "CHANGELOG.md").read_text(), re.M).group(1),
+        "CHANGELOG.md": re.search(r"^## (\d+\.\d+\.\d+(?:(?:a|b|rc)\d+)?)", (ROOT / "CHANGELOG.md").read_text(), re.M).group(1),
     }
     dates = {
         "CITATION.cff": str(yaml.safe_load((ROOT / "CITATION.cff").read_text())["date-released"]),

@@ -3,4 +3,4 @@
 Research instruments only: nothing in this package determines CRA applicability
 or conformity. See README.md for limits.
 """
-__version__ = "1.2.0"
+__version__ = "1.3.0rc1"

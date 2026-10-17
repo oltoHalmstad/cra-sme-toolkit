@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "crasme"
-version = "1.2.0"
+version = "1.3.0rc1"
 description = "CRA-SME research toolkit: risk models, evidence traceability, SBOM/scanner metrics and Article 14 reporting clocks for EU Cyber Resilience Act implementation studies in SMEs"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -31,8 +31,8 @@ crasme-provenance = "crasme.provenance:main"
 crasme-gate = "crasme.gate:main"
 
 [project.urls]
-Repository = "https://github.com/OWNER/cra-sme-toolkit"
-Changelog = "https://github.com/OWNER/cra-sme-toolkit/blob/main/CHANGELOG.md"
+Repository = "https://github.com/oltoHalmstad/cra-sme-toolkit"
+Changelog = "https://github.com/oltoHalmstad/cra-sme-toolkit/blob/main/CHANGELOG.md"
 
 [tool.setuptools]
 packages = ["crasme"]

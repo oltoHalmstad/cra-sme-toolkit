@@ -1,7 +1,7 @@
 # Security policy
 
 ## Reporting a vulnerability in this toolkit
-**Do not open a public issue.** Use GitHub's *private vulnerability reporting* (Security tab → "Report a vulnerability") on this repository. If that is unavailable, email the maintainer at `SECURITY-CONTACT@example.invalid` (**replace before publishing**).
+**Do not open a public issue.** Use GitHub's *private vulnerability reporting*: https://github.com/oltoHalmstad/cra-sme-toolkit/security/advisories/new (Security tab → "Report a vulnerability"). This is the only supported channel, so that reports stay private and traceable.
 
 Please include the affected file or version, reproduction steps, and the impact. We aim to acknowledge reports within 5 working days.
 

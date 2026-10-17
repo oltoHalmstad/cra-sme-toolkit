@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/crasme/release_decision.schema.json",
+  "$id": "https://github.com/oltoHalmstad/cra-sme-toolkit/schemas/release_decision.schema.json",
   "title": "CRA-SME release decision (v1.0)",
   "type": "object",
   "required": [
