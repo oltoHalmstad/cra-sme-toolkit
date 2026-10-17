@@ -1,5 +1,7 @@
 # E9: Retrospective release replay on real open-source IoT and network products
 
+**Pre-registration:** https://doi.org/10.5281/zenodo.23438234 (see REGISTRATION.md).
+
 **Sample:** 20 products and 144 real releases (2024Q4–2026Q3), frozen from git history on 17 Oct 2026.
 
 | File | Content | Real? |

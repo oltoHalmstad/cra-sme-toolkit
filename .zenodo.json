@@ -38,6 +38,12 @@
       "identifier": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng",
       "relation": "references",
       "resource_type": "publication-other"
+    },
+    {
+      "identifier": "10.5281/zenodo.23438234",
+      "relation": "isSupplementedBy",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
     }
   ],
   "language": "eng",
