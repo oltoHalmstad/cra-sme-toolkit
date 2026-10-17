@@ -119,3 +119,51 @@ def test_kev_mirror_fallback(monkeypatch, tmp_path):
     fetch_data.main(["--inventories", str(tmp_path / "inv"), "--cache", str(tmp_path / "c")])
     import json
     assert json.loads((tmp_path / "c" / "MANIFEST.json").read_text())["kev_source"] == fetch_data.KEV_MIRROR
+
+
+def test_missing_osv_record_is_a_coverage_gap_not_clean(tmp_path):
+    sys.path.insert(0, str(ROOT / "tools" / "replay"))
+    import json
+    import run_replay
+    (tmp_path / "osv/index/npm").mkdir(parents=True)
+    (tmp_path / "osv/vulns").mkdir(parents=True)
+    (tmp_path / "osv/index/npm/a.json").write_text(json.dumps(["GHSA-1", "GHSA-2"]))
+    (tmp_path / "osv/vulns/GHSA-1.json").write_text(json.dumps({"id": "GHSA-1"}))
+    c = run_replay.OSVCache(tmp_path)
+    assert c.vulns_for("npm", "a") is None                       # GHSA-2 unfetched -> unassessed
+    (tmp_path / "osv/vulns/GHSA-2.json").write_text(json.dumps({"id": "GHSA-2", "_osv_404": True}))
+    assert [v["id"] for v in run_replay.OSVCache(tmp_path).vulns_for("npm", "a")] == ["GHSA-1"]  # withdrawn
+    assert c.vulns_for("npm", "missing") is None
+
+
+def test_fetch_survives_transient_network_errors(monkeypatch, tmp_path):
+    sys.path.insert(0, str(ROOT / "tools" / "replay"))
+    import json
+    import fetch_data
+    calls = {}
+
+    def flaky(url, data=None, retries=7):
+        if url == fetch_data.KEV_URL:
+            return {"catalogVersion": "x", "vulnerabilities": [{"cveID": f"CVE-1-{i}"} for i in range(1200)]}
+        if "querybatch" in url:
+            return {"results": [{"vulns": [{"id": "GHSA-ok"}, {"id": "GHSA-flaky"}, {"id": "GHSA-dead"}, {"id": "GHSA-gone"}]}]}
+        vid = url.rsplit("/", 1)[-1]
+        calls[vid] = calls.get(vid, 0) + 1
+        if vid == "GHSA-flaky" and calls[vid] == 1:
+            raise RuntimeError("Network is unreachable")
+        if vid == "GHSA-dead":
+            raise RuntimeError("Network is unreachable")
+        if vid == "GHSA-gone":
+            return None
+        return {"id": vid, "affected": []}
+    monkeypatch.setattr(fetch_data, "http", flaky)
+    monkeypatch.setattr(fetch_data.time, "sleep", lambda s: None)
+    inv = tmp_path / "inv" / "p"
+    inv.mkdir(parents=True)
+    (inv / "1.csv").write_text("ecosystem,name,version,dev,source\nnpm,a,1.0.0,False,lock\n")
+    fetch_data.main(["--inventories", str(tmp_path / "inv"), "--cache", str(tmp_path / "c")])
+    m = json.loads((tmp_path / "c/MANIFEST.json").read_text())
+    assert m["osv_unfetched_records"] == ["GHSA-dead"]
+    assert (tmp_path / "c/osv/vulns/GHSA-flaky.json").exists()
+    assert json.loads((tmp_path / "c/osv/vulns/GHSA-gone.json").read_text())["_osv_404"] is True
+    assert not (tmp_path / "c/osv/vulns/GHSA-dead.json").exists()

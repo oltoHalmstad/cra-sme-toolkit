@@ -27,7 +27,7 @@ KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulner
 KEV_MIRROR = "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
 
 
-def http(url, data=None, retries=4):
+def http(url, data=None, retries=7):
     for i in range(retries):
         try:
             req = urllib.request.Request(url, data=json.dumps(data).encode() if data is not None else None,
@@ -43,7 +43,7 @@ def http(url, data=None, retries=4):
         except Exception as e:
             if i == retries - 1:
                 raise RuntimeError(f"request failed for {url}: {type(e).__name__}: {e}") from e
-        time.sleep(2 ** i)
+        time.sleep(min(2 ** i, 30))
 
 
 def safe(name: str) -> str:
@@ -61,21 +61,33 @@ def packages(inv_dir: Path, include_dev: bool):
 
 def osv_index(cache: Path, pkgs):
     todo = [p for p in pkgs if not (cache / "osv/index" / p[0] / f"{safe(p[1])}.json").exists()]
+    failed = []
     for i in range(0, len(todo), 500):
         chunk = todo[i:i + 500]
         queries = [{"package": {"ecosystem": e, "name": n}} for e, n in chunk]
-        res = http("https://api.osv.dev/v1/querybatch", {"queries": queries})["results"]
+        try:
+            res = http("https://api.osv.dev/v1/querybatch", {"queries": queries})["results"]
+        except Exception as ex:   # no index file is written -> packages count as unfetched downstream
+            print(f"osv index chunk {i} failed: {ex}")
+            failed += [f"{e}/{n}" for e, n in chunk]
+            continue
         for (e, n), r in zip(chunk, res):
             ids = [v["id"] for v in r.get("vulns", [])]
             tok = r.get("next_page_token")
-            while tok:   # paginate single query
-                more = http("https://api.osv.dev/v1/query", {"package": {"ecosystem": e, "name": n}, "page_token": tok}) or {}
-                ids += [v["id"] for v in more.get("vulns", [])]
-                tok = more.get("next_page_token")
+            try:
+                while tok:   # paginate single query
+                    more = http("https://api.osv.dev/v1/query", {"package": {"ecosystem": e, "name": n}, "page_token": tok}) or {}
+                    ids += [v["id"] for v in more.get("vulns", [])]
+                    tok = more.get("next_page_token")
+            except Exception as ex:   # incomplete id list must not look complete -> no index file
+                print(f"osv index pagination failed for {e}/{n}: {ex}")
+                failed.append(f"{e}/{n}")
+                continue
             p = cache / "osv/index" / e / f"{safe(n)}.json"
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(json.dumps(sorted(set(ids))))
         print(f"osv index {min(i + 500, len(todo))}/{len(todo)}")
+    return failed
 
 
 def osv_vulns(cache: Path):
@@ -87,12 +99,26 @@ def osv_vulns(cache: Path):
     todo = [i for i in sorted(ids) if not (out / f"{i}.json").exists()]
 
     def get(i):
-        d = http(f"https://api.osv.dev/v1/vulns/{urllib.parse.quote(i)}")
-        if d:
-            (out / f"{i}.json").write_text(json.dumps(d))
-    with cf.ThreadPoolExecutor(16) as ex:
-        list(ex.map(get, todo))
-    print(f"osv vulns fetched {len(todo)} (total {len(ids)})")
+        try:
+            d = http(f"https://api.osv.dev/v1/vulns/{urllib.parse.quote(i)}")
+        except Exception as ex:
+            return i, str(ex)
+        # 404 -> tombstone, so "withdrawn" is distinguishable from "fetch failed" (no file)
+        (out / f"{i}.json").write_text(json.dumps(d if d else {"id": i, "_osv_404": True}))
+        return i, None
+    failed = todo
+    for attempt, workers in enumerate((8, 2, 1)):   # retry failures with less parallelism
+        with cf.ThreadPoolExecutor(workers) as ex:
+            res = list(ex.map(get, failed))
+        failed = [i for i, err in res if err]
+        print(f"osv vulns pass {attempt + 1}: {len(res) - len(failed)}/{len(res)} ok")
+        if not failed:
+            break
+        time.sleep(30)
+    for i in failed[:20]:
+        print(f"osv vuln unfetched: {i}")
+    print(f"osv vulns: {len(ids)} indexed, {len(failed)} unfetched (their packages count as unassessed)")
+    return failed
 
 
 def go_escape(m: str) -> str:
@@ -155,7 +181,12 @@ def versions(cache: Path, pkgs):
                             fixed |= {ev["fixed"] for ev in r.get("events", []) if "fixed" in ev}
         times = registry_times(e, n)
         if e == "Go":
-            times = {v: go_version_time(n, v) for v in sorted(fixed)}
+            times = {}
+            for v in sorted(fixed):
+                try:
+                    times[v] = go_version_time(n, v)
+                except Exception as ex:      # unknown publish time -> fix availability undetermined
+                    times["__error__"] = str(ex)
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps({v: t for v, t in times.items() if v in fixed or v == "__error__"}))
     with cf.ThreadPoolExecutor(8) as ex:
@@ -187,13 +218,14 @@ def main(argv=None):
     (cache / "kev.json").write_text(json.dumps(kev))
     pk = packages(Path(a.inventories), a.include_dev)
     print(f"{len(pk)} unique packages")
-    osv_index(cache, pk)
-    osv_vulns(cache)
+    idx_failed = osv_index(cache, pk)
+    vuln_failed = osv_vulns(cache)
     versions(cache, pk)
     (cache / "MANIFEST.json").write_text(json.dumps({
         "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "packages": len(pk),
         "osv_records": len(list((cache / "osv/vulns").glob("*.json"))), "kev_entries": len(kev["vulnerabilities"]),
-        "kev_catalog_version": kev.get("catalogVersion"), "kev_source": kev_source, "include_dev": a.include_dev}, indent=2))
+        "kev_catalog_version": kev.get("catalogVersion"), "kev_source": kev_source,
+        "osv_index_unfetched_packages": idx_failed, "osv_unfetched_records": vuln_failed, "include_dev": a.include_dev}, indent=2))
 
 
 if __name__ == "__main__":

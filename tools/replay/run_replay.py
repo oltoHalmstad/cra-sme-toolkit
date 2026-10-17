@@ -47,8 +47,12 @@ class OSVCache:
             if i not in self._v:
                 f = self.cache / "osv/vulns" / f"{i}.json"
                 self._v[i] = json.loads(f.read_text()) if f.exists() else None
-            if self._v[i] is not None:
-                out.append(self._v[i])
+            rec = self._v[i]
+            if rec is None:
+                return None      # an indexed record could not be fetched -> coverage gap (fail safe)
+            if rec.get("_osv_404"):
+                continue         # OSV answered 404 (record withdrawn/removed): legitimately no record
+            out.append(rec)
         return out
 
     def versions_published(self, eco: str, name: str) -> dict:
