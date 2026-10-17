@@ -73,4 +73,4 @@ def test_citation_cff_format_version_untouched():
     import yaml
     c = yaml.safe_load((ROOT / "CITATION.cff").read_text())
     assert str(c["cff-version"]) == "1.2.0"        # CFF schema version, not the software version
-    assert "repository-code" not in c          # source repository is private; Zenodo archive is the public release
+    assert c["repository-code"] == "https://github.com/oltoHalmstad/cra-sme-toolkit"

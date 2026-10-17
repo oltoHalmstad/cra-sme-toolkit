@@ -31,6 +31,8 @@ crasme-provenance = "crasme.provenance:main"
 crasme-gate = "crasme.gate:main"
 
 [project.urls]
+Repository = "https://github.com/oltoHalmstad/cra-sme-toolkit"
+Changelog = "https://github.com/oltoHalmstad/cra-sme-toolkit/blob/main/CHANGELOG.md"
 Archive = "https://doi.org/10.5281/zenodo.23437353"
 
 [tool.setuptools]

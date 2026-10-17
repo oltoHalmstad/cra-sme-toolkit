@@ -16,8 +16,8 @@
 - **Packaging:** the synthetic E9 test cache (939 files) is now one `tests/fixtures/e9_synthetic_cache.tar.gz`; `run_replay.py --cache` accepts a `.tar.gz`. This keeps the archive under Zenodo's preview limit.
 - **Release metadata:**
   - Zenodo DOI 10.5281/zenodo.23437353
-  - the development repository is private; the Zenodo archive is the public release, and no metadata links to the repository
-  - SECURITY.md asks for private reports by email to the author
+  - public GitHub repository https://github.com/oltoHalmstad/cra-sme-toolkit
+  - SECURITY.md uses GitHub private vulnerability reporting, with email as a fallback
   - schema `$id`s are DOI-based identifiers
   - `tools/set_doi.py` added
   - `tools/check_release.py` accepts PEP 440 pre-release versions

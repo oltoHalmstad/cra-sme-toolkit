@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Security vulnerability in this toolkit
-    url: https://doi.org/10.5281/zenodo.23437353
-    about: Report privately by email to the author (see SECURITY.md) — never in an issue.
+    url: https://github.com/oltoHalmstad/cra-sme-toolkit/security/advisories/new
+    about: Report privately — never in a public issue.

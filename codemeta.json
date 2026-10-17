@@ -31,5 +31,6 @@
     "jsonschema>=4.21"
   ],
   "developmentStatus": "active",
-  "identifier": "https://doi.org/10.5281/zenodo.23437353"
+  "identifier": "https://doi.org/10.5281/zenodo.23437353",
+  "codeRepository": "https://github.com/oltoHalmstad/cra-sme-toolkit"
 }

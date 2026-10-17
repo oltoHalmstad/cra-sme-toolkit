@@ -33,3 +33,4 @@ identifiers:
 - type: doi
   value: 10.5281/zenodo.23437353
   description: Zenodo DOI
+repository-code: https://github.com/oltoHalmstad/cra-sme-toolkit
