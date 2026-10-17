@@ -92,6 +92,8 @@ jobs:
         run: python tools/replay/fetch_data.py --inventories experiments/e9_release_replay/inventories --cache e9-cache ${{ inputs.include_dev && '--include-dev' || '' }}
       - name: Replay all releases (offline from cache)
         run: python tools/replay/run_replay.py --e9 experiments/e9_release_replay --cache e9-cache --out e9-results ${{ inputs.include_dev && '--include-dev' || '' }}
+      - name: Draw the pre-registered validation sample (seed 2026; blinded rater sheets)
+        run: python tools/replay/validation.py sample --results e9-results --e9 experiments/e9_release_replay --out e9-results/validation
       - name: OpenCRA head-to-head (current knowledge) + fail-safe probes
         run: tools/replay/opencra_compare.sh e9-sbom/sboms e9-results/opencra
       - name: Analysis notebook on real results

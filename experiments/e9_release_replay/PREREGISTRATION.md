@@ -1,6 +1,6 @@
 # E9 Pre-registration: Retrospective release replay on open-source IoT and network products
 
-**Version:** 1.0, frozen 17 Oct 2026, before any vulnerability data was fetched.
+**Version:** 1.1, frozen 17 Oct 2026, before any vulnerability data was fetched (amendment log in §11).
 **Toolkit commit:** record the commit that adds this file. Register it on OSF, or archive it on Zenodo, *before* running `.github/workflows/e9-replay.yml`.
 
 ## 1. Research questions and hypotheses
@@ -56,7 +56,7 @@ The sample spans ecosystems: npm (4), PyPI (4), Go (5), Maven (2), C/firmware (3
 ## 7. Analysis plan
 - **Primary analysis:** descriptive proportions per gate, with 95% Wilson CIs. Releases are clustered within products, so report a product-level bootstrap as well (resample products).
 - **No significance tests between gates.** The decisions are deterministic functions of the same data; we report differences and the cases that drive them.
-- **Manual validation:** a stratified random sample of 30 `known_kev` and 30 `known_high` findings (seed 2026). Two authors check whether the affected code is plausibly reachable in the product, and Cohen's κ is reported. Precision = share judged plausibly reachable.
+- **Manual validation:** a stratified random sample of 30 `known_kev` and 30 `known_high` findings (seed 2026). Two raters check whether the affected code is plausibly reachable in the product, and Cohen's κ is reported. Precision = share judged plausibly reachable. The unit, strata, blinding, labels and statistics are fixed in **VALIDATION.md** and implemented in `crasme/validation.py` (tested).
 - **Sensitivity analyses:**
   - include dev dependencies
   - exclude releases with undecidable matches
@@ -74,3 +74,9 @@ The sample spans ecosystems: npm (4), PyPI (4), Go (5), Maven (2), C/firmware (3
 
 ## 10. Ethics
 Only public data are used. Any previously unknown, exploitable issue found during manual validation is reported privately to the maintainers under their security policy, and never in the paper before a fix.
+
+## 11. Amendment log
+| Version | Date | Change | Data seen? |
+|---|---|---|---|
+| 1.0 | 17 Oct 2026 | Initial registration | No |
+| 1.1 | 17 Oct 2026 | Manual validation operationalised in VALIDATION.md: (product, vulnerability, package) units deduplicated across releases; stratum blinding; three labels; κ before adjudication; Wilson CIs. KEV is fetched from CISA's GitHub mirror (cisagov/kev-data) if cisa.gov refuses the CI runner; the source is recorded in MANIFEST.json. | No. No OSV or KEV data had been fetched. |

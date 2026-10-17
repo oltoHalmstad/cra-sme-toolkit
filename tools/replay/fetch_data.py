@@ -23,6 +23,8 @@ from pathlib import Path
 
 UA = {"User-Agent": "cra-sme-e9-replay/1.3 (research; https://doi.org/10.5281/zenodo.23437353)"}
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+# CISA's own GitHub mirror (cisagov/kev-data); used only if cisa.gov refuses the runner
+KEV_MIRROR = "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
 
 
 def http(url, data=None, retries=4):
@@ -167,10 +169,20 @@ def main(argv=None):
     a = ap.parse_args(argv)
     cache = Path(a.cache)
     cache.mkdir(parents=True, exist_ok=True)
-    kev = http(KEV_URL)
+    kev, kev_source = None, None
+    for url in (KEV_URL, KEV_MIRROR):
+        try:
+            kev = http(url)
+        except Exception as e:
+            print(f"KEV fetch failed from {url}: {e}")
+            continue
+        if kev and len(kev.get("vulnerabilities", [])) >= 1000:
+            kev_source = url
+            break
     if not kev or len(kev.get("vulnerabilities", [])) < 1000:
         raise SystemExit("KEV feed unavailable or implausibly small — refusing to continue (fail safe)")
     kev["_fetched_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    kev["_source"] = kev_source
     (cache / "kev.json").write_text(json.dumps(kev))
     pk = packages(Path(a.inventories), a.include_dev)
     print(f"{len(pk)} unique packages")
@@ -180,7 +192,7 @@ def main(argv=None):
     (cache / "MANIFEST.json").write_text(json.dumps({
         "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "packages": len(pk),
         "osv_records": len(list((cache / "osv/vulns").glob("*.json"))), "kev_entries": len(kev["vulnerabilities"]),
-        "kev_catalog_version": kev.get("catalogVersion"), "include_dev": a.include_dev}, indent=2))
+        "kev_catalog_version": kev.get("catalogVersion"), "kev_source": kev_source, "include_dev": a.include_dev}, indent=2))
 
 
 if __name__ == "__main__":
