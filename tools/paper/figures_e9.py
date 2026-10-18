@@ -6,6 +6,7 @@ import argparse
 import csv
 import json
 import statistics
+from collections import defaultdict
 from pathlib import Path
 
 import matplotlib
@@ -155,5 +156,153 @@ def main(argv=None):
     print("figures ->", out)
 
 
+
+# ---------------------------------------------------------------------------------------------
+# Revision (18 Oct 2026): figures requested by peer feedback
+# ---------------------------------------------------------------------------------------------
+def fig_inventory_quality(R, e9g_dir, out):
+    """PASS rate by inventory-quality group for G1, G2 and the post-hoc G3."""
+    N = list(csv.DictReader(open(Path(e9g_dir) / "e9g_natural.csv")))
+    M = {(m["product_id"], m["tag"]): m for m in csv.DictReader(open(R / "release_metrics.csv"))}
+    tb = {("thingsboard", t) for t in ("v3.9", "v3.9.1", "v4.0.1", "v4.2")}
+    inc = ("no-package-manifest", "resolve-in-ci (rebar3")
+    def grp(r):
+        k = (r["product_id"], r["tag"])
+        if M[k]["inventory_ok"] != "True":
+            return 0
+        if r["inventory_status"].startswith(inc):
+            return 1
+        if k in tb:
+            return 2
+        if r["inventory_status"] == "lockfile":
+            return 3
+        return None
+    groups = ["Empty or\ninvalid", "Present, declared\nincomplete", "Present, partial\n(found post hoc)", "Committed\nlockfile"]
+    rows = defaultdict(list)
+    for r in N:
+        g = grp(r)
+        if g is not None:
+            rows[g].append(r)
+    fig, ax = plt.subplots(figsize=(7.2, 2.8))
+    gates = [("G1", "CVSS ≥ 7 gate", "#9aa3ad", None), ("G2", "CRA-SME v1.2", BLUE, None),
+             ("G3", "+ completeness (post hoc)", ORANGE, "////")]
+    w = 0.26
+    for gi, (g, lab, col, hatch) in enumerate(gates):
+        for i in range(4):
+            rs = rows[i]
+            k = sum(r[g] == "PASS" for r in rs)
+            p = k / len(rs)
+            x = i + (gi - 1) * w
+            ax.bar(x, p, width=w, color=col, edgecolor=SURF, linewidth=1.5, hatch=hatch, label=lab if i == 0 else None)
+            ax.text(x, p + 0.03, f"{k}/{len(rs)}", ha="center", fontsize=6.6, color=INK)
+    ax.set_xticks(range(4))
+    ax.set_xticklabels(groups, fontsize=7.6)
+    ax.set_ylim(0, 1.15)
+    ax.set_ylabel("Share of releases\ngiven PASS")
+    ax.yaxis.grid(True, color=GRID, lw=0.6)
+    ax.set_axisbelow(True)
+    ax.legend(frameon=False, fontsize=7.4, loc="upper center", ncol=3, bbox_to_anchor=(0.5, 1.16))
+    save(fig, out, "Figure3_inventory_quality")
+
+
+def _km_curve(pairs):
+    pts = sorted(pairs)
+    n, s, i, xs, ys = len(pts), 1.0, 0, [0], [1.0]
+    while i < n:
+        t = pts[i][0]
+        tied = [e for tt, e in pts[i:] if tt == t]
+        d = sum(tied)
+        if d:
+            s *= 1 - d / (n - i)
+            xs.append(t)
+            ys.append(s)
+        i += len(tied)
+    return xs, ys
+
+
+def fig_tfoa(R, out):
+    F = list(csv.DictReader(open(R / "findings.csv")))
+    X = list(csv.DictReader(open(R / "exposure.csv")))
+    from datetime import date
+    dd = lambda s: date.fromisoformat(s[:10])  # noqa: E731
+    present = defaultdict(list)
+    for f in F:
+        present[(f["product_id"], f["vuln_id"], f["package"])].append(dd(f["release_date"]))
+    units = {}
+    for x in X:
+        units.setdefault((x["product_id"], x["vuln_id"], x["package"]), x)
+    up, lo = [], []
+    for k, u in units.items():
+        pub = dd(u["published"])
+        lp = max(present.get(k, [pub]))
+        if u["first_sampled_release_without"]:
+            t = int(u["days_published_to_fixed_release"])
+            up.append((t, True))
+            lo.append((min(max(0, (lp - pub).days), t), True))
+        else:
+            c = max(0, (lp - pub).days)
+            up.append((c, False))
+            lo.append((c, False))
+    fig, ax = plt.subplots(figsize=(3.5, 2.7))
+    for pairs, col, lab in ((up, BLUE, "upper bound (first sampled release without)"),
+                            (lo, ORANGE, "lower bound (last sampled release with)")):
+        xs, ys = _km_curve(pairs)
+        ax.step(xs, ys, where="post", color=col, lw=1.8, label=lab)
+    ax.axhline(0.5, color=INK2, lw=0.8, ls=":")
+    ax.axvline(30, color=INK2, lw=1, ls="--")
+    ax.text(32, 0.04, "30 days", fontsize=7, color=INK2)
+    ax.set_xlim(0, 400)
+    ax.set_ylim(0, 1.0)
+    ax.set_xlabel("Days since disclosure")
+    ax.set_ylabel("Share still present\n(Kaplan–Meier)")
+    ax.legend(frameon=False, fontsize=6.4, loc="upper right")
+    ax.yaxis.grid(True, color=GRID, lw=0.6)
+    ax.set_axisbelow(True)
+    save(fig, out, "Figure5_tfoa")
+
+
+def fig_evidence_flow(out):
+    fig, ax = plt.subplots(figsize=(7.2, 2.3))
+    ax.set_xlim(0, 100)
+    ax.set_ylim(0, 30)
+    ax.axis("off")
+    steps = [("Release\nartefact", "what ships"), ("Build\nidentity", "commit, digest"),
+             ("Representative\ninventory", "complete for\nthe artefact"), ("Dated\nknowledge", "OSV, KEV as of\nrelease date"),
+             ("Gate\ndecision", "PASS / REVIEW /\nFAIL + reasons"), ("Human\ndecision", "triage, VEX,\nArt. 14 check")]
+    xs = [1 + i * 16.6 for i in range(6)]
+    for i, (x, (t, b)) in enumerate(zip(xs, steps)):
+        hot = i == 2
+        ax.add_patch(FancyBboxPatch((x, 9), 14, 17, boxstyle="round,pad=0.3,rounding_size=1.2",
+                                    fc="#fdf0e9" if hot else "#f3f6fb", ec=ORANGE if hot else BLUE, lw=1.6 if hot else 1.0))
+        ax.text(x + 7, 21.3, t, ha="center", va="center", fontsize=6.9, weight="bold", color=INK, linespacing=1.1)
+        ax.text(x + 7, 13.2, b, ha="center", va="center", fontsize=6.4, color=INK2, linespacing=1.15)
+        if i < 5:
+            ax.annotate("", xy=(x + 16.4, 17.5), xytext=(x + 14.4, 17.5), arrowprops=dict(arrowstyle="-|>", color=INK2, lw=1))
+    ax.text(xs[2] + 7, 4.2, "silent PASS arises here: present\nbut unrepresentative inventory", ha="center", fontsize=6.6,
+            color=INK, linespacing=1.15)
+    save(fig, out, "Figure6_evidence_flow")
+
+
+def main_revision(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--results", required=True)
+    ap.add_argument("--e9g", required=True)
+    ap.add_argument("--out", required=True)
+    a = ap.parse_args(argv)
+    R, out = Path(a.results), Path(a.out)
+    out.mkdir(parents=True, exist_ok=True)
+    M = list(csv.DictReader(open(R / "release_metrics.csv")))
+    D = list(csv.DictReader(open(R / "drift.csv")))
+    lock = {m["product_id"] for m in M if m["inventory_status"] == "lockfile"}
+    fig_pipeline(out)
+    fig_gates(M, out)
+    fig_inventory_quality(R, a.e9g, out)
+    fig_drift(D, lock, out)
+    fig_tfoa(R, out)
+    fig_evidence_flow(out)
+    print("revision figures ->", out)
+
+
 if __name__ == "__main__":
-    main()
+    import sys as _s
+    main_revision() if "--e9g" in _s.argv else main()

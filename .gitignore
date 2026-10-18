@@ -25,3 +25,5 @@ paper/build_manuscript.js
 paper/references.json
 paper/*.docx
 paper/*.pdf
+paper/content.json
+paper/build_manuscript_jcp.py
