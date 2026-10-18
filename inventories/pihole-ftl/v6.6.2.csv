@@ -1,0 +1,2 @@
+ecosystem,name,version,dev,source
+npm,pihole-ftl,1.0.0,False,ci:syft:ok

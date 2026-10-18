@@ -1,0 +1,4605 @@
+{
+  "target": "e9-sbom/sboms/homebridge-v2.1.0.cdx.json",
+  "scanned_at": "2026-10-18T11:04:11.512150Z",
+  "sbom": {
+    "bom_format": "CycloneDX",
+    "spec_version": "1.6",
+    "serial_number": "urn:uuid:c619dbc1-c958-4454-a575-df0e761f9796",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-18T10:38:23Z",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0",
+      "version": null,
+      "component_type": "file",
+      "tools": [
+        {
+          "name": "syft",
+          "version": "1.42.3"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "@homebridge/ciao",
+        "version": "1.3.9",
+        "purl": "pkg:npm/%40homebridge/ciao@1.3.9",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@homebridge/dbus-native",
+        "version": "0.7.6",
+        "purl": "pkg:npm/%40homebridge/dbus-native@0.7.6",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@homebridge/hap-nodejs",
+        "version": "2.1.7",
+        "purl": "pkg:npm/%40homebridge/hap-nodejs@2.1.7",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@leichtgewicht/ip-codec",
+        "version": "2.0.5",
+        "purl": "pkg:npm/%40leichtgewicht/ip-codec@2.0.5",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@matter/general",
+        "version": "0.17.1",
+        "purl": "pkg:npm/%40matter/general@0.17.1",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@matter/main",
+        "version": "0.17.1",
+        "purl": "pkg:npm/%40matter/main@0.17.1",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@matter/model",
+        "version": "0.17.1",
+        "purl": "pkg:npm/%40matter/model@0.17.1",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@matter/node",
+        "version": "0.17.1",
+        "purl": "pkg:npm/%40matter/node@0.17.1",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@matter/nodejs",
+        "version": "0.17.1",
+        "purl": "pkg:npm/%40matter/nodejs@0.17.1",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@matter/protocol",
+        "version": "0.17.1",
+        "purl": "pkg:npm/%40matter/protocol@0.17.1",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@matter/types",
+        "version": "0.17.1",
+        "purl": "pkg:npm/%40matter/types@0.17.1",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@noble/curves",
+        "version": "2.2.0",
+        "purl": "pkg:npm/%40noble/curves@2.2.0",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "@noble/hashes",
+        "version": "2.2.0",
+        "purl": "pkg:npm/%40noble/hashes@2.2.0",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v6",
+        "purl": "pkg:github/actions/checkout@v6",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v6",
+        "purl": "pkg:github/actions/checkout@v6",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/setup-node",
+        "version": "v6",
+        "purl": "pkg:github/actions/setup-node@v6",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "bonjour-hap",
+        "version": "3.10.3",
+        "purl": "pkg:npm/bonjour-hap@3.10.3",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "buffer-from",
+        "version": "1.1.2",
+        "purl": "pkg:npm/buffer-from@1.1.2",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "chalk",
+        "version": "5.6.2",
+        "purl": "pkg:npm/chalk@5.6.2",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "commander",
+        "version": "15.0.0",
+        "purl": "pkg:npm/commander@15.0.0",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "debug",
+        "version": "4.4.3",
+        "purl": "pkg:npm/debug@4.4.3",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "dns-packet",
+        "version": "5.6.1",
+        "purl": "pkg:npm/dns-packet@5.6.1",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "duplexer",
+        "version": "0.1.2",
+        "purl": "pkg:npm/duplexer@0.1.2",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "event-stream",
+        "version": "4.0.1",
+        "purl": "pkg:npm/event-stream@4.0.1",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "fast-deep-equal",
+        "version": "3.1.3",
+        "purl": "pkg:npm/fast-deep-equal@3.1.3",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "fast-srp-hap",
+        "version": "2.0.4",
+        "purl": "pkg:npm/fast-srp-hap@2.0.4",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "from",
+        "version": "0.1.7",
+        "purl": "pkg:npm/from@0.1.7",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "fs-extra",
+        "version": "11.3.5",
+        "purl": "pkg:npm/fs-extra@11.3.5",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "futoin-hkdf",
+        "version": "1.5.3",
+        "purl": "pkg:npm/futoin-hkdf@1.5.3",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "graceful-fs",
+        "version": "4.2.11",
+        "purl": "pkg:npm/graceful-fs@4.2.11",
+        "licenses": [
+          "ISC"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "hexy",
+        "version": "0.4.0",
+        "purl": "pkg:npm/hexy@0.4.0",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge",
+        "version": "2.1.0",
+        "purl": "pkg:npm/homebridge@2.1.0",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/codeql-analysis.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/codeql-analysis.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/discord-webhooks.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/discord-webhooks.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/eslint.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/eslint.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/eslint.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/eslint.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/labeler.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/labeler.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/lint-docs.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/lint-docs.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/nodejs-build-and-test.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/nodejs-build-and-test.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/nodejs-build-and-test.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/nodejs-build-and-test.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/release-drafter.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/release-drafter.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/.github/.github/workflows/stale.yml",
+        "version": "latest",
+        "purl": "pkg:github/homebridge/.github@latest#.github/workflows/stale.yml",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "homebridge/deprecate-past-pre-releases",
+        "version": "v1",
+        "purl": "pkg:github/homebridge/deprecate-past-pre-releases@v1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "jsonfile",
+        "version": "6.2.1",
+        "purl": "pkg:npm/jsonfile@6.2.1",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "long",
+        "version": "5.3.2",
+        "purl": "pkg:npm/long@5.3.2",
+        "licenses": [
+          "Apache-2.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "map-stream",
+        "version": "0.0.7",
+        "purl": "pkg:npm/map-stream@0.0.7",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "minimist",
+        "version": "1.2.8",
+        "purl": "pkg:npm/minimist@1.2.8",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "mkdirp",
+        "version": "0.5.6",
+        "purl": "pkg:npm/mkdirp@0.5.6",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "ms",
+        "version": "2.1.3",
+        "purl": "pkg:npm/ms@2.1.3",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "multicast-dns",
+        "version": "7.2.5",
+        "purl": "pkg:npm/multicast-dns@7.2.5",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "multicast-dns-service-types",
+        "version": "1.1.0",
+        "purl": "pkg:npm/multicast-dns-service-types@1.1.0",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "node-persist",
+        "version": "0.0.12",
+        "purl": "pkg:npm/node-persist@0.0.12",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "oznu/gh-wiki-edit-discord-notification",
+        "version": "main",
+        "purl": "pkg:github/oznu/gh-wiki-edit-discord-notification@main",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "pause-stream",
+        "version": "0.0.11",
+        "purl": "pkg:npm/pause-stream@0.0.11",
+        "licenses": [
+          "Apache-2.0",
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "q",
+        "version": "1.1.2",
+        "purl": "pkg:npm/q@1.1.2",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "qrcode-terminal",
+        "version": "0.12.0",
+        "purl": "pkg:npm/qrcode-terminal@0.12.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "safe-buffer",
+        "version": "5.2.1",
+        "purl": "pkg:npm/safe-buffer@5.2.1",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "sax",
+        "version": "1.6.0",
+        "purl": "pkg:npm/sax@1.6.0",
+        "licenses": [
+          "BlueOak-1.0.0"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "semver",
+        "version": "7.8.1",
+        "purl": "pkg:npm/semver@7.8.1",
+        "licenses": [
+          "ISC"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "source-map",
+        "version": "0.6.1",
+        "purl": "pkg:npm/source-map@0.6.1",
+        "licenses": [
+          "BSD-3-Clause"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "source-map-support",
+        "version": "0.5.21",
+        "purl": "pkg:npm/source-map-support@0.5.21",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "split",
+        "version": "1.0.1",
+        "purl": "pkg:npm/split@1.0.1",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "stream-combiner",
+        "version": "0.2.2",
+        "purl": "pkg:npm/stream-combiner@0.2.2",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "through",
+        "version": "2.3.8",
+        "purl": "pkg:npm/through@2.3.8",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "thunky",
+        "version": "1.1.0",
+        "purl": "pkg:npm/thunky@1.1.0",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "tslib",
+        "version": "2.8.1",
+        "purl": "pkg:npm/tslib@2.8.1",
+        "licenses": [
+          "0BSD"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "tweetnacl",
+        "version": "1.0.3",
+        "purl": "pkg:npm/tweetnacl@1.0.3",
+        "licenses": [
+          "Unlicense"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "universalify",
+        "version": "2.0.1",
+        "purl": "pkg:npm/universalify@2.0.1",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "xml2js",
+        "version": "0.6.2",
+        "purl": "pkg:npm/xml2js@0.6.2",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "xmlbuilder",
+        "version": "11.0.1",
+        "purl": "pkg:npm/xmlbuilder@11.0.1",
+        "licenses": [
+          "MIT"
+        ],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/build.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "3217fd863cb1da10f91b5ec652ec032a3c9c6f76",
+          "SHA-256": "4fdf7fb9080b236be6596c1dd8adaef3cda23f5636ede0c1ec24cf574a766bdc"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/codeql-analysis.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "9f44d22354195b0589b96cb015057c614eb5b348",
+          "SHA-256": "90a047779490258ca6e6ef1aac7ac4b3482b0e41c301ac53fec54147d9c8cf74"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/deprecate-previous-pre-releases.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "bb42a96edaadaccd404b6f95a5789c4f01509c46",
+          "SHA-256": "6521485d9480ae16643a41862861769dbad1bb5c832ea2b6e5413a2e226e5a03"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/labeler.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "5d28753d2fb2224ba9359822d8b646626880230e",
+          "SHA-256": "aaacdedae6cb19331a593f0301a5a8703941bad130f1023cb18ff1c8e7acb0f4"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/release-drafter.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "ac36987b6e95e40410e937e4eaf36f6f0deca49f",
+          "SHA-256": "e2e332a0b0564457f2cdd0f5c45ec3f8ba243039b7a28f9f63d6f2c816591307"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/release.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "7c2db6e59fb975b3d72a36c44f83e7254824cf8d",
+          "SHA-256": "8408fdede10c2e3443b1835fb1f58f4058ab7f5c124a340c0798b4d0cce22ac5"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/stale.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "01bb4ab84c964ab3d0a1a773d85fd35f445d90cc",
+          "SHA-256": "8e0b70a2f9bcefc6248b915467234f13dfe178501bf10dd83777a5353d183041"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/wiki-change-notification.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "36300126568f5f244f804b6068d7b98fa0507ae2",
+          "SHA-256": "52b46c136e39befbd0d430f397b9b0f3e3596c3ac9310d9c097a34e5c92aa4a3"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/homebridge-v2.1.0/package-lock.json",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "a59dc0e62381c825904dfc537afa16a712aff133",
+          "SHA-256": "3ad1c5211bf8d336a41d2969846cdeb3639d906a30d7fc41d831d8a5b99235b8"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      }
+    ],
+    "raw": {
+      "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "serialNumber": "urn:uuid:c619dbc1-c958-4454-a575-df0e761f9796",
+      "version": 1,
+      "metadata": {
+        "timestamp": "2026-10-18T10:38:23Z",
+        "tools": {
+          "components": [
+            {
+              "type": "application",
+              "author": "anchore",
+              "name": "syft",
+              "version": "1.42.3"
+            }
+          ]
+        },
+        "component": {
+          "bom-ref": "1f110547347da041",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0"
+        }
+      },
+      "components": [
+        {
+          "bom-ref": "pkg:npm/%40homebridge/ciao@1.3.9?package-id=c0b4a0e3717450e8",
+          "type": "library",
+          "name": "@homebridge/ciao",
+          "version": "1.3.9",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@homebridge\\/ciao:\\@homebridge\\/ciao:1.3.9:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40homebridge/ciao@1.3.9",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40homebridge/dbus-native@0.7.6?package-id=a0b31067f0b61949",
+          "type": "library",
+          "name": "@homebridge/dbus-native",
+          "version": "0.7.6",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@homebridge\\/dbus-native:\\@homebridge\\/dbus-native:0.7.6:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40homebridge/dbus-native@0.7.6",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/dbus-native:\\@homebridge\\/dbus_native:0.7.6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/dbus_native:\\@homebridge\\/dbus-native:0.7.6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/dbus_native:\\@homebridge\\/dbus_native:0.7.6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/dbus:\\@homebridge\\/dbus-native:0.7.6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/dbus:\\@homebridge\\/dbus_native:0.7.6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40homebridge/hap-nodejs@2.1.7?package-id=0d4a3eb281e94897",
+          "type": "library",
+          "name": "@homebridge/hap-nodejs",
+          "version": "2.1.7",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@homebridge\\/hap-nodejs:\\@homebridge\\/hap-nodejs:2.1.7:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40homebridge/hap-nodejs@2.1.7",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/hap-nodejs:\\@homebridge\\/hap_nodejs:2.1.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/hap_nodejs:\\@homebridge\\/hap-nodejs:2.1.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/hap_nodejs:\\@homebridge\\/hap_nodejs:2.1.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/hap:\\@homebridge\\/hap-nodejs:2.1.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@homebridge\\/hap:\\@homebridge\\/hap_nodejs:2.1.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40leichtgewicht/ip-codec@2.0.5?package-id=995c004f6bd4e9ea",
+          "type": "library",
+          "name": "@leichtgewicht/ip-codec",
+          "version": "2.0.5",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@leichtgewicht\\/ip-codec:\\@leichtgewicht\\/ip-codec:2.0.5:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40leichtgewicht/ip-codec@2.0.5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@leichtgewicht\\/ip-codec:\\@leichtgewicht\\/ip_codec:2.0.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@leichtgewicht\\/ip_codec:\\@leichtgewicht\\/ip-codec:2.0.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@leichtgewicht\\/ip_codec:\\@leichtgewicht\\/ip_codec:2.0.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@leichtgewicht\\/ip:\\@leichtgewicht\\/ip-codec:2.0.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:\\@leichtgewicht\\/ip:\\@leichtgewicht\\/ip_codec:2.0.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40matter/general@0.17.1?package-id=a5ff6247f22a1835",
+          "type": "library",
+          "name": "@matter/general",
+          "version": "0.17.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@matter\\/general:\\@matter\\/general:0.17.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40matter/general@0.17.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40matter/main@0.17.1?package-id=37390d0b5491db87",
+          "type": "library",
+          "name": "@matter/main",
+          "version": "0.17.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@matter\\/main:\\@matter\\/main:0.17.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40matter/main@0.17.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40matter/model@0.17.1?package-id=50ca58efd4e5e240",
+          "type": "library",
+          "name": "@matter/model",
+          "version": "0.17.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@matter\\/model:\\@matter\\/model:0.17.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40matter/model@0.17.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40matter/node@0.17.1?package-id=fa63a9b2ed36de81",
+          "type": "library",
+          "name": "@matter/node",
+          "version": "0.17.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@matter\\/node:\\@matter\\/node:0.17.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40matter/node@0.17.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40matter/nodejs@0.17.1?package-id=d99bd69c5f0ea436",
+          "type": "library",
+          "name": "@matter/nodejs",
+          "version": "0.17.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@matter\\/nodejs:\\@matter\\/nodejs:0.17.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40matter/nodejs@0.17.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40matter/protocol@0.17.1?package-id=19a5052ce0a795e2",
+          "type": "library",
+          "name": "@matter/protocol",
+          "version": "0.17.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@matter\\/protocol:\\@matter\\/protocol:0.17.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40matter/protocol@0.17.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40matter/types@0.17.1?package-id=3844dd3ce6d5c3eb",
+          "type": "library",
+          "name": "@matter/types",
+          "version": "0.17.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@matter\\/types:\\@matter\\/types:0.17.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40matter/types@0.17.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40noble/curves@2.2.0?package-id=31e3d4816233384f",
+          "type": "library",
+          "name": "@noble/curves",
+          "version": "2.2.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@noble\\/curves:\\@noble\\/curves:2.2.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40noble/curves@2.2.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/%40noble/hashes@2.2.0?package-id=2268a832e8f6b29c",
+          "type": "library",
+          "name": "@noble/hashes",
+          "version": "2.2.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:\\@noble\\/hashes:\\@noble\\/hashes:2.2.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/%40noble/hashes@2.2.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v6?package-id=1ce778ecf7235f54",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v6",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v6",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/deprecate-previous-pre-releases.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v6?package-id=17f85c44f7973c32",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v6",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v6:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v6",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/release.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/setup-node@v6?package-id=18256ba5f5ef9f56",
+          "type": "library",
+          "name": "actions/setup-node",
+          "version": "v6",
+          "cpe": "cpe:2.3:a:actions\\/setup-node:actions\\/setup-node:v6:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/setup-node@v6",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup-node:actions\\/setup_node:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_node:actions\\/setup-node:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup_node:actions\\/setup_node:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-node:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_node:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/release.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/bonjour-hap@3.10.3?package-id=519663764a92423e",
+          "type": "library",
+          "name": "bonjour-hap",
+          "version": "3.10.3",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:bonjour-hap:bonjour-hap:3.10.3:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/bonjour-hap@3.10.3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:bonjour-hap:bonjour_hap:3.10.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:bonjour_hap:bonjour-hap:3.10.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:bonjour_hap:bonjour_hap:3.10.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:bonjour:bonjour-hap:3.10.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:bonjour:bonjour_hap:3.10.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/buffer-from@1.1.2?package-id=98e22d90241a7628",
+          "type": "library",
+          "name": "buffer-from",
+          "version": "1.1.2",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:buffer-from:buffer-from:1.1.2:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/buffer-from@1.1.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:buffer-from:buffer_from:1.1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:buffer_from:buffer-from:1.1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:buffer_from:buffer_from:1.1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:buffer:buffer-from:1.1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:buffer:buffer_from:1.1.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/chalk@5.6.2?package-id=57bbba252acf2548",
+          "type": "library",
+          "name": "chalk",
+          "version": "5.6.2",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:chalk:chalk:5.6.2:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/chalk@5.6.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/commander@15.0.0?package-id=8c66051810fa4ff0",
+          "type": "library",
+          "name": "commander",
+          "version": "15.0.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:commander:commander:15.0.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/commander@15.0.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/debug@4.4.3?package-id=96b0606cb5228062",
+          "type": "library",
+          "name": "debug",
+          "version": "4.4.3",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:debug_project:debug:4.4.3:*:*:*:*:node.js:*:*",
+          "purl": "pkg:npm/debug@4.4.3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/dns-packet@5.6.1?package-id=39d154f92ec19133",
+          "type": "library",
+          "name": "dns-packet",
+          "version": "5.6.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:dns-packet_project:dns-packet:5.6.1:*:*:*:*:node.js:*:*",
+          "purl": "pkg:npm/dns-packet@5.6.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/duplexer@0.1.2?package-id=d0ffc65c646e8f8c",
+          "type": "library",
+          "name": "duplexer",
+          "version": "0.1.2",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:duplexer:duplexer:0.1.2:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/duplexer@0.1.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/event-stream@4.0.1?package-id=461242ca3604b1c6",
+          "type": "library",
+          "name": "event-stream",
+          "version": "4.0.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:event-stream:event-stream:4.0.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/event-stream@4.0.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:event-stream:event_stream:4.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:event_stream:event-stream:4.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:event_stream:event_stream:4.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:event:event-stream:4.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:event:event_stream:4.0.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/fast-deep-equal@3.1.3?package-id=5dcd27213b9411fd",
+          "type": "library",
+          "name": "fast-deep-equal",
+          "version": "3.1.3",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:fast-deep-equal:fast-deep-equal:3.1.3:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/fast-deep-equal@3.1.3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast-deep-equal:fast_deep_equal:3.1.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast_deep_equal:fast-deep-equal:3.1.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast_deep_equal:fast_deep_equal:3.1.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast-deep:fast-deep-equal:3.1.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast-deep:fast_deep_equal:3.1.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast_deep:fast-deep-equal:3.1.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast_deep:fast_deep_equal:3.1.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast:fast-deep-equal:3.1.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast:fast_deep_equal:3.1.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/fast-srp-hap@2.0.4?package-id=d02fff43b8885730",
+          "type": "library",
+          "name": "fast-srp-hap",
+          "version": "2.0.4",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:fast-srp-hap:fast-srp-hap:2.0.4:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/fast-srp-hap@2.0.4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast-srp-hap:fast_srp_hap:2.0.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast_srp_hap:fast-srp-hap:2.0.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast_srp_hap:fast_srp_hap:2.0.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast-srp:fast-srp-hap:2.0.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast-srp:fast_srp_hap:2.0.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast_srp:fast-srp-hap:2.0.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast_srp:fast_srp_hap:2.0.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast:fast-srp-hap:2.0.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fast:fast_srp_hap:2.0.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/from@0.1.7?package-id=ca23488b24e5aedb",
+          "type": "library",
+          "name": "from",
+          "version": "0.1.7",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:from:from:0.1.7:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/from@0.1.7",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/fs-extra@11.3.5?package-id=2c027082d4964ee4",
+          "type": "library",
+          "name": "fs-extra",
+          "version": "11.3.5",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:fs-extra:fs-extra:11.3.5:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/fs-extra@11.3.5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fs-extra:fs_extra:11.3.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fs_extra:fs-extra:11.3.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fs_extra:fs_extra:11.3.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fs:fs-extra:11.3.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:fs:fs_extra:11.3.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/futoin-hkdf@1.5.3?package-id=5b409a05c370c663",
+          "type": "library",
+          "name": "futoin-hkdf",
+          "version": "1.5.3",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:futoin-hkdf:futoin-hkdf:1.5.3:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/futoin-hkdf@1.5.3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:futoin-hkdf:futoin_hkdf:1.5.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:futoin_hkdf:futoin-hkdf:1.5.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:futoin_hkdf:futoin_hkdf:1.5.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:futoin:futoin-hkdf:1.5.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:futoin:futoin_hkdf:1.5.3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/graceful-fs@4.2.11?package-id=45319b4c36cfb339",
+          "type": "library",
+          "name": "graceful-fs",
+          "version": "4.2.11",
+          "licenses": [
+            {
+              "license": {
+                "id": "ISC"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:graceful-fs:graceful-fs:4.2.11:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/graceful-fs@4.2.11",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:graceful-fs:graceful_fs:4.2.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:graceful_fs:graceful-fs:4.2.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:graceful_fs:graceful_fs:4.2.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:graceful:graceful-fs:4.2.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:graceful:graceful_fs:4.2.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/hexy@0.4.0?package-id=090c3a3e31c072cf",
+          "type": "library",
+          "name": "hexy",
+          "version": "0.4.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:hexy:hexy:0.4.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/hexy@0.4.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/homebridge@2.1.0?package-id=55052ba623e82feb",
+          "type": "library",
+          "name": "homebridge",
+          "version": "2.1.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:homebridge:homebridge:2.1.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/homebridge@2.1.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=eca2f20dda989111#.github/workflows/codeql-analysis.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/codeql-analysis.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/codeql-analysis.yml:homebridge\\/.github\\/.github\\/workflows\\/codeql-analysis.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/codeql-analysis.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/codeql-analysis.yml:homebridge\\/.github\\/.github\\/workflows\\/codeql_analysis.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/codeql_analysis.yml:homebridge\\/.github\\/.github\\/workflows\\/codeql-analysis.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/codeql_analysis.yml:homebridge\\/.github\\/.github\\/workflows\\/codeql_analysis.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/codeql:homebridge\\/.github\\/.github\\/workflows\\/codeql-analysis.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/codeql:homebridge\\/.github\\/.github\\/workflows\\/codeql_analysis.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql-analysis.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=f8114f09b8c00ffb#.github/workflows/discord-webhooks.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/discord-webhooks.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/discord-webhooks.yml:homebridge\\/.github\\/.github\\/workflows\\/discord-webhooks.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/discord-webhooks.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/discord-webhooks.yml:homebridge\\/.github\\/.github\\/workflows\\/discord_webhooks.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/discord_webhooks.yml:homebridge\\/.github\\/.github\\/workflows\\/discord-webhooks.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/discord_webhooks.yml:homebridge\\/.github\\/.github\\/workflows\\/discord_webhooks.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/discord:homebridge\\/.github\\/.github\\/workflows\\/discord-webhooks.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/discord:homebridge\\/.github\\/.github\\/workflows\\/discord_webhooks.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/release.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=427bd2ebc8e98268#.github/workflows/eslint.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/eslint.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/eslint.yml:homebridge\\/.github\\/.github\\/workflows\\/eslint.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/eslint.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=8728921e00cae6c5#.github/workflows/eslint.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/eslint.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/eslint.yml:homebridge\\/.github\\/.github\\/workflows\\/eslint.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/eslint.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/release.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=ddc0a5be8cde7adc#.github/workflows/labeler.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/labeler.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/labeler.yml:homebridge\\/.github\\/.github\\/workflows\\/labeler.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/labeler.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/labeler.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=edf204fad31bc3b9#.github/workflows/lint-docs.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/lint-docs.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/lint-docs.yml:homebridge\\/.github\\/.github\\/workflows\\/lint-docs.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/lint-docs.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/lint-docs.yml:homebridge\\/.github\\/.github\\/workflows\\/lint_docs.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/lint_docs.yml:homebridge\\/.github\\/.github\\/workflows\\/lint-docs.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/lint_docs.yml:homebridge\\/.github\\/.github\\/workflows\\/lint_docs.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/lint:homebridge\\/.github\\/.github\\/workflows\\/lint-docs.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/lint:homebridge\\/.github\\/.github\\/workflows\\/lint_docs.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=a746cbbf11e1fd93#.github/workflows/nodejs-build-and-test.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/nodejs-build-and-test.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/nodejs-build-and-test.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/build.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=ed4f18421e5bb7d8#.github/workflows/nodejs-build-and-test.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/nodejs-build-and-test.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/nodejs-build-and-test.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs:homebridge\\/.github\\/.github\\/workflows\\/nodejs-build-and-test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/nodejs:homebridge\\/.github\\/.github\\/workflows\\/nodejs_build_and_test.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/release.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=238344179be5366c#.github/workflows/release-drafter.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/release-drafter.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/release-drafter.yml:homebridge\\/.github\\/.github\\/workflows\\/release-drafter.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/release-drafter.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/release-drafter.yml:homebridge\\/.github\\/.github\\/workflows\\/release_drafter.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/release_drafter.yml:homebridge\\/.github\\/.github\\/workflows\\/release-drafter.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/release_drafter.yml:homebridge\\/.github\\/.github\\/workflows\\/release_drafter.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/release:homebridge\\/.github\\/.github\\/workflows\\/release-drafter.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/release:homebridge\\/.github\\/.github\\/workflows\\/release_drafter.yml:latest:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/release-drafter.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/.github@latest?package-id=9265c034873d87e3#.github/workflows/stale.yml",
+          "type": "library",
+          "name": "homebridge/.github/.github/workflows/stale.yml",
+          "version": "latest",
+          "cpe": "cpe:2.3:a:homebridge\\/.github\\/.github\\/workflows\\/stale.yml:homebridge\\/.github\\/.github\\/workflows\\/stale.yml:latest:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/.github@latest#.github/workflows/stale.yml",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-action-workflow-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action-workflow"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/stale.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/homebridge/deprecate-past-pre-releases@v1?package-id=7dc6d6d447bbc726",
+          "type": "library",
+          "name": "homebridge/deprecate-past-pre-releases",
+          "version": "v1",
+          "cpe": "cpe:2.3:a:homebridge\\/deprecate-past-pre-releases:homebridge\\/deprecate-past-pre-releases:v1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/homebridge/deprecate-past-pre-releases@v1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate-past-pre-releases:homebridge\\/deprecate_past_pre_releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate_past_pre_releases:homebridge\\/deprecate-past-pre-releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate_past_pre_releases:homebridge\\/deprecate_past_pre_releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate-past-pre:homebridge\\/deprecate-past-pre-releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate-past-pre:homebridge\\/deprecate_past_pre_releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate_past_pre:homebridge\\/deprecate-past-pre-releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate_past_pre:homebridge\\/deprecate_past_pre_releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate-past:homebridge\\/deprecate-past-pre-releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate-past:homebridge\\/deprecate_past_pre_releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate_past:homebridge\\/deprecate-past-pre-releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate_past:homebridge\\/deprecate_past_pre_releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate:homebridge\\/deprecate-past-pre-releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:homebridge\\/deprecate:homebridge\\/deprecate_past_pre_releases:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/deprecate-previous-pre-releases.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/jsonfile@6.2.1?package-id=ce9f72d1ffb0ead9",
+          "type": "library",
+          "name": "jsonfile",
+          "version": "6.2.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:jsonfile:jsonfile:6.2.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/jsonfile@6.2.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/long@5.3.2?package-id=22165934193ce3c8",
+          "type": "library",
+          "name": "long",
+          "version": "5.3.2",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:long:long:5.3.2:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/long@5.3.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/map-stream@0.0.7?package-id=05bfb5a04274c919",
+          "type": "library",
+          "name": "map-stream",
+          "version": "0.0.7",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:map-stream:map-stream:0.0.7:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/map-stream@0.0.7",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:map-stream:map_stream:0.0.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:map_stream:map-stream:0.0.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:map_stream:map_stream:0.0.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:map:map-stream:0.0.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:map:map_stream:0.0.7:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/minimist@1.2.8?package-id=bf8bc4c7577fa757",
+          "type": "library",
+          "name": "minimist",
+          "version": "1.2.8",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:minimist:minimist:1.2.8:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/minimist@1.2.8",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/mkdirp@0.5.6?package-id=4ee017b1ce1fca30",
+          "type": "library",
+          "name": "mkdirp",
+          "version": "0.5.6",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:mkdirp:mkdirp:0.5.6:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/mkdirp@0.5.6",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/ms@2.1.3?package-id=bb1077662b3cb7e0",
+          "type": "library",
+          "name": "ms",
+          "version": "2.1.3",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:vercel:ms:2.1.3:*:*:*:*:node.js:*:*",
+          "purl": "pkg:npm/ms@2.1.3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/multicast-dns@7.2.5?package-id=78968cd7d5b81c67",
+          "type": "library",
+          "name": "multicast-dns",
+          "version": "7.2.5",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:multicast-dns:multicast-dns:7.2.5:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/multicast-dns@7.2.5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast-dns:multicast_dns:7.2.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast_dns:multicast-dns:7.2.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast_dns:multicast_dns:7.2.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast:multicast-dns:7.2.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast:multicast_dns:7.2.5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/multicast-dns-service-types@1.1.0?package-id=e89ed9169b28470a",
+          "type": "library",
+          "name": "multicast-dns-service-types",
+          "version": "1.1.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:multicast-dns-service-types:multicast-dns-service-types:1.1.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/multicast-dns-service-types@1.1.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast-dns-service-types:multicast_dns_service_types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast_dns_service_types:multicast-dns-service-types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast_dns_service_types:multicast_dns_service_types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast-dns-service:multicast-dns-service-types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast-dns-service:multicast_dns_service_types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast_dns_service:multicast-dns-service-types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast_dns_service:multicast_dns_service_types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast-dns:multicast-dns-service-types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast-dns:multicast_dns_service_types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast_dns:multicast-dns-service-types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast_dns:multicast_dns_service_types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast:multicast-dns-service-types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:multicast:multicast_dns_service_types:1.1.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/node-persist@0.0.12?package-id=2238269bc5235334",
+          "type": "library",
+          "name": "node-persist",
+          "version": "0.0.12",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:node-persist:node-persist:0.0.12:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/node-persist@0.0.12",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:node-persist:node_persist:0.0.12:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:node_persist:node-persist:0.0.12:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:node_persist:node_persist:0.0.12:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:node:node-persist:0.0.12:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:node:node_persist:0.0.12:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/oznu/gh-wiki-edit-discord-notification@main?package-id=2f3f964a523081bd",
+          "type": "library",
+          "name": "oznu/gh-wiki-edit-discord-notification",
+          "version": "main",
+          "cpe": "cpe:2.3:a:oznu\\/gh-wiki-edit-discord-notification:oznu\\/gh-wiki-edit-discord-notification:main:*:*:*:*:*:*:*",
+          "purl": "pkg:github/oznu/gh-wiki-edit-discord-notification@main",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh-wiki-edit-discord-notification:oznu\\/gh_wiki_edit_discord_notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh_wiki_edit_discord_notification:oznu\\/gh-wiki-edit-discord-notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh_wiki_edit_discord_notification:oznu\\/gh_wiki_edit_discord_notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh-wiki-edit-discord:oznu\\/gh-wiki-edit-discord-notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh-wiki-edit-discord:oznu\\/gh_wiki_edit_discord_notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh_wiki_edit_discord:oznu\\/gh-wiki-edit-discord-notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh_wiki_edit_discord:oznu\\/gh_wiki_edit_discord_notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh-wiki-edit:oznu\\/gh-wiki-edit-discord-notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh-wiki-edit:oznu\\/gh_wiki_edit_discord_notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh_wiki_edit:oznu\\/gh-wiki-edit-discord-notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh_wiki_edit:oznu\\/gh_wiki_edit_discord_notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh-wiki:oznu\\/gh-wiki-edit-discord-notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh-wiki:oznu\\/gh_wiki_edit_discord_notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh_wiki:oznu\\/gh-wiki-edit-discord-notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh_wiki:oznu\\/gh_wiki_edit_discord_notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh:oznu\\/gh-wiki-edit-discord-notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:oznu\\/gh:oznu\\/gh_wiki_edit_discord_notification:main:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/wiki-change-notification.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/pause-stream@0.0.11?package-id=72f1952d4263723f",
+          "type": "library",
+          "name": "pause-stream",
+          "version": "0.0.11",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            },
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:pause-stream:pause-stream:0.0.11:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/pause-stream@0.0.11",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pause-stream:pause_stream:0.0.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pause_stream:pause-stream:0.0.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pause_stream:pause_stream:0.0.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pause:pause-stream:0.0.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:pause:pause_stream:0.0.11:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/q@1.1.2?package-id=fe7652bcd6722359",
+          "type": "library",
+          "name": "q",
+          "version": "1.1.2",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:q:q:1.1.2:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/q@1.1.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/qrcode-terminal@0.12.0?package-id=78916ea55fe6aa29",
+          "type": "library",
+          "name": "qrcode-terminal",
+          "version": "0.12.0",
+          "cpe": "cpe:2.3:a:qrcode-terminal:qrcode-terminal:0.12.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/qrcode-terminal@0.12.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:qrcode-terminal:qrcode_terminal:0.12.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:qrcode_terminal:qrcode-terminal:0.12.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:qrcode_terminal:qrcode_terminal:0.12.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:qrcode:qrcode-terminal:0.12.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:qrcode:qrcode_terminal:0.12.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/safe-buffer@5.2.1?package-id=28135efb01cb74b9",
+          "type": "library",
+          "name": "safe-buffer",
+          "version": "5.2.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:safe-buffer:safe-buffer:5.2.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/safe-buffer@5.2.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:safe-buffer:safe_buffer:5.2.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:safe_buffer:safe-buffer:5.2.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:safe_buffer:safe_buffer:5.2.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:safe:safe-buffer:5.2.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:safe:safe_buffer:5.2.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/sax@1.6.0?package-id=e700ff10562ba3d7",
+          "type": "library",
+          "name": "sax",
+          "version": "1.6.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "BlueOak-1.0.0"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:sax:sax:1.6.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/sax@1.6.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/semver@7.8.1?package-id=6afa0bfecce02762",
+          "type": "library",
+          "name": "semver",
+          "version": "7.8.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "ISC"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:npmjs:semver:7.8.1:*:*:*:*:node.js:*:*",
+          "purl": "pkg:npm/semver@7.8.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/source-map@0.6.1?package-id=73890295bbf91080",
+          "type": "library",
+          "name": "source-map",
+          "version": "0.6.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "BSD-3-Clause"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:source-map:source-map:0.6.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/source-map@0.6.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source-map:source_map:0.6.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source_map:source-map:0.6.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source_map:source_map:0.6.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source:source-map:0.6.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source:source_map:0.6.1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/source-map-support@0.5.21?package-id=3d35b8fa79afc6b3",
+          "type": "library",
+          "name": "source-map-support",
+          "version": "0.5.21",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:source-map-support:source-map-support:0.5.21:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/source-map-support@0.5.21",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source-map-support:source_map_support:0.5.21:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source_map_support:source-map-support:0.5.21:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source_map_support:source_map_support:0.5.21:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source-map:source-map-support:0.5.21:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source-map:source_map_support:0.5.21:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source_map:source-map-support:0.5.21:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source_map:source_map_support:0.5.21:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source:source-map-support:0.5.21:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:source:source_map_support:0.5.21:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/split@1.0.1?package-id=11152a71d0e3b5c0",
+          "type": "library",
+          "name": "split",
+          "version": "1.0.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:split:split:1.0.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/split@1.0.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/stream-combiner@0.2.2?package-id=b6bebe73ee8f6160",
+          "type": "library",
+          "name": "stream-combiner",
+          "version": "0.2.2",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:stream-combiner:stream-combiner:0.2.2:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/stream-combiner@0.2.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stream-combiner:stream_combiner:0.2.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stream_combiner:stream-combiner:0.2.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stream_combiner:stream_combiner:0.2.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stream:stream-combiner:0.2.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:stream:stream_combiner:0.2.2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/through@2.3.8?package-id=86f0f1f1a09c4ab6",
+          "type": "library",
+          "name": "through",
+          "version": "2.3.8",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:through:through:2.3.8:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/through@2.3.8",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/thunky@1.1.0?package-id=63c112218a893f01",
+          "type": "library",
+          "name": "thunky",
+          "version": "1.1.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:thunky:thunky:1.1.0:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/thunky@1.1.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/tslib@2.8.1?package-id=732c6f5be784c8f2",
+          "type": "library",
+          "name": "tslib",
+          "version": "2.8.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "0BSD"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:tslib:tslib:2.8.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/tslib@2.8.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/tweetnacl@1.0.3?package-id=2e0c9b3fb3b53bc7",
+          "type": "library",
+          "name": "tweetnacl",
+          "version": "1.0.3",
+          "licenses": [
+            {
+              "license": {
+                "id": "Unlicense"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:tweetnacl:tweetnacl:1.0.3:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/tweetnacl@1.0.3",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/universalify@2.0.1?package-id=268eb9812287520d",
+          "type": "library",
+          "name": "universalify",
+          "version": "2.0.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:universalify:universalify:2.0.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/universalify@2.0.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/xml2js@0.6.2?package-id=661ab85bf0f2008e",
+          "type": "library",
+          "name": "xml2js",
+          "version": "0.6.2",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:xml2js:xml2js:0.6.2:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/xml2js@0.6.2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:npm/xmlbuilder@11.0.1?package-id=92fc7d6c6f3396ae",
+          "type": "library",
+          "name": "xmlbuilder",
+          "version": "11.0.1",
+          "licenses": [
+            {
+              "license": {
+                "id": "MIT"
+              }
+            }
+          ],
+          "cpe": "cpe:2.3:a:xmlbuilder:xmlbuilder:11.0.1:*:*:*:*:*:*:*",
+          "purl": "pkg:npm/xmlbuilder@11.0.1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "javascript-lock-cataloger"
+            },
+            {
+              "name": "syft:package:language",
+              "value": "javascript"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "npm"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "javascript-npm-package-lock-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/package-lock.json"
+            }
+          ]
+        },
+        {
+          "bom-ref": "ebff2c81fbaf921b",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/build.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "3217fd863cb1da10f91b5ec652ec032a3c9c6f76"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "4fdf7fb9080b236be6596c1dd8adaef3cda23f5636ede0c1ec24cf574a766bdc"
+            }
+          ]
+        },
+        {
+          "bom-ref": "5e19ea2e1f9dfee4",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/codeql-analysis.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "9f44d22354195b0589b96cb015057c614eb5b348"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "90a047779490258ca6e6ef1aac7ac4b3482b0e41c301ac53fec54147d9c8cf74"
+            }
+          ]
+        },
+        {
+          "bom-ref": "626d60acf5295253",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/deprecate-previous-pre-releases.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "bb42a96edaadaccd404b6f95a5789c4f01509c46"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "6521485d9480ae16643a41862861769dbad1bb5c832ea2b6e5413a2e226e5a03"
+            }
+          ]
+        },
+        {
+          "bom-ref": "01f131306d9c2765",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/labeler.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "5d28753d2fb2224ba9359822d8b646626880230e"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "aaacdedae6cb19331a593f0301a5a8703941bad130f1023cb18ff1c8e7acb0f4"
+            }
+          ]
+        },
+        {
+          "bom-ref": "31e88b446ac7c887",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/release-drafter.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "ac36987b6e95e40410e937e4eaf36f6f0deca49f"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "e2e332a0b0564457f2cdd0f5c45ec3f8ba243039b7a28f9f63d6f2c816591307"
+            }
+          ]
+        },
+        {
+          "bom-ref": "cc210d8a1a5f5704",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/release.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "7c2db6e59fb975b3d72a36c44f83e7254824cf8d"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "8408fdede10c2e3443b1835fb1f58f4058ab7f5c124a340c0798b4d0cce22ac5"
+            }
+          ]
+        },
+        {
+          "bom-ref": "ffd6ebf112245b93",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/stale.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "01bb4ab84c964ab3d0a1a773d85fd35f445d90cc"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "8e0b70a2f9bcefc6248b915467234f13dfe178501bf10dd83777a5353d183041"
+            }
+          ]
+        },
+        {
+          "bom-ref": "29606451ce566170",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/wiki-change-notification.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "36300126568f5f244f804b6068d7b98fa0507ae2"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "52b46c136e39befbd0d430f397b9b0f3e3596c3ac9310d9c097a34e5c92aa4a3"
+            }
+          ]
+        },
+        {
+          "bom-ref": "fd71c2238fc07657",
+          "type": "file",
+          "name": "/tmp/e9-sbom/homebridge-v2.1.0/package-lock.json",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "a59dc0e62381c825904dfc537afa16a712aff133"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "3ad1c5211bf8d336a41d2969846cdeb3639d906a30d7fc41d831d8a5b99235b8"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "ref": "pkg:npm/%40homebridge/ciao@1.3.9?package-id=c0b4a0e3717450e8",
+          "dependsOn": [
+            "pkg:npm/debug@4.4.3?package-id=96b0606cb5228062",
+            "pkg:npm/fast-deep-equal@3.1.3?package-id=5dcd27213b9411fd",
+            "pkg:npm/source-map-support@0.5.21?package-id=3d35b8fa79afc6b3",
+            "pkg:npm/tslib@2.8.1?package-id=732c6f5be784c8f2"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40homebridge/dbus-native@0.7.6?package-id=a0b31067f0b61949",
+          "dependsOn": [
+            "pkg:npm/event-stream@4.0.1?package-id=461242ca3604b1c6",
+            "pkg:npm/hexy@0.4.0?package-id=090c3a3e31c072cf",
+            "pkg:npm/long@5.3.2?package-id=22165934193ce3c8",
+            "pkg:npm/minimist@1.2.8?package-id=bf8bc4c7577fa757",
+            "pkg:npm/safe-buffer@5.2.1?package-id=28135efb01cb74b9",
+            "pkg:npm/xml2js@0.6.2?package-id=661ab85bf0f2008e"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40homebridge/hap-nodejs@2.1.7?package-id=0d4a3eb281e94897",
+          "dependsOn": [
+            "pkg:npm/%40homebridge/ciao@1.3.9?package-id=c0b4a0e3717450e8",
+            "pkg:npm/%40homebridge/dbus-native@0.7.6?package-id=a0b31067f0b61949",
+            "pkg:npm/bonjour-hap@3.10.3?package-id=519663764a92423e",
+            "pkg:npm/debug@4.4.3?package-id=96b0606cb5228062",
+            "pkg:npm/fast-srp-hap@2.0.4?package-id=d02fff43b8885730",
+            "pkg:npm/futoin-hkdf@1.5.3?package-id=5b409a05c370c663",
+            "pkg:npm/node-persist@0.0.12?package-id=2238269bc5235334",
+            "pkg:npm/source-map-support@0.5.21?package-id=3d35b8fa79afc6b3",
+            "pkg:npm/tslib@2.8.1?package-id=732c6f5be784c8f2",
+            "pkg:npm/tweetnacl@1.0.3?package-id=2e0c9b3fb3b53bc7"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40matter/general@0.17.1?package-id=a5ff6247f22a1835",
+          "dependsOn": [
+            "pkg:npm/%40noble/curves@2.2.0?package-id=31e3d4816233384f"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40matter/main@0.17.1?package-id=37390d0b5491db87",
+          "dependsOn": [
+            "pkg:npm/%40matter/general@0.17.1?package-id=a5ff6247f22a1835",
+            "pkg:npm/%40matter/model@0.17.1?package-id=50ca58efd4e5e240",
+            "pkg:npm/%40matter/node@0.17.1?package-id=fa63a9b2ed36de81",
+            "pkg:npm/%40matter/protocol@0.17.1?package-id=19a5052ce0a795e2",
+            "pkg:npm/%40matter/types@0.17.1?package-id=3844dd3ce6d5c3eb"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40matter/model@0.17.1?package-id=50ca58efd4e5e240",
+          "dependsOn": [
+            "pkg:npm/%40matter/general@0.17.1?package-id=a5ff6247f22a1835"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40matter/node@0.17.1?package-id=fa63a9b2ed36de81",
+          "dependsOn": [
+            "pkg:npm/%40matter/general@0.17.1?package-id=a5ff6247f22a1835",
+            "pkg:npm/%40matter/model@0.17.1?package-id=50ca58efd4e5e240",
+            "pkg:npm/%40matter/protocol@0.17.1?package-id=19a5052ce0a795e2",
+            "pkg:npm/%40matter/types@0.17.1?package-id=3844dd3ce6d5c3eb"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40matter/nodejs@0.17.1?package-id=d99bd69c5f0ea436",
+          "dependsOn": [
+            "pkg:npm/%40matter/general@0.17.1?package-id=a5ff6247f22a1835",
+            "pkg:npm/%40matter/node@0.17.1?package-id=fa63a9b2ed36de81",
+            "pkg:npm/%40matter/protocol@0.17.1?package-id=19a5052ce0a795e2",
+            "pkg:npm/%40matter/types@0.17.1?package-id=3844dd3ce6d5c3eb"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40matter/protocol@0.17.1?package-id=19a5052ce0a795e2",
+          "dependsOn": [
+            "pkg:npm/%40matter/general@0.17.1?package-id=a5ff6247f22a1835",
+            "pkg:npm/%40matter/model@0.17.1?package-id=50ca58efd4e5e240",
+            "pkg:npm/%40matter/types@0.17.1?package-id=3844dd3ce6d5c3eb"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40matter/types@0.17.1?package-id=3844dd3ce6d5c3eb",
+          "dependsOn": [
+            "pkg:npm/%40matter/general@0.17.1?package-id=a5ff6247f22a1835",
+            "pkg:npm/%40matter/model@0.17.1?package-id=50ca58efd4e5e240"
+          ]
+        },
+        {
+          "ref": "pkg:npm/%40noble/curves@2.2.0?package-id=31e3d4816233384f",
+          "dependsOn": [
+            "pkg:npm/%40noble/hashes@2.2.0?package-id=2268a832e8f6b29c"
+          ]
+        },
+        {
+          "ref": "pkg:npm/bonjour-hap@3.10.3?package-id=519663764a92423e",
+          "dependsOn": [
+            "pkg:npm/fast-deep-equal@3.1.3?package-id=5dcd27213b9411fd",
+            "pkg:npm/multicast-dns-service-types@1.1.0?package-id=e89ed9169b28470a",
+            "pkg:npm/multicast-dns@7.2.5?package-id=78968cd7d5b81c67"
+          ]
+        },
+        {
+          "ref": "pkg:npm/debug@4.4.3?package-id=96b0606cb5228062",
+          "dependsOn": [
+            "pkg:npm/ms@2.1.3?package-id=bb1077662b3cb7e0"
+          ]
+        },
+        {
+          "ref": "pkg:npm/dns-packet@5.6.1?package-id=39d154f92ec19133",
+          "dependsOn": [
+            "pkg:npm/%40leichtgewicht/ip-codec@2.0.5?package-id=995c004f6bd4e9ea"
+          ]
+        },
+        {
+          "ref": "pkg:npm/event-stream@4.0.1?package-id=461242ca3604b1c6",
+          "dependsOn": [
+            "pkg:npm/duplexer@0.1.2?package-id=d0ffc65c646e8f8c",
+            "pkg:npm/from@0.1.7?package-id=ca23488b24e5aedb",
+            "pkg:npm/map-stream@0.0.7?package-id=05bfb5a04274c919",
+            "pkg:npm/pause-stream@0.0.11?package-id=72f1952d4263723f",
+            "pkg:npm/split@1.0.1?package-id=11152a71d0e3b5c0",
+            "pkg:npm/stream-combiner@0.2.2?package-id=b6bebe73ee8f6160",
+            "pkg:npm/through@2.3.8?package-id=86f0f1f1a09c4ab6"
+          ]
+        },
+        {
+          "ref": "pkg:npm/fs-extra@11.3.5?package-id=2c027082d4964ee4",
+          "dependsOn": [
+            "pkg:npm/graceful-fs@4.2.11?package-id=45319b4c36cfb339",
+            "pkg:npm/jsonfile@6.2.1?package-id=ce9f72d1ffb0ead9",
+            "pkg:npm/universalify@2.0.1?package-id=268eb9812287520d"
+          ]
+        },
+        {
+          "ref": "pkg:npm/homebridge@2.1.0?package-id=55052ba623e82feb",
+          "dependsOn": [
+            "pkg:npm/%40homebridge/hap-nodejs@2.1.7?package-id=0d4a3eb281e94897",
+            "pkg:npm/%40matter/main@0.17.1?package-id=37390d0b5491db87",
+            "pkg:npm/chalk@5.6.2?package-id=57bbba252acf2548",
+            "pkg:npm/commander@15.0.0?package-id=8c66051810fa4ff0",
+            "pkg:npm/fs-extra@11.3.5?package-id=2c027082d4964ee4",
+            "pkg:npm/qrcode-terminal@0.12.0?package-id=78916ea55fe6aa29",
+            "pkg:npm/semver@7.8.1?package-id=6afa0bfecce02762",
+            "pkg:npm/source-map-support@0.5.21?package-id=3d35b8fa79afc6b3"
+          ]
+        },
+        {
+          "ref": "pkg:npm/jsonfile@6.2.1?package-id=ce9f72d1ffb0ead9",
+          "dependsOn": [
+            "pkg:npm/universalify@2.0.1?package-id=268eb9812287520d"
+          ]
+        },
+        {
+          "ref": "pkg:npm/mkdirp@0.5.6?package-id=4ee017b1ce1fca30",
+          "dependsOn": [
+            "pkg:npm/minimist@1.2.8?package-id=bf8bc4c7577fa757"
+          ]
+        },
+        {
+          "ref": "pkg:npm/multicast-dns@7.2.5?package-id=78968cd7d5b81c67",
+          "dependsOn": [
+            "pkg:npm/dns-packet@5.6.1?package-id=39d154f92ec19133",
+            "pkg:npm/thunky@1.1.0?package-id=63c112218a893f01"
+          ]
+        },
+        {
+          "ref": "pkg:npm/node-persist@0.0.12?package-id=2238269bc5235334",
+          "dependsOn": [
+            "pkg:npm/mkdirp@0.5.6?package-id=4ee017b1ce1fca30",
+            "pkg:npm/q@1.1.2?package-id=fe7652bcd6722359"
+          ]
+        },
+        {
+          "ref": "pkg:npm/pause-stream@0.0.11?package-id=72f1952d4263723f",
+          "dependsOn": [
+            "pkg:npm/through@2.3.8?package-id=86f0f1f1a09c4ab6"
+          ]
+        },
+        {
+          "ref": "pkg:npm/source-map-support@0.5.21?package-id=3d35b8fa79afc6b3",
+          "dependsOn": [
+            "pkg:npm/buffer-from@1.1.2?package-id=98e22d90241a7628",
+            "pkg:npm/source-map@0.6.1?package-id=73890295bbf91080"
+          ]
+        },
+        {
+          "ref": "pkg:npm/split@1.0.1?package-id=11152a71d0e3b5c0",
+          "dependsOn": [
+            "pkg:npm/through@2.3.8?package-id=86f0f1f1a09c4ab6"
+          ]
+        },
+        {
+          "ref": "pkg:npm/stream-combiner@0.2.2?package-id=b6bebe73ee8f6160",
+          "dependsOn": [
+            "pkg:npm/duplexer@0.1.2?package-id=d0ffc65c646e8f8c",
+            "pkg:npm/through@2.3.8?package-id=86f0f1f1a09c4ab6"
+          ]
+        },
+        {
+          "ref": "pkg:npm/xml2js@0.6.2?package-id=661ab85bf0f2008e",
+          "dependsOn": [
+            "pkg:npm/sax@1.6.0?package-id=e700ff10562ba3d7",
+            "pkg:npm/xmlbuilder@11.0.1?package-id=92fc7d6c6f3396ae"
+          ]
+        }
+      ]
+    }
+  },
+  "matches": [],
+  "skipped_components": [
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/build.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "3217fd863cb1da10f91b5ec652ec032a3c9c6f76",
+        "SHA-256": "4fdf7fb9080b236be6596c1dd8adaef3cda23f5636ede0c1ec24cf574a766bdc"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/codeql-analysis.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "9f44d22354195b0589b96cb015057c614eb5b348",
+        "SHA-256": "90a047779490258ca6e6ef1aac7ac4b3482b0e41c301ac53fec54147d9c8cf74"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/deprecate-previous-pre-releases.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "bb42a96edaadaccd404b6f95a5789c4f01509c46",
+        "SHA-256": "6521485d9480ae16643a41862861769dbad1bb5c832ea2b6e5413a2e226e5a03"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/labeler.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "5d28753d2fb2224ba9359822d8b646626880230e",
+        "SHA-256": "aaacdedae6cb19331a593f0301a5a8703941bad130f1023cb18ff1c8e7acb0f4"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/release-drafter.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "ac36987b6e95e40410e937e4eaf36f6f0deca49f",
+        "SHA-256": "e2e332a0b0564457f2cdd0f5c45ec3f8ba243039b7a28f9f63d6f2c816591307"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/release.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "7c2db6e59fb975b3d72a36c44f83e7254824cf8d",
+        "SHA-256": "8408fdede10c2e3443b1835fb1f58f4058ab7f5c124a340c0798b4d0cce22ac5"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/stale.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "01bb4ab84c964ab3d0a1a773d85fd35f445d90cc",
+        "SHA-256": "8e0b70a2f9bcefc6248b915467234f13dfe178501bf10dd83777a5353d183041"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0/.github/workflows/wiki-change-notification.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "36300126568f5f244f804b6068d7b98fa0507ae2",
+        "SHA-256": "52b46c136e39befbd0d430f397b9b0f3e3596c3ac9310d9c097a34e5c92aa4a3"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/homebridge-v2.1.0/package-lock.json",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "a59dc0e62381c825904dfc537afa16a712aff133",
+        "SHA-256": "3ad1c5211bf8d336a41d2969846cdeb3639d906a30d7fc41d831d8a5b99235b8"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    }
+  ],
+  "offline": false,
+  "warnings": [
+    "Skipped 9 component(s) with invalid or missing PURLs (they were not sent to OSV)."
+  ]
+}

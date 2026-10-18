@@ -1,0 +1,7 @@
+Syft is required to scan directories and images. Downloading the official 
+Anchore release once to /home/runner/.opencra/bin …
+
+Syft installed to /home/runner/.opencra/bin/syft
+  Next: opencra scan .   ·   opencra doctor   ·   opencra kev refresh
+Wrote json to e9-results/opencra/probes/malformed.out.json
+[+] Scan complete: 0 critical vulnerabilities found.

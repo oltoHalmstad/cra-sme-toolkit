@@ -1,0 +1,21 @@
+Syft failed on e9-results/opencra/probes/notcdx.cdx.json: [0004] ERROR could not
+determine source: errors occurred attempting to resolve 
+'e9-results/opencra/probes/notcdx.cdx.json':
+  - snap: snap file "e9-results/opencra/probes/notcdx.cdx.json" does not exist
+  - docker: pull failed: Error response from daemon: pull access denied for 
+e9-results/opencra/probes/notcdx.cdx.json, repository does not exist or may 
+require 'docker login': denied: requested access to the resource is denied
+  - podman: podman not available: no host address
+  - containerd: pull failed: connection error: desc = "transport: Error while 
+dialing: dial unix /run/containerd/containerd.sock: connect: permission denied"
+  - oci-registry: failed to get image descriptor from registry: GET 
+https://index.docker.io/v2/e9-results/opencra/probes/notcdx.cdx.json/manifests/l
+atest: UNAUTHORIZED: authentication required; [map[Action:pull Class: 
+Name:e9-results/opencra/probes/notcdx.cdx.json Type:repository]]
+  - oci-model: failed to fetch descriptor: GET 
+https://index.docker.io/v2/e9-results/opencra/probes/notcdx.cdx.json/manifests/l
+atest: UNAUTHORIZED: authentication required; [map[Action:pull Class: 
+Name:e9-results/opencra/probes/notcdx.cdx.json Type:repository]]
+  - snap: no snap found with name 'e9-results/opencra/probes/notcdx.cdx.json'
+  - additionally, the following providers failed with file does not exist: 
+docker-archive, oci-archive, oci-dir, singularity, local-file, local-directory

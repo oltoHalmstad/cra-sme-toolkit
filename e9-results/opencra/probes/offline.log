@@ -1,0 +1,10 @@
+OpenCRA is ready. Next commands:
+
+  opencra scan .          Scan this directory
+  opencra doctor          Check Syft, cache, and PDF
+  opencra kev refresh     Update the CISA KEV catalog
+  opencra --help          All commands
+
+Syft is downloaded automatically on the first online directory scan.
+No cached CISA KEV catalog. Re-run without --offline after `opencra kev refresh`
+while online.

@@ -1,0 +1,12 @@
+{
+  "seed": 2026,
+  "n_per_stratum": 30,
+  "units_available": {
+    "known_kev": 0,
+    "known_high": 255
+  },
+  "sampled": {
+    "known_kev": 0,
+    "known_high": 30
+  }
+}

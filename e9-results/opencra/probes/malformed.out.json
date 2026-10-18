@@ -1,0 +1,53 @@
+{
+  "target": "e9-results/opencra/probes/malformed.cdx.json",
+  "scanned_at": "2026-10-18T11:00:06.407001Z",
+  "sbom": {
+    "bom_format": "CycloneDX",
+    "spec_version": "1.7",
+    "serial_number": "urn:uuid:b6e63b27-8f04-42a5-81d6-2446e70c581c",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-18T11:00:06Z",
+      "name": "malformed.cdx.json",
+      "version": "sha256:19245d33339bde5ed501606035545d5975c8afef182c9793504c0460fd1ebf1b",
+      "component_type": "file",
+      "tools": [
+        {
+          "name": "syft",
+          "version": "1.54.1"
+        }
+      ]
+    },
+    "components": [],
+    "raw": {
+      "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.7",
+      "serialNumber": "urn:uuid:b6e63b27-8f04-42a5-81d6-2446e70c581c",
+      "version": 1,
+      "metadata": {
+        "timestamp": "2026-10-18T11:00:06Z",
+        "tools": {
+          "components": [
+            {
+              "type": "application",
+              "author": "anchore",
+              "name": "syft",
+              "version": "1.54.1"
+            }
+          ]
+        },
+        "component": {
+          "bom-ref": "903f7321aca68264",
+          "type": "file",
+          "name": "malformed.cdx.json",
+          "version": "sha256:19245d33339bde5ed501606035545d5975c8afef182c9793504c0460fd1ebf1b"
+        }
+      }
+    }
+  },
+  "matches": [],
+  "skipped_components": [],
+  "offline": false,
+  "warnings": []
+}

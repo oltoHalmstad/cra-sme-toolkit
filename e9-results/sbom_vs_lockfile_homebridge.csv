@@ -1,0 +1,9 @@
+product_id,tag,syft_status,lockfile_n,syft_n,both,recall_vs_lockfile,precision_vs_lockfile,syft_only,error
+homebridge,v1.8.5,ok,102,103,102,1.0,0.9902912621359223,1,
+homebridge,v1.9.0,ok,111,112,111,1.0,0.9910714285714286,1,
+homebridge,v1.10.0,ok,111,112,111,1.0,0.9910714285714286,1,
+homebridge,v1.11.0,ok,111,112,111,1.0,0.9910714285714286,1,
+homebridge,v1.11.1,ok,110,111,110,1.0,0.990990990990991,1,
+homebridge,v1.11.4,ok,50,51,50,1.0,0.9803921568627451,1,
+homebridge,v2.1.0,ok,54,55,54,1.0,0.9818181818181818,1,
+homebridge,v2.4.0,ok,51,52,51,1.0,0.9807692307692307,1,

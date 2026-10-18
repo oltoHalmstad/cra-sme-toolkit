@@ -1,0 +1,5 @@
+product_id,tag,syft_status,lockfile_n,syft_n,both,recall_vs_lockfile,precision_vs_lockfile,syft_only,error
+mosquitto,v2.0.20,ok,0,0,0,,,0,
+mosquitto,v2.0.21,ok,0,0,0,,,0,
+mosquitto,v2.0.22,ok,0,0,0,,,0,
+mosquitto,v2.1.2,ok,0,0,0,,,0,

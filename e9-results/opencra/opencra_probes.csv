@@ -1,0 +1,7 @@
+case,exit_code
+empty,0
+malformed,0
+notcdx,2
+known_vuln,0
+missing,2
+offline_no_cache,2

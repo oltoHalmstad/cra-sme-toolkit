@@ -1,0 +1,2154 @@
+{
+  "target": "e9-sbom/sboms/mosquitto-v2.0.22.cdx.json",
+  "scanned_at": "2026-10-18T11:04:46.873245Z",
+  "sbom": {
+    "bom_format": "CycloneDX",
+    "spec_version": "1.6",
+    "serial_number": "urn:uuid:642606fb-7996-4724-9d25-80bf4d89a1d7",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-18T10:38:20Z",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22",
+      "version": null,
+      "component_type": "file",
+      "tools": [
+        {
+          "name": "syft",
+          "version": "1.42.3"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "Mattraks/delete-workflow-runs",
+        "version": "v2",
+        "purl": "pkg:github/mattraks/delete-workflow-runs@v2",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/checkout",
+        "version": "v4",
+        "purl": "pkg:github/actions/checkout@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/upload-artifact",
+        "version": "v4",
+        "purl": "pkg:github/actions/upload-artifact@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "actions/upload-artifact",
+        "version": "v4",
+        "purl": "pkg:github/actions/upload-artifact@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "ca-certificates",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/ca-certificates@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "dessant/lock-threads",
+        "version": "v5",
+        "purl": "pkg:github/dessant/lock-threads@v5",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "docbook-xsl",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/docbook-xsl@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "g++",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/g%2B%2B@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "gcc",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/gcc@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "github/codeql-action/analyze",
+        "version": "v3",
+        "purl": "pkg:github/github/codeql-action@v3#analyze",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "github/codeql-action/init",
+        "version": "v3",
+        "purl": "pkg:github/github/codeql-action@v3#init",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "github/issue-labeler",
+        "version": "v3.4",
+        "purl": "pkg:github/github/issue-labeler@v3.4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "johnwason/vcpkg-action",
+        "version": "v6",
+        "purl": "pkg:github/johnwason/vcpkg-action@v6",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "johnwason/vcpkg-action",
+        "version": "v6",
+        "purl": "pkg:github/johnwason/vcpkg-action@v6",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "joncloud/makensis-action",
+        "version": "v4",
+        "purl": "pkg:github/joncloud/makensis-action@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "joncloud/makensis-action",
+        "version": "v4",
+        "purl": "pkg:github/joncloud/makensis-action@v4",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "libcjson-dev",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/libcjson-dev@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "libcjson1",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/libcjson1@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "libssl-dev",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/libssl-dev@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "libssl3t64",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/libssl3t64@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "libwebsockets-dev",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/libwebsockets-dev@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "libwebsockets19t64",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/libwebsockets19t64@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "suisei-cn/actions-download-file",
+        "version": "v1.6.0",
+        "purl": "pkg:github/suisei-cn/actions-download-file@v1.6.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "suisei-cn/actions-download-file",
+        "version": "v1.6.0",
+        "purl": "pkg:github/suisei-cn/actions-download-file@v1.6.0",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "vapier/coverity-scan-action",
+        "version": "v1",
+        "purl": "pkg:github/vapier/coverity-scan-action@v1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "vapier/coverity-scan-action",
+        "version": "v1",
+        "purl": "pkg:github/vapier/coverity-scan-action@v1",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "library",
+        "name": "xsltproc",
+        "version": "unknown",
+        "purl": "pkg:deb/ubuntu/xsltproc@unknown",
+        "licenses": [],
+        "hashes": {},
+        "skipped_reason": null
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/codeql-analysis.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "315feafee123a1a38bef0834a08a845bb62b8934",
+          "SHA-256": "ff854438e2b195bced26ae4c8d1d8d224f6135e7c1ebf04b7877781bd72a9e85"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/coverity-scan-develop.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "b3f016cc634ce2fabfa0385fa666441e8e3f108a",
+          "SHA-256": "39bbd1881b9bf1c9952753d4018931ba54d525d2e255b383fc4976bd7cc6c7d4"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/coverity-scan-fixes.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "c10dbc303e5b95dbfdaeebe404555c27783bec63",
+          "SHA-256": "7bbefc0ea6c9808b5293f4ae26f6463424a3dab73914ac641a19942164a7cd4f"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/delete-old-workflow-runs.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "f2efb78e35c7180c5dbd3406a8eca7c942071f55",
+          "SHA-256": "8b743a01d0e38f1a25da887885e2e156221b158fea3fbc6b40868633e6b401d4"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/issue-labler.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "1b462b2e40ddfea131433d2796aaec35d5b3c9a9",
+          "SHA-256": "e1102c406384e57317a1ed84266106247e520269bb40e3cea5f518dbd8797af6"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/lock.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "782deee7697a2a646307c0a66122652541e102d0",
+          "SHA-256": "a89baaabcd08c9094ffed41bebc9ee9db2f292b4169d2aaa772f721531b559d0"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/mosquitto-cmake.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "8e90eaf10ba833872531685b11ae99090ea919fe",
+          "SHA-256": "80e93e9bd391acb5e1c98b90ee640a332fd47b937fd9d1a207c32641e1f56114"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/mosquitto-make.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "147c274a3b6d7b082e27f70c88749b1316ed0e2b",
+          "SHA-256": "bb228d4c018e654eb5b0d31afc053175be29c615d3d43849806590fb96d6dda8"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/windows-x86.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "33da54cbb7c886b135f52f7ba3c7a96b9a06338d",
+          "SHA-256": "7e777080fba68e78543a9ee42f24bbb5444cf4bfb455d8a02c2b0cb86441c0a8"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/windows.yml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "aa86ff858cb38cb3f14a8635f8f89d62ae890116",
+          "SHA-256": "cffa2dbe2bb1ba6d91cb65c580913fcbd772f0e434165cf4c742cccfefb1907c"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      },
+      {
+        "type": "file",
+        "name": "/tmp/e9-sbom/mosquitto-v2.0.22/snap/snapcraft.yaml",
+        "version": null,
+        "purl": null,
+        "licenses": [],
+        "hashes": {
+          "SHA-1": "868cd0ed00a1c45dab4330f62896d550e6a72a60",
+          "SHA-256": "23eaa7ef477ede1cdba787d17f661c8d4b8e32eed2c0e4fec93c0f418ca05567"
+        },
+        "skipped_reason": "invalid or missing PURL"
+      }
+    ],
+    "raw": {
+      "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+      "bomFormat": "CycloneDX",
+      "specVersion": "1.6",
+      "serialNumber": "urn:uuid:642606fb-7996-4724-9d25-80bf4d89a1d7",
+      "version": 1,
+      "metadata": {
+        "timestamp": "2026-10-18T10:38:20Z",
+        "tools": {
+          "components": [
+            {
+              "type": "application",
+              "author": "anchore",
+              "name": "syft",
+              "version": "1.42.3"
+            }
+          ]
+        },
+        "component": {
+          "bom-ref": "4c31611dbb06f731",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22"
+        }
+      },
+      "components": [
+        {
+          "bom-ref": "pkg:github/mattraks/delete-workflow-runs@v2?package-id=48414c7b1f80b0fd",
+          "type": "library",
+          "name": "Mattraks/delete-workflow-runs",
+          "version": "v2",
+          "cpe": "cpe:2.3:a:Mattraks\\/delete-workflow-runs:Mattraks\\/delete-workflow-runs:v2:*:*:*:*:*:*:*",
+          "purl": "pkg:github/Mattraks/delete-workflow-runs@v2",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Mattraks\\/delete-workflow-runs:Mattraks\\/delete_workflow_runs:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Mattraks\\/delete_workflow_runs:Mattraks\\/delete-workflow-runs:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Mattraks\\/delete_workflow_runs:Mattraks\\/delete_workflow_runs:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Mattraks\\/delete-workflow:Mattraks\\/delete-workflow-runs:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Mattraks\\/delete-workflow:Mattraks\\/delete_workflow_runs:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Mattraks\\/delete_workflow:Mattraks\\/delete-workflow-runs:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Mattraks\\/delete_workflow:Mattraks\\/delete_workflow_runs:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Mattraks\\/delete:Mattraks\\/delete-workflow-runs:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:Mattraks\\/delete:Mattraks\\/delete_workflow_runs:v2:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/delete-old-workflow-runs.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=9235b9374321d01c",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql-analysis.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=c57ff32e4d3d5c34",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/coverity-scan-develop.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=2a3fe312387749c5",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/coverity-scan-fixes.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=c054d61f795e233e",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/mosquitto-cmake.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=c279bc87cb211fcc",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/mosquitto-make.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=b4ffa4ff9d9a1912",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows-x86.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/checkout@v4?package-id=337cb5128111bcec",
+          "type": "library",
+          "name": "actions/checkout",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/checkout@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/upload-artifact@v4?package-id=d6a29876459479f0",
+          "type": "library",
+          "name": "actions/upload-artifact",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/upload-artifact@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows-x86.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/actions/upload-artifact@v4?package-id=901429d04feb31d8",
+          "type": "library",
+          "name": "actions/upload-artifact",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/actions/upload-artifact@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload-artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload_artifact:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload-artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:actions\\/upload:actions\\/upload_artifact:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/ca-certificates@unknown?package-id=bcbfc6d4684bae40",
+          "type": "library",
+          "name": "ca-certificates",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:ca-certificates:ca-certificates:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/ca-certificates@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:ca-certificates:ca_certificates:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:ca_certificates:ca-certificates:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:ca_certificates:ca_certificates:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:ca:ca-certificates:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:ca:ca_certificates:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/dessant/lock-threads@v5?package-id=c143b25348c2008d",
+          "type": "library",
+          "name": "dessant/lock-threads",
+          "version": "v5",
+          "cpe": "cpe:2.3:a:dessant\\/lock-threads:dessant\\/lock-threads:v5:*:*:*:*:*:*:*",
+          "purl": "pkg:github/dessant/lock-threads@v5",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock-threads:dessant\\/lock_threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock_threads:dessant\\/lock-threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock_threads:dessant\\/lock_threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock:dessant\\/lock-threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:dessant\\/lock:dessant\\/lock_threads:v5:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/lock.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/docbook-xsl@unknown?package-id=0159874de364487b",
+          "type": "library",
+          "name": "docbook-xsl",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:docbook-xsl:docbook-xsl:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/docbook-xsl@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docbook-xsl:docbook_xsl:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docbook_xsl:docbook-xsl:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docbook_xsl:docbook_xsl:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docbook:docbook-xsl:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:docbook:docbook_xsl:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/g%2B%2B@unknown?package-id=853fbd8afa27243b",
+          "type": "library",
+          "name": "g++",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:g\\+\\+:g\\+\\+:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/g%2B%2B@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/gcc@unknown?package-id=1caa43656378f204",
+          "type": "library",
+          "name": "gcc",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:gcc:gcc:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/gcc@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/github/codeql-action@v3?package-id=6e46bc88f6d5e449#analyze",
+          "type": "library",
+          "name": "github/codeql-action/analyze",
+          "version": "v3",
+          "cpe": "cpe:2.3:a:github\\/codeql-action\\/analyze:github\\/codeql-action\\/analyze:v3:*:*:*:*:*:*:*",
+          "purl": "pkg:github/github/codeql-action@v3#analyze",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/analyze:github\\/codeql_action\\/analyze:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/analyze:github\\/codeql-action\\/analyze:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/analyze:github\\/codeql_action\\/analyze:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql-action\\/analyze:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql_action\\/analyze:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql-analysis.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/github/codeql-action@v3?package-id=e44f6bc7aabf3d57#init",
+          "type": "library",
+          "name": "github/codeql-action/init",
+          "version": "v3",
+          "cpe": "cpe:2.3:a:github\\/codeql-action\\/init:github\\/codeql-action\\/init:v3:*:*:*:*:*:*:*",
+          "purl": "pkg:github/github/codeql-action@v3#init",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql-action\\/init:github\\/codeql_action\\/init:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/init:github\\/codeql-action\\/init:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql_action\\/init:github\\/codeql_action\\/init:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql-action\\/init:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/codeql:github\\/codeql_action\\/init:v3:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/codeql-analysis.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/github/issue-labeler@v3.4?package-id=52c1bae141e2913e",
+          "type": "library",
+          "name": "github/issue-labeler",
+          "version": "v3.4",
+          "cpe": "cpe:2.3:a:github\\/issue-labeler:github\\/issue-labeler:v3.4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/github/issue-labeler@v3.4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/issue-labeler:github\\/issue_labeler:v3.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/issue_labeler:github\\/issue-labeler:v3.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/issue_labeler:github\\/issue_labeler:v3.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/issue:github\\/issue-labeler:v3.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:github\\/issue:github\\/issue_labeler:v3.4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/issue-labler.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/johnwason/vcpkg-action@v6?package-id=08546ff2700a0b29",
+          "type": "library",
+          "name": "johnwason/vcpkg-action",
+          "version": "v6",
+          "cpe": "cpe:2.3:a:johnwason\\/vcpkg-action:johnwason\\/vcpkg-action:v6:*:*:*:*:*:*:*",
+          "purl": "pkg:github/johnwason/vcpkg-action@v6",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg-action:johnwason\\/vcpkg_action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg_action:johnwason\\/vcpkg-action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg_action:johnwason\\/vcpkg_action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg:johnwason\\/vcpkg-action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg:johnwason\\/vcpkg_action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows-x86.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/johnwason/vcpkg-action@v6?package-id=b56d909dde6d323a",
+          "type": "library",
+          "name": "johnwason/vcpkg-action",
+          "version": "v6",
+          "cpe": "cpe:2.3:a:johnwason\\/vcpkg-action:johnwason\\/vcpkg-action:v6:*:*:*:*:*:*:*",
+          "purl": "pkg:github/johnwason/vcpkg-action@v6",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg-action:johnwason\\/vcpkg_action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg_action:johnwason\\/vcpkg-action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg_action:johnwason\\/vcpkg_action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg:johnwason\\/vcpkg-action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:johnwason\\/vcpkg:johnwason\\/vcpkg_action:v6:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/joncloud/makensis-action@v4?package-id=491af3a556b83ca0",
+          "type": "library",
+          "name": "joncloud/makensis-action",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:joncloud\\/makensis-action:joncloud\\/makensis-action:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/joncloud/makensis-action@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis-action:joncloud\\/makensis_action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis_action:joncloud\\/makensis-action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis_action:joncloud\\/makensis_action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis:joncloud\\/makensis-action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis:joncloud\\/makensis_action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows-x86.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/joncloud/makensis-action@v4?package-id=5db0bf25921d3f0a",
+          "type": "library",
+          "name": "joncloud/makensis-action",
+          "version": "v4",
+          "cpe": "cpe:2.3:a:joncloud\\/makensis-action:joncloud\\/makensis-action:v4:*:*:*:*:*:*:*",
+          "purl": "pkg:github/joncloud/makensis-action@v4",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis-action:joncloud\\/makensis_action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis_action:joncloud\\/makensis-action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis_action:joncloud\\/makensis_action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis:joncloud\\/makensis-action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:joncloud\\/makensis:joncloud\\/makensis_action:v4:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/libcjson-dev@unknown?package-id=313b812cb3913dd5",
+          "type": "library",
+          "name": "libcjson-dev",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:libcjson-dev:libcjson-dev:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/libcjson-dev@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libcjson-dev:libcjson_dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libcjson_dev:libcjson-dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libcjson_dev:libcjson_dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libcjson:libcjson-dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libcjson:libcjson_dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/libcjson1@unknown?package-id=25d6eacfce7439bd",
+          "type": "library",
+          "name": "libcjson1",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:libcjson1:libcjson1:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/libcjson1@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/libssl-dev@unknown?package-id=15aa865964a3bae5",
+          "type": "library",
+          "name": "libssl-dev",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:libssl-dev:libssl-dev:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/libssl-dev@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libssl-dev:libssl_dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libssl_dev:libssl-dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libssl_dev:libssl_dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libssl:libssl-dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libssl:libssl_dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/libssl3t64@unknown?package-id=839784da12f13345",
+          "type": "library",
+          "name": "libssl3t64",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:libssl3t64:libssl3t64:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/libssl3t64@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/libwebsockets-dev@unknown?package-id=e75b4ec8254440ad",
+          "type": "library",
+          "name": "libwebsockets-dev",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:libwebsockets-dev:libwebsockets-dev:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/libwebsockets-dev@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libwebsockets-dev:libwebsockets_dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libwebsockets_dev:libwebsockets-dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libwebsockets_dev:libwebsockets_dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libwebsockets:libwebsockets-dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:libwebsockets:libwebsockets_dev:unknown:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/libwebsockets19t64@unknown?package-id=0bf9f7c0e6e4aced",
+          "type": "library",
+          "name": "libwebsockets19t64",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:libwebsockets19t64:libwebsockets19t64:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/libwebsockets19t64@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/suisei-cn/actions-download-file@v1.6.0?package-id=f81fdf84187010f0",
+          "type": "library",
+          "name": "suisei-cn/actions-download-file",
+          "version": "v1.6.0",
+          "cpe": "cpe:2.3:a:suisei-cn\\/actions-download-file:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/suisei-cn/actions-download-file@v1.6.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions-download-file:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions_download_file:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions_download_file:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions-download:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions-download:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions_download:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions_download:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows-x86.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/suisei-cn/actions-download-file@v1.6.0?package-id=1b78adf3b8d6d7cf",
+          "type": "library",
+          "name": "suisei-cn/actions-download-file",
+          "version": "v1.6.0",
+          "cpe": "cpe:2.3:a:suisei-cn\\/actions-download-file:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*",
+          "purl": "pkg:github/suisei-cn/actions-download-file@v1.6.0",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions-download-file:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions_download_file:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions_download_file:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions-download:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions-download:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions_download:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions_download:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei-cn\\/actions:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei_cn\\/actions:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei:suisei-cn\\/actions-download-file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:suisei:suisei_cn\\/actions_download_file:v1.6.0:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/windows.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/vapier/coverity-scan-action@v1?package-id=2277ac34ad73865f",
+          "type": "library",
+          "name": "vapier/coverity-scan-action",
+          "version": "v1",
+          "cpe": "cpe:2.3:a:vapier\\/coverity-scan-action:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/vapier/coverity-scan-action@v1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity-scan-action:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity_scan_action:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity_scan_action:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity-scan:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity-scan:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity_scan:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity_scan:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/coverity-scan-develop.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:github/vapier/coverity-scan-action@v1?package-id=a7f8d3ef9b6ef9ac",
+          "type": "library",
+          "name": "vapier/coverity-scan-action",
+          "version": "v1",
+          "cpe": "cpe:2.3:a:vapier\\/coverity-scan-action:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*",
+          "purl": "pkg:github/vapier/coverity-scan-action@v1",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "github-actions-usage-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "github-action"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "github-actions-use-statement"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity-scan-action:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity_scan_action:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity_scan_action:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity-scan:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity-scan:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity_scan:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity_scan:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity:vapier\\/coverity-scan-action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:cpe23",
+              "value": "cpe:2.3:a:vapier\\/coverity:vapier\\/coverity_scan_action:v1:*:*:*:*:*:*:*"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/.github/workflows/coverity-scan-fixes.yml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:deb/ubuntu/xsltproc@unknown?package-id=eba806c2067d4b9e",
+          "type": "library",
+          "name": "xsltproc",
+          "version": "unknown",
+          "cpe": "cpe:2.3:a:xsltproc:xsltproc:unknown:*:*:*:*:*:*:*",
+          "purl": "pkg:deb/ubuntu/xsltproc@unknown",
+          "properties": [
+            {
+              "name": "syft:package:foundBy",
+              "value": "snap-cataloger"
+            },
+            {
+              "name": "syft:package:type",
+              "value": "deb"
+            },
+            {
+              "name": "syft:package:metadataType",
+              "value": "snap-entry"
+            },
+            {
+              "name": "syft:location:0:path",
+              "value": "/snap/snapcraft.yaml"
+            }
+          ]
+        },
+        {
+          "bom-ref": "5e19ea2e1f9dfee4",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/codeql-analysis.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "315feafee123a1a38bef0834a08a845bb62b8934"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "ff854438e2b195bced26ae4c8d1d8d224f6135e7c1ebf04b7877781bd72a9e85"
+            }
+          ]
+        },
+        {
+          "bom-ref": "4c7fa7937516f1a6",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/coverity-scan-develop.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "b3f016cc634ce2fabfa0385fa666441e8e3f108a"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "39bbd1881b9bf1c9952753d4018931ba54d525d2e255b383fc4976bd7cc6c7d4"
+            }
+          ]
+        },
+        {
+          "bom-ref": "bd5a839e234e431a",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/coverity-scan-fixes.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "c10dbc303e5b95dbfdaeebe404555c27783bec63"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "7bbefc0ea6c9808b5293f4ae26f6463424a3dab73914ac641a19942164a7cd4f"
+            }
+          ]
+        },
+        {
+          "bom-ref": "a0c60d2746a64b62",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/delete-old-workflow-runs.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "f2efb78e35c7180c5dbd3406a8eca7c942071f55"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "8b743a01d0e38f1a25da887885e2e156221b158fea3fbc6b40868633e6b401d4"
+            }
+          ]
+        },
+        {
+          "bom-ref": "f95123ced7496f9f",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/issue-labler.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "1b462b2e40ddfea131433d2796aaec35d5b3c9a9"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "e1102c406384e57317a1ed84266106247e520269bb40e3cea5f518dbd8797af6"
+            }
+          ]
+        },
+        {
+          "bom-ref": "fe8047766b0ba755",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/lock.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "782deee7697a2a646307c0a66122652541e102d0"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "a89baaabcd08c9094ffed41bebc9ee9db2f292b4169d2aaa772f721531b559d0"
+            }
+          ]
+        },
+        {
+          "bom-ref": "232ed458e2f0d870",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/mosquitto-cmake.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "8e90eaf10ba833872531685b11ae99090ea919fe"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "80e93e9bd391acb5e1c98b90ee640a332fd47b937fd9d1a207c32641e1f56114"
+            }
+          ]
+        },
+        {
+          "bom-ref": "cd1b1d4ee237b01c",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/mosquitto-make.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "147c274a3b6d7b082e27f70c88749b1316ed0e2b"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "bb228d4c018e654eb5b0d31afc053175be29c615d3d43849806590fb96d6dda8"
+            }
+          ]
+        },
+        {
+          "bom-ref": "8d3d1cd8f320a655",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/windows-x86.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "33da54cbb7c886b135f52f7ba3c7a96b9a06338d"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "7e777080fba68e78543a9ee42f24bbb5444cf4bfb455d8a02c2b0cb86441c0a8"
+            }
+          ]
+        },
+        {
+          "bom-ref": "fd37c610ead3d23e",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/windows.yml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "aa86ff858cb38cb3f14a8635f8f89d62ae890116"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "cffa2dbe2bb1ba6d91cb65c580913fcbd772f0e434165cf4c742cccfefb1907c"
+            }
+          ]
+        },
+        {
+          "bom-ref": "84fcc1ea2a079e27",
+          "type": "file",
+          "name": "/tmp/e9-sbom/mosquitto-v2.0.22/snap/snapcraft.yaml",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "868cd0ed00a1c45dab4330f62896d550e6a72a60"
+            },
+            {
+              "alg": "SHA-256",
+              "content": "23eaa7ef477ede1cdba787d17f661c8d4b8e32eed2c0e4fec93c0f418ca05567"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "matches": [],
+  "skipped_components": [
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/codeql-analysis.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "315feafee123a1a38bef0834a08a845bb62b8934",
+        "SHA-256": "ff854438e2b195bced26ae4c8d1d8d224f6135e7c1ebf04b7877781bd72a9e85"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/coverity-scan-develop.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "b3f016cc634ce2fabfa0385fa666441e8e3f108a",
+        "SHA-256": "39bbd1881b9bf1c9952753d4018931ba54d525d2e255b383fc4976bd7cc6c7d4"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/coverity-scan-fixes.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "c10dbc303e5b95dbfdaeebe404555c27783bec63",
+        "SHA-256": "7bbefc0ea6c9808b5293f4ae26f6463424a3dab73914ac641a19942164a7cd4f"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/delete-old-workflow-runs.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "f2efb78e35c7180c5dbd3406a8eca7c942071f55",
+        "SHA-256": "8b743a01d0e38f1a25da887885e2e156221b158fea3fbc6b40868633e6b401d4"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/issue-labler.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "1b462b2e40ddfea131433d2796aaec35d5b3c9a9",
+        "SHA-256": "e1102c406384e57317a1ed84266106247e520269bb40e3cea5f518dbd8797af6"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/lock.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "782deee7697a2a646307c0a66122652541e102d0",
+        "SHA-256": "a89baaabcd08c9094ffed41bebc9ee9db2f292b4169d2aaa772f721531b559d0"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/mosquitto-cmake.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "8e90eaf10ba833872531685b11ae99090ea919fe",
+        "SHA-256": "80e93e9bd391acb5e1c98b90ee640a332fd47b937fd9d1a207c32641e1f56114"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/mosquitto-make.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "147c274a3b6d7b082e27f70c88749b1316ed0e2b",
+        "SHA-256": "bb228d4c018e654eb5b0d31afc053175be29c615d3d43849806590fb96d6dda8"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/windows-x86.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "33da54cbb7c886b135f52f7ba3c7a96b9a06338d",
+        "SHA-256": "7e777080fba68e78543a9ee42f24bbb5444cf4bfb455d8a02c2b0cb86441c0a8"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/.github/workflows/windows.yml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "aa86ff858cb38cb3f14a8635f8f89d62ae890116",
+        "SHA-256": "cffa2dbe2bb1ba6d91cb65c580913fcbd772f0e434165cf4c742cccfefb1907c"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    },
+    {
+      "type": "file",
+      "name": "/tmp/e9-sbom/mosquitto-v2.0.22/snap/snapcraft.yaml",
+      "version": null,
+      "purl": null,
+      "licenses": [],
+      "hashes": {
+        "SHA-1": "868cd0ed00a1c45dab4330f62896d550e6a72a60",
+        "SHA-256": "23eaa7ef477ede1cdba787d17f661c8d4b8e32eed2c0e4fec93c0f418ca05567"
+      },
+      "skipped_reason": "invalid or missing PURL"
+    }
+  ],
+  "offline": false,
+  "warnings": [
+    "Skipped 11 component(s) with invalid or missing PURLs (they were not sent to OSV)."
+  ]
+}
