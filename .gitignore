@@ -27,3 +27,5 @@ paper/*.docx
 paper/*.pdf
 paper/content.json
 paper/build_manuscript_jcp.py
+paper/softwarex/build_softwarex.py
+paper/softwarex/*.docx
