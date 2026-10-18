@@ -2,7 +2,7 @@
 # Use: pip install -c constraints-ci.txt -e ".[test,notebooks,analysis]"
 numpy==2.5.3
 scipy==1.18.1
-pandas==3.0.5
+pandas==3.0.6
 jsonschema==4.26.0
 PyYAML==6.0.3
 pytest==9.1.1
