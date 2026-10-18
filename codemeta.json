@@ -13,7 +13,13 @@
     {
       "@type": "Person",
       "givenName": "Olga",
-      "familyName": "Torstensson"
+      "familyName": "Torstensson",
+      "@id": "https://orcid.org/0009-0007-2169-6851",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Halmstad University, Sweden"
+      },
+      "email": "olga.torstensson@hh.se"
     },
     {
       "@type": "Person",

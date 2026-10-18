@@ -23,7 +23,7 @@ Cite the Zenodo DOI of the version you used. GitHub's "Cite this repository" but
 > Torstensson, O. (2026). *CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs* (Version 1.3.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23437353
 
 ## Authors and contributors
-- **Olga Torstensson** (School of Information Technology, Halmstad University): concept, research design, maintainer.
+- **Olga Torstensson** ([ORCID 0009-0007-2169-6851](https://orcid.org/0009-0007-2169-6851); School of Information Technology, Halmstad University): concept, research design, maintainer.
 - **Dmytro Prokopovych-Tkachenko** ([ORCID 0000-0002-6590-3898](https://orcid.org/0000-0002-6590-3898); Department of Cybersecurity and Information Technologies, University of Customs and Finance, Dnipro, Ukraine): co-author.
 - Software, analysis scripts and documentation were developed with the assistance of an AI system (Claude, Anthropic); commits made that way carry a `Co-Authored-By: Claude` trailer. The maintainer reviews all changes and is responsible for the content.
 
