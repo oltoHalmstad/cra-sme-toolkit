@@ -1,0 +1,145 @@
+product_id,tag,inventory_status,runtime_components,independent_components,G1,G2,G3,completeness_reasons,detail
+zigbee2mqtt,1.42.0,lockfile,204,205,PASS,PASS,PASS,,
+zigbee2mqtt,2.1.3,lockfile,405,405,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+zigbee2mqtt,2.4.0,lockfile,314,314,PASS,PASS,PASS,,
+zigbee2mqtt,2.6.1,lockfile,323,323,PASS,PASS,PASS,,
+zigbee2mqtt,2.7.1,lockfile,318,318,PASS,PASS,PASS,,
+zigbee2mqtt,2.9.1,lockfile,319,319,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+zigbee2mqtt,2.12.0,lockfile,317,317,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+zigbee2mqtt,2.14.1,lockfile,302,302,PASS,PASS,PASS,,
+node-red,4.0.8,lockfile-missing,300,0,PASS,PASS,PASS,,
+node-red,4.0.9,lockfile-missing,301,0,PASS,PASS,PASS,,
+node-red,4.1.0,lockfile-missing,276,0,PASS,PASS,PASS,,
+node-red,4.1.2,lockfile-missing,276,0,PASS,PASS,PASS,,
+node-red,4.1.8,lockfile,274,275,PASS,PASS,PASS,,
+node-red,5.0.0,lockfile,437,455,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+node-red,4.1.15,lockfile,438,459,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+homebridge,v1.8.5,lockfile,102,103,PASS,PASS,PASS,,
+homebridge,v1.9.0,lockfile,111,112,PASS,PASS,PASS,,
+homebridge,v1.10.0,lockfile,111,112,PASS,PASS,PASS,,
+homebridge,v1.11.0,lockfile,111,112,PASS,PASS,PASS,,
+homebridge,v1.11.1,lockfile,110,111,PASS,PASS,PASS,,
+homebridge,v1.11.4,lockfile,50,51,PASS,PASS,PASS,,
+homebridge,v2.1.0,lockfile,54,55,PASS,PASS,PASS,,
+homebridge,v2.4.0,lockfile,51,52,PASS,PASS,PASS,,
+zwave-js-ui,v9.29.0,lockfile,444,453,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+zwave-js-ui,v10.1.3,lockfile,414,422,PASS,PASS,PASS,,
+zwave-js-ui,v10.7.0,lockfile,415,423,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+zwave-js-ui,v11.3.1,lockfile,602,611,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+zwave-js-ui,v11.9.1,lockfile,593,594,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+zwave-js-ui,v11.15.1,lockfile,588,589,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+zwave-js-ui,v11.21.1,lockfile,437,438,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+zwave-js-ui,v11.24.2,lockfile,449,450,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+home-assistant,2024.12.5,lockfile,87,1875,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.07 of 1068 independent components
+home-assistant,2025.3.4,lockfile,89,1925,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.07 of 1092 independent components
+home-assistant,2025.6.3,lockfile,92,1960,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.07 of 1102 independent components
+home-assistant,2025.9.4,lockfile,95,1965,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.07 of 1108 independent components
+home-assistant,2025.12.5,lockfile,96,2028,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.07 of 1139 independent components
+home-assistant,2026.3.4,lockfile,97,2106,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.07 of 1172 independent components
+home-assistant,2026.6.4,lockfile,105,1229,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.07 of 1206 independent components
+home-assistant,2026.9.4,lockfile,106,1264,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.07 of 1235 independent components
+esphome,2024.12.2,lockfile,22,36,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+esphome,2025.3.3,lockfile,22,36,PASS,PASS,PASS,,
+esphome,2025.6.2,lockfile,23,37,PASS,PASS,PASS,,
+esphome,2025.9.2,lockfile,23,37,PASS,PASS,PASS,,
+esphome,2025.12.4,lockfile,24,38,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+esphome,2026.3.1,lockfile,26,40,PASS,PASS,PASS,,
+esphome,2026.6.3,lockfile,27,43,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+esphome,2026.9.1,lockfile,29,49,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+octoprint,1.10.3,"resolve-in-ci (pip, no lockfile)",71,3,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+octoprint,1.11.2,"resolve-in-ci (pip, no lockfile)",71,6,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+octoprint,1.11.3,"resolve-in-ci (pip, no lockfile)",72,7,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+octoprint,1.11.5,"resolve-in-ci (pip, no lockfile)",72,7,PASS,PASS,PASS,,
+octoprint,1.11.7,"resolve-in-ci (pip, no lockfile)",72,7,PASS,PASS,PASS,,
+octoprint,1.11.8,"resolve-in-ci (pip, no lockfile)",72,7,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+frigate,v0.15.0,lockfile,314,1853,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+frigate,v0.15.1,lockfile,314,1854,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+frigate,v0.16.1,lockfile,355,1825,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.38 of 16 independent components
+frigate,v0.16.3,lockfile,356,1825,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.38 of 16 independent components
+frigate,v0.17.1,lockfile,397,1856,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.23 of 13 independent components
+frigate,v0.17.2,lockfile,397,1856,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.23 of 13 independent components
+frigate,v0.18.0,lockfile,487,1955,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,PyPI coverage 0.15 of 20 independent components
+adguardhome,v0.107.55,lockfile,736,1036,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+adguardhome,v0.107.59,lockfile,786,1027,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+adguardhome,v0.107.63,lockfile,787,785,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+adguardhome,v0.107.67,lockfile,790,786,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+adguardhome,v0.107.71,lockfile,781,780,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+adguardhome,v0.107.73,lockfile,784,784,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+adguardhome,v0.107.77,lockfile,348,348,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+adguardhome,v0.107.79,lockfile,355,487,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+headscale,v0.25.1,lockfile,257,246,PASS,PASS,PASS,,
+headscale,v0.26.1,lockfile,262,239,PASS,PASS,PASS,,
+headscale,v0.27.1,lockfile,273,257,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+headscale,v0.28.0,lockfile,281,266,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+headscale,v0.29.1,lockfile,294,283,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+headscale,v0.29.4,lockfile,294,283,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+traefik,v3.2.3,lockfile,1310,1327,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+traefik,v3.3.5,lockfile,1315,1332,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+traefik,v3.4.3,lockfile,1318,1335,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+traefik,v3.5.3,lockfile,2185,1796,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+traefik,v3.6.6,lockfile,2315,1872,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+traefik,v3.6.12,lockfile,2316,1873,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+traefik,v3.7.6,lockfile,1369,1254,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+traefik,v3.7.13,lockfile,1378,1263,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+telegraf,v1.33.0,lockfile,680,673,PASS,PASS,PASS,,
+telegraf,v1.34.1,lockfile,697,688,PASS,PASS,PASS,,
+telegraf,v1.35.1,lockfile,731,722,PASS,PASS,PASS,,
+telegraf,v1.36.2,lockfile,744,735,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+telegraf,v1.37.0,lockfile,764,755,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+telegraf,v1.38.2,lockfile,777,768,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+telegraf,v1.39.1,lockfile,793,786,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+telegraf,v1.40.1,lockfile,798,790,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+evcc,0.132.0,lockfile,986,989,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+evcc,0.202.1,lockfile,896,899,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+evcc,0.204.5,lockfile,935,939,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+evcc,0.208.1,lockfile,367,369,PASS,PASS,PASS,,
+evcc,0.300.2,lockfile,376,378,PASS,PASS,PASS,,
+evcc,0.303.2,lockfile,419,421,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+evcc,0.310.1,lockfile,545,545,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+evcc,0.316.1,lockfile,557,560,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+thingsboard,v3.9,resolve-in-ci (maven),50,2378,PASS,PASS,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,Maven coverage 0.10 of 202 independent components
+thingsboard,v3.9.1,resolve-in-ci (maven),50,2378,PASS,PASS,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,Maven coverage 0.10 of 202 independent components
+thingsboard,v4.0.1,resolve-in-ci (maven),50,2156,PASS,PASS,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,Maven coverage 0.10 of 205 independent components
+thingsboard,v4.2,resolve-in-ci (maven),52,2173,PASS,PASS,REVIEW_REQUIRED,INVENTORY_CROSSCHECK_LOW,Maven coverage 0.10 of 216 independent components
+thingsboard,v4.2.1.1,resolve-in-ci (maven),515,2136,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+thingsboard,v4.3.1.1,resolve-in-ci (maven),518,2223,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+thingsboard,v4.3.1.3,resolve-in-ci (maven),522,2265,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+thingsboard,v4.4,resolve-in-ci (maven),0,2743,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_ECOSYSTEM_MISSING INVENTORY_CROSSCHECK_LOW,Maven; Maven coverage 0.00 of 307 independent components
+openhab-core,4.3.1,resolve-in-ci (maven),463,348,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+openhab-core,4.3.4,resolve-in-ci (maven),463,348,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+openhab-core,4.3.5,resolve-in-ci (maven),463,348,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+openhab-core,4.3.7,resolve-in-ci (maven),463,347,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+openhab-core,5.1.0,resolve-in-ci (maven),457,357,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+openhab-core,5.1.3,resolve-in-ci (maven),457,357,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+openhab-core,4.3.11,resolve-in-ci (maven),463,347,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+openhab-core,5.2.1,resolve-in-ci (maven),465,363,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+mosquitto,v2.0.20,no-package-manifest (C),0,0,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+mosquitto,v2.0.21,no-package-manifest (C),0,0,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+mosquitto,v2.0.22,no-package-manifest (C),0,0,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+mosquitto,v2.1.2,no-package-manifest (C),0,0,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+tasmota,v14.4.1,no-package-manifest (C/PlatformIO),2,2,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C/PlatformIO)
+tasmota,v14.5.0,no-package-manifest (C/PlatformIO),2,2,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C/PlatformIO)
+tasmota,v15.0.1,no-package-manifest (C/PlatformIO),2,2,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C/PlatformIO)
+tasmota,v15.2.0,no-package-manifest (C/PlatformIO),2,2,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C/PlatformIO)
+tasmota,v15.3.0,no-package-manifest (C/PlatformIO),2,2,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C/PlatformIO)
+tasmota,v15.5.0,no-package-manifest (C/PlatformIO),2,2,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C/PlatformIO)
+tasmota,v15.6.0,no-package-manifest (C/PlatformIO),2,2,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C/PlatformIO)
+pihole-ftl,v6.1,no-package-manifest (C),1,1,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+pihole-ftl,v6.2.3,no-package-manifest (C),1,1,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+pihole-ftl,v6.4.1,no-package-manifest (C),1,1,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+pihole-ftl,v6.5,no-package-manifest (C),1,1,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+pihole-ftl,v6.6.2,no-package-manifest (C),1,1,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+pihole-ftl,v6.7.1,no-package-manifest (C),1,1,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE,no-package-manifest (C)
+influxdb3,v3.2.0,lockfile,568,675,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+influxdb3,v3.5.0,lockfile,614,712,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+influxdb3,v3.8.0,lockfile,614,717,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+influxdb3,v3.8.3,lockfile,618,721,PASS,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+influxdb3,v3.9.6,lockfile,733,856,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+influxdb3,v3.11.5,lockfile,741,866,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,,
+emqx,v5.8.4,"resolve-in-ci (rebar3, no committed lock)",24,31,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE INVENTORY_ECOSYSTEM_MISSING,"resolve-in-ci (rebar3, no committed lock); Hex"
+emqx,v5.8.6,"resolve-in-ci (rebar3, no committed lock)",24,31,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE INVENTORY_ECOSYSTEM_MISSING,"resolve-in-ci (rebar3, no committed lock); Hex"
+emqx,6.0.0,"resolve-in-ci (rebar3, no committed lock)",24,31,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE INVENTORY_ECOSYSTEM_MISSING,"resolve-in-ci (rebar3, no committed lock); Hex"
+emqx,v5.8.9,"resolve-in-ci (rebar3, no committed lock)",24,31,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE INVENTORY_ECOSYSTEM_MISSING,"resolve-in-ci (rebar3, no committed lock); Hex"
+emqx,6.2.0,"resolve-in-ci (rebar3, no committed lock)",25,32,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE INVENTORY_ECOSYSTEM_MISSING,"resolve-in-ci (rebar3, no committed lock); Hex"
+emqx,6.0.3,"resolve-in-ci (rebar3, no committed lock)",24,31,PASS,PASS,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE INVENTORY_ECOSYSTEM_MISSING,"resolve-in-ci (rebar3, no committed lock); Hex"
+emqx,6.1.5,"resolve-in-ci (rebar3, no committed lock)",25,32,FAIL,REVIEW_REQUIRED,REVIEW_REQUIRED,INVENTORY_METHOD_INCOMPLETE INVENTORY_ECOSYSTEM_MISSING,"resolve-in-ci (rebar3, no committed lock); Hex"

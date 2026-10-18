@@ -1,0 +1,504 @@
+{
+  "label": "E9-G POST-HOC / EXPLORATORY (protocol committed 39cc882 before implementation)",
+  "rules": {
+    "coverage_min": 0.5,
+    "min_independent": 10,
+    "reasons": {
+      "INVENTORY_METHOD_INCOMPLETE": "inventory produced by a method known to be incomplete for this product",
+      "INVENTORY_ECOSYSTEM_MISSING": "the product's declared build ecosystem contributes no components",
+      "INVENTORY_CROSSCHECK_LOW": "an independent SBOM of the same checkout is mostly absent from the inventory"
+    }
+  },
+  "A_natural": {
+    "known_incomplete_n": 24,
+    "pass_on_known_incomplete": {
+      "G1": {
+        "k": 23,
+        "n": 24,
+        "p": 0.9583,
+        "wilson95": [
+          0.7976,
+          0.9926
+        ],
+        "clusters": 4,
+        "product_bootstrap95": [
+          0.8889,
+          1.0
+        ]
+      },
+      "G2": {
+        "k": 23,
+        "n": 24,
+        "p": 0.9583,
+        "wilson95": [
+          0.7976,
+          0.9926
+        ],
+        "clusters": 4,
+        "product_bootstrap95": [
+          0.8889,
+          1.0
+        ]
+      },
+      "G3": {
+        "k": 0,
+        "n": 24,
+        "p": 0.0,
+        "wilson95": [
+          0.0,
+          0.138
+        ],
+        "clusters": 4,
+        "product_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "complete_controls_n": 94,
+    "G2_pass_controls": 26,
+    "unnecessary_review_on_controls": {
+      "k": 0,
+      "n": 26,
+      "p": 0.0,
+      "wilson95": [
+        0.0,
+        0.1287
+      ],
+      "clusters": 8,
+      "product_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "review_rate_all": {
+      "G2": {
+        "k": 89,
+        "n": 144,
+        "p": 0.6181,
+        "wilson95": [
+          0.5366,
+          0.6934
+        ],
+        "clusters": 20,
+        "product_bootstrap95": [
+          0.4621,
+          0.7755
+        ]
+      },
+      "G3": {
+        "k": 112,
+        "n": 144,
+        "p": 0.7778,
+        "wilson95": [
+          0.7032,
+          0.838
+        ],
+        "clusters": 20,
+        "product_bootstrap95": [
+          0.6382,
+          0.8993
+        ]
+      }
+    },
+    "reasons_all": {
+      "INVENTORY_METHOD_INCOMPLETE": 24,
+      "INVENTORY_ECOSYSTEM_MISSING": 8,
+      "INVENTORY_CROSSCHECK_LOW": 18
+    },
+    "c_rules_ms_per_release_median": 0.113,
+    "c_rules_ms_per_release_max": 2.961
+  },
+  "B_seeded": {
+    "controls": 26,
+    "controls_products": 8,
+    "baseline_reproduces_registered_decisions": "26/26",
+    "faulty_inventories": 130,
+    "false_pass_all_faults": {
+      "G1": {
+        "k": 130,
+        "n": 130,
+        "p": 1.0,
+        "wilson95": [
+          0.9713,
+          1.0
+        ],
+        "clusters": 8,
+        "product_bootstrap95": [
+          1.0,
+          1.0
+        ]
+      },
+      "G2": {
+        "k": 80,
+        "n": 130,
+        "p": 0.6154,
+        "wilson95": [
+          0.5296,
+          0.6946
+        ],
+        "clusters": 8,
+        "product_bootstrap95": [
+          0.6,
+          0.6632
+        ]
+      },
+      "G3": {
+        "k": 12,
+        "n": 130,
+        "p": 0.0923,
+        "wilson95": [
+          0.0536,
+          0.1544
+        ],
+        "clusters": 8,
+        "product_bootstrap95": [
+          0.0312,
+          0.1818
+        ]
+      }
+    },
+    "false_pass_by_fault": {
+      "F1_remove50": {
+        "G1": {
+          "k": 26,
+          "n": 26,
+          "p": 1.0,
+          "wilson95": [
+            0.8713,
+            1.0
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            1.0,
+            1.0
+          ]
+        },
+        "G2": {
+          "k": 26,
+          "n": 26,
+          "p": 1.0,
+          "wilson95": [
+            0.8713,
+            1.0
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            1.0,
+            1.0
+          ]
+        },
+        "G3": {
+          "k": 12,
+          "n": 26,
+          "p": 0.4615,
+          "wilson95": [
+            0.2876,
+            0.6454
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            0.1562,
+            0.9091
+          ]
+        }
+      },
+      "F2_remove90": {
+        "G1": {
+          "k": 26,
+          "n": 26,
+          "p": 1.0,
+          "wilson95": [
+            0.8713,
+            1.0
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            1.0,
+            1.0
+          ]
+        },
+        "G2": {
+          "k": 26,
+          "n": 26,
+          "p": 1.0,
+          "wilson95": [
+            0.8713,
+            1.0
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            1.0,
+            1.0
+          ]
+        },
+        "G3": {
+          "k": 0,
+          "n": 26,
+          "p": 0.0,
+          "wilson95": [
+            0.0,
+            0.1287
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "F3_devonly": {
+        "G1": {
+          "k": 0,
+          "n": 0,
+          "p": null,
+          "wilson95": null,
+          "clusters": 0,
+          "product_bootstrap95": null
+        },
+        "G2": {
+          "k": 0,
+          "n": 0,
+          "p": null,
+          "wilson95": null,
+          "clusters": 0,
+          "product_bootstrap95": null
+        },
+        "G3": {
+          "k": 0,
+          "n": 0,
+          "p": null,
+          "wilson95": null,
+          "clusters": 0,
+          "product_bootstrap95": null
+        }
+      },
+      "F4_drop_ecosystem": {
+        "G1": {
+          "k": 26,
+          "n": 26,
+          "p": 1.0,
+          "wilson95": [
+            0.8713,
+            1.0
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            1.0,
+            1.0
+          ]
+        },
+        "G2": {
+          "k": 2,
+          "n": 26,
+          "p": 0.0769,
+          "wilson95": [
+            0.0214,
+            0.2414
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            0.0,
+            0.3158
+          ]
+        },
+        "G3": {
+          "k": 0,
+          "n": 26,
+          "p": 0.0,
+          "wilson95": [
+            0.0,
+            0.1287
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "F5_two_components": {
+        "G1": {
+          "k": 26,
+          "n": 26,
+          "p": 1.0,
+          "wilson95": [
+            0.8713,
+            1.0
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            1.0,
+            1.0
+          ]
+        },
+        "G2": {
+          "k": 26,
+          "n": 26,
+          "p": 1.0,
+          "wilson95": [
+            0.8713,
+            1.0
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            1.0,
+            1.0
+          ]
+        },
+        "G3": {
+          "k": 0,
+          "n": 26,
+          "p": 0.0,
+          "wilson95": [
+            0.0,
+            0.1287
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "F6_strip_versions": {
+        "G1": {
+          "k": 26,
+          "n": 26,
+          "p": 1.0,
+          "wilson95": [
+            0.8713,
+            1.0
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            1.0,
+            1.0
+          ]
+        },
+        "G2": {
+          "k": 0,
+          "n": 26,
+          "p": 0.0,
+          "wilson95": [
+            0.0,
+            0.1287
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "G3": {
+          "k": 0,
+          "n": 26,
+          "p": 0.0,
+          "wilson95": [
+            0.0,
+            0.1287
+          ],
+          "clusters": 8,
+          "product_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "c_rule_detection_recall": {
+      "k": 92,
+      "n": 130,
+      "p": 0.7077,
+      "wilson95": [
+        0.6244,
+        0.779
+      ],
+      "clusters": 8,
+      "product_bootstrap95": [
+        0.6182,
+        0.7688
+      ]
+    },
+    "c_rule_detection_by_fault": {
+      "F1_remove50": {
+        "k": 14,
+        "n": 26,
+        "p": 0.5385,
+        "wilson95": [
+          0.3546,
+          0.7124
+        ],
+        "clusters": 8,
+        "product_bootstrap95": [
+          0.0909,
+          0.8438
+        ]
+      },
+      "F2_remove90": {
+        "k": 26,
+        "n": 26,
+        "p": 1.0,
+        "wilson95": [
+          0.8713,
+          1.0
+        ],
+        "clusters": 8,
+        "product_bootstrap95": [
+          1.0,
+          1.0
+        ]
+      },
+      "F3_devonly": {
+        "k": 0,
+        "n": 0,
+        "p": null,
+        "wilson95": null,
+        "clusters": 0,
+        "product_bootstrap95": null
+      },
+      "F4_drop_ecosystem": {
+        "k": 26,
+        "n": 26,
+        "p": 1.0,
+        "wilson95": [
+          0.8713,
+          1.0
+        ],
+        "clusters": 8,
+        "product_bootstrap95": [
+          1.0,
+          1.0
+        ]
+      },
+      "F5_two_components": {
+        "k": 26,
+        "n": 26,
+        "p": 1.0,
+        "wilson95": [
+          0.8713,
+          1.0
+        ],
+        "clusters": 8,
+        "product_bootstrap95": [
+          1.0,
+          1.0
+        ]
+      },
+      "F6_strip_versions": {
+        "k": 0,
+        "n": 26,
+        "p": 0.0,
+        "wilson95": [
+          0.0,
+          0.1287
+        ],
+        "clusters": 8,
+        "product_bootstrap95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  }
+}
