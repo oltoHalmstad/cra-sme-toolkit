@@ -4,7 +4,7 @@
 [![ci](https://github.com/oltoHalmstad/cra-sme-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/oltoHalmstad/cra-sme-toolkit/actions/workflows/ci.yml)
 ![licence: Apache-2.0 (code) / CC BY 4.0 (docs, data)](https://img.shields.io/badge/licence-Apache--2.0%20%7C%20CC%20BY%204.0-blue)
 
-**A risk-driven, evidence-based research toolkit for implementing the EU Cyber Resilience Act (Regulation (EU) 2024/2847) in SMEs.** Version 1.3.0rc1 (release candidate for 1.3.0), research edition, 17 October 2026.
+**A risk-driven, evidence-based research toolkit for implementing the EU Cyber Resilience Act (Regulation (EU) 2024/2847) in SMEs.** Version 1.3.0, research edition, 18 October 2026.
 
 > **Not legal advice. Not an official CRA assessment. Not a certification.** The risk scores are research instruments and are not EU thresholds. Nothing here establishes CRA applicability or conformity.
 
@@ -13,14 +13,14 @@
 git clone https://github.com/oltoHalmstad/cra-sme-toolkit && cd cra-sme-toolkit
 # (or download the citable release archive from https://doi.org/10.5281/zenodo.23437353)
 python -m pip install -e ".[test,notebooks]"     # Python ≥ 3.12
-pytest                                            # ~100 tests; workbook parity needs LibreOffice
-python tools/run_notebooks.py                     # re-execute the six notebooks
+pytest                                            # ~280 tests; workbook parity needs LibreOffice
+python tools/run_notebooks.py                     # re-execute the eight notebooks
 ```
 
 ## How to cite
 Cite the Zenodo DOI of the version you used. GitHub's "Cite this repository" button reads `CITATION.cff`.
 
-> Torstensson, O. (2026). *CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs* (Version 1.3.0rc1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23437353
+> Torstensson, O. (2026). *CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs* (Version 1.3.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23437353
 
 ## Licensing
 | Part | Licence |
@@ -43,10 +43,21 @@ crasme-gate --bundle examples/demo-release --policy examples/demo-policy.yaml --
 python tools/mutation_suite.py        # 69 seeded faults: false-green 0/69 (legacy v1.1: 63/69)
 ```
 
-## New in 1.3.0rc1: E9, a real-world release replay
-The toolkit is replayed on **20 open-source IoT and network products and 144 real releases**. The question is what each gate would have decided at each release date. See `experiments/e9_release_replay/` and notebook 08.
+## New in 1.3.0: E9 release replay and completeness-aware gating
+- **E9 (pre-registered, 10.5281/zenodo.23438234):** the gates are replayed on **144 real releases of 20 open-source IoT and network products**, using only what was knowable on each release date (OSV, CISA KEV, registry data). Results: `experiments/e9_release_replay/results/run-39047161461/RESULTS.md`.
+  - No assessable release shipped an already KEV-listed vulnerability (0/119).
+  - 58% shipped a version-matched high or critical one.
+  - Consecutive releases share a median of 53% of their components (Jaccard similarity 0.53).
+  - The fail-safe engine passes no empty or invalid inventory, but does pass present-yet-incomplete ones (19/20).
+- **E9-G (post hoc, exploratory):** `crasme/completeness.py` adds three inventory-completeness rules. Protocol: `experiments/e9_release_replay/E9G-PROTOCOL.md`; results: `results/e9g-posthoc/`.
+- **Manual-validation kit:** `crasme/validation.py` and `tools/replay/validation.py` draw a seeded, blinded sample and compute Cohen's κ and precision.
+- **Reproducibility:** an offline re-run from the archived data cache reproduces the core result tables byte for byte (`tools/replay/run_replay.py`).
 
-The sample, inventories and drift results are real. The vulnerability replay runs in the `e9-replay` GitHub Actions workflow, because it needs OSV and KEV access.
+Quick replay demo on the bundled **synthetic** cache (no network needed):
+```bash
+python tools/replay/run_replay.py --e9 experiments/e9_release_replay \
+    --cache tests/fixtures/e9_synthetic_cache.tar.gz --out /tmp/e9-demo --limit-products headscale,mosquitto
+```
 
 ## What is new in v1.2
 | Path | What it is |

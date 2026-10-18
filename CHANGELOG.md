@@ -1,4 +1,13 @@
 # Changelog
+## 1.3.0 — 18 Oct 2026: E9 results, exploratory re-analyses and completeness-aware gating
+- **E9 registered run** 39047161461: results, `ANALYSIS.json`, `RESULTS.md` and the offline reproduction check, under `experiments/e9_release_replay/results/`.
+- **Added `crasme/validation.py` and `tools/replay/validation.py`:** a seeded stratified sample, blinded rater sheets, Cohen's κ, and precision with Wilson CIs. Calibration items are in `experiments/e9_release_replay/validation/practice/`.
+- **Added `tools/replay/analyze_e9.py`** (the registered analysis) and **`analyze_e9_posthoc.py`** (exploratory): time to first observed absence with Kaplan–Meier bounds, and product-cluster CIs.
+- **Added `crasme/completeness.py` and `tools/replay/e9g_completeness.py`** (E9-G, post hoc): three inventory-completeness rules, evaluated on natural releases and seeded faults.
+- **Fixed in `fetch_data.py`:** resilient OSV retrieval. **Fixed in `run_replay.py`:** an indexed but unfetched OSV record now makes the package unassessed (fail safe). These are deviations D1 and D2, documented in `REGISTRATION.md`, together with D3.
+- **Added `tools/paper/figures_e9.py`:** reproducible figures.
+- **Added `Licence.txt`:** a copy of the Apache-2.0 licence, as the SoftwareX submission requirements ask.
+
 ## 1.3.0rc1 — 17 Oct 2026: E9 real-world release replay (pre-registered; vulnerability replay pending)
 - **Added E9** (`experiments/e9_release_replay/`): a frozen sample of 20 open-source IoT and network products and 144 real releases (2024Q4–2026Q3), selected from git history with a pre-registered rule. It also includes lockfile inventories for 94 releases (47,363 component-versions), coverage classification for all 144, and `PREREGISTRATION.md` (H9a–H9f).
 - **Added `crasme.replay`:**
