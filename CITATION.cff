@@ -10,6 +10,10 @@ license: Apache-2.0
 authors:
 - family-names: Torstensson
   given-names: Olga
+- family-names: Prokopovych-Tkachenko
+  given-names: Dmytro
+  affiliation: Department of Cybersecurity and Information Technologies, University of Customs and Finance, Dnipro, Ukraine
+  orcid: https://orcid.org/0000-0002-6590-3898
 abstract: 'Research toolkit for implementing and evaluating the EU Cyber Resilience Act (Regulation (EU)
   2024/2847) in small and medium-sized enterprises. It contains a 46-obligation CRA requirements catalogue,
   a risk and evidence workbook, a tested Python core (release-decision engine, ordinal and Monte Carlo

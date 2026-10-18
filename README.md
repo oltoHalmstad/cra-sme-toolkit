@@ -24,6 +24,7 @@ Cite the Zenodo DOI of the version you used. GitHub's "Cite this repository" but
 
 ## Authors and contributors
 - **Olga Torstensson** (School of Information Technology, Halmstad University): concept, research design, maintainer.
+- **Dmytro Prokopovych-Tkachenko** ([ORCID 0000-0002-6590-3898](https://orcid.org/0000-0002-6590-3898); Department of Cybersecurity and Information Technologies, University of Customs and Finance, Dnipro, Ukraine): co-author.
 - Software, analysis scripts and documentation were developed with the assistance of an AI system (Claude, Anthropic); commits made that way carry a `Co-Authored-By: Claude` trailer. The maintainer reviews all changes and is responsible for the content.
 
 Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md). Cite the software through `CITATION.cff` (see *How to cite* above).

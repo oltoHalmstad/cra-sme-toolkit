@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = "Apache-2.0"
 license-files = ["LICENSE", "LICENSES/*"]
-authors = [{ name = "Olga Torstensson" }]
+authors = [{ name = "Olga Torstensson" }, { name = "Dmytro Prokopovych-Tkachenko" }]
 keywords = ["cyber resilience act", "CRA", "SME", "SBOM", "compliance as code", "risk assessment", "traceability", "vulnerability disclosure"]
 classifiers = [
   "Development Status :: 3 - Alpha",
