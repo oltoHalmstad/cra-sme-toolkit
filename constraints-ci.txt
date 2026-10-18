@@ -1,6 +1,6 @@
 # CI constraints: exact versions the v1.2.0 test suite and notebooks were verified with (17 Oct 2026).
 # Use: pip install -c constraints-ci.txt -e ".[test,notebooks,analysis]"
-numpy==2.5.3
+numpy==2.5.4
 scipy==1.18.1
 pandas==3.0.5
 jsonschema==4.26.0
