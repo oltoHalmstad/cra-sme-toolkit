@@ -31,7 +31,7 @@ Protocol: `../../E9G-PROTOCOL.md`, committed in `39cc882` before implementation.
 |---|---|---|---|---|
 | F1 remove 50% | 26/26 | 26/26 | 12/26 | 14/26 |
 | F2 remove 90% | 26/26 | 26/26 | 0/26 | 26/26 |
-| F3 dev-only as runtime | n/a | n/a | n/a | not applicable: no control marks development dependencies |
+| F3 dev-only as runtime | n/a | n/a | n/a | not applicable: the frozen inventories retain no development dependencies (registration deviation D3) |
 | F4 drop declared ecosystem | 26/26 | 2/26 | 0/26 | 26/26 |
 | F5 two components | 26/26 | 26/26 | 0/26 | 26/26 |
 | F6 strip versions | 26/26 | 0/26 | 0/26 | 0/26 (G2 already reviews: undecidable matches) |
@@ -40,4 +40,4 @@ Protocol: `../../E9G-PROTOCOL.md`, committed in `39cc882` before implementation.
 - F1 sits at the 0.50 coverage threshold, so about half pass. A stricter threshold trades this against more flags on controls.
 - Controls are not human-verified.
 - C3 requires a second, independent inventory pipeline.
-- F3 could not be tested on this sample.
+- F3 could not be tested, because the inventories retain no development dependencies (deviation D3).
