@@ -34,9 +34,9 @@ keywords:
 - evidence traceability
 - vulnerability disclosure
 - design science research
-doi: 10.5281/zenodo.23437353
+doi: 10.5281/zenodo.23502171
 identifiers:
 - type: doi
-  value: 10.5281/zenodo.23437353
-  description: Zenodo DOI
+  value: 10.5281/zenodo.23502171
+  description: Zenodo DOI of release 1.3.0
 repository-code: https://github.com/oltoHalmstad/cra-sme-toolkit

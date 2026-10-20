@@ -1,6 +1,6 @@
 # CRA-SME Toolkit
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23437353.svg)](https://doi.org/10.5281/zenodo.23437353)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23502171.svg)](https://doi.org/10.5281/zenodo.23502171)
 [![ci](https://github.com/oltoHalmstad/cra-sme-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/oltoHalmstad/cra-sme-toolkit/actions/workflows/ci.yml)
 ![licence: Apache-2.0 (code) / CC BY 4.0 (docs, data)](https://img.shields.io/badge/licence-Apache--2.0%20%7C%20CC%20BY%204.0-blue)
 
@@ -11,7 +11,7 @@
 ## Install and run
 ```bash
 git clone https://github.com/oltoHalmstad/cra-sme-toolkit && cd cra-sme-toolkit
-# (or download the citable release archive from https://doi.org/10.5281/zenodo.23437353)
+# (or download the citable release archive from https://doi.org/10.5281/zenodo.23502171)
 python -m pip install -e ".[test,notebooks]"     # Python ≥ 3.12
 pytest                                            # ~280 tests; workbook parity needs LibreOffice
 python tools/run_notebooks.py                     # re-execute the eight notebooks
@@ -20,7 +20,7 @@ python tools/run_notebooks.py                     # re-execute the eight noteboo
 ## How to cite
 Cite the Zenodo DOI of the version you used. GitHub's "Cite this repository" button reads `CITATION.cff`.
 
-> Torstensson, O. (2026). *CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs* (Version 1.3.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23437353
+> Torstensson, O., & Prokopovych-Tkachenko, D. (2026). *CRA-SME Toolkit: a risk-driven, evidence-based research toolkit for EU Cyber Resilience Act implementation in SMEs* (Version 1.3.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23502171
 
 ## Authors and contributors
 - **Olga Torstensson** ([ORCID 0009-0007-2169-6851](https://orcid.org/0009-0007-2169-6851); School of Information Technology, Halmstad University): concept, research design, maintainer.
